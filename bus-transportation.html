@@ -6,23 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
-
-        body {
-            font-family: "Kantumruy Pro", sans-serif;
-        }
-
-        .icon-setting-customize{
-            width: 30px;
-            height: 30px;
-            background-color: #eee;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -48,16 +32,26 @@
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle bg-danger rounded-5" style="width: 40px; height: 40px;" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle bg-danger rounded-5" style="width: 40px; height: 40px;"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <!-- <img src="assets/images/jenny-feedback.jpg" alt="pf" style=""> -->
                             </a>
-                            <ul class="dropdown-menu show g-5">
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i class="fa-solid fa-user icon-setting-customize"></i><span class="ms-3">កែសម្រួលប្រវត្តិរូប</span></a></li>
-                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i class="fa-solid fa-gear icon-setting-customize"></i><span class="ms-3">ការកំណត់ និងឯកជនភាព</span></a></li>
-                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i class="fa-solid fa-circle-question icon-setting-customize"></i><span class="ms-3">ជំនួយ និងគាំទ្រ</span></a></li>
-                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i class="fa-solid fa-right-from-bracket icon-setting-customize"></i><span class="ms-3">ចាកចេញពីគណនី</span></a></li>
+                            <ul class="dropdown-menu g-5">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-user icon-setting-customize"></i><span
+                                            class="ms-3">កែសម្រួលប្រវត្តិរូប</span></a></li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-gear icon-setting-customize"></i><span
+                                            class="ms-3">ការកំណត់ និងឯកជនភាព</span></a></li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-circle-question icon-setting-customize"></i><span
+                                            class="ms-3">ជំនួយ និងគាំទ្រ</span></a></li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-right-from-bracket icon-setting-customize"></i><span
+                                            class="ms-3">ចាកចេញពីគណនី</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -65,63 +59,201 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-5">
-        <form class="row g-3">
-            <div class="col-4">
-                <label for="direction" class="form-label">ទីតាំងចេញដំណើរ</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
-                    <option value="1">ភ្នំពេញ</option>
-                    <option value="2">កំពង់ចាម</option>
-                    <option value="3">ត្បូងឃ្មុំ</option>
-                    <option value="3">កណ្តាល</option>
-                    <option value="3">កំពត</option>
-                    <option value="3">តាកែវ</option>
-                </select>
+    <main>
+        <section class="my-5">
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-4">
+                        <label for="direction" class="form-label">ទីតាំងចេញដំណើរ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
+                            <option value="1">ភ្នំពេញ</option>
+                            <option value="2">កំពង់ចាម</option>
+                            <option value="3">ត្បូងឃ្មុំ</option>
+                            <option value="3">កណ្តាល</option>
+                            <option value="3">កំពត</option>
+                            <option value="3">តាកែវ</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="direction" class="form-label">ទិសដៅត្រូវចុះ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
+                            <option value="1">ភ្នំពេញ</option>
+                            <option value="2">កំពង់ចាម</option>
+                            <option value="3">ត្បូងឃ្មុំ</option>
+                            <option value="3">កណ្តាល</option>
+                            <option value="3">កំពត</option>
+                            <option value="3">តាកែវ</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="direction" class="form-label">ម៉ោងធ្វើដំណើរ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
+                            <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
+                            <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
+                            <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
+                            <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
+                            <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
+                            <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="direction" class="form-label">ថ្ងៃចេញដំណើរ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
+                            <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
+                            <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
+                            <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
+                            <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
+                            <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
+                            <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
             </div>
-            <div class="col-4">
-                <label for="direction" class="form-label">ទិសដៅត្រូវចុះ</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
-                    <option value="1">ភ្នំពេញ</option>
-                    <option value="2">កំពង់ចាម</option>
-                    <option value="3">ត្បូងឃ្មុំ</option>
-                    <option value="3">កណ្តាល</option>
-                    <option value="3">កំពត</option>
-                    <option value="3">តាកែវ</option>
-                </select>
-            </div>
-            <div class="col-4">
-                <label for="direction" class="form-label">ម៉ោងធ្វើដំណើរ</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
-                    <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
-                    <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
-                    <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
-                    <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
-                    <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
-                    <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
-                </select>
-            </div>
-            <div class="col-4">
-                <label for="direction" class="form-label">ថ្ងៃចេញដំណើរ</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
-                    <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
-                    <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
-                    <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
-                    <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
-                    <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
-                    <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
-                </select>
-            </div>
-            <div class="col-4">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </form>
-    </div>
+        </section>
 
-    <script src="js/bootstrap.bundle.js"></script>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 py-3 py-lg-0">
+                        <div class="card rounded-4 pb-2 border-2 border-danger overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="#" class="btn fs-5 btn-outline-danger p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-6">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        តើខ្ញុំអាចទិញដោយផ្ទាល់នៅក្រុមហ៊ុនបានដែរទេ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">ពួកយើងដាក់លក់សំបុត្រទាំងនៅលើវេបសាយ
+                                        និងដោយផ្ទាល់នៅក្រុមហ៊ុន។
+                                        លោកអ្នកអាចបញ្ជាទិញតាមរយៈប្រភេទណាមួយដែលអ្នកគិតថាងាយស្រួលសម្រាប់អ្នក។ សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        តើខ្ញុំទទួលបានសំបុត្រនៅពេលណា?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">សម្រាប់ការទិញដោយផ្ទាល់លោកអ្នកនឹងទទួលបានភ្លាមៗ
+                                        ចំពោះការទិញតាមអនឡាញលោកអ្នកត្រូវបង្ហាញលេខកូដដែលលោកអ្នកបញ្ជាទិញនៅពេលទៅដល់កន្លែងឡានដើម្បីពួកយើងផ្ទៀងផ្ទាត់ព័ត៌មាន។
+                                        សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        តើខ្ញុំអាចស្វែងរកព័ត៌មានបន្ថែមតាមណា?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">លោកអ្នកអាចធ្វើការទំនាក់ទំនងមកយើងខ្ញុំតាមរយៈលេខទូរសព្ទ Email
+                                        ឬក៏ផ្ញើរសារមកយើងបានរៀងរាល់ម៉ោងធ្វើការ។ សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        តើការទូទាត់ប្រភេទណាដែលទទួលយក?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">ពួកយើងទទួលយកគ្រប់ប្រភេទទាំងអស់ មិនថាជាការទូទាត់ជាសាច់ប្រាក់សុទ្ធ(ខ្មែរ
+                                        ដុល្លា)
+                                        និងការទូទាត់តាមបាគង អេស៊ីលីដា ធនាគារក្នុងស្រុកទាំងអស់។ សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">នាមត្រកូល</label>
+                                <input type="text" class="form-control shadow-none" id="validationCustom01" value="Mark"
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
+                                <input type="text" class="form-control shadow-none" id="validationCustom02" value="Otto"
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom10" class="form-label">អ៊ីម៉ែល</label>
+                                <input type="email" class="form-control shadow-none" id="validationCustom10" required>
+                                <div class="invalid-feedback">
+                                    បញ្ចូលអាស័យដ្ឋានអ៊ីម៉ែល
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationTextarea" class="form-label">សារ</label>
+                                <textarea class="form-control no-resize shadow-none" id="validationTextarea"
+                                    placeholder="បញ្ចូលសារទីនេះ" required></textarea>
+                                <div class="invalid-feedback">
+                                    បញ្ចូលសារ
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <a href="#" class="btn btn-outline-dark">បោះបង់</a>
+                                <button class="btn btn-primary" type="submit">ផ្ញើសារ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

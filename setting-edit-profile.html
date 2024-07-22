@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="card rounded-4 border-0 bg-light">
+                            <div class="card-body p-4">
+                                <ul class="nav nav-pills d-flex flex-column fs-5 gap-2" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">
+                                            កែសម្រួលប្រវត្តិរូប
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-passwd-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-passwd" type="button" role="tab"
+                                            aria-controls="pills-passwd" aria-selected="false">
+                                            ប្តូរលេខកូដសម្ងាត់
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-graphicdesign-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-graphicdesign" type="button" role="tab"
+                                            aria-controls="pills-graphicdesign" aria-selected="false">
+                                            ការជូនដំណឹង
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-marketing-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-marketing" type="button" role="tab"
+                                            aria-controls="pills-marketing" aria-selected="false">
+                                            មតិស្ថាបនា
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="card rounded-4 border-0 bg-light">
+                            <div class="card-body p-4">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- Change-Information-Section -->
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                        <h5 class="card-title">ព័ត៌មានផ្ទាល់ខ្លួន</h5>
+                                        <div class="profile-setting">
+                                            <a href="#"
+                                                onclick="document.getElementById('profilePicture').click(); return false;">
+                                                <img src="https://i.pinimg.com/originals/68/76/99/6876993a25a8fc274cc09aee12171034.jpg"
+                                                    class="card-img-top" alt="setting-pf" id="profile-pic">
+                                            </a>
+                                        </div>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-12" style="display: none;">
+                                                <input type="file" class="form-control shadow-none" id="profilePicture"
+                                                    accept="image/*" onchange="previewImage(event)">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom01" class="form-label">នាមត្រកូល</label>
+                                                <input type="text" class="form-control shadow-none"
+                                                    id="validationCustom01" value="Mark" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
+                                                <input type="text" class="form-control shadow-none"
+                                                    id="validationCustom02" value="Otto" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustomUsername"
+                                                    class="form-label">ឈ្មោះអ្នកប្រើប្រាស់</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                    <input type="text" class="form-control shadow-none"
+                                                        id="validationCustomUsername"
+                                                        aria-describedby="inputGroupPrepend" required>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom05" class="form-label">អ៊ីម៉ែល</label>
+                                                <input type="email" class="form-control shadow-none"
+                                                    id="validationCustom05" required>
+                                                <div class="invalid-feedback">
+                                                    Please input an email.
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">រក្សាទុក</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Change-Password-Section -->
+                                    <div class="tab-pane fade" id="pills-passwd" role="tabpanel"
+                                        aria-labelledby="pills-passwd-tab">
+                                        <h5 class="card-title">Change Password</h5>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom08"
+                                                    class="form-label">លេខសម្ងាត់បច្ចុប្បន្ន</label>
+                                                <input type="password" class="form-control shadow-none"
+                                                    id="validationCustom08" required>
+                                                <div class="invalid-feedback">
+                                                    សូមបញ្ចូលពាក្យសម្ងាត់ចាស់
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom06"
+                                                    class="form-label">លេខសម្ងាត់ថ្មី</label>
+                                                <input type="password" class="form-control shadow-none"
+                                                    id="validationCustom06" required>
+                                                <div class="invalid-feedback">
+                                                    សូមបញ្ចូលពាក្យសម្ងាត់ថ្មី
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom07"
+                                                    class="form-label">លេខសម្ងាត់ថ្មី</label>
+                                                <input type="password" class="form-control shadow-none"
+                                                    id="validationCustom07" required>
+                                                <div class="invalid-feedback">
+                                                    សូមបញ្ចូលពាក្យសម្ងាត់ថ្មីម្តងទៀត
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary"
+                                                    type="submit">ប្តូរលេខកូដសម្ងាត់</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!-- Change- -->
+                                    <div class="tab-pane fade" id="pills-graphicdesign" role="tabpanel"
+                                        aria-labelledby="pills-graphicdesign-tab" tabindex="0">
+                                        <h5 class="card-title">Notifications</h5>
+                                        <!-- Content for 'ការជូនដំណឹង' tab -->
+                                    </div>
+
+                                    <!-- Feedback-Section -->
+                                    <div class="tab-pane fade" id="pills-marketing" role="tabpanel"
+                                        aria-labelledby="pills-marketing-tab" tabindex="0">
+                                        <h5 class="card-title">Feedback</h5>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-12">
+                                                <label for="validationCustomUsername1"
+                                                    class="form-label">ឈ្មោះអ្នកប្រើប្រាស់</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text" id="inputGroupPrepend1">@</span>
+                                                    <input type="text" class="form-control shadow-none"
+                                                        id="validationCustomUsername1"
+                                                        aria-describedby="inputGroupPrepend1" required>
+                                                    <div class="invalid-feedback">
+                                                        សូមបំពេញឈ្មោះហៅក្រៅរបស់អ្នក
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom10" class="form-label">អ៊ីម៉ែល</label>
+                                                <input type="email" class="form-control shadow-none"
+                                                    id="validationCustom10" required>
+                                                <div class="invalid-feedback">
+                                                    បញ្ចូលអាស័យដ្ឋានអ៊ីម៉ែល
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationTextarea" class="form-label">សារ</label>
+                                                <textarea class="form-control no-resize shadow-none"
+                                                    id="validationTextarea" placeholder="បញ្ចូលសារទីនេះ"
+                                                    required></textarea>
+                                                <div class="invalid-feedback">
+                                                    បញ្ចូលសារ
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <a href="#" class="btn btn-outline-dark">បោះបង់</a>
+                                                <button class="btn btn-primary" type="submit">ផ្ញើសារ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                const output = document.getElementById('profile-pic');
+                output.src = reader.result;
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+</body>
+
+</html>

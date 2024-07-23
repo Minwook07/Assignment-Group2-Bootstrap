@@ -11,16 +11,13 @@
   }
 
   :root,[data-theme=light]{
-    --color-primary:#1A5319;
-    --color-secondary:#508D4E;
-    --color-subtle:#80AF81;
+    --color-primary:#669955;
+    --color-secondary:#80C56D;
+    --color-subtle:#95D385;
     --color-bg:#eee;
     --color-text:#ffff;
 }
 [data-theme=dark]{
-    --color-primary:#669955;
-    --color-secondary:#80C56D;
-    --color-subtle:#95D385;
     --color-bg:#222;
     --color-text:#ffff;
 }

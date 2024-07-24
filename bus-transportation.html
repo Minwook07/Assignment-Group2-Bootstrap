@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Express</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/lips/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="width: 200px;">
+                    <img src="assets/images/CSC-Express-LOGO.png" alt=""
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bg-danger rounded-5" style="width: 40px; height: 40px;"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- <img src="assets/images/jenny-feedback.jpg" alt="pf" style=""> -->
+                            </a>
+                            <ul class="dropdown-menu g-5">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-user icon-setting-customize"></i><span
+                                            class="ms-3">កែសម្រួលប្រវត្តិរូប</span></a></li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-gear icon-setting-customize"></i><span
+                                            class="ms-3">ការកំណត់ និងឯកជនភាព</span></a></li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-circle-question icon-setting-customize"></i><span
+                                            class="ms-3">ជំនួយ និងគាំទ្រ</span></a></li>
+                                <li><a class="dropdown-item d-flex align-item-center" href="#"><i
+                                            class="fa-solid fa-right-from-bracket icon-setting-customize"></i><span
+                                            class="ms-3">ចាកចេញពីគណនី</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="my-5">
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="direction" class="form-label">ទីតាំងចេញដំណើរ</label>
+                        <select class="form-select shadow-none" aria-label="Default select example">
+                            <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
+                            <option value="1">ភ្នំពេញ</option>
+                            <option value="2">កំពង់ចាម</option>
+                            <option value="3">ត្បូងឃ្មុំ</option>
+                            <option value="3">កណ្តាល</option>
+                            <option value="3">កំពត</option>
+                            <option value="3">តាកែវ</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="direction" class="form-label">ទិសដៅត្រូវចុះ</label>
+                        <select class="form-select shadow-none" aria-label="Default select example">
+                            <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
+                            <option value="1">ភ្នំពេញ</option>
+                            <option value="2">កំពង់ចាម</option>
+                            <option value="3">ត្បូងឃ្មុំ</option>
+                            <option value="3">កណ្តាល</option>
+                            <option value="3">កំពត</option>
+                            <option value="3">តាកែវ</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="direction" class="form-label">ម៉ោងធ្វើដំណើរ</label>
+                        <select class="form-select shadow-none" aria-label="Default select example">
+                            <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
+                            <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
+                            <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
+                            <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
+                            <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
+                            <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
+                            <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="direction" class="form-label">ថ្ងៃចេញដំណើរ</label>
+                        <div class="d-flex gap-3">
+                            <select class="form-select shadow-none" aria-label="Default select example">
+                                <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
+                                <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
+                                <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
+                                <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
+                                <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
+                                <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
+                                <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary col-4">ស្វែងរក</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
+                        <div
+                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
+                        <div
+                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
+                        <div
+                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
+                        <div
+                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section class="faqs">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item accordion-item-customize">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        តើខ្ញុំអាចទិញដោយផ្ទាល់នៅក្រុមហ៊ុនបានដែរទេ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">ពួកយើងដាក់លក់សំបុត្រទាំងនៅលើវេបសាយ
+                                        និងដោយផ្ទាល់នៅក្រុមហ៊ុន។
+                                        លោកអ្នកអាចបញ្ជាទិញតាមរយៈប្រភេទណាមួយដែលអ្នកគិតថាងាយស្រួលសម្រាប់អ្នក។ សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item accordion-item-customize">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        តើខ្ញុំទទួលបានសំបុត្រនៅពេលណា?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">សម្រាប់ការទិញដោយផ្ទាល់លោកអ្នកនឹងទទួលបានភ្លាមៗ
+                                        ចំពោះការទិញតាមអនឡាញលោកអ្នកត្រូវបង្ហាញលេខកូដដែលលោកអ្នកបញ្ជាទិញនៅពេលទៅដល់កន្លែងឡានដើម្បីពួកយើងផ្ទៀងផ្ទាត់ព័ត៌មាន។
+                                        សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item accordion-item-customize">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        តើខ្ញុំអាចស្វែងរកព័ត៌មានបន្ថែមតាមណា?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">
+                                        លោកអ្នកអាចធ្វើការទំនាក់ទំនងមកយើងខ្ញុំតាមរយៈលេខទូរសព្ទ Email
+                                        ឬក៏ផ្ញើរសារមកយើងបានរៀងរាល់ម៉ោងធ្វើការ។ សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item accordion-item-customize">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        តើការទូទាត់ប្រភេទណាដែលទទួលយក?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body fs-5">ពួកយើងទទួលយកគ្រប់ប្រភេទទាំងអស់
+                                        មិនថាជាការទូទាត់ជាសាច់ប្រាក់សុទ្ធ(ខ្មែរ
+                                        ដុល្លា)
+                                        និងការទូទាត់តាមបាគង អេស៊ីលីដា ធនាគារក្នុងស្រុកទាំងអស់។ សូមអរគុណ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/images/faqs.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form FAQs -->
+        <section class="my-5 p-3">
+            <div class="container bg-primary-csc rounded-4 p-5">
+                <h5 class="text-white fs-1">ចង់សួរសំណួរបន្ថែម?</h5>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label text-white">ឈ្មោះរបស់អ្នក</label>
+                        <input type="text" class="form-control shadow-none py-3" id="validationCustom01" value="Mark"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label text-white">លេខទូរសព្ទ</label>
+                        <input type="number" class="form-control shadow-none py-3" id="validationCustom02" required>
+                        <div class="invalid-feedback">
+                            សូមបញ្ចូលលេខទូរសព្ទរបស់អ្នក
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom10" class="form-label text-white">អ៊ីម៉ែល</label>
+                        <input type="email" class="form-control shadow-none py-3" id="validationCustom10" required>
+                        <div class="invalid-feedback">
+                            បញ្ចូលអាស័យដ្ឋានអ៊ីម៉ែល
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationTextarea" class="form-label text-white">សារ</label>
+                        <textarea class="form-control no-resize shadow-none py-3" id="validationTextarea"
+                            placeholder="បញ្ចូលសារទីនេះ" required></textarea>
+                        <div class="invalid-feedback">
+                            សរសេរសំណួរអ្នកទីនេះ
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <button class="btn bg-white py-3 px-5" type="submit">ផ្ញើសារ</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="bg-ft-style py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex">
+                            <div class="text-white">
+                                <h5 class="fw-bold">តាមដានទំនិញរបស់អ្នក</h5>
+                                <h5>តាមដានទំនិញរបស់អ្នកជាមួយនឹងការដឹកជញ្ជូន Loraic</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form class="row g-3 justify-content-center">
+                            <div class="col-md-6">
+                                <input type="email" class="form-control shadow-none py-3"
+                                    placeholder="អាស័យដ្ឋានអ៊ីម៉េល" id="validationCustom09">
+                            </div>
+                            <div class="col-md-auto">
+                                <button class="btn btn-primary py-3 px-5" type="submit">ផ្ញើសារ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>

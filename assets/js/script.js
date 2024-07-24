@@ -21,8 +21,8 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   */
   function updateButton({ buttonEl, isDark }) {
     const newCta = isDark 
-    ? "<i class='bi bi-sun-fill my-1 theme-icon-active fs-4 color-text-primary '></i>" 
-    : "<i class='bi bi-moon-stars-fill fs-4 color-text-primary'></i>";
+    ? "<i class='bi bi-sun-fill my-1 theme-icon-active fs-4 text-my-primary '></i>" 
+    : "<i class='bi bi-moon-stars-fill fs-4 text-my-primary'></i>";
 
     // use an aria-label if you are omitting text on the button
     // and using a sun/moon icon, for example

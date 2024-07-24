@@ -65,8 +65,10 @@ input:focus {
 }
 
 /* Button color */
-.btn-primary-csc{
+.btn-csc:hover {
+  color: var(--color-text);
   background-color: var(--color-primary);
+  border-color: var();
 }
 
 /* navtop */
@@ -128,10 +130,11 @@ input:focus {
 /* End of Section Our Service */
 
 /*  */
-.xxx{
+.xxx {
   top: 40%;
   left: 50%;
 }
+
 /* Page Setting */
 .profile-setting {
   width: 100px;
@@ -160,25 +163,122 @@ input:focus {
   justify-content: center;
   align-items: center;
 }
+
 /* End Page of Setting */
 
 /* Page Bus-Transportation */
-.card-customize-border{
-  border: 2px solid var(--color-primary)!important;
+.card-customize-border {
+  border: 2px solid var(--color-primary) !important;
 }
-.btn-outline-primary-customize{
+
+.btn-outline-primary-customize {
   border-color: var(--color-primary);
 }
 
-.btn-outline-primary-customize:hover{
+.btn-outline-primary-customize:hover {
   color: var(--color-text);
   background-color: var(--color-primary);
 }
 
-.bg-ft-style{
+.bg-ft-style {
   background: url('/assets/images/bg-ft.webp');
 }
 
-.accordion-item-customize{
+.accordion-item-customize {
   margin-bottom: 1rem;
+}
+
+
+/*  */
+[data-theme="light"] {
+  --my-color-primary: #669955;
+  --my-color-secondary: #80C56D;
+  --my-color-subtle: #95D385;
+  --my-color-bg: #eee;
+  --my-color-text: #000;
+}
+
+[data-theme="dark"] {
+  --my-color-primary: #669955;
+  --my-color-secondary: #80C56D;
+  --my-color-subtle: #95D385;
+  --my-color-bg: #222;
+  --my-color-text: #fff;
+}
+
+/* Background and Text Colors */
+.bg-my-primary {
+  background-color: var(--my-color-primary);
+}
+
+.bg-my-secondary {
+  background-color: var(--my-color-secondary);
+}
+
+.bg-my-subtle {
+  background-color: var(--my-color-subtle);
+}
+
+.text-my-primary {
+  color: var(--my-color-primary);
+}
+
+.text-my-secondary {
+  color: var(--my-color-secondary);
+}
+
+.text-my-subtle {
+  color: var(--my-color-subtle);
+}
+
+/* Buttons */
+.btn-my-primary {
+  color: #fff;
+  background-color: var(--my-color-primary);
+  border-color: var(--my-color-primary);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-my-primary:hover {
+  background-color: darken(var(--my-color-primary), 10%);
+  border-color: darken(var(--my-color-primary), 10%);
+}
+
+.btn-my-secondary {
+  color: #fff;
+  background-color: var(--my-color-secondary);
+  border-color: var(--my-color-secondary);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-my-secondary:hover {
+  background-color: darken(var(--my-color-secondary), 10%);
+  border-color: darken(var(--my-color-secondary), 10%);
+}
+
+/* Outline Buttons */
+.btn-my-outline-primary {
+  color: var(--my-color-primary);
+  background-color: transparent;
+  border-color: var(--my-color-primary);
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-my-outline-primary:hover {
+  color: #fff;
+  background-color: var(--my-color-primary);
+  border-color: var(--my-color-primary);
+}
+
+.btn-my-outline-secondary {
+  color: var(--my-color-secondary);
+  background-color: transparent;
+  border-color: var(--my-color-secondary);
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-my-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--my-color-secondary);
+  border-color: var(--my-color-secondary);
 }

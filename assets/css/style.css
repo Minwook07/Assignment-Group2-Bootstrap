@@ -131,4 +131,7 @@ input:focus{
   .dropdown-menu-color{
     --bs-dropdown-link-active-bg:var(--color-subtle)!important;
   }
- 
+ .hero-baner img{
+  width: 100%;
+  height: 450px;
+ }

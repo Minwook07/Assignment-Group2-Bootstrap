@@ -48,7 +48,7 @@ body {
 }
 
 /* background color */
-.bg-primary {
+.bg-primary-csc {
   background-color: var(--color-primary);
 }
 
@@ -62,6 +62,11 @@ body {
 
 input:focus {
   border: 1px solid #eee !important;
+}
+
+/* Button color */
+.btn-primary-csc{
+  background-color: var(--color-primary);
 }
 
 /* navtop */
@@ -100,26 +105,33 @@ input:focus {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* Page Express-Logistic & Section Our Service*/
+/* Page Express-Logistic & Section Tracking */
+
+/*Section Our Service*/
 .display-10-customize {
   font-size: 80px !important;
-  color: #508D4E;
+  color: var(--color-primary);
 }
 
 .card-customize:hover {
-  background-color: #508D4E;
+  background-color: var(--color-primary);
 }
 
-.card-customize:hover .card-customize-body {
-  color: white;
+.card-customize:hover .card-body {
+  color: var(--color-text);
 }
 
 .card-customize:hover .display-10-customize {
-  color: white;
+  color: var(--color-text);
 }
 
 /* End of Section Our Service */
 
+/*  */
+.xxx{
+  top: 40%;
+  left: 50%;
+}
 /* Page Setting */
 .profile-setting {
   width: 100px;
@@ -142,10 +154,31 @@ input:focus {
 .icon-setting-customize {
   width: 30px;
   height: 30px;
-  background-color: #eee;
+  background-color: var(--color-bg);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* End Page of Setting */
+
+/* Page Bus-Transportation */
+.card-customize-border{
+  border: 2px solid var(--color-primary)!important;
+}
+.btn-outline-primary-customize{
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary-customize:hover{
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+
+.bg-ft-style{
+  background: url('/assets/images/bg-ft.webp');
+}
+
+.accordion-item-customize{
+  margin-bottom: 1rem;
+}

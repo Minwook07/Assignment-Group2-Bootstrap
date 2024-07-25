@@ -1,85 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
 @font-face {
-  font-family:' Font Awesome 6 Free';
+  font-family: ' Font Awesome 6 Free';
   src: url(/assets/lips/webfonts/fa-solid-900.ttf);
   font-weight: 900;
   font-style: normal;
 }
-  body{
-    font-family: "Kantumruy Pro","Poppins", sans-serif;
-    background-color: #eee;
-  }
 
-  :root,[data-theme=light]{
-    --color-primary:#669955;
-    --color-secondary:#80C56D;
-    --color-subtle:#95D385;
-    --color-bg:#eee;
-    --color-text:#ffff;
+body {
+  font-family: "Kantumruy Pro", "Poppins", sans-serif;
 }
-[data-theme=dark]{
-    --color-bg:#222;
-    --color-text:#ffff;
+
+:root,
+[data-theme=light] {
+  --color-primary: #669955;
+  --color-main:#508D4E;
+  --color-secondary: #80C56D;
+  --color-subtle: #95D385;
+  --color-bg: #eee;
+  --color-text: #222;
 }
+
+[data-theme=dark] {
+  --color-bg: #222;
+  --color-text: #ffff;
+}
+
 /* text color */
-.color-text-primary{
-    color: var(--color-primary);
-}
-.color-text-secondary{
-    color:var(--color-secondary) ;
-}
-.color-text-subtle{
-    color: var(--color-subtle);
-}
-.color-bg{
-    color: var(--color-bg);
-}
 .color-text{
-    color: var(--color-text);
+  color: var(--color-text);
 }
+.color-text-primary {
+  color: var(--color-primary);
+}
+
+.color-text-secondary {
+  color: var(--color-secondary);
+}
+
+.color-text-subtle {
+  color: var(--color-subtle);
+}
+
+.color-bg {
+  color: var(--color-bg);
+}
+
+.color-text {
+  color: var(--color-text);
+}
+
 /* background color */
-.bg-primary{
-    background-color: var(--color-primary);
+.bg-color{
+  background-color: var(--color-bg);
 }
-.bg-secondary{
-    background-color: var(--color-secondary);
-}
-
-.bg-subtle{
-    background-color: var(--color-subtle);
+.bg-color-primary {
+  background-color: var(--color-primary);
 }
 
-input:focus{
-    border: 1px solid #eee!important;
+.bg-color-secondary {
+  background-color: var(--color-secondary);
 }
 
+.bg-color-subtle {
+  background-color: var(--color-subtle);
+}
+/* btn-color */
+.btn-color-primary{
+  background-color: var(--color-primary);
+}
+.btn-color-secondary{
+  background-color: var(--color-secondary);
+}
+.btn-color-subtle{
+  background-color: var(--color-subtle);
+}
+.btn-color-main{
+  background-color: var(--color-main);
+}
 /* navtop */
-  .navtop{
-    width: 100%;
-    height: 70px;
-    background-color:#f0fdfa;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .quick-contact a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #4e4e4e;
-  }
-  .btn-color{
-    background-color:#2dd4bf;
-  }
-  .btn-color:hover{
-    background-color:  #5eead4;
-    color: #ffff;
-  }
-  .active-line{
-    background-color: #5eead4;
-    color: #ffff;
-  }
-  .dropdown-menu-color{
-    background-color:#fafafa ;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1); 
-  }
+.navtop {
+  width: 100%;
+  height: 70px;
+  background-color: #f0fdfa;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quick-contact a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #4e4e4e;
+}
+
+.btn-color {
+  background-color: #2dd4bf;
+}
+
+.btn-color:hover {
+  background-color: #5eead4;
+  color: #ffff;
+}
+
+.active-line {
+  background-color: #5eead4;
+  color: #ffff;
+}
+
+.dropdown-menu-color {
+  background-color: #fafafa;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* form */
+.logo-modal{
+  width: 100px!important;
+}
+.left-side-img img{
+  width: 400px;
+}
+input:focus {
+  border: 1px solid #eee !important;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.icon{
+  width: 25px;
+}
+.icon-link{
+  transition: 0.8s;
+  display: flex;
+  justify-content: center;
+}
+.icon-link:hover{
+  border: none;
+  color: #ffff!important;
+}

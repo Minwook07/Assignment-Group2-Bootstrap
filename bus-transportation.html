@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/lips/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#" style="width: 200px;">
@@ -38,7 +40,6 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle bg-danger rounded-5" style="width: 40px; height: 40px;"
                                 href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <!-- <img src="assets/images/jenny-feedback.jpg" alt="pf" style=""> -->
                             </a>
                             <ul class="dropdown-menu g-5">
                                 <li>
@@ -62,13 +63,115 @@
                 </div>
             </div>
         </nav>
+    </header>  -->
+    <header>
+        <div class="navtop">
+            <div class="container d-flex justify-content-between">
+                <div class="quick-contact d-flex align-items-center">
+                    <div class="phone_number me-4">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
+                            <span class="ms-3 text-my-primary">+086 35 95 62</span>
+                        </a>
+                    </div>
+                    <div class="send_email">
+                        <a href="#" class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
+                            <span class="text-my-primary">csc.express@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="dropdown me-4">
+                        <button class="btn btn-color  dropdown-toggle  d-flex align-items-center" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                            <span class="text-my-primary">ភាសាខ្មែរ</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-my-primary" href="#">English</a></li>
+                            <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+                            class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-xl bg-body-tertiary ">
+            <div class="container">
+                <a class="navbar-brand logo" href="#" style="width: 150px;">
+                    <img src="assets/images/CSC-Express-LOGO.png" alt="#"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start d-flex justify-content-lg-end" id="navbarNav">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav offcanvas-body ms-xl-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active me-2" aria-current="page" href="#">ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3" href="#">សាខា</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
+                            <ul class="dropdown-menu dropdown-menu-color">
+                                <li><a class="dropdown-item" href="#">ការដឹកជញ្ជូនរហ័ស</a></li>
+                                <li><a class="dropdown-item" href="#">តាមដានទំនិញ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
+                            <ul class="dropdown-menu dropdown-menu-color">
+                                <li><a class="dropdown-item" href="#">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                                <li><a class="dropdown-item" href="#">ទិញសំបុត្រ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-3" href="#">ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-3 dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">អំពីយើង</a>
+                            <ul class="dropdown-menu dropdown-menu-color ">
+                                <li><a class="dropdown-item" href="#">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                                <li><a class="dropdown-item" href="#">ក្រុមយើងខ្ញុំ</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="ms-3 d-flex">
+                            <button class="btn btn-primary me-3">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-user-plus"></i> Signup
+                            </button>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="my-5">
             <div class="container">
                 <form class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <label for="direction" class="form-label">ទីតាំងចេញដំណើរ</label>
+                        <span class="text-my-default"><i class="fa-solid fa-location-arrow"></i></span>
+                        <label for="direction" class="form-label text-my-default">ទីតាំងចេញដំណើរ</label>
                         <select class="form-select shadow-none" aria-label="Default select example">
                             <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
                             <option value="1">ភ្នំពេញ</option>
@@ -80,7 +183,8 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <label for="direction" class="form-label">ទិសដៅត្រូវចុះ</label>
+                        <span class="text-my-default"><i class="fa-solid fa-location-dot"></i></span>
+                        <label for="direction" class="form-label text-my-default">ទិសដៅត្រូវចុះ</label>
                         <select class="form-select shadow-none" aria-label="Default select example">
                             <option selected>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
                             <option value="1">ភ្នំពេញ</option>
@@ -92,7 +196,8 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <label for="direction" class="form-label">ម៉ោងធ្វើដំណើរ</label>
+                        <span class="text-my-default"><i class="fa-solid fa-clock"></i></span>
+                        <label for="direction" class="form-label text-my-default">ម៉ោងធ្វើដំណើរ</label>
                         <select class="form-select shadow-none" aria-label="Default select example">
                             <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
                             <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
@@ -104,8 +209,9 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <label for="direction" class="form-label">ថ្ងៃចេញដំណើរ</label>
-                        <div class="d-flex gap-3">
+                        <div class="gap-3">
+                            <span class="text-my-default"><i class="fa-regular fa-calendar-days"></i></span>
+                            <label for="direction" class="form-label text-my-default">ថ្ងៃចេញដំណើរ</label>
                             <select class="form-select shadow-none" aria-label="Default select example">
                                 <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
                                 <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
@@ -115,10 +221,63 @@
                                 <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
                                 <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
                             </select>
-                            <button type="submit" class="btn btn-primary col-4">ស្វែងរក</button>
                         </div>
+                        <button type="submit" class="btn btn-my-primary col-4"><span class="text-my-default me-2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>ស្វែងរក</button>
                     </div>
                 </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-my-primary rounded-circle d-flex justify-content-center align-items-center"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-magnifying-glass-location fs-3 text-my-default"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">ស្វែងរក</h5>
+                                    <p class="card-text">ចុចប៊ូតុងស្វែងរកបន្ទាប់ពីបំពេញព័ត៌មានរួច ដើម្បីមើលព័ត៌មានលម្អិត
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-my-primary rounded-circle d-flex justify-content-center align-items-center"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-magnifying-glass-location fs-3 text-my-default"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">ស្វែងរក</h5>
+                                    <p class="card-text">ចុចប៊ូតុងស្វែងរកបន្ទាប់ពីបំពេញព័ត៌មានរួច ដើម្បីមើលព័ត៌មានលម្អិត
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-my-primary rounded-circle d-flex justify-content-center align-items-center"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-magnifying-glass-location fs-3 text-my-default"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">ស្វែងរក</h5>
+                                    <p class="card-text">ចុចប៊ូតុងស្វែងរកបន្ទាប់ពីបំពេញព័ត៌មានរួច ដើម្បីមើលព័ត៌មានលម្អិត
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -126,58 +285,196 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
-                        <div
-                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                        <div class="card border-2 border-my-primary rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
                                 <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
                                     និងក្នុងប្រាសាទ</p>
-                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                <a href="#" class="btn fs-5 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
-                        <div
-                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                        <div class="card border-2 border-my-primary rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
                                 <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
                                     និងក្នុងប្រាសាទ</p>
-                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                <a href="#" class="btn fs-5 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
-                        <div
-                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                        <div class="card border-2 border-my-primary rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
                                 <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
                                     និងក្នុងប្រាសាទ</p>
-                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                <a href="#" class="btn fs-5 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0">
-                        <div
-                            class="card card-customize-border border-2 border-danger rounded-4 pb-2 border-2 overflow-hidden">
+                        <div class="card border-2 border-my-primary rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_Temple.jpg/1200px-Angkor_Wat_Temple.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fs-4 pb-3">តំបន់អង្គរ</h5>
                                 <p class="card-text fs-5">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
                                     និងក្នុងប្រាសាទ</p>
-                                <a href="#" class="btn fs-5 btn-outline-primary-customize p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                <a href="#" class="btn fs-5 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-8 col-xl-4 bg-my-primary rounded-4 d-flex justify-content-center align-items-center"
+                                style="width: 90px; height: 100px;">
+                                <img src="assets/images/us-buss.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-8 col-xl-8">
+                                <div class="text-my-default ms-3">
+                                    <h5 class="card-title">អ្នកបើកបរ</h5>
+                                    <p class="card-text">អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,7 +490,7 @@
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item accordion-item-customize">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fs-4" type="button"
+                                    <button class="accordion-button collapsed fs-4 bg-none" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                         aria-expanded="false" aria-controls="flush-collapseOne">
                                         តើខ្ញុំអាចទិញដោយផ្ទាល់នៅក្រុមហ៊ុនបានដែរទេ?
@@ -268,7 +565,7 @@
 
         <!-- Form FAQs -->
         <section class="my-5 p-3">
-            <div class="container bg-primary-csc rounded-4 p-5">
+            <div class="container bg-my-subtle rounded-4 p-5">
                 <h5 class="text-white fs-1">ចង់សួរសំណួរបន្ថែម?</h5>
                 <form class="row g-3 needs-validation" novalidate>
                     <div class="col-md-4">
@@ -309,7 +606,7 @@
         </section>
 
         <!--  -->
-        <section class="bg-ft-style py-5">
+        <section class="bg-my-secondary py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
@@ -337,6 +634,8 @@
     </main>
 
     <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {

@@ -115,6 +115,39 @@
         </nav>
     </header>
     <main>
+        <section class="hero-banner bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h5 class="display-5">ស្វែងរកសេវាកម្មទំនិញនៅទីនេះជាមួយCSC Express</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam temporibus adipisci
+                            necessitatibus aspernatur excepturi corrupti officiis culpa praesentium?</p>
+                        <div class="d-flex gap-4">
+                            <button class="btn btn-my-primary py-3 px-5" type="button">ចាប់ផ្តើម</button>
+                            <button class="btn btn-my-outline-primary py-3 px-5" type="button">ព័ត៌មានបន្ថែម</button>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-4">
+                                <h5 class="num fs-1" data-val="280" data-suffix="K+">0</h5>
+                                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
+                            </div>
+                            <div class="col-4">
+                                <h5 class="num fs-1" data-val="100" data-suffix="M+">0</h5>
+                                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
+                            </div>
+                            <div class="col-4">
+                                <h5 class="num fs-1" data-val="80" data-suffix="K+">0</h5>
+                                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/hero-banner-logistic.png" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Tracking Item -->
         <section class="mt-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -124,13 +157,12 @@
                             data-bs-toggle="modal" data-bs-target="#exampleModal" id="inputTrackingNumber"
                             placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
                     </div>
-                    <div class="col-2">
-                        <!-- Button trigger modal -->
+                    <!-- <div class="col-2">
                         <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             តាមដានអីវ៉ាន់
                         </button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Modal -->
@@ -141,11 +173,11 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <h3 class="mb-3">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
-                                    <div class="col-lg-10">
+                                    <div class="col-8 col-lg-10">
                                         <input type="text" class="form-control shadow-none py-3"
                                             id="inputTrackingNumber1" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
                                     </div>
-                                    <div class="col-lg-2">
+                                    <div class="col-4 col-lg-2">
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary py-3">
                                             តាមដានអីវ៉ាន់
@@ -157,15 +189,15 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
-        <!-- Our Service -->
+        <!-- Section Our Service -->
         <section class="my-5">
             <div class="container">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-                    <h5 class="rounded-5 bg-my-primary w-25 p-2 text-center text-white mb-4">ពួកយើងជា CSC</h5>
-                    <h5 class="text-my-default">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</h5>
+                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">ពួកយើងជា
+                        CSC</h5>
+                    <p class="text-my-default fs-5">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</p>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-4 py-3 py-lg-0">
@@ -205,14 +237,14 @@
             </div>
         </section>
 
-        <!-- Warehouse -->
+        <!-- Section Warehouse -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 py-3 py-lg-0 position-relative">
                     <div class="card rounded-4 border-0 overflow-hidden">
                         <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
                     </div>
-                    <div class="row position-absolute xxx">
+                    <div class="row position-absolute">
                         <div class="col-10 card">
                             <i class="fa-solid fa-truck-plane display-10-customize mb-4"></i>
                             <h5 class="card-title fs-4">ភស្តុភារពេញលេញ</h5>
@@ -224,28 +256,34 @@
             </div>
         </div>
 
+        <!-- Section Our Blog -->
         <section>
             <div class="container">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-                    <h5 class="rounded-5 bg-my-primary w-25 p-2 text-center text-white mb-4">ព័ត៌មានចុងក្រោយ</h5>
-                    <h5>អានBlogsការដឹកជញ្ជូនទាំងអស់របស់ពួកយើង</h5>
+                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
+                        ព័ត៌មានចុងក្រោយ</h5>
+                    <p class="text-my-default fs-5">អានBlogsការដឹកជញ្ជូនទាំងអស់របស់ពួកយើង</p>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-4 py-3 py-lg-0">
                         <div class="card rounded-4 pb-2 border-0 overflow-hidden">
                             <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
-                                <h5 class="bg-my-primary text-white d-flex justify-content-center py-3 mt-2" style="width: 300px;">២២ កក្កដា ២០២៤
+                                <h5
+                                    class="bg-my-primary text-white card-customize-blog d-flex justify-content-center py-3 mt-2">
+                                    ២២ កក្កដា ២០២៤
                                 </h5>
                                 <ul class="rounded-0 list-unstyled px-4">
                                     <li>
                                         <a href="#" role="button"
                                             class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
-                                            <div class="rounded-circle bg-my-primary overflow-hidden me-3" style="width: 60px; height: 60px;">
-                                                <img src="assets/images/us-delivery.jpg" alt="transportation" style="width: 100%; height: 100%; object-fit: cover;">
+                                            <div
+                                                class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
+                                                <img src="assets/images/us-delivery.jpg" class="img-top-src"
+                                                    alt="transportation">
                                             </div>
                                             <div>
-                                                <h5>កញ្ញា សុគន្ធនារតីបុផ្ផារានី</h5>
+                                                <h5>កញ្ញា សុគន្ធនារតី</h5>
                                                 <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
                                             </div>
                                         </a>
@@ -260,89 +298,160 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-lg-4 py-3 py-lg-0">
                         <div class="card rounded-4 pb-2 border-0 overflow-hidden">
                             <img src="assets/images/card-features-8.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bg-my-primary text-white d-flex justify-content-center py-3">២២ កក្កដា ២០២៤
+                            <div class="card-body p-0">
+                                <h5
+                                    class="bg-my-primary text-white card-customize-blog d-flex justify-content-center py-3 mt-2">
+                                    ២២ កក្កដា ២០២៤
                                 </h5>
+                                <ul class="rounded-0 list-unstyled px-4">
+                                    <li>
+                                        <a href="#" role="button"
+                                            class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
+                                            <div
+                                                class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
+                                                <img src="assets/images/us-delivery.jpg" class="img-top-src"
+                                                    alt="transportation">
+                                            </div>
+                                            <div>
+                                                <h5>កញ្ញា សុគន្ធនារតី</h5>
+                                                <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                                 <hr>
-                                <h5 class="card-title fs-4 pb-3">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
-                                <p class="card-text fs-5">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
+                                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
+                                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
                                     និងរហ័សទាន់ចិត្ត...</p>
-                                <a href="#" class="btn fs-5 p-0 m-0 text-my-primary">អានអត្ថបទ<i
+                                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                                         class="fa-solid fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-lg-4 py-3 py-lg-0">
                         <div class="card rounded-4 pb-2 border-0 overflow-hidden">
                             <img src="assets/images/card-features-9.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bg-my-primary text-white d-flex justify-content-center py-3">២២ កក្កដា ២០២៤
+                            <div class="card-body p-0">
+                                <h5
+                                    class="bg-my-primary text-white card-customize-blog d-flex justify-content-center py-3 mt-2">
+                                    ២២ កក្កដា ២០២៤
                                 </h5>
+                                <ul class="rounded-0 list-unstyled px-4">
+                                    <li>
+                                        <a href="#" role="button"
+                                            class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
+                                            <div
+                                                class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
+                                                <img src="assets/images/us-delivery.jpg" class="img-top-src"
+                                                    alt="transportation">
+                                            </div>
+                                            <div>
+                                                <h5>កញ្ញា សុគន្ធនារតី</h5>
+                                                <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                                 <hr>
-                                <h5 class="card-title fs-4 pb-3">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
-                                <p class="card-text fs-5">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
+                                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
+                                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
                                     និងរហ័សទាន់ចិត្ត...</p>
-                                <a href="#" class="btn fs-5 p-0 m-0 text-my-primary">អានអត្ថបទ<i
+                                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                                         class="fa-solid fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Our Service -->
+        <!-- Section Our Service -->
         <section class="my-5">
             <div class="container">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-                    <h5 class="rounded-5 bg-danger w-25 p-2 text-center text-white mb-4">ពួកយើងជា CSC</h5>
-                    <h5>យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</h5>
+                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">ពួកយើងជា
+                        CSC</h5>
+                    <p class="text-my-default fs-5">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</p>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex justify-content-center">
-                        <div class="position-relative card bg-my-primary text-center rounded-4 overflow-hidden rounded-4 border-0"
-                            style="height: 250px; width: 250px">
+                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+                        <div class="card card-service-customize m-auto border-0">
                             <div class="card-body m-0 p-0">
-                                <img src="assets/images/us-process1.png" class=""
-                                    style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                                <img src="assets/images/us-process1.png" class="img-service-src rounded-4" alt="">
                             </div>
-                            <div class="position-absolute bg-danger rounded-circle end-15 bottom-15 d-flex justify-content-center align-items-center text-white" style="width: 50px; height: 50px;">
+                            <div
+                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
                                 <h5 class="fs-3">1</h5>
                             </div>
                         </div>
-                        <div>
+                        <div class="text-center mt-4">
                             <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
-                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
+                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
+                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex justify-content-center">
-                        <div class="card bg-my-primary text-center rounded-4 overflow-hidden rounded-4 border-0"
-                            style="height: 250px; width: 250px">
+                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+                        <div class="card card-service-customize m-auto border-0">
                             <div class="card-body m-0 p-0">
-                                <img src="assets/images/us-process2.png" class=""
-                                    style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                                <img src="assets/images/us-process2.png" class="img-service-src rounded-4" alt="">
+                            </div>
+                            <div
+                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                                <h5 class="fs-3">1</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex justify-content-center">
-                        <div class="card bg-my-primary text-center rounded-4 overflow-hidden rounded-4 border-0"
-                            style="height: 250px; width: 250px">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/us-process3.png" class=""
-                                    style="width: 100%; height: 100%; object-fit: cover;" alt="">
-                            </div>
+                        <div class="text-center mt-4">
+                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
+                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
+                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
                         </div>
                     </div>
-
+                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+                        <div class="card card-service-customize m-auto border-0">
+                            <div class="card-body m-0 p-0">
+                                <img src="assets/images/us-process3.png" class="img-service-src rounded-4" alt="">
+                            </div>
+                            <div
+                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                                <h5 class="fs-3">1</h5>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
+                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
+                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let suffix = valueDisplay.getAttribute("data-suffix") || ""; // Default to empty string if no suffix is set
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () {
+                startValue += 1;
+                valueDisplay.textContent = startValue + suffix;
+                if (startValue == endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+        });
+    </script>
 </body>
 
 </html>

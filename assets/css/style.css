@@ -27,6 +27,7 @@ img {
   object-fit: cover;
 }
 
+/* backtotop */
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
@@ -37,7 +38,7 @@ img {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 80px !important;
   z-index: 99999;
   background-color: var(--my-color-primary);
   color: #fff;
@@ -45,6 +46,27 @@ img {
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+}
+
+.chat-bot {
+  position: fixed;
+  right: 15px;
+  bottom: 15px !important;
+  z-index: 99999;
+  background-color: var(--my-color-primary);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.chat-bot-icon {
+  color: #999;
+}
+
+.chat-bot-icon:hover {
+  color: var(--my-color-primary);
 }
 
 :root,
@@ -293,6 +315,7 @@ input:focus {
   background-image: url(../images/A-young-Caucasian-woman.jpeg);
   background-position: top;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 /* SectionExpress Way */
@@ -363,7 +386,9 @@ input:focus {
 /* Page bus-transportation */
 /* SectionTransport Carousel */
 .hero-banner-bustransport {
-  background-image: url(../images/pr1-494x555.webp);
+  padding: 100px 0 !important;
+  background-image: url(../images/woman-bus-hero.jpeg);
+  background-size: inherit;
 }
 
 
@@ -404,13 +429,26 @@ input:focus {
   width: 80%;
 }
 
-/* SectionTransport Support */
+/* SectionTransport Our Partner */
+.tick-before {
+  font-size: 20px !important;
+}
+
+.tick-before::before {
+  content: '\f058';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400;
+  margin-right: 10px;
+  color: var(--my-color-primary);
+}
+
+/* SectionTransport Support Call */
 .bg-support-customize {
   height: 450px;
-  background-image: url(../images/shipping-by-plane.jpg);
+  background-image: url(../images/woman-call-center.jpeg);
   background-position: top;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: inherit;
 }
 
 /* SectionTransport FAQs */
@@ -497,8 +535,8 @@ input:focus {
 
 .btn-toggle {
   position: relative;
-  width: 60px;
-  height: 30px;
+  width: 40px;
+  height: 22px;
   background-color: #ddd;
   border-radius: 100px;
   cursor: pointer;
@@ -512,7 +550,7 @@ input:focus {
   height: 20px;
   background-color: #fff;
   border-radius: 100px;
-  margin: 5px;
+  margin: 1px;
   transition: .2s;
 }
 
@@ -521,7 +559,7 @@ input:checked+.btn-toggle {
 }
 
 input:checked+.btn-toggle::before {
-  transform: translateX(30px);
+  transform: translateX(18px);
 }
 
 /* Remove spinner number */

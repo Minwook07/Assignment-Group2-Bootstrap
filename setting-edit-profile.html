@@ -17,12 +17,12 @@
         <section class="mt-5 pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-md-5 col-lg-4 mb-4 mb-lg-0">
                         <div class="card rounded-4 border-0 bg-light">
                             <div class="card-body p-4">
                                 <ul class="nav nav-pills d-flex flex-column fs-5 gap-2" id="pills-tab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill"
+                                        <button class="nav-link w-100 text-start active" id="pills-home-tab" data-bs-toggle="pill"
                                             data-bs-target="#pills-home" type="button" role="tab"
                                             aria-controls="pills-home" aria-selected="true">
                                             <i class="fa-solid fa-user"></i>
@@ -30,7 +30,7 @@
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-passwd-tab" data-bs-toggle="pill"
+                                        <button class="nav-link w-100 text-start" id="pills-passwd-tab" data-bs-toggle="pill"
                                             data-bs-target="#pills-passwd" type="button" role="tab"
                                             aria-controls="pills-passwd" aria-selected="false">
                                             <i class="fa-solid fa-lock"></i>
@@ -38,7 +38,7 @@
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="pills-graphicdesign-tab"
+                                        <button class="nav-link w-100 text-start" id="pills-graphicdesign-tab"
                                             data-bs-toggle="pill" data-bs-target="#pills-graphicdesign" type="button"
                                             role="tab" aria-controls="pills-graphicdesign" aria-selected="false">
                                             <i class="fa-regular fa-bell"></i>
@@ -46,7 +46,7 @@
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-marketing-tab" data-bs-toggle="pill"
+                                        <button class="nav-link w-100 text-start" id="pills-marketing-tab" data-bs-toggle="pill"
                                             data-bs-target="#pills-marketing" type="button" role="tab"
                                             aria-controls="pills-marketing" aria-selected="false">
                                             <i class="fa-regular fa-comment-dots"></i>
@@ -57,21 +57,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9">
+                    <div class="col-12 col-md-7 col-lg-8">
                         <div class="card rounded-4 border-0 bg-light">
                             <div class="card-body p-4">
                                 <div class="tab-content" id="pills-tabContent">
                                     <!-- Change-Information-Section -->
-                                    <div class="tab-pane fade " id="pills-home" role="tabpanel"
+                                    <div class="tab-pane show active fade " id="pills-home" role="tabpanel"
                                         aria-labelledby="pills-home-tab" tabindex="0">
                                         <h5 class="card-title">ព័ត៌មានផ្ទាល់ខ្លួន</h5>
                                         <div class="profile-setting">
                                             <a href="#"
                                                 onclick="document.getElementById('profilePicture').click(); return false;">
-                                                <img src="https://i.pinimg.com/originals/68/76/99/6876993a25a8fc274cc09aee12171034.jpg"
+                                                <img src="assets/images/woman-hero-1.jpeg"
                                                     class="card-img-top" alt="setting-pf" id="profile-pic">
                                             </a>
                                         </div>
+                                        <h5>Kim Eun-Kyung</h5>
                                         <form class="row g-3 needs-validation" novalidate>
                                             <div class="col-md-12" style="display: none;">
                                                 <input type="file" class="form-control shadow-none" id="profilePicture"
@@ -80,7 +81,7 @@
                                             <div class="col-md-6">
                                                 <label for="validationCustom01" class="form-label">នាមត្រកូល</label>
                                                 <input type="text" class="form-control shadow-none"
-                                                    id="validationCustom01" value="Mark" required>
+                                                    id="validationCustom01" value="Kim" required>
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -88,7 +89,7 @@
                                             <div class="col-md-6">
                                                 <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
                                                 <input type="text" class="form-control shadow-none"
-                                                    id="validationCustom02" value="Otto" required>
+                                                    id="validationCustom02" value="Eun-Kyung" required>
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -99,7 +100,7 @@
                                                 <div class="input-group has-validation">
                                                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                                                     <input type="text" class="form-control shadow-none"
-                                                        id="validationCustomUsername"
+                                                        id="validationCustomUsername" value="eun-kyung_kim"
                                                         aria-describedby="inputGroupPrepend" required>
                                                     <div class="invalid-feedback">
                                                         Please choose a username.
@@ -109,7 +110,7 @@
                                             <div class="col-md-12">
                                                 <label for="validationCustom05" class="form-label">អ៊ីម៉ែល</label>
                                                 <input type="email" class="form-control shadow-none"
-                                                    id="validationCustom05" required>
+                                                    id="validationCustom05" value="kim_eunkyung@gmail.com" required>
                                                 <div class="invalid-feedback">
                                                     Please input an email.
                                                 </div>
@@ -158,8 +159,8 @@
                                         </form>
                                     </div>
 
-                                    <!-- Change- -->
-                                    <div class="tab-pane fade show active" id="pills-graphicdesign" role="tabpanel"
+                                    <!-- Change Notification -->
+                                    <div class="tab-pane fade" id="pills-graphicdesign" role="tabpanel"
                                         aria-labelledby="pills-graphicdesign-tab" tabindex="0">
                                         <h5 class="card-title">Notifications</h5>
                                         <!-- Content for 'ការជូនដំណឹង' tab -->
@@ -208,6 +209,33 @@
                                                 <div class="col-2">
                                                     <input type="checkbox" id="toggle-push4" class="toggle-push-none">
                                                     <label for="toggle-push4" class="btn-toggle"></label>
+                                                </div>
+                                                <div class="col-10 d-flex align-items-center">
+                                                    <div>
+                                                        <h5>ផុសBlogថ្មី</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" id="toggle-push5" class="toggle-push-none">
+                                                    <label for="toggle-push5" class="btn-toggle"></label>
+                                                </div>
+                                                <div class="col-10 d-flex align-items-center">
+                                                    <div>
+                                                        <h5>Feedback ពីអ្នកប្រើប្រាស់</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" id="toggle-push6" class="toggle-push-none">
+                                                    <label for="toggle-push6" class="btn-toggle"></label>
+                                                </div>
+                                                <div class="col-10 d-flex align-items-center">
+                                                    <div>
+                                                        <h5>ការផ្តល់មតិត្រឡប់</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" id="toggle-push7" class="toggle-push-none">
+                                                    <label for="toggle-push7" class="btn-toggle"></label>
                                                 </div>
                                             </div>
                                         </div>

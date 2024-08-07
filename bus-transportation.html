@@ -141,18 +141,52 @@
     </header>
     <main>
         <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-            class="bi bi-arrow-up-short fs-5"></i></a>
+                class="bi bi-arrow-up-short fs-5"></i></a>
+        <div class="dropup-center dropstart">
+            <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
+                aria-expanded="false">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </button>
+            <div class="dropdown-menu p-3">
+                <form action="" class="d-flex align-items-center rounded-5 border p-1" style="max-width: 400px;">
+                    <textarea class="form-control shadow-none border-0" id="my-chat-bot"  placeholder="Message..."
+                        rows="1"></textarea>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn chat-bot-icon border-0 p-1">
+                            <i class="fas fa-smile"></i>
+                        </button>
+                        <button type="button" class="btn chat-bot-icon border-0 p-1">
+                            <i class="fas fa-file-image"></i>
+                        </button>
+                        <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                            <i class="fas fa-paperclip"></i>
+                        </label>
+                        <input type="file" id="fileInput" style="display: none;" />
+                        <button type="submit" class="btn chat-bot-icon p-1">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
         <!-- SectionTransport Carousel -->
-        <section class="hero-banner-bustransport bg-white py-5">
+        <section class="hero-banner-bustransport d-flex align-items-center bg-white py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 mb-5 mb-md-0">
                         <div>
-                            <h5 class="fs-1">CSC Express ធ្វើឱ្យការធ្វើដំណើររបស់អ្នកកាន់តែងាយស្រួល</h5>
-                            <p class="fs-5">ពួកយើងធានានូវសុវត្ថិភាព គុណភាព ប្រសិទ្ធភាព ប្រកបដោយសុខដុមរម្យនា</p>
+                            <h5 class="fs-1 text-white">CSC Express ធ្វើឱ្យការធ្វើដំណើររបស់អ្នកកាន់តែងាយស្រួល</h5>
+                            <p class="fs-5 text-white">ពួកយើងធានានូវសុវត្ថិភាព គុណភាព ប្រសិទ្ធភាព ប្រកបដោយសុខដុមរម្យនា
+                            </p>
+                            <div class="d-flex gap-4">
+                                <button class="btn btn-my-primary py-3 px-5" type="button">ចាប់ផ្តើម</button>
+                                <button class="btn btn-my-outline-primary py-3 px-5"
+                                    type="button">ព័ត៌មានបន្ថែម</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="card bg-my-subtle border-0 rounded-4">
                             <div class="card-body">
                                 <form class="row g-3">
@@ -214,8 +248,37 @@
                                                 <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
                                             </select>
                                         </div>
-                                        <!-- <button type="submit" class="btn btn-my-primary col-4"><span class="text-my-default me-2"><i
-                                                            class="fa-solid fa-magnifying-glass"></i></span>ស្វែងរក</button> -->
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="gap-3">
+                                            <span class="text-my-default"><i
+                                                    class="fa-regular fa-calendar-days"></i></span>
+                                            <label for="direction"
+                                                class="form-label text-my-default fs-5">ថ្ងៃត្រឡប់មកវិញ</label>
+                                            <select class="form-select shadow-none" aria-label="Default select example">
+                                                <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
+                                                <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
+                                                <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
+                                                <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
+                                                <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
+                                                <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
+                                                <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="gap-3">
+                                            <span class="text-my-default"><i
+                                                    class="fa-regular fa-calendar-days"></i></span>
+                                            <label for="direction"
+                                                class="form-label text-my-default fs-5">ប្រភេទឡានក្រុង</label>
+                                            <select class="form-select shadow-none" aria-label="Default select example">
+                                                <option selected>ជ្រើសរើសប្រភេទឡានរបស់អ្នក</option>
+                                                <option value="1">ឡានធម្មតា</option>
+                                                <option value="2">ឡានវីអាយភី</option>
+                                                <option value="3">ឡានផ្លាកទីនីម</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="col-auto d-flex align-items-end">
                                         <label for="searchbtn" class="visually-hidden">Search</label>
@@ -493,9 +556,43 @@
         </section>
 
         <!-- SectionTransport Our Partner -->
-        <!-- <section class="py-5">
-            
-        </section> -->
+        <section class="py-5">
+            <div class="container">
+                <div class="section-top-title text-center mb-5">
+                    <h5 class="fs-3 text-my-default">លក្ខណៈពិសេសដែលអ្នកនឹងស្រឡាញ់</h5>
+                    <hr class="divider-separator m-auto">
+                    <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក</p>
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li class="tick-before text-my-default">មានតម្លៃសមរម្យ៖
+                            សំបុត្រដែលស័ក្តិសមនឹងថវិកាសម្រាប់ការធ្វើដំណើរបន្ថែមទៀត។
+                        </li>
+                        <li class="tick-before text-my-default">ងាយស្រួល៖ ផ្លូវផ្ទាល់ គ្មានការផ្ទេរ
+                            គ្មានការរំខានចរាចរណ៍។</li>
+                        <li class="tick-before text-my-default">អាចចូលប្រើបាន៖
+                            ទៅដល់គ្រប់ជ្រុងទាំងអស់ជាមួយនឹងបណ្តាញដ៏ធំទូលាយរបស់យើង។
+                        </li>
+                        <li class="tick-before text-my-default">ភាពស្និទ្ធស្នាលនឹងបរិស្ថាន៖
+                            កាត់បន្ថយកម្រិតកាបូនរបស់អ្នក។</li>
+                        <li class="tick-before text-my-default">ផាសុកភាព៖ កន្លែងអង្គុយដ៏ប្រណីត
+                            និងគ្រឿងបរិក្ខារនៅលើយន្តហោះ។</li>
+                        <li class="tick-before text-my-default">សុវត្ថិភាព៖
+                            អាទិភាពលើសុវត្ថិភាពរបស់អ្នកជាមួយអ្នកបើកបរដែលមានជំនាញវិជ្ជាជីវៈ។</li>
+                        <li class="tick-before text-my-default">សហគមន៍៖ ភ្ជាប់ និងចែករំលែកបទពិសោធន៍ជាមួយអ្នករួមដំណើរ។
+                        </li>
+                        <li class="tick-before text-my-default">Wi-Fi | Entertainment៖ រក្សាទំនាក់ទំនង និងកម្សាន្ត។</li>
+                        <li class="tick-before text-my-default">ការកក់ដែលអាចបត់បែនបាន៖
+                            ការកក់តាមអ៊ីនធឺណិតងាយស្រួលជាមួយនឹងកាលវិភាគដែលអាចបត់បែនបាន។</li>
+                        <li class="tick-before text-my-default">កន្លែងដាក់ឥវ៉ាន់ធំទូលាយ៖
+                            មានបន្ទប់ច្រើនសម្រាប់របស់របររបស់អ្នក។</li>
+                        <li class="tick-before text-my-default">វិធីបង់ប្រាក់ដែលយើងទទួលយក៖</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SectionTransport Support Call -->
         <section class="py-5 bg-support-customize d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -513,7 +610,7 @@
         </section>
 
         <!-- SectionTransport FAQs -->
-        <section class="faqs">
+        <section class="faqs py-5">
             <div class="container">
                 <!-- <div class="section-top-title text-center mb-5">
                     <h5 class="fs-3 text-my-default">ទិញសំបុត្រឡាន តាមរយៈវិធីខាងក្រោមនេះ</h5>
@@ -672,7 +769,7 @@
                         <form class="row g-3">
                             <div class="col-auto">
                                 <label for="inputPassword2" class="visually-hidden">Email</label>
-                                <input type="email" class="form-control" id="inputPassword2"
+                                <input type="email" class="form-control shadow-none" id="inputPassword2"
                                     placeholder="បញ្ចូលអ៊ីម៉េល">
                             </div>
                             <!-- <div class="col-auto">
@@ -697,6 +794,14 @@
     <script src="assets/lips/aos-master/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        const textarea = document.getElementById('my-chat-bot');
+
+        textarea.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px'; 
+        });
     </script>
 </body>
 

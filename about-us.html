@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" data-theme="light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Express</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/lips/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <button type="button" class="btn-mode" data-theme-toggle><i class="fa-solid fa-moon"></i></button>
+    </header>
+    <section class="my-main-bg about-us-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h1 class="text-my-primary">អំពីយើង.</h1>
+                    <p></p>
+                </div>
+                <div class="col-12 col-md-9 d-flex gap-3 card-hover">
+                    <div class="card-img position-relative rounded-4">
+                        <img src="assets/images/team/nita.jpg" alt="">
+                        <div class="our-name our-name-rotate my-main-bg rounded-4 position-absolute p-3">
+                            <h3 class=" text-my-primary mb-0">មិត​ ចិត</h3>
+                        </div>
+                    </div>
+                    <div class="card-img position-relative rounded-4">
+                        <img src="assets/images/team/chenny.jpg" alt="">
+                        <div class="our-name our-name-rotate my-main-bg rounded-4 position-absolute p-3">
+                            <h3 class="z-1 text-my-primary mb-0">មិត​ ចិត</h3>
+                        </div>
+                    </div>
+                    <div class="card-img position-relative rounded-4">
+                        <img src="assets/images/cute.jpg" alt="">
+                        <div class="our-name our-name-rotate my-main-bg rounded-4 position-absolute p-3">
+                            <h3 class="z-1 text-my-primary mb-0">ងន់ ចេន្នី</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardImgs = document.querySelectorAll('.card-img');
+            cardImgs.forEach(cardImg => {
+                cardImg.addEventListener('mouseover', function () {
+                    cardImgs.forEach(img => img.classList.remove('default-hover'));
+                });
+
+                cardImg.addEventListener('mouseout', function () {
+                    if (!Array.from(cardImgs).some(img => img.matches(':hover'))) {
+                        cardImgs[0].classList.add('default-hover');
+                    }
+                });
+            });
+            
+            // Initialize the default hover state
+            cardImgs[0].classList.add('default-hover');
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const cartImg = document.getElementById("cart-img");
+            const ourName = document.getElementById("our-name");
+            ourName.addEventListener('mouseout', () => {
+                ourName.classList.remove('our-name-rotate');
+                ourName.classList.add('rotate-zero');
+            });
+        });
+    </script> -->
+</body>
+
+</html>

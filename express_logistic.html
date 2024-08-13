@@ -2,585 +2,1017 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC Express</title>
-    <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/libs/plyr.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC Express</title>
+  <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/libs/plyr.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <main>
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-                class="bi bi-arrow-up-short fs-5"></i></a>
-
-        <!-- SectionExpress Hero Banner -->
-        <section class="hero-banner-express bg-white py-5 position-relative">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 z-2">
-                        <h5 class="display-5 fw-medium">ស្វែងរកសេវាកម្មទំនិញនៅទីនេះជាមួយCSC Express</h5>
-                        <p class="fs-1-maximium mb-5">ជាមួយនឹងសេវាកម្មយើងខ្ញុំ ផ្តល់ឱ្យអ្នកនូវអ្វីដែលថ្មី
-                            និងមិនធ្លាប់មានពីមុន។ <br> ចង់ដឹងថាពួកយើងមានសេវាកម្មដែលបំពេញតម្រូវការរបស់លោកអ្នក <br>
-                            កុំភ្លេចចាប់ផ្តើមជាមួយពួកយើង</p>
-                        <div class="d-flex gap-4">
-                            <button class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">ចាប់ផ្តើម</button>
-                            <button class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium"
-                                type="button">ព័ត៌មានបន្ថែម</button>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-4">
-                                <h5 class="num fs-1" data-val="280" data-suffix="K+">0</h5>
-                                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
-                            </div>
-                            <div class="col-4">
-                                <h5 class="num fs-1" data-val="100" data-suffix="M+">0</h5>
-                                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
-                            </div>
-                            <div class="col-4">
-                                <h5 class="num fs-1" data-val="80" data-suffix="K+">0</h5>
-                                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 col-lg-6 d-none d-lg-flex justify-content-center justify-content-lg-end align-items-center z-2">
-                        <div class="box-circle-hero">
-                            <img src="assets/images/bs-hero.webp" class="foreimage-hero" alt="foreimage-hero">
-                        </div>
-                    </div>
-                </div>
+  <header>
+    <div class="navtop">
+      <div class="container d-flex justify-content-between">
+        <div class="quick-contact d-flex align-items-center">
+          <div class="phone_number me-4">
+            <a href="#" class="d-flex align-items-center">
+              <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
+              <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
+            </a>
+          </div>
+          <div class="send_email">
+            <a href="#" class="d-flex align-items-center">
+              <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
+              <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="dropdown me-4">
+            <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+              type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+              <span>ភាសាខ្មែរ</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+              <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+              class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- Fixed or Sticky Navbar -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html" style="width: 150px;">
+          <img src="assets/images/CSC-Express-LOGO.png" alt="#" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">CSC EXPRESS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-xl-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="branch.html">សាខា</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="express_logistic.html">ការដឹកជញ្ជូនរហ័ស</a></li>
+                  <li><a class="dropdown-item" href="tracking-items.html">តាមដានទំនិញ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                  <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="ms-3 d-flex">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
+                <i class="fas fa-sign-in-alt"></i> Log in
+              </button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                class="btn btn-my-secondary btn-my-outline-secondary fs-6">
+                <i class="fas fa-user-plus"></i> Sign up
+              </button>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <!-- SectionExpress Tracking Item -->
-        <section class="mt-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
-                    <div class="col-7">
-                        <input type="text" class="form-control shadow-none py-3 input-tracking-customize"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal" id="inputTrackingNumber"
-                            placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
+    <!-- login  modal -->
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header my-main-bg p-1">
+            <a href="" class="logo-modal me-auto">
+              <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
+            </a>
+            <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
+                class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
+          </div>
+          <div class="modal-body my-main-bg p-0">
+            <div class="row justify-content-center p-0 rounded">
+              <div class="col-8 my-5 p-0">
+                <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
+                <form class="needs-validation" novalidate>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control shadow-none" id="floatingInput"
+                      placeholder="name@example.com" required>
+                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                    <div class="invalid-feedback">
+                      សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
                     </div>
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            តាមដានអីវ៉ាន់
-                        </button>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control shadow-none outline" id="floatingPassword"
+                      placeholder="Password" required>
+                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i> លេខសម្ងាត់</label>
+                    <div class="invalid-feedback">
+                      សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
                     </div>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="row p-0 m-0 justify-content-center">
-                                    <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
-                                    <div class="col-7 col-sm-8 col-lg-9">
-                                        <input type="text" class="form-control shadow-none py-3"
-                                            id="inputTrackingNumber1" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
-                                    </div>
-                                    <div class="col-5 col-sm-4 col-lg-3">
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary py-3 w-100">
-                                            តាមដានអីវ៉ាន់
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                  <div class=" form-check">
+                    <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
+                    <label class="form-check-label text-my-primary" for="exampleCheck1">ចងចាំខ្ញុំ</label>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <a href="home.html" class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</a>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
+                      <img src="assets/images/facebook.png" alt="" class="icon">
+                    </a>
+                    <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
+                      <img src="assets/images/google.png" alt="" class="icon">
+                    </a>
+                    <a href="#" type="button" class="btn mb-3 py-2 border bg-light icon-link">
+                      <img src="assets/images/apple-logo.png" alt="" class="icon">
+                    </a>
+                  </div>
+                </form>
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
+                  class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
+                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ? <span><a href="#"
+                      type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span></p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- SectionExpress Why Choose Us -->
-        <section class="my-5">
-            <div class="container">
-                <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">ពួកយើងជា
-                        CSC</h5>
-                    <p class="text-my-default fs-5">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="card card-customize text-center rounded-4 py-5 border-0">
-                            <div class="card-body">
-                                <i class="fa-solid fa-truck-plane display-10-customize mb-4"></i>
-                                <h5 class="card-title fs-4">ភស្តុភារពេញលេញ</h5>
-                                <p class="card-text fs-5">សេវាកម្មដឹកជញ្ជូនតាមអាកាស CSC Express ផ្តល់ចំណេះដឹង
-                                    និងឱកាសដើម្បីបង្កើនប្រសិទ្ធភាពរាល់ម៉ាយនៅគ្រប់ផ្លូវ។</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="card card-customize text-center rounded-4 py-5 border-0">
-                            <div class="card-body">
-                                <i class="fa-solid fa-truck-fast display-10-customize mb-4"></i>
-                                <h5 class="card-title fs-4">ការដឹកជញ្ជូនទូទាំងពិភពលោក</h5>
-                                <p class="card-text fs-5">សេវាកម្មដឹកជញ្ជូនតាមអាកាស CSC Express ផ្តល់ចំណេះដឹង
-                                    និងឱកាសដើម្បីបង្កើនប្រសិទ្ធភាពរាល់ម៉ាយនៅគ្រប់ផ្លូវ។</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="card card-customize text-center rounded-4 py-5 border-0">
-                            <div class="card-body">
-                                <i class="fa-solid fa-shield display-10-customize mb-4"></i>
-                                <h5 class="card-title fs-4">ការដឹកជញ្ជូនប្រកបដោយសុវត្ថិភាព</h5>
-                                <p class="card-text fs-5">សេវាកម្មដឹកជញ្ជូនតាមអាកាស CSC Express ផ្តល់ចំណេះដឹង
-                                    និងឱកាសដើម្បីបង្កើនប្រសិទ្ធភាពរាល់ម៉ាយនៅគ្រប់ផ្លូវ។</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- forgot password Modal -->
+    <div class="modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content my-main-bg">
+          <div class="modal-body">
+            <h4 class="mb-3 text-my-primary"> ស្នើរសុំផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
+            <p class="text-my-default">លោកអ្នកនឹងទទួលបានលេខកូដក្នុងរយៈ60វិនាទី</p>
+            <div class="form-floating mb-3 needs-validation" novalidate>
+              <input type="email" class="form-control shadow-none" id="floatingEmail" placeholder="name@example.com">
+              <label for="floatingEmail">អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+              <div class="invalid-feedback">
+                សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទ
+              </div>
             </div>
-        </section>
-
-        <!-- SectionExpress Support-->
-        <section class="support-section py-5 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <div class="text-white">
-                            <h5>២៤/៧</h5>
-                            <h5 class="fs-2">គាំទ្រ និងជំនួយការ២៤ ម៉ោង</h5>
-                            <p class="fs-1-maximium">​ដើម្បី​ភាព​ងាយស្រួល​សម្រាប់​អតិថិជន​
-                                យើង​បាន​ដាក់​ឲ្យ​ប្រើប្រាស់​ទូរស័ព្ទ​ចំនួន​ពីរ​ខ្សែ​ ដែល​លោក​អ្នក​អាច​ទាក់ទង​មក​បាន​
-                                គ្រប់ពេលវេលា​ ២៤ ម៉ោង​លើ​ ២៤ ម៉ោង​ ។</p>
-                            <a href="#" class="btn btn-my-primary px-5 py-3">ទាក់ទងមកពួកយើង</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+              class="btn btn-my-primary text-light">បញ្ជូន</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- otp Modal -->
+    <div class="modal fade" id="otpcode" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="otppassword" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content my-main-bg">
+          <div class="modal-header">
+            <a href="" class="logo-modal me-auto">
+              <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
+            </a>
+            <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
+                class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-my-primary mb-3">សូមលោកអ្នកបញ្ជូលេខកូដ4ខ្ទង់</h4>
+            <div class="d-flex justify-content-center mb-3">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
             </div>
-        </section>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+              class="btn btn-my-primary text-light">បញ្ជូន</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- SectionExpress Our Service -->
-        <section class="my-5">
-            <div class="container">
-                <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">សេវាកម្ម
-                        CSC</h5>
-                    <p class="text-my-default fs-5">សេវាកម្មរបស់យើងខ្ញុំប្រកបដោយគុណភាព</p>
+    <!-- sign in Modal -->
+    <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content my-main-bg">
+          <div class="modal-header p-0">
+            <a href="" class="logo-modal me-auto">
+              <img src="assets/images/CSC-Express-LOGO.png" class="logo-modal p-0" alt="">
+            </a>
+            <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-my-primary mb-3">ចុះឈ្មោះ</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="form-floating col mb-3">
+                  <input type="text" class="form-control shadow-none" id="floatingLastname" placeholder="នាមត្រកូល"
+                    required>
+                  <label for="floatingLastname" class="ms-2">នាមត្រកូល</label>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលនាមត្រកូលរបស់អ្នក
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div #swiperRef="" class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="assets/images/service-warehouse.png" class="card-img-top"
-                                            alt="features">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
-                                            <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
-                                                ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
-                                            <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="assets/images/service-truck.png" class="card-img-top" alt="features">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវគោក</h5>
-                                            <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
-                                                ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
-                                            <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="assets/images/service-ship.png" class="card-img-top" alt="features">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវទឹក</h5>
-                                            <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
-                                                ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
-                                            <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="assets/images/service-airplane.png" class="card-img-top"
-                                            alt="features">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវអាកាស</h5>
-                                            <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
-                                                ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
-                                            <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form-floating col mb-3">
+                  <input type="text" class="form-control shadow-none" id="floatingFirstname" placeholder="នាមខ្លួន"
+                    required>
+                  <label for="floatingFirstname" class="ms-2">នាមខ្លួន</label>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលនាមខ្លួនរបស់អ្នក
+                  </div>
                 </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control shadow-none" id="floatingEmail" placeholder="name@example.com"
+                    required>
+                  <label for="floatingEmail" class="ms-2">អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលអុីម៉េល​របស់អ្នក
+                  </div>
+                </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="password" class="form-control shadow-none" id="floatingPassword1"
+                    placeholder="ពាក្យសម្ងាត់" required>
+                  <label for="floatingPassword1" class="ms-2">ពាក្យសម្ងាត់</label>
+                  <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                    style="cursor: pointer;"></i>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលពាក្យសម្ងាត់របស់អ្នក
+                  </div>
+                </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="password" class="form-control shadow-none" id="floatingPassword2"
+                    placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
+                  <label for="floatingPassword2" class="ms-2">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                  <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                    style="cursor: pointer;"></i>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលលេខសម្ងាត់លោកអ្នកដើម្បីផ្ទៀងផ្ទាត់
+                  </div>
+                </div>
+                <div class="form-check ms-3 mb-md-3">
+                  <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked required>
+                  <label class="form-check-label text-my-primary" for="checkpolicy">
+                    យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="home.html" class="btn btn-my-primary text-light">ចុះឈ្មោះ</a>
+              </div>
+            </form>
+            <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#" type="button"
+                  data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  class="color-text-primary text-my-primary">ចូលគណនីឥឡូវនេះ</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BackToTop Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+        class="bi bi-arrow-up-short fs-5"></i></a>
+
+    <!-- Chat Bot -->
+    <div class="dropup-center dropstart">
+      <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
+        data-bs-auto-close="outside" aria-expanded="false">
+        <i class="fa-brands fa-facebook-messenger"></i>
+      </button>
+      <div class="dropdown-menu chat-contain p-0 rounded-4 overflow-hidden">
+        <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
+          <h5 class="text-white">ជំនួយការ ២៤ម៉ោង</h5>
+          <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
+          <div class="card-body">
+            <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
+            <div class="d-grid gap-3 col-6">
+              <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
+              <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
+              <button class="btn btn-my-outline-primary" type="button">ចិន</button>
             </div>
-        </section>
-
-        <!-- SectionExpress Process Work -->
-        <section class="my-5 process-banner">
-            <div class="container">
-                <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
-                        ដំណើរការផ្លាស់ទី</h5>
-                    <p class="text-my-default fs-5">ដំណើរការនៃការដឹកអីវ៉ាន់</p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
-                        <div class="card card-service-customize m-auto border-0">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/process-1.png" class="img-service-src rounded-4"
-                                    alt="process-1">
-                            </div>
-                            <div
-                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
-                                <h5 class="fs-3">1</h5>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 m-auto w-75">
-                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
-                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
-                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
-                        <div class="card card-service-customize m-auto border-0">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/process-2.png" class="img-service-src rounded-4"
-                                    alt="process-2">
-                            </div>
-                            <div
-                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
-                                <h5 class="fs-3">2</h5>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 m-auto w-75">
-                            <h5>ជំហានទី 2: ការដឹកជញ្ជូន</h5>
-                            <p>បន្ទាប់ពីធ្វើការពិនិត្យរួចរាល់និងគិតថ្លៃសេវារួចរាល់ ពួកយើងនឹងធ្វើការដឹកទៅតាមមធ្យោបាយនានា​
-                                និងប្រាកដថាអីវ៉ាន់របស់លោកអ្នកស្ថិតក្នុងរូបភាពដើម ដោយមិនមានការខូចខាតអ្វីឡើយ
-                                កញ្ចប់ត្រូវបានការពារ និងត្រួតពិនិត្យ</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
-                        <div class="card card-service-customize m-auto border-0">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/process-3.png" class="img-service-src rounded-4"
-                                    alt="process-3">
-                            </div>
-                            <div
-                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
-                                <h5 class="fs-3">3</h5>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 m-auto w-75">
-                            <h5>ជំហានទី 1: អីវ៉ាន់ដល់មុខផ្ទះអ្នក</h5>
-                            <p>ការដឹកជញ្ជូនទាន់ពេលវេលា គ្រប់ពេលវេលា ជាមួយនឹងជម្រើសនៃការទម្លាក់ចុះប្រកបដោយសុវត្ថិភាព
-                                ហើយលោកអ្នកអាចរើសជម្រើសណាមួយក្នុងការទទួលយកអីវ៉ាន់</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <p class="mx-4">Bot - អម្បាញ់មិញ</p>
+        <form action="" class="d-flex align-items-center mx-2">
+          <div class="my-send-text d-flex mb-4">
+            <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
+              placeholder="Message..." rows="1"></textarea>
+            <div class="d-flex align-items-center my-btn-fill w-25">
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-face-smile"></i>
+              </button>
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-file-image"></i>
+              </button>
+              <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                <i class="fa-solid fa-paperclip"></i>
+              </label>
+              <input type="file" id="fileInput" style="display: none;" />
+              <button type="button" class="btn chat-bot-icon send-button p-1">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
             </div>
-        </section>
+          </div>
+        </form>
+      </div>
+    </div>
 
-        <!-- SectionExpress More Service -->
-        <section class="my-5">
-            <div class="container">
-                <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
-                        សេវាកម្មបន្ថែម</h5>
-                    <p class="text-my-default fs-5">ពួកយើងមានសេវាកម្មដឹកជូនអ្នកគ្រប់ទីកន្លែង</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-customize-mode d-flex">
-                            <div class="card-tr-customize bg-my-subtle">
-                                <img src="assets/images/warehouse-1.png" alt="">
-                            </div>
-                            <div class="text-my-customize text-my-default ms-3">
-                                <h5 class="fs-4">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
-                                <p class="fw-normal fs-1-maximium m-0">
-                                    បន្ទាប់ពីអីវ៉ាន់របស់លោកអ្នកមកដល់ឃ្លាំងក្នុងប្រទេសកម្ពុជា អាចទុកបានរយៈពេល១សប្តាហ៍
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-customize-mode d-flex">
-                            <div class="card-tr-customize bg-my-subtle">
-                                <img src="assets/images/truck-1.png" alt="">
-                            </div>
-                            <div class="text-my-customize text-my-default ms-3">
-                                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈឡាន</h5>
-                                <p class="fw-normal fs-1-maximium m-0">
-                                    អីវ៉ាន់ដែលមានទ្រង់ទ្រាយធំហើយធ្ងន់ ពួកយើងនឹងប្រើប្រាស់ឡានទំនិញសម្រាប់ដឹកជូនដល់មុខផ្ទះ
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-customize-mode d-flex">
-                            <div class="card-tr-customize bg-my-subtle">
-                                <img src="assets/images/scooter.png" alt="">
-                            </div>
-                            <div class="text-my-customize text-my-default ms-3">
-                                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈម៉ូតូ</h5>
-                                <p class="fw-normal fs-1-maximium m-0">
-                                    សម្រាប់អីវ៉ាន់ដែលជាប្រភេទកញ្ចប់តូចៗ ដែលមានទំហំសមល្មមពួកយើងនឹងប្រើប្រាស់ម៉ូតូ
-                                    សម្រាប់ដឹកដល់មុខផ្ទះ
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-customize-mode d-flex">
-                            <div class="card-tr-customize bg-my-subtle">
-                                <img src="assets/images/scooter.png" alt="">
-                            </div>
-                            <div class="text-my-customize text-my-default ms-3">
-                                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈរម៉ក</h5>
-                                <p class="fw-normal fs-1-maximium m-0">
-                                    សម្រាប់អីវ៉ាន់ដែលស្ថិតនៅធន់កណ្តាល ពួកយើងនឹងប្រើម៉ូតូកង់បីសម្រាប់ដឹកទៅដល់មុខផ្ទះ
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-customize-mode d-flex">
-                            <div class="card-tr-customize bg-my-subtle">
-                                <img src="assets/images/package.png" alt="">
-                            </div>
-                            <div class="text-my-customize text-my-default ms-3">
-                                <h5 class="fs-4">ការមកយកដោយផ្ទាល់</h5>
-                                <p class="fw-normal fs-1-maximium m-0">
-                                    លោកអ្នកអាចជ្រើសរើស ក្នុងការមកយកអីវ៉ាន់ដោយផ្ទាល់ពីក្រុមហ៊ុនបាន
-                                    នៅសាខាដែលជិតលោកអ្នកបំផុត
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- SectionExpress Hero Banner -->
+    <section class="hero-banner-express bg-white py-5 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 z-2">
+            <h5 class="display-5 fw-medium">ស្វែងរកសេវាកម្មទំនិញនៅទីនេះជាមួយCSC Express</h5>
+            <p class="fs-1-maximium mb-5">ជាមួយនឹងសេវាកម្មយើងខ្ញុំ ផ្តល់ឱ្យអ្នកនូវអ្វីដែលថ្មី
+              និងមិនធ្លាប់មានពីមុន។ <br> ចង់ដឹងថាពួកយើងមានសេវាកម្មដែលបំពេញតម្រូវការរបស់លោកអ្នក <br>
+              កុំភ្លេចចាប់ផ្តើមជាមួយពួកយើង</p>
+            <div class="d-flex gap-4">
+              <button class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">ចាប់ផ្តើម</button>
+              <button class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium" type="button">ព័ត៌មានបន្ថែម</button>
             </div>
-        </section>
-
-        <!-- SectionExpress Our Blog -->
-        
-        <!-- SectionExpress Our Blog -->
-        <section class="my-5">
-            <div class="container">
-                <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
-                        ព័ត៌មានចុងក្រោយ</h5>
-                    <p class="text-my-default fs-5">អានBlogsការដឹកជញ្ជូនទាំងអស់របស់ពួកយើង</p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
-                        <div class="card rounded-4 border-0 overflow-hidden">
-                            <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
-                            <div class="card-body p-0">
-                                <ul class="rounded-0 list-unstyled px-4 pt-3">
-                                    <li>
-                                        <a href="#" role="button"
-                                            class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
-                                            <div
-                                                class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
-                                                <img src="assets/images/us-delivery.jpg" class="img-top-src"
-                                                    alt="transportation">
-                                            </div>
-                                            <div>
-                                                <h5>កញ្ញា សុគន្ធនារតី</h5>
-                                                <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
-                                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
-                                    និងរហ័សទាន់ចិត្ត...</p>
-                                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
-                                        class="fa-solid fa-arrow-right ms-2"></i></a>
-                            </div>
-                            <div class="card-footer">
-                                <div class="meta d-flex align-items-center">
-                                    <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
-                                        <img src="assets/images/us-delivery.jpg" class="img-top-src"
-                                            alt="transportation">
-                                    </div>
-                                    <time class="metabit dt-published" datetime="2022-07-28"><i
-                                            class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
-                                    <span class="metabit disqus-comment-count comment-count"><i
-                                            class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
-                        <div class="card rounded-4 border-0 overflow-hidden">
-                            <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
-                            <div class="card-body p-0">
-                                <ul class="rounded-0 list-unstyled px-4 pt-3">
-                                    <li>
-                                        <a href="#" role="button"
-                                            class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
-                                            <div
-                                                class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
-                                                <img src="assets/images/us-delivery.jpg" class="img-top-src"
-                                                    alt="transportation">
-                                            </div>
-                                            <div>
-                                                <h5>កញ្ញា សុគន្ធនារតី</h5>
-                                                <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
-                                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
-                                    និងរហ័សទាន់ចិត្ត...</p>
-                                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
-                                        class="fa-solid fa-arrow-right ms-2"></i></a>
-                            </div>
-                            <div class="card-footer">
-                                <div class="meta d-flex align-items-center">
-                                    <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
-                                        <img src="assets/images/us-delivery.jpg" class="img-top-src"
-                                            alt="transportation">
-                                    </div>
-                                    <time class="metabit dt-published" datetime="2022-07-28"><i
-                                            class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
-                                    <span class="metabit disqus-comment-count comment-count"><i
-                                            class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
-                        <div class="card rounded-4 border-0 overflow-hidden">
-                            <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
-                            <div class="card-body p-0">
-                                <ul class="rounded-0 list-unstyled px-4 pt-3">
-                                    <li>
-                                        <a href="#" role="button"
-                                            class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
-                                            <div
-                                                class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
-                                                <img src="assets/images/us-delivery.jpg" class="img-top-src"
-                                                    alt="transportation">
-                                            </div>
-                                            <div>
-                                                <h5>កញ្ញា សុគន្ធនារតី</h5>
-                                                <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
-                                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
-                                    និងរហ័សទាន់ចិត្ត...</p>
-                                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
-                                        class="fa-solid fa-arrow-right ms-2"></i></a>
-                            </div>
-                            <div class="card-footer">
-                                <div class="meta d-flex align-items-center">
-                                    <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
-                                        <img src="assets/images/us-delivery.jpg" class="img-top-src"
-                                            alt="transportation">
-                                    </div>
-                                    <time class="metabit dt-published" datetime="2022-07-28"><i
-                                            class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
-                                    <span class="metabit disqus-comment-count comment-count"><i
-                                            class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row mt-5">
+              <div class="col-4">
+                <h5 class="num fs-1" data-val="280" data-suffix="K+">0</h5>
+                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
+              </div>
+              <div class="col-4">
+                <h5 class="num fs-1" data-val="100" data-suffix="M+">0</h5>
+                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
+              </div>
+              <div class="col-4">
+                <h5 class="num fs-1" data-val="80" data-suffix="K+">0</h5>
+                <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
+              </div>
             </div>
-        </section>
-
-        <!-- SectionExpress DownMobileApp -->
-        <section class="bg-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h5 class="text-my-default fs-2">ទាញយកកម្មវិធីរបស់យើងនៅលើ AppStore ឬ Google Play Store!</h5>
-                        <p class="text-my-default fs-1-maximium">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Iure nisi omnis, pariatur rerum
-                            expedita quis vero laborum facilis voluptatibus, quam eveniet illo veniam quod nostrum quos
-                            sequi? Magni, dignissimos quis.</p>
-                        <div class="d-flex gap-4">
-                            <a href="#" class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">Google Play</a>
-                            <a href="#" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium"
-                                type="button">AppStore</a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <img src="assets/images/appdownload.png" class="" alt="">
-                    </div>
-                </div>
+          </div>
+          <div
+            class="col-12 col-lg-6 d-none d-lg-flex justify-content-center justify-content-lg-end align-items-center z-2">
+            <div class="box-circle-hero">
+              <img src="assets/images/bs-hero.webp" class="foreimage-hero" alt="foreimage-hero">
             </div>
-        </section>
-    </main>
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/numCount.js"></script>
-    <script src="assets/js/backtotop.js"></script>
-    <script src="assets/js/plyr.js"></script>
-    <script>
-        const player = new Plyr('#player');
-        const player1 = new Plyr('#player1');
-    </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            centeredSlides: false,
-            spaceBetween: 22,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                },
-                576: {
-                    slidesPerView: 2,
-                },
-                320: {
-                    slidesPerView: 1,
-                }
-            }
-        });
-        document.querySelectorAll('.swiper-slide').forEach(slide => {
-            slide.addEventListener('mouseenter', () => {
-                swiper.autoplay.stop();
-            });
+    <!-- SectionExpress Tracking Item -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
+          <div class="col-7">
+            <input type="text" class="form-control shadow-none py-3 input-tracking-customize" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" id="inputTrackingNumber" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              តាមដានអីវ៉ាន់
+            </button>
+          </div>
+        </div>
 
-            slide.addEventListener('mouseleave', () => {
-                swiper.autoplay.start();
-            });
-        });
-    </script>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row p-0 m-0 justify-content-center">
+                  <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <input type="text" class="form-control shadow-none py-3" id="inputTrackingNumber1"
+                      placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
+                  </div>
+                  <div class="col-5 col-sm-4 col-lg-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary py-3 w-100">
+                      តាមដានអីវ៉ាន់
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress Why Choose Us -->
+    <section class="my-5">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+          <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">ពួកយើងជា
+            CSC</h5>
+          <p class="text-my-default fs-5">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 py-3 py-lg-0">
+            <div class="card card-customize text-center rounded-4 py-5 border-0">
+              <div class="card-body">
+                <i class="fa-solid fa-truck-plane display-10-customize mb-4"></i>
+                <h5 class="card-title fs-4">ភស្តុភារពេញលេញ</h5>
+                <p class="card-text fs-5">សេវាកម្មដឹកជញ្ជូនតាមអាកាស CSC Express ផ្តល់ចំណេះដឹង
+                  និងឱកាសដើម្បីបង្កើនប្រសិទ្ធភាពរាល់ម៉ាយនៅគ្រប់ផ្លូវ។</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 py-3 py-lg-0">
+            <div class="card card-customize text-center rounded-4 py-5 border-0">
+              <div class="card-body">
+                <i class="fa-solid fa-truck-fast display-10-customize mb-4"></i>
+                <h5 class="card-title fs-4">ការដឹកជញ្ជូនទូទាំងពិភពលោក</h5>
+                <p class="card-text fs-5">សេវាកម្មដឹកជញ្ជូនតាមអាកាស CSC Express ផ្តល់ចំណេះដឹង
+                  និងឱកាសដើម្បីបង្កើនប្រសិទ្ធភាពរាល់ម៉ាយនៅគ្រប់ផ្លូវ។</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 py-3 py-lg-0">
+            <div class="card card-customize text-center rounded-4 py-5 border-0">
+              <div class="card-body">
+                <i class="fa-solid fa-shield display-10-customize mb-4"></i>
+                <h5 class="card-title fs-4">ការដឹកជញ្ជូនប្រកបដោយសុវត្ថិភាព</h5>
+                <p class="card-text fs-5">សេវាកម្មដឹកជញ្ជូនតាមអាកាស CSC Express ផ្តល់ចំណេះដឹង
+                  និងឱកាសដើម្បីបង្កើនប្រសិទ្ធភាពរាល់ម៉ាយនៅគ្រប់ផ្លូវ។</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress Support-->
+    <section class="support-section py-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="text-white">
+              <h5>២៤/៧</h5>
+              <h5 class="fs-2">គាំទ្រ និងជំនួយការ២៤ ម៉ោង</h5>
+              <p class="fs-1-maximium">​ដើម្បី​ភាព​ងាយស្រួល​សម្រាប់​អតិថិជន​
+                យើង​បាន​ដាក់​ឲ្យ​ប្រើប្រាស់​ទូរស័ព្ទ​ចំនួន​ពីរ​ខ្សែ​ ដែល​លោក​អ្នក​អាច​ទាក់ទង​មក​បាន​
+                គ្រប់ពេលវេលា​ ២៤ ម៉ោង​លើ​ ២៤ ម៉ោង​ ។</p>
+              <a href="#" class="btn btn-my-primary px-5 py-3">ទាក់ទងមកពួកយើង</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress Our Service -->
+    <section class="my-5">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+          <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">សេវាកម្ម
+            CSC</h5>
+          <p class="text-my-default fs-5">សេវាកម្មរបស់យើងខ្ញុំប្រកបដោយគុណភាព</p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div #swiperRef="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="assets/images/service-warehouse.png" class="card-img-top" alt="features">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
+                      <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
+                        ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
+                      <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="assets/images/service-truck.png" class="card-img-top" alt="features">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវគោក</h5>
+                      <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
+                        ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
+                      <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="assets/images/service-ship.png" class="card-img-top" alt="features">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវទឹក</h5>
+                      <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
+                        ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
+                      <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="assets/images/service-airplane.png" class="card-img-top" alt="features">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវអាកាស</h5>
+                      <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
+                        ដែលស្ថិតនៅកណ្តាលទីក្រុងនៃប្រទេស</p>
+                      <a href="#" class="btn btn-my-primary">អានបន្ថែម</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress Process Work -->
+    <section class="my-5 process-banner">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+          <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
+            ដំណើរការផ្លាស់ទី</h5>
+          <p class="text-my-default fs-5">ដំណើរការនៃការដឹកអីវ៉ាន់</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+            <div class="card card-service-customize m-auto border-0">
+              <div class="card-body m-0 p-0">
+                <img src="assets/images/process-1.png" class="img-service-src rounded-4" alt="process-1">
+              </div>
+              <div
+                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                <h5 class="fs-3">1</h5>
+              </div>
+            </div>
+            <div class="text-center mt-4 m-auto w-75">
+              <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
+              <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
+                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+            <div class="card card-service-customize m-auto border-0">
+              <div class="card-body m-0 p-0">
+                <img src="assets/images/process-2.png" class="img-service-src rounded-4" alt="process-2">
+              </div>
+              <div
+                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                <h5 class="fs-3">2</h5>
+              </div>
+            </div>
+            <div class="text-center mt-4 m-auto w-75">
+              <h5>ជំហានទី 2: ការដឹកជញ្ជូន</h5>
+              <p>បន្ទាប់ពីធ្វើការពិនិត្យរួចរាល់និងគិតថ្លៃសេវារួចរាល់ ពួកយើងនឹងធ្វើការដឹកទៅតាមមធ្យោបាយនានា​
+                និងប្រាកដថាអីវ៉ាន់របស់លោកអ្នកស្ថិតក្នុងរូបភាពដើម ដោយមិនមានការខូចខាតអ្វីឡើយ
+                កញ្ចប់ត្រូវបានការពារ និងត្រួតពិនិត្យ</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+            <div class="card card-service-customize m-auto border-0">
+              <div class="card-body m-0 p-0">
+                <img src="assets/images/process-3.png" class="img-service-src rounded-4" alt="process-3">
+              </div>
+              <div
+                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                <h5 class="fs-3">3</h5>
+              </div>
+            </div>
+            <div class="text-center mt-4 m-auto w-75">
+              <h5>ជំហានទី 1: អីវ៉ាន់ដល់មុខផ្ទះអ្នក</h5>
+              <p>ការដឹកជញ្ជូនទាន់ពេលវេលា គ្រប់ពេលវេលា ជាមួយនឹងជម្រើសនៃការទម្លាក់ចុះប្រកបដោយសុវត្ថិភាព
+                ហើយលោកអ្នកអាចរើសជម្រើសណាមួយក្នុងការទទួលយកអីវ៉ាន់</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress More Service -->
+    <section class="my-5">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+          <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
+            សេវាកម្មបន្ថែម</h5>
+          <p class="text-my-default fs-5">ពួកយើងមានសេវាកម្មដឹកជូនអ្នកគ្រប់ទីកន្លែង</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-customize-mode d-flex">
+              <div class="card-tr-customize bg-my-subtle">
+                <img src="assets/images/warehouse-1.png" alt="">
+              </div>
+              <div class="text-my-customize text-my-default ms-3">
+                <h5 class="fs-4">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
+                <p class="fw-normal fs-1-maximium m-0">
+                  បន្ទាប់ពីអីវ៉ាន់របស់លោកអ្នកមកដល់ឃ្លាំងក្នុងប្រទេសកម្ពុជា អាចទុកបានរយៈពេល១សប្តាហ៍
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-customize-mode d-flex">
+              <div class="card-tr-customize bg-my-subtle">
+                <img src="assets/images/truck-1.png" alt="">
+              </div>
+              <div class="text-my-customize text-my-default ms-3">
+                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈឡាន</h5>
+                <p class="fw-normal fs-1-maximium m-0">
+                  អីវ៉ាន់ដែលមានទ្រង់ទ្រាយធំហើយធ្ងន់ ពួកយើងនឹងប្រើប្រាស់ឡានទំនិញសម្រាប់ដឹកជូនដល់មុខផ្ទះ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-customize-mode d-flex">
+              <div class="card-tr-customize bg-my-subtle">
+                <img src="assets/images/scooter.png" alt="">
+              </div>
+              <div class="text-my-customize text-my-default ms-3">
+                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈម៉ូតូ</h5>
+                <p class="fw-normal fs-1-maximium m-0">
+                  សម្រាប់អីវ៉ាន់ដែលជាប្រភេទកញ្ចប់តូចៗ ដែលមានទំហំសមល្មមពួកយើងនឹងប្រើប្រាស់ម៉ូតូ
+                  សម្រាប់ដឹកដល់មុខផ្ទះ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-customize-mode d-flex">
+              <div class="card-tr-customize bg-my-subtle">
+                <img src="assets/images/scooter.png" alt="">
+              </div>
+              <div class="text-my-customize text-my-default ms-3">
+                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈរម៉ក</h5>
+                <p class="fw-normal fs-1-maximium m-0">
+                  សម្រាប់អីវ៉ាន់ដែលស្ថិតនៅធន់កណ្តាល ពួកយើងនឹងប្រើម៉ូតូកង់បីសម្រាប់ដឹកទៅដល់មុខផ្ទះ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-customize-mode d-flex">
+              <div class="card-tr-customize bg-my-subtle">
+                <img src="assets/images/package.png" alt="">
+              </div>
+              <div class="text-my-customize text-my-default ms-3">
+                <h5 class="fs-4">ការមកយកដោយផ្ទាល់</h5>
+                <p class="fw-normal fs-1-maximium m-0">
+                  លោកអ្នកអាចជ្រើសរើស ក្នុងការមកយកអីវ៉ាន់ដោយផ្ទាល់ពីក្រុមហ៊ុនបាន
+                  នៅសាខាដែលជិតលោកអ្នកបំផុត
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress Our Blog -->
+
+    <!-- SectionExpress Our Blog -->
+    <section class="my-5">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+          <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
+            ព័ត៌មានចុងក្រោយ</h5>
+          <p class="text-my-default fs-5">អានBlogsការដឹកជញ្ជូនទាំងអស់របស់ពួកយើង</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+            <div class="card rounded-4 border-0 overflow-hidden">
+              <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <ul class="rounded-0 list-unstyled px-4 pt-3">
+                  <li>
+                    <a href="#" role="button"
+                      class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
+                      <div class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
+                        <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
+                      </div>
+                      <div>
+                        <h5>កញ្ញា សុគន្ធនារតី</h5>
+                        <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
+                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
+                  និងរហ័សទាន់ចិត្ត...</p>
+                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
+                    class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+              <div class="card-footer">
+                <div class="meta d-flex align-items-center">
+                  <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
+                    <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
+                  </div>
+                  <time class="metabit dt-published" datetime="2022-07-28"><i
+                      class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                  <span class="metabit disqus-comment-count comment-count"><i
+                      class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+            <div class="card rounded-4 border-0 overflow-hidden">
+              <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <ul class="rounded-0 list-unstyled px-4 pt-3">
+                  <li>
+                    <a href="#" role="button"
+                      class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
+                      <div class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
+                        <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
+                      </div>
+                      <div>
+                        <h5>កញ្ញា សុគន្ធនារតី</h5>
+                        <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
+                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
+                  និងរហ័សទាន់ចិត្ត...</p>
+                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
+                    class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+              <div class="card-footer">
+                <div class="meta d-flex align-items-center">
+                  <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
+                    <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
+                  </div>
+                  <time class="metabit dt-published" datetime="2022-07-28"><i
+                      class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                  <span class="metabit disqus-comment-count comment-count"><i
+                      class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+            <div class="card rounded-4 border-0 overflow-hidden">
+              <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+                <ul class="rounded-0 list-unstyled px-4 pt-3">
+                  <li>
+                    <a href="#" role="button"
+                      class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
+                      <div class="rounded-circle bg-my-primary img-cusomize-top overflow-hidden me-3">
+                        <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
+                      </div>
+                      <div>
+                        <h5>កញ្ញា សុគន្ធនារតី</h5>
+                        <h5 class="fs-6 fw-medium">អ្នកដឹកជញ្ជូន</h5>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
+                <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
+                  និងរហ័សទាន់ចិត្ត...</p>
+                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
+                    class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+              <div class="card-footer">
+                <div class="meta d-flex align-items-center">
+                  <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
+                    <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
+                  </div>
+                  <time class="metabit dt-published" datetime="2022-07-28"><i
+                      class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                  <span class="metabit disqus-comment-count comment-count"><i
+                      class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SectionExpress DownMobileApp -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h5 class="text-my-default fs-2">ទាញយកកម្មវិធីរបស់យើងនៅលើ AppStore ឬ Google Play Store!</h5>
+            <p class="text-my-default fs-1-maximium">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit.
+              Iure nisi omnis, pariatur rerum
+              expedita quis vero laborum facilis voluptatibus, quam eveniet illo veniam quod nostrum quos
+              sequi? Magni, dignissimos quis.</p>
+            <div class="d-flex gap-4">
+              <a href="#" class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">Google Play</a>
+              <a href="#" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium" type="button">AppStore</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="assets/images/appdownload.png" class="" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer  bg-body-my-tertiary">
+      <div class="container my-5 my-5 mt-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+            <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">
+              <img class="me-md-5" src="assets/images/CSC-Express-LOGO.png" alt="#"
+                style="width: 100%; height: auto; object-fit: contain;">
+            </a>
+            <div class="mt-0">
+              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់ គុណភាព
+                សុវតិ្ថភាព
+                លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
+            </div>
+            <div class="mb-2 ms-3 ms-md-0">
+              <a class="text-my-secondary  fs-5" href="#">ប្រវតិ្តក្រុមហ៊ុន</a>
+            </div>
+
+            <div class="mb-2 ms-3 ms-md-0">
+              <a class=" text-my-secondary fs-5 " href="#">ក្រុមយើងខ្ញុំ</a>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5   ">
+              <h4 class="text-my-primary">Quick-links</h4>
+            </div>
+            <div class="mb-2">
+              <a class="text-my-secondary fs-5" href="#">ទំព័រដើម</a>
+            </div>
+
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សាខា</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">ទំនាក់ទំនង</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">អំពីយើង</a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5 mb-4 ">
+              <h4 class="text-my-primary">សេវាកម្ម</h4>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">ប្រូម៉ូសិន</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មបានកាតបញ្ចុះតម្លៃ</a>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5 mb-4 ">
+              <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
+            </div>
+
+            <div class="contactus">
+              <div class="mb-2">
+                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-secondary"></i>
+                  <span class="ms-2  text-my-secondary fs-5">Ant Trainning Center</span>
+                </a>
+              </div>
+              <div class="mb-2">
+                <a href="#">
+                  <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
+                  <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
+                </a>
+              </div>
+              <div class="mb-4">
+                <a href="#">
+                  <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
+                  <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="mb-2">
+              <a href="#"><i
+                  class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+              <a href="#"><i
+                  class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footers">
+      <div class="d-flex justify-content-center">
+        <p class="fs-6 text-white mb-0">@copy right csc express 2024</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/headerfixed.js"></script>
+  <script src="assets/js/backtotop.js"></script>
+  <script src="assets/js/numCount.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 22,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      }
+    });
+    document.querySelectorAll('.swiper-slide').forEach(slide => {
+      slide.addEventListener('mouseenter', () => {
+        swiper.autoplay.stop();
+      });
+
+      slide.addEventListener('mouseleave', () => {
+        swiper.autoplay.start();
+      });
+    });
+  </script>
 </body>
 
 </html>

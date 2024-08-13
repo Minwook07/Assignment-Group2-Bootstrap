@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Express</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/lips/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/lips/aos-master/dist/aos.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+            class="bi bi-arrow-up-short fs-5"></i></a>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="map" style="width: 100%; height: 500px;"></div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="card mt-5 shadow-sm">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
+                                <div class="col-8">
+                                    <input type="text" class="form-control shadow-none py-3 input-tracking-customize"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal" id="inputTrackingNumber"
+                                        placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        តាមដានអីវ៉ាន់
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="card mt-5 shadow-sm">
+                        <div
+                            class="card-header border-0 rounded bg-white d-inline-flex justify-content-between align-items-center">
+                            <button class="btn clicked fs-4 border-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample1">
+                                Experience
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <ul class="navbar-nav list-unstyled">
+                                <li class="nav-item nav-item-track d-flex align-items-start mb-4">
+                                    <div class="icon-track active rounded-circle bg-secondary-subtle text-dark me-3">
+                                        <i class="fa-solid fa-check fs-5"></i>
+                                    </div>
+                                    <div class="text-container">
+                                        <h5>បានទទួលការបញ្ជាទិញ</h5>
+                                        <p>Google - American <br> <span class="text-black-50">ម៉ោង 11:20 នាទីពេលព្រឹក
+                                                ថ្ងៃទី 16</span></p>
+                                        <p>Work in Google is one of the beautiful experience I can do in my entire
+                                            lift.
+                                            <br>
+                                            There are a lot of interesting think to learn and manager respect you
+                                            time
+                                            and your personality...
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-track d-flex align-items-start mb-4">
+                                    <div class="icon-track completed rounded-circle bg-secondary-subtle text-dark me-3">
+                                        <i class="fa-solid fa-warehouse fs-5"></i>
+                                    </div>
+                                    <div class="text-container">
+                                        <h5>អីវ៉ាន់កំពុងស្ថិតក្នុងឃ្លាំងប្រទេសចិន</h5>
+                                        <p>Google - American <br> <span class="text-black-50">November 2020 to
+                                                December
+                                                2026</span></p>
+                                        <p>Work in Google is one of the beautiful experience I can do in my entire
+                                            lift.
+                                            <br>
+                                            There are a lot of interesting think to learn and manager respect you
+                                            time
+                                            and your personality...
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-track d-flex align-items-start mb-4">
+                                    <div class="icon-track current rounded-circle bg-secondary-subtle text-dark me-3">
+                                        <i class="fa-solid fa-truck-plane fs-5"></i>
+                                    </div>
+                                    <div class="text-container">
+                                        <h5>អីវ៉ាន់រៀបចំដឹកមកកាន់ឃ្លាំងប្រទេសកម្ពុជា</h5>
+                                        <p>Google - American <br> <span class="text-black-50">November 2020 to
+                                                December
+                                                2026</span></p>
+                                        <p>Work in Google is one of the beautiful experience I can do in my entire
+                                            lift.
+                                            <br>
+                                            There are a lot of interesting think to learn and manager respect you
+                                            time
+                                            and your personality...
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-track d-flex align-items-start mb-4">
+                                    <div class="icon-track rounded-circle bg-secondary-subtle text-dark me-3">
+                                        <i class="fa-solid fa-house-circle-check fs-5"></i>
+                                    </div>
+                                    <div class="text-container">
+                                        <h5>អីវ៉ាន់ដឹកមកដល់ CSCស្នាក់ការកណ្តាល រាជធានីភ្នំពេញ</h5>
+                                        <p>Google - American <br> <span class="text-black-50">November 2020 to
+                                                December
+                                                2026</span></p>
+                                        <p>Work in Google is one of the beautiful experience I can do in my entire
+                                            lift.
+                                            <br>
+                                            There are a lot of interesting think to learn and manager respect you
+                                            time
+                                            and your personality...
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Leaflet Routing Machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([25.0, 104.0], 4); // Centered between China and Cambodia
+
+        // Add a tile layer (e.g., OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Define the route from China to Cambodia
+        var control = L.Routing.control({
+            waypoints: [
+                L.latLng(35.8617, 104.1954),  // Starting point (China)
+                L.latLng(30.5728, 104.0668),  // Stop 1: Chengdu, China
+                L.latLng(29.5630, 106.5516),  // Stop 2: Chongqing, China
+                L.latLng(21.0278, 105.8342),  // Stop 3: Hanoi, Vietnam
+                L.latLng(12.5657, 104.991)    // Ending point (Cambodia)
+            ],
+            lineOptions: {
+                styles: [{ color: 'blue', weight: 4 }]
+            },
+            createMarker: function (i, waypoint, n) {
+                var markerOptions = {
+                    icon: L.icon({
+                        iconUrl: 'https://cdn-icons-png.flaticon.com/512/679/679600.png', // Truck icon URL
+                        iconSize: [32, 32],
+                        iconAnchor: [16, 16]
+                    })
+                };
+                return L.marker(waypoint.latLng, markerOptions);
+            },
+            routeWhileDragging: true
+        }).addTo(map);
+    </script>
+</body>
+
+</html>

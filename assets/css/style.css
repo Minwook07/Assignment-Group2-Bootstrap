@@ -16,10 +16,34 @@ body {
   background-color: var(--my-color-bg);
 }
 
+:root,
+[data-theme="light"] {
+  --my-color-primary: #669955;
+  --my-color-secondary: #80C56D;
+  --my-color-subtle: #95D385;
+  --my-color-bg: #eee;
+  --my-color-text: #000;
+  --my-color-footer: #ffff;
+  --my-bg-contactus: #729268;
+  --my-color-icon: #ffff;
+  --my-qoute-color: #ffff;
+}
+
+[data-theme="dark"] {
+  --my-color-primary: #669955;
+  --my-color-secondary: #80C56D;
+  --my-color-subtle: #95D385;
+  --my-color-bg: #222;
+  --my-color-text: #fff;
+  --my-color-footer: #222;
+  --my-bg-contactus: #222;
+  --my-qoute-color: #0000;
+}
+
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 /* backtotop */
@@ -43,6 +67,7 @@ img {
   transition: all 0.4s;
 }
 
+/* Chat Bot */
 .chat-bot {
   position: fixed;
   right: 15px;
@@ -56,6 +81,21 @@ img {
   transition: all 0.4s;
 }
 
+.chat-contain {
+  position: relative;
+  width: 350px;
+  height: 70vh;
+}
+
+.my-send-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.my-input-textarea {
+  resize: none;
+}
+
 .chat-bot-icon {
   color: #999;
 }
@@ -64,38 +104,18 @@ img {
   color: var(--my-color-primary);
 }
 
-:root,
-[data-theme="light"] {
-  --my-color-primary: #669955;
-  --my-color-secondary: #80C56D;
-  --my-color-subtle: #95D385;
-  --my-color-bg: #eee;
-  --my-color-text: #000;
-  --my-color-footer: #ffff;
-  --my-bg-contactus: #729268;
-  --my-color-icon: #ffff;
-  --my-information-color: #F4EFF8;
-}
-
-[data-theme="dark"] {
-  --my-color-primary: #669955;
-  --my-color-secondary: #80C56D;
-  --my-color-subtle: #95D385;
-  --my-color-bg: #222;
-  --my-color-text: #fff;
-  --my-color-footer: #222;
-  --my-bg-contactus: #222;
-}
-.choose-us-icon{
+.choose-us-icon {
   width: 150px;
   height: 100px;
 }
-.choose-us-text{
+
+.choose-us-text {
   font-size: 18px;
 }
-.choose-us-icon img{
-  width: 50%;
-  object-fit: contain;
+
+.choose-us-icon img {
+  width: 50% !important;
+  object-fit: contain !important;
 }
 
 .dropdown-menu-blur {
@@ -121,6 +141,10 @@ img {
 
 .bg-my-subtle {
   background-color: var(--my-color-subtle);
+}
+
+.bg-my-qoute-color {
+  background-color: var(--my-qoute-color);
 }
 
 .text-my-primary {
@@ -160,9 +184,8 @@ img {
 }
 
 .btn-my-primary:hover {
-  color: var(--my-color-text);
-  background-color: darken(var(--my-color-primary), 10%);
-  border-color: darken(var(--my-color-primary), 10%);
+  color: #fff;
+  background-color: #5a884b;
 }
 
 .btn-my-secondary {
@@ -233,6 +256,7 @@ input:focus {
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar.scrolled {
   position: fixed;
   top: 0;
@@ -240,20 +264,24 @@ input:focus {
   z-index: 1000;
   transition: top 0.3s;
 }
+
 .navtop {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: white; 
+  background-color: white;
 }
+
 .navbar {
-  top: 60px; 
+  top: 60px;
   transition: top 0.3s ease-in-out;
 }
+
 .navbar.scrolled-top {
   top: 0;
 }
+
 .dropdown-menu-color {
   background-color: #fafafa;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
@@ -362,7 +390,8 @@ input:focus {
   --bs-dropdown-link-active-bg: var(--my-color-subtle) !important;
 }
 
-.user-profile, .profile {
+.user-profile,
+.profile {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -376,11 +405,6 @@ input:focus {
   border-radius: 50%;
 }
 
-.user-profile .profile img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .notification-badge {
   width: 15px;
   height: 15px;
@@ -394,8 +418,7 @@ input:focus {
 /* herobaner */
 .hero-baner {
   width: 100%;
-  height:800px;
-  /* background-image: url(../images/cargo-delivery-vehicle.jpg); */
+  height: 800px;
   background-image: url(../images/pikaso_texttoimage_35mm-film-photography-A-luxurious-hero-background-.jpeg);
   position: relative;
   background-size: cover;
@@ -403,7 +426,8 @@ input:focus {
   background-position: center;
   overflow: hidden;
 }
-.hero-banner-home{
+
+.hero-banner-home {
   width: 100%;
   height: 700px;
   background-image: url(../images/hero-home.jpg);
@@ -413,7 +437,8 @@ input:focus {
   background-position: center;
   overflow: hidden;
 }
-.favorite-page{
+
+.favorite-page {
   width: 100%;
   height: 700px;
   background-image: url(../images/favorite-baner.jpg);
@@ -422,18 +447,20 @@ input:focus {
   background-position: center;
   overflow: hidden;
 }
+
 @media (max-width: 850px) {
   .hero-baner {
-    height: 500px; 
+    height: 500px;
   }
 }
+
 .overlay-now {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#2c2a2aa6;
+  background-color: #2c2a2aa6;
   opacity: 0.8;
   z-index: 1 !important;
 }
@@ -463,6 +490,7 @@ input:focus {
   display: flex;
   align-items: center;
 }
+
 .step {
   text-align: center;
   padding: 20px;
@@ -506,8 +534,16 @@ input:focus {
 .card-hover:hover {
   transform: scale(1.05);
 }
-.service-icon1{
+
+.service-icon1 {
   width: 90px;
+
+}
+
+.service-icon {
+  width: 100px;
+  height: 100%;
+}
 
 }
 .service-icon{
@@ -549,13 +585,14 @@ input:focus {
 }
 
 /* FAQs */
-
-.nav-pill-style .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pill-style .nav-link.active,
+.nav-pills .show>.nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--my-color-primary);
 }
-.nav-pill-style .nav-link{
- color: var(--my-color-secondary);
+
+.nav-pill-style .nav-link {
+  color: var(--my-color-secondary);
 }
 
 /* contact us */
@@ -594,7 +631,7 @@ a {
 }
 
 .left-side-img img {
-  width: 400px;
+  width: 400px!important;
 }
 
 .icon-link {
@@ -607,7 +644,7 @@ a {
 }
 
 .icon {
-  width: 20px;
+  width: 20px!important;
 }
 .dropdown-menu-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -636,7 +673,8 @@ a {
 .line-team {
   border-top: 2px solid #80C56D;
 }
-.our-team{
+
+.our-team {
   width: 100%;
 }
 
@@ -645,9 +683,6 @@ a {
 }
 
 .card .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: 0.5s;
 }
 
@@ -677,6 +712,7 @@ a {
   border-radius: 50%;
   background-color: #669955;
 }
+
 /* dot animation */
 .dot-animation {
   --uib-size: 60px;
@@ -742,12 +778,6 @@ a {
   width: 150px !important;
 }
 
-.logo-modal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .left-side-img img {
   width: 400px;
 }
@@ -769,7 +799,7 @@ input:focus {
   width: 20px;
 }
 
-/* contact-us */
+/* contact-us section*/
 .pt-110 {
   padding-top: 110px;
 }
@@ -856,32 +886,78 @@ input:focus {
 /* about us */
 .about-us-banner {
   width: 100%;
-  height: 550px;
+  height: 600px;
 
 }
 
-.card-img {
-  height: 550px;
+.my-type-1 {
+  border-radius: 40px 40px 0px 0px;
+  border-radius: 40px 0px 40px 0px;
+
+}
+
+.my-type-2 {
+  border-radius: 40px 0px 40px 0px;
+}
+
+.my-type-3 {
+  border-radius: 0px 0px 40px 40px;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.card-pf-img {
+  width: 10px;
+  height: 450px;
   flex: 1;
   overflow: hidden;
   transition: flex 0.4s ease;
 }
 
-.card-img img {
-  width: 100%;
-  height: 550px;
+.card-pf-img img {
+  /* width: 100%; */
+  height: 450px;
   object-fit: cover;
 }
 
-.card-img:hover,
-.card-img.default-hover {
-  flex: 2;
+.card-pf-img:hover,
+.card-pf-img.default-hover {
+  flex: 1.3;
   cursor: pointer;
 }
 
-.card-img:hover~.card-img,
-.default-hover~.card-img {
-  flex: 1;
+.our-profile-img {
+  width: 300px;
+  left: 37%;
+  top: 15%;
+}
+
+.my-descrition {
+  width: 400px;
+  left: 20px;
+  top: -15px;
+}
+
+.my-qoute-border {
+  width: 400px;
+  height: 210px;
+  border: 5px solid var(--my-color-primary);
+}
+
+.myprofile-name {
+  top: -100px;
+  left: 200px;
+  border-radius: 30px 0 30px 0;
+
+}
+
+.my-quote {
+  width: 450px;
+  margin-left: 190px;
+}
+
+.my-range-skill {
+  width: 450px;
+  margin-left: 190px;
 }
 
 /* about-company */
@@ -908,19 +984,11 @@ input:focus {
 .banner-com-2,
 .award-part,
 .bus-img {
-  max-width: 280px;
+  max-width: 280px!important;
 }
 
 .bus-img {
   margin-top: 115px;
-}
-
-.banner-com-1 img,
-.banner-com-2 img,
-.award-part img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .staff-info {
@@ -951,12 +1019,6 @@ input:focus {
 
 .office {
   width: 300px;
-}
-
-.office img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .company-history {
@@ -997,12 +1059,6 @@ input:focus {
   width: 500px;
 }
 
-.timeline-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .line-overlay {
   width: 100%;
   height: 10px;
@@ -1027,12 +1083,6 @@ input:focus {
   width: 300px;
 }
 
-.plan img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .titleTop {
   top: -32px;
   left: 4px;
@@ -1047,9 +1097,6 @@ input:focus {
 }
 
 .award-1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: 0.7s ease-in-out;
 }
 
@@ -1098,6 +1145,165 @@ input:focus {
   cursor: pointer;
 }
 
+/* notification section */
+.nav-notification .nav-link {
+  color: var(--my-color-text);
+}
+
+.nav-notification .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: transparent;
+  color: var(--my-color-text);
+  font-weight: bold;
+}
+
+.my-badge {
+  font-size: 10px;
+}
+
+.btn-notifications::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  left: 100%;
+  top: 7px;
+  background-color: #6C757D;
+}
+
+.notification-img {
+  width: 55px;
+}
+
+.dot-online {
+  background-color: #25d366;
+  left: 35px;
+  top: 35px;
+}
+
+.timer {
+  font-size: 10px;
+}
+
+.cursor:hover {
+  cursor: pointer;
+}
+
+/* favorite section page */
+.my-favorite-banner {
+  width: 100%;
+  height: 300px;
+  background-color: var(--my-color-subtle);
+}
+
+/* trending service section */
+
+.margin-img {
+  margin-top: 80px;
+}
+
+.truck-position {
+  top: -50px;
+  left: 192px;
+  height: 40px;
+  border: 3px solid var(--my-color-primary);
+  border-bottom: transparent;
+  border-radius: 100px 100px 0 0;
+}
+
+.box-my-style {
+  border: 3px solid var(--my-color-primary);
+  height: 140px;
+  width: 300px;
+}
+
+.box-my-style-position {
+  width: 300px;
+  right: 15px;
+  top: -10px;
+}
+
+.ms-100 {
+  margin-left: 60px;
+}
+
+/* second style */
+.my-box-position {
+  top: 13px;
+  left: 15px;
+}
+
+.my-truck-position {
+  top: 145px;
+  left: 225px;
+  /* height: 40px; */
+  border: 3px solid var(--my-color-primary);
+  border-bottom: transparent;
+  border-radius: 100px 100px 0 0;
+  transform: rotate(180deg);
+}
+
+.my-tranform {
+  transform: rotate(-180deg);
+}
+
+/* new section in trending page */
+.my-img-delivery {
+  width: 500px;
+  /* height: 230px; */
+  border: 5px solid var(--my-color-primary);
+}
+
+.border-flower-1 {
+  border-radius: 5px 100px 5px 100px;
+}
+
+.border-flower-2 {
+  border-radius: 100px 5px 100px 5px;
+}
+
+.border-flower-3 {
+  border-radius: 100px 5px 100px 5px;
+}
+
+.border-flower-4 {
+  border-radius: 5px 100px 5px 100px;
+}
+
+.my-img-position-trend-1 {
+  right: 15px;
+  bottom: 10px;
+}
+
+.my-img-position-trend-2 {
+  left: 15px;
+  bottom: 10px;
+}
+
+.my-img-position-trend-3 {
+  right: 15px;
+  top: 10px;
+}
+
+.my-img-position-trend-4 {
+  left: 15px;
+  top: 10px;
+}
+
+/* blog or read more */
+.heart-icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heart-icon i.fa-solid {
+  color: red;
+}
+
+.nav-link-hover {
+  color: var(--my-color-text);
+}
+
 @media (max-width: 1024px) {
   .staff-info {
     left: 0;
@@ -1136,22 +1342,11 @@ input:focus {
 
 /* Page express_logistic*/
 /* SectionExpress Hero Banner */
-.box-circle-hero {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  border-radius: 999px;
-  border: 2px dashed var(--my-color-primary);
-  overflow: hidden;
-}
-
-.svg-shape {
-  position: absolute;
-  top: -70px;
-  left: -30px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.hero-banner-express {
+  height: 600px;
+  background-image: url(../images/world-map.webp);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .foreimage-hero {
@@ -1188,38 +1383,18 @@ input:focus {
 /* SectionExpress Support */
 .support-section {
   height: 450px;
-  background-image: url(../images/A-young-Caucasian-woman.jpeg);
+  background-image: url(../images/support-24h.png);
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* SectionExpress Way */
-.card-tr-customize {
-  border-radius: 20px;
-  border: 2px solid var(--my-color-primary);
-  box-shadow: 5px 0px 0px var(--my-color-primary) !important;
-}
-
-.card-tr-customize:hover {
-  background-color: var(--my-color-primary);
-}
-
-.card-tr-customize:hover .card-text-customize {
-  color: #fff !important;
-}
-
-.card-tr-customize:hover .rounded-cricle-tr {
-  background-color: var(--my-color-subtle);
-}
-
-
-.rounded-cricle-tr {
-  width: 40px;
-  height: 40px;
-}
-
 /* SectionExpress Process Work */
+.process-banner {
+  background-image: url(../images/Group-10241.png);
+  background-size: cover;
+}
+
 .card-service-customize {
   position: relative;
   width: 250px;
@@ -1234,29 +1409,61 @@ input:focus {
   bottom: -15px;
 }
 
+/* SectionExpress More Service */
+.card-tr-customize {
+  width: 100px;
+  height: 100px;
+  border-radius: 30% 70% 70% 30% / 55% 55% 45% 45%;
+}
+
+.card-tr-customize:hover {
+  background-color: var(--my-color-secondary);
+}
+
+.card-tr-customize:hover .card-text-customize {
+  color: #fff !important;
+}
+
+.card-tr-customize:hover .rounded-cricle-tr {
+  background-color: var(--my-color-subtle);
+}
+
+.rounded-cricle-tr {
+  width: 40px;
+  height: 40px;
+}
+
+.card-customize-mode:hover .card-tr-customize {
+  background-color: var(--my-color-primary);
+}
+
 
 /* SectionExpress Our Blog */
-.card-customize-blog {
-  width: 300px;
-}
-
 .img-cusomize-top {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.img-cusomize-top .img-top-src {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* SectionExpress DownMobileApp */
 
 /* Page bus-transportation */
 /* SectionTransport Carousel */
 .hero-banner-bustransport {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
   padding: 100px 0 !important;
-  background-image: url(../images/woman-bus-hero.jpeg);
-  background-size: inherit;
+  background-image: url(../images/bus-tran-hero.png);
+  background-size: cover;
+}
+
+.card-hero {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 /* SectionTransport Info Booking */
@@ -1264,9 +1471,15 @@ input:focus {
   width: 50px;
   height: 50px;
   padding: 40px !important;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+  background-color: var(--my-color-primary) !important;
 }
 
 /* SectionTransport Destination */
+.card-img-des {
+  height: 380px;
+}
+
 .divider-separator {
   width: 70px;
   border: 3px solid var(--my-color-primary);
@@ -1288,8 +1501,8 @@ input:focus {
 }
 
 .choose-us-box img {
-  width: 50%;
-  object-fit: contain;
+  width: 50% !important;
+  object-fit: contain !important;
 }
 
 .text-my-customize {
@@ -1307,11 +1520,27 @@ input:focus {
   font-weight: 400;
   margin-right: 10px;
   color: var(--my-color-primary);
-} 
+}
+
+/* SectionTransport Discount */
+.discount-banner {
+  height: 450px;
+  overflow: hidden;
+}
+
+.img-promotion-half {
+  margin-bottom: 20px;
+}
+
+.discount-banner1 {
+  height: 450px;
+}
 
 /* SectionTransport Support Call */
 .bg-support-customize {
   height: 450px;
+  display: flex;
+  align-items: center;
   background-image: url(../images/woman-call-center.jpeg);
   background-position: top;
   background-attachment: fixed;
@@ -1319,15 +1548,19 @@ input:focus {
 }
 
 /* SectionTransport FAQs */
+.faqs-banner {
+  background-image: url(../images/mydesign-1.png);
+  background-size: cover;
+}
+
 .accordion-item-customize {
   border-bottom: 0 !important;
   overflow: hidden;
 }
 
 .accordion-button-cutomize {
-  /* border-bottom: 0.5px solid var(--my-color-primary); */
   background-color: transparent !important;
-  border: 1px solid var(--my-color-primary);
+  border: 1px solid #fff;
   overflow: hidden;
   border-radius: 10px !important;
   margin-bottom: 10px;
@@ -1338,7 +1571,7 @@ input:focus {
 }
 
 .accordion-button-cutomize:not(.collapsed) {
-  background-color: var(--my-color-primary) !important;
+  background-color: #222 !important;
   color: #fff;
 }
 
@@ -1366,18 +1599,17 @@ input:focus {
   line-height: 14px;
 }
 
+/* SectionTransport Form FAQ */
+.form-faqs-more {
+  background-image: url(../images/Group-10241.png);
+}
+
 /* Page Setting */
 .profile-setting {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
-}
-
-.profile-setting img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .form-control.no-resize {
@@ -1422,7 +1654,7 @@ input:focus {
 }
 
 input:checked+.btn-toggle {
-  background-color: #0d6efd;
+  background-color: var(--my-color-primary);
 }
 
 input:checked+.btn-toggle::before {
@@ -1452,10 +1684,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .order-item img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 80px !important;
+  height: 80px !important;
   margin-right: 15px;
+  overflow: hidden;
 }
 
 .item-details {
@@ -1501,7 +1733,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .img-qr {
-  width: 200px;
+  width: 200px !important;
 }
 
 .file-input {
@@ -1560,4 +1792,18 @@ input[type="number"]::-webkit-inner-spin-button {
   .leaflet-routing-alt {
     display: none !important;
   }
+}
+
+/* Page privacy-policy */
+.policy-collect-icon li::before {
+  content: '\f023';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--my-color-secondary);
+}
+
+/* Page branch */
+.branch-image {
+  border: 2px solid var(--my-color-primary);
 }

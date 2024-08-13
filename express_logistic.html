@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/lips/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/lips/plyr.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -16,24 +17,21 @@
 <body>
     <main>
         <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-            class="bi bi-arrow-up-short fs-5"></i></a>
+                class="bi bi-arrow-up-short fs-5"></i></a>
 
         <!-- SectionExpress Hero Banner -->
-        <section class="hero-banner bg-white py-5 position-relative">
-            <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute bottom-0" viewBox="0 0 1440 320">
-                <path fill="#80C56D" fill-opacity="1"
-                    d="M0,64L20,69.3C40,75,80,85,120,90.7C160,96,200,96,240,128C280,160,320,224,360,256C400,288,440,288,480,266.7C520,245,560,203,600,176C640,149,680,139,720,112C760,85,800,43,840,37.3C880,32,920,64,960,90.7C1000,117,1040,139,1080,138.7C1120,139,1160,117,1200,90.7C1240,64,1280,32,1320,48C1360,64,1400,128,1420,160L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
-                </path>
-            </svg>
+        <section class="hero-banner-express bg-white py-5 position-relative">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6 z-2">
                         <h5 class="display-5 fw-medium">ស្វែងរកសេវាកម្មទំនិញនៅទីនេះជាមួយCSC Express</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam temporibus adipisci
-                            necessitatibus aspernatur excepturi corrupti officiis culpa praesentium?</p>
+                        <p class="fs-1-maximium mb-5">ជាមួយនឹងសេវាកម្មយើងខ្ញុំ ផ្តល់ឱ្យអ្នកនូវអ្វីដែលថ្មី
+                            និងមិនធ្លាប់មានពីមុន។ <br> ចង់ដឹងថាពួកយើងមានសេវាកម្មដែលបំពេញតម្រូវការរបស់លោកអ្នក <br>
+                            កុំភ្លេចចាប់ផ្តើមជាមួយពួកយើង</p>
                         <div class="d-flex gap-4">
-                            <button class="btn btn-my-primary py-3 px-5" type="button">ចាប់ផ្តើម</button>
-                            <button class="btn btn-my-outline-primary py-3 px-5" type="button">ព័ត៌មានបន្ថែម</button>
+                            <button class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">ចាប់ផ្តើម</button>
+                            <button class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium"
+                                type="button">ព័ត៌មានបន្ថែម</button>
                         </div>
                         <div class="row mt-5">
                             <div class="col-4">
@@ -53,18 +51,13 @@
                     <div
                         class="col-12 col-lg-6 d-none d-lg-flex justify-content-center justify-content-lg-end align-items-center z-2">
                         <div class="box-circle-hero">
-                            <svg class="svg-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#669955"
-                                    d="M38,-46C52.6,-41.6,70.3,-35.1,78.7,-22.5C87,-9.9,86,8.9,77.2,21.7C68.3,34.5,51.7,41.3,37.5,53.3C23.4,65.2,11.7,82.2,-2.1,85C-15.8,87.9,-31.6,76.5,-42.9,63.7C-54.2,50.8,-61,36.4,-61.2,23C-61.3,9.5,-54.8,-3.1,-50.5,-16.4C-46.1,-29.7,-44,-43.6,-36,-50.2C-27.9,-56.8,-14,-55.9,-1.2,-54.3C11.6,-52.7,23.3,-50.4,38,-46Z"
-                                    transform="translate(100 100)" />
-                            </svg>
-                            <img src="assets/images/pic.png" class="foreimage-hero" alt="foreimage-hero">
+                            <img src="assets/images/bs-hero.webp" class="foreimage-hero" alt="foreimage-hero">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- SectionExpress Tracking Item -->
         <section class="mt-5">
             <div class="container">
@@ -158,11 +151,12 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="text-white">
-                            <h5>24/7</h5>
-                            <h5 class="fs-2">Quickly Support and Help of our Logistic of any Problem</h5>
-                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                default model text</p>
-                            <a href="#" class="btn btn-my-primary px-5 py-3">Contact us</a>
+                            <h5>២៤/៧</h5>
+                            <h5 class="fs-2">គាំទ្រ និងជំនួយការ២៤ ម៉ោង</h5>
+                            <p class="fs-1-maximium">​ដើម្បី​ភាព​ងាយស្រួល​សម្រាប់​អតិថិជន​
+                                យើង​បាន​ដាក់​ឲ្យ​ប្រើប្រាស់​ទូរស័ព្ទ​ចំនួន​ពីរ​ខ្សែ​ ដែល​លោក​អ្នក​អាច​ទាក់ទង​មក​បាន​
+                                គ្រប់ពេលវេលា​ ២៤ ម៉ោង​លើ​ ២៤ ម៉ោង​ ។</p>
+                            <a href="#" class="btn btn-my-primary px-5 py-3">ទាក់ទងមកពួកយើង</a>
                         </div>
                     </div>
                 </div>
@@ -175,7 +169,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center mb-3">
                     <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">សេវាកម្ម
                         CSC</h5>
-                    <p class="text-my-default fs-5">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</p>
+                    <p class="text-my-default fs-5">សេវាកម្មរបស់យើងខ្ញុំប្រកបដោយគុណភាព</p>
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -183,7 +177,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img src="assets/images/card-features-3.png" class="card-img-top"
+                                        <img src="assets/images/service-warehouse.png" class="card-img-top"
                                             alt="features">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
@@ -195,8 +189,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img src="assets/images/card-features-3.png" class="card-img-top"
-                                            alt="features">
+                                        <img src="assets/images/service-truck.png" class="card-img-top" alt="features">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវគោក</h5>
                                             <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
@@ -207,8 +200,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img src="assets/images/card-features-3.png" class="card-img-top"
-                                            alt="features">
+                                        <img src="assets/images/service-ship.png" class="card-img-top" alt="features">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវទឹក</h5>
                                             <p class="card-text">ពួកយើងមានឃ្លាំងផ្ទាល់ខ្លួនប្រចាំប្រទេសចិន
@@ -219,7 +211,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img src="assets/images/card-features-3.png" class="card-img-top"
+                                        <img src="assets/images/service-airplane.png" class="card-img-top"
                                             alt="features">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវអាកាស</h5>
@@ -236,142 +228,162 @@
             </div>
         </section>
 
-        <!-- SectionExpress Way -->
-        <section class="my-5">
+        <!-- SectionExpress Process Work -->
+        <section class="my-5 process-banner">
             <div class="container">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
+                        ដំណើរការផ្លាស់ទី</h5>
+                    <p class="text-my-default fs-5">ដំណើរការនៃការដឹកអីវ៉ាន់</p>
+                </div>
                 <div class="row">
-                    <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                        <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
-                            មធ្យោបាយដឹក</h5>
-                        <p class="text-my-default fs-5">លោកអ្នកអាចជ្រើសរើសការដឹកជញ្ជូនណាមួយ</p>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card card-tr-customize mb-3 text-center text-lg-start">
-                                    <div class="row g-0 justify-content-center py-2">
-                                        <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                            <div class="rounded-cricle-tr bg-my-primary p-5 rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fa-solid fa-plane fs-1 text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body py-0 py-lg-2">
-                                                <h5 class="card-title card-text-customize text-my-default">
-                                                    ការដឹកអីវ៉ាន់តាមរយៈរថយន្ត</h5>
-                                                <p class="card-text card-text-customize text-my-default">
-                                                    លោកអ្នកធ្វើការរង់ចាំត្រឹមតែ ៧ទៅ៩ថ្ងៃប៉ុណ្ណោះ
-                                                    លោកអ្នកនឹងទទួលបានអីវ៉ាន់មកដល់ដៃ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+                        <div class="card card-service-customize m-auto border-0">
+                            <div class="card-body m-0 p-0">
+                                <img src="assets/images/process-1.png" class="img-service-src rounded-4"
+                                    alt="process-1">
                             </div>
-                            <div class="col-12">
-                                <div class="card card-tr-customize mb-3 text-center text-lg-start">
-                                    <div class="row g-0 justify-content-center py-2">
-                                        <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                            <div class="rounded-cricle-tr bg-my-primary p-5 rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fa-solid fa-truck fs-1 text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body py-0 py-lg-2">
-                                                <h5 class="card-title card-text-customize text-my-default">
-                                                    ការដឹកតាមរយៈផ្លូវទឹក</h5>
-                                                <p class="card-text card-text-customize text-my-default">
-                                                    លោកអ្នកអាចធ្វើការដឹកជញ្ចូនតាមរយៈកប៉ាល់ធំៗ
-                                                    ត្រឹមតែរយៈពេល១១ថ្ងៃប៉ុណ្ណោះ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card card-tr-customize mb-3 text-center text-lg-start">
-                                    <div class="row g-0 justify-content-center py-2">
-                                        <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                            <div class="rounded-cricle-tr bg-my-primary p-5 rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fa-solid fa-anchor fs-1 text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body py-0 py-lg-2">
-                                                <h5 class="card-title card-text-customize text-my-default">
-                                                    ការដឹកអីវ៉ាន់តាមរយៈយន្តហោះ</h5>
-                                                <p class="card-text card-text-customize text-my-default">
-                                                    លោកអ្នកចំណាយពេលត្រឹមតែ១ទៅ២ថ្ងៃប៉ុណ្ណោះ
-                                                    លោកអ្នកនឹងទទួលបានអីវ៉ាន់</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div
+                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                                <h5 class="fs-3">1</h5>
                             </div>
                         </div>
+                        <div class="text-center mt-4 m-auto w-75">
+                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
+                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
+                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <div>
-                            <img src="assets/images/babber.png" alt="">
+                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+                        <div class="card card-service-customize m-auto border-0">
+                            <div class="card-body m-0 p-0">
+                                <img src="assets/images/process-2.png" class="img-service-src rounded-4"
+                                    alt="process-2">
+                            </div>
+                            <div
+                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                                <h5 class="fs-3">2</h5>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4 m-auto w-75">
+                            <h5>ជំហានទី 2: ការដឹកជញ្ជូន</h5>
+                            <p>បន្ទាប់ពីធ្វើការពិនិត្យរួចរាល់និងគិតថ្លៃសេវារួចរាល់ ពួកយើងនឹងធ្វើការដឹកទៅតាមមធ្យោបាយនានា​
+                                និងប្រាកដថាអីវ៉ាន់របស់លោកអ្នកស្ថិតក្នុងរូបភាពដើម ដោយមិនមានការខូចខាតអ្វីឡើយ
+                                កញ្ចប់ត្រូវបានការពារ និងត្រួតពិនិត្យ</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
+                        <div class="card card-service-customize m-auto border-0">
+                            <div class="card-body m-0 p-0">
+                                <img src="assets/images/process-3.png" class="img-service-src rounded-4"
+                                    alt="process-3">
+                            </div>
+                            <div
+                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
+                                <h5 class="fs-3">3</h5>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4 m-auto w-75">
+                            <h5>ជំហានទី 1: អីវ៉ាន់ដល់មុខផ្ទះអ្នក</h5>
+                            <p>ការដឹកជញ្ជូនទាន់ពេលវេលា គ្រប់ពេលវេលា ជាមួយនឹងជម្រើសនៃការទម្លាក់ចុះប្រកបដោយសុវត្ថិភាព
+                                ហើយលោកអ្នកអាចរើសជម្រើសណាមួយក្នុងការទទួលយកអីវ៉ាន់</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- SectionExpress Process Work -->
+
+        <!-- SectionExpress More Service -->
         <section class="my-5">
             <div class="container">
                 <div class="d-flex flex-column justify-content-center align-items-center mb-3">
-                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">ពួកយើងជា
-                        CSC</h5>
-                    <p class="text-my-default fs-5">យើងផ្តល់ការដឹកជញ្ជូនរហ័ស និងសុវត្ថិភាពទូទាំងពិភពលោក</p>
+                    <h5 class="bg-rounded-my-customize bg-my-primary rounded-5 p-2 text-center text-white mb-4">
+                        សេវាកម្មបន្ថែម</h5>
+                    <p class="text-my-default fs-5">ពួកយើងមានសេវាកម្មដឹកជូនអ្នកគ្រប់ទីកន្លែង</p>
                 </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-customize-mode d-flex">
+                            <div class="card-tr-customize bg-my-subtle">
+                                <img src="assets/images/warehouse-1.png" alt="">
+                            </div>
+                            <div class="text-my-customize text-my-default ms-3">
+                                <h5 class="fs-4">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
+                                <p class="fw-normal fs-1-maximium m-0">
+                                    បន្ទាប់ពីអីវ៉ាន់របស់លោកអ្នកមកដល់ឃ្លាំងក្នុងប្រទេសកម្ពុជា អាចទុកបានរយៈពេល១សប្តាហ៍
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-customize-mode d-flex">
+                            <div class="card-tr-customize bg-my-subtle">
+                                <img src="assets/images/truck-1.png" alt="">
+                            </div>
+                            <div class="text-my-customize text-my-default ms-3">
+                                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈឡាន</h5>
+                                <p class="fw-normal fs-1-maximium m-0">
+                                    អីវ៉ាន់ដែលមានទ្រង់ទ្រាយធំហើយធ្ងន់ ពួកយើងនឹងប្រើប្រាស់ឡានទំនិញសម្រាប់ដឹកជូនដល់មុខផ្ទះ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-customize-mode d-flex">
+                            <div class="card-tr-customize bg-my-subtle">
+                                <img src="assets/images/scooter.png" alt="">
+                            </div>
+                            <div class="text-my-customize text-my-default ms-3">
+                                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈម៉ូតូ</h5>
+                                <p class="fw-normal fs-1-maximium m-0">
+                                    សម្រាប់អីវ៉ាន់ដែលជាប្រភេទកញ្ចប់តូចៗ ដែលមានទំហំសមល្មមពួកយើងនឹងប្រើប្រាស់ម៉ូតូ
+                                    សម្រាប់ដឹកដល់មុខផ្ទះ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-customize-mode d-flex">
+                            <div class="card-tr-customize bg-my-subtle">
+                                <img src="assets/images/scooter.png" alt="">
+                            </div>
+                            <div class="text-my-customize text-my-default ms-3">
+                                <h5 class="fs-4">ការដឹកជញ្ជូនតាមរយៈរម៉ក</h5>
+                                <p class="fw-normal fs-1-maximium m-0">
+                                    សម្រាប់អីវ៉ាន់ដែលស្ថិតនៅធន់កណ្តាល ពួកយើងនឹងប្រើម៉ូតូកង់បីសម្រាប់ដឹកទៅដល់មុខផ្ទះ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-customize-mode d-flex">
+                            <div class="card-tr-customize bg-my-subtle">
+                                <img src="assets/images/package.png" alt="">
+                            </div>
+                            <div class="text-my-customize text-my-default ms-3">
+                                <h5 class="fs-4">ការមកយកដោយផ្ទាល់</h5>
+                                <p class="fw-normal fs-1-maximium m-0">
+                                    លោកអ្នកអាចជ្រើសរើស ក្នុងការមកយកអីវ៉ាន់ដោយផ្ទាល់ពីក្រុមហ៊ុនបាន
+                                    នៅសាខាដែលជិតលោកអ្នកបំផុត
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SectionExpress Videotutoriels -->
+        <section class="bg-danger"
+            style="height: 400px; background-image: url(https://www.loda.com.kh/assets/img/App.54d7758c.jpg);">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
-                        <div class="card card-service-customize m-auto border-0">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/us-process1.png" class="img-service-src rounded-4" alt="">
-                            </div>
-                            <div
-                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
-                                <h5 class="fs-3">1</h5>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 m-auto w-75">
-                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
-                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
-                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
-                        <div class="card card-service-customize m-auto border-0">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/us-process2.png" class="img-service-src rounded-4" alt="">
-                            </div>
-                            <div
-                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
-                                <h5 class="fs-3">1</h5>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 m-auto w-75">
-                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
-                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
-                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center">
-                        <div class="card card-service-customize m-auto border-0">
-                            <div class="card-body m-0 p-0">
-                                <img src="assets/images/us-process3.png" class="img-service-src rounded-4" alt="">
-                            </div>
-                            <div
-                                class="bg-my-primary rounded-circle process-box-customize d-flex justify-content-center align-items-center text-white">
-                                <h5 class="fs-3">1</h5>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4 m-auto w-75">
-                            <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
-                            <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
-                                ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
+                    <div class="card">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
@@ -387,15 +399,11 @@
                     <p class="text-my-default fs-5">អានBlogsការដឹកជញ្ជូនទាំងអស់របស់ពួកយើង</p>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="card rounded-4 pb-2 border-0 overflow-hidden">
+                    <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+                        <div class="card rounded-4 border-0 overflow-hidden">
                             <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
-                                <h5
-                                    class="bg-my-primary text-white card-customize-blog d-flex justify-content-center py-3 mt-2">
-                                    ២២ កក្កដា ២០២៤
-                                </h5>
-                                <ul class="rounded-0 list-unstyled px-4">
+                                <ul class="rounded-0 list-unstyled px-4 pt-3">
                                     <li>
                                         <a href="#" role="button"
                                             class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
@@ -418,18 +426,25 @@
                                 <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                                         class="fa-solid fa-arrow-right ms-2"></i></a>
                             </div>
+                            <div class="card-footer">
+                                <div class="meta d-flex align-items-center">
+                                    <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
+                                        <img src="assets/images/us-delivery.jpg" class="img-top-src"
+                                            alt="transportation">
+                                    </div>
+                                    <time class="metabit dt-published" datetime="2022-07-28"><i
+                                            class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                                    <span class="metabit disqus-comment-count comment-count"><i
+                                            class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="card rounded-4 pb-2 border-0 overflow-hidden">
-                            <img src="assets/images/card-features-8.png" class="card-img-top" alt="...">
+                    <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+                        <div class="card rounded-4 border-0 overflow-hidden">
+                            <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
-                                <h5
-                                    class="bg-my-primary text-white card-customize-blog d-flex justify-content-center py-3 mt-2">
-                                    ២២ កក្កដា ២០២៤
-                                </h5>
-                                <ul class="rounded-0 list-unstyled px-4">
+                                <ul class="rounded-0 list-unstyled px-4 pt-3">
                                     <li>
                                         <a href="#" role="button"
                                             class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
@@ -452,18 +467,25 @@
                                 <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                                         class="fa-solid fa-arrow-right ms-2"></i></a>
                             </div>
+                            <div class="card-footer">
+                                <div class="meta d-flex align-items-center">
+                                    <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
+                                        <img src="assets/images/us-delivery.jpg" class="img-top-src"
+                                            alt="transportation">
+                                    </div>
+                                    <time class="metabit dt-published" datetime="2022-07-28"><i
+                                            class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                                    <span class="metabit disqus-comment-count comment-count"><i
+                                            class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="card rounded-4 pb-2 border-0 overflow-hidden">
-                            <img src="assets/images/card-features-9.png" class="card-img-top" alt="...">
+                    <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+                        <div class="card rounded-4 border-0 overflow-hidden">
+                            <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
-                                <h5
-                                    class="bg-my-primary text-white card-customize-blog d-flex justify-content-center py-3 mt-2">
-                                    ២២ កក្កដា ២០២៤
-                                </h5>
-                                <ul class="rounded-0 list-unstyled px-4">
+                                <ul class="rounded-0 list-unstyled px-4 pt-3">
                                     <li>
                                         <a href="#" role="button"
                                             class="rounded-3 list-group-item list-group-item-action d-flex align-items-center">
@@ -486,9 +508,44 @@
                                 <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                                         class="fa-solid fa-arrow-right ms-2"></i></a>
                             </div>
+                            <div class="card-footer">
+                                <div class="meta d-flex align-items-center">
+                                    <div class="bg-my-primary img-cusomize-top overflow-hidden me-3">
+                                        <img src="assets/images/us-delivery.jpg" class="img-top-src"
+                                            alt="transportation">
+                                    </div>
+                                    <time class="metabit dt-published" datetime="2022-07-28"><i
+                                            class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                                    <span class="metabit disqus-comment-count comment-count"><i
+                                            class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- SectionExpress DownMobileApp -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <h5 class="text-my-default fs-2">ទាញយកកម្មវិធីរបស់យើងនៅលើ AppStore ឬ Google Play Store!</h5>
+                        <p class="text-my-default fs-1-maximium">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Iure nisi omnis, pariatur rerum
+                            expedita quis vero laborum facilis voluptatibus, quam eveniet illo veniam quod nostrum quos
+                            sequi? Magni, dignissimos quis.</p>
+                        <div class="d-flex gap-4">
+                            <a href="#" class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">Google Play</a>
+                            <a href="#" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium"
+                                type="button">AppStore</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/appdownload.png" class="" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -497,6 +554,11 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/numCount.js"></script>
     <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+        const player1 = new Plyr('#player1');
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

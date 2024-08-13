@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" data-theme="light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,71 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Contact</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                                aria-selected="false" disabled>Disabled</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="bg-danger text-center py-5">
+                                        <h5 class="fs-3">BLACK FRIDAY OFFER</h5>
+                                        <h5 class="fs-1">50% OFF</h5>
+                                        <a href="#" class="btn btn-outline-light">GET IT NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/images/angkor-poster.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

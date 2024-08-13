@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" data-theme="light">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC Express</title>
+  <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header> <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+        class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button></header>
+  <div class="container">
+    <div class="dropdown-center notification">
+      <button type="button" class="btn btn-my-primary dropdown-toggle text-white ms-5" data-bs-toggle="dropdown"
+        data-bs-auto-close="outside" aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu border-0 dropdown-menu-blur shadow p-0" aria-labelledby="dropdown">
+        <div>
+          <h2 class="fw-bold fs-5 text-my-default mb-3 ps-4 pt-2">ការបញ្ជូនដំណឹង</h2>
+        </div>
+        <ul class="nav nav-notification nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item position-relative" role="presentation">
+            <button class="nav-link btn-notifications active rounded-0 ps-4 pe-2 py-0 d-flex align-items-center mb-1"
+              id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+              aria-controls="pills-home" aria-selected="true">ទាំងអស់<span
+                class="badge bg-black rounded-circle my-badge ms-1">8</span></button>
+          </li>
+
+          <li class="nav-item position-relative" role="presentation">
+            <button class="nav-link btn-notifications rounded-0 px-2 py-0" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">សេវាកម្ម</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-0 px-2 py-0" id="pills-contact-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">មតិកែលម្អ</button>
+          </li>
+          <hr>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="d-flex justify-content-between align-items-center bg-secondary-subtle ps-4 py-2 cursor">
+              <div class="notification-img">
+                <img src="assets/images/promotion.jpg" alt="" class="rounded-circle">
+                <!-- <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div> -->
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default">
+                    ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i> តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center ps-4 py-2 cursor">
+              <div class="notification-img position-relative">
+                <img src="assets/images/cute.jpg" alt="" class="rounded-circle">
+                <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div>
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​ សូនីតា</span>
+                  បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i> សេវាកម្មរហ័ស
+                  ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center bg-secondary-subtle ps-4 py-2 cursor">
+              <div class="notification-img position-relative">
+                <img src="assets/images/cute.jpg" alt="" class="rounded-circle">
+                <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div>
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​ សូនីតា</span>
+                  បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i> សេវាកម្មរហ័ស
+                  ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade ps-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="notification-img">
+                <img src="assets/images/promotion.jpg" alt="" class="rounded-circle">
+                <!-- <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div> -->
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default">
+                    ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i> តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="notification-img">
+                <img src="assets/images/promotion.jpg" alt="" class="rounded-circle">
+                <!-- <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div> -->
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default">
+                    ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i> តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="notification-img">
+                <img src="assets/images/promotion.jpg" alt="" class="rounded-circle">
+                <!-- <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div> -->
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default">
+                    ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i> តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade ps-4" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="notification-img position-relative">
+                <img src="assets/images/cute.jpg" alt="" class="rounded-circle">
+                <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div>
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​ សូនីតា</span>
+                  បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i> សេវាកម្មរហ័ស
+                  ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="notification-img position-relative">
+                <img src="assets/images/cute.jpg" alt="" class="rounded-circle">
+                <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div>
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​ សូនីតា</span>
+                  បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i> សេវាកម្មរហ័ស
+                  ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="notification-img position-relative">
+                <img src="assets/images/cute.jpg" alt="" class="rounded-circle">
+                <div class="dot-online position-absolute px-2 rounded-circle">
+                  <i class="fa-solid fa-message text-white timer"></i>
+                </div>
+              </div>
+              <div class="my-comment ps-3 pe-4">
+                <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​ សូនីតា</span>
+                  បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp; &nbsp; <span><i
+                      class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span></p>
+                <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i> សេវាកម្មរហ័ស
+                  ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

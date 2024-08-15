@@ -397,7 +397,7 @@
         </div>
 
         <!-- SectionTransport Carousel -->
-        <section class="hero-banner-bustransport py-5">
+        <section class="hero-banner-bustransport py-5" style="margin-top: 93px;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 mb-5 mb-md-0">
@@ -465,40 +465,6 @@
                                             <span class="text-my-default"><i
                                                     class="fa-regular fa-calendar-days"></i></span>
                                             <label for="direction"
-                                                class="form-label text-my-default fs-5">ថ្ងៃចេញដំណើរ</label>
-                                            <select class="form-select shadow-none" aria-label="Default select example">
-                                                <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
-                                                <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
-                                                <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
-                                                <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
-                                                <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
-                                                <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
-                                                <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-6">
-                                        <div class="gap-3">
-                                            <span class="text-my-default"><i
-                                                    class="fa-regular fa-calendar-days"></i></span>
-                                            <label for="direction"
-                                                class="form-label text-my-default fs-5">ថ្ងៃត្រឡប់មកវិញ</label>
-                                            <select class="form-select shadow-none" aria-label="Default select example">
-                                                <option selected>ជ្រើសម៉ោងសម្រាប់ធ្វើដំណើរ</option>
-                                                <option value="1">ម៉ោង ៤ ៣០នាទីព្រឹក</option>
-                                                <option value="2">ម៉ោង ៦ ៣០នាទីព្រឹក</option>
-                                                <option value="3">ម៉ោង ១១ ៣០នាទីព្រឹក</option>
-                                                <option value="3">ម៉ោង ៥ ០០នាទីល្ងាច</option>
-                                                <option value="3">ម៉ោង ១០ ០០នាទីយប់</option>
-                                                <option value="3">ម៉ោង ១១ ៣០នាទីយប់</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-6">
-                                        <div class="gap-3">
-                                            <span class="text-my-default"><i
-                                                    class="fa-regular fa-calendar-days"></i></span>
-                                            <label for="direction"
                                                 class="form-label text-my-default fs-5">ប្រភេទឡានក្រុង</label>
                                             <select class="form-select shadow-none" aria-label="Default select example">
                                                 <option selected>ជ្រើសរើសប្រភេទឡានរបស់អ្នក</option>
@@ -508,11 +474,25 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <span class="text-my-default"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <label for="direction"
+                                            class="form-label text-my-default fs-5">ថ្ងៃចេញដំណើរ</label>
+                                        <input type="date" id="direction" class="form-control shadow-none"
+                                            min="2024-08-15">
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <span class="text-my-default"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <label for="comeback"
+                                            class="form-label text-my-default fs-5">ថ្ងៃត្រឡប់មកវិញ</label>
+                                        <input type="date" id="comeback" class="form-control shadow-none"
+                                            min="2024-08-15">
+                                    </div>
                                     <div class="col-auto d-flex align-items-end">
                                         <label for="searchbtn" class="visually-hidden">Search</label>
-                                        <button type="submit" class="btn btn-my-primary"><span
+                                        <a href="booking-ticket-detail.html" class="btn btn-my-primary"><span
                                                 class="text-white me-2"><i
-                                                    class="fa-solid fa-magnifying-glass"></i></span>ស្វែងរក</button>
+                                                    class="fa-solid fa-magnifying-glass"></i></span>ស្វែងរក</a>
                                     </div>
                                 </form>
                             </div>
@@ -570,6 +550,77 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SectionTransport Destination -->
+        <section class="py-5">
+            <div class="container">
+                <div class="section-top-title text-center mb-5">
+                    <h5 class="fs-3 text-my-default">ទិសដៅដែលពេញនិយម</h5>
+                    <hr class="divider-separator m-auto">
+                    <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                        <div
+                            class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="assets/images/siemreap.png" class="card-img-des" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-6">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="booking-ticket-detail.html"
+                                    class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                        <div
+                            class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="assets/images/kampot.png" class="card-img-des" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-6">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="booking-ticket-detail.html"
+                                    class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                        <div
+                            class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="assets/images/kampot2.png" class="card-img-des" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 pb-3">តំបន់អង្គរ</h5>
+                                <p class="card-text fs-6">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
+                                    និងក្នុងប្រាសាទ</p>
+                                <a href="booking-ticket-detail.html"
+                                    class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                        <div
+                            class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
+                            <img src="assets/images/kohkong.png" class="card-img-des" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 pb-3">កោះរ៉ុង</h5>
+                                <p class="card-text fs-6">កោះរ៉ុង ​ជា​កោះមួយ​ក្នុង​ខេត្ត​ព្រះ​សីហនុ។​
+                                    មានទីតាំងស្ថិតនៅខាងលិចនៃឆេ្នរក្រុងព្រះសីហនុ។ កោះនេះគឺជាកោះដ៏ស្រស់ស្អាតបំផុតនៃតំបន់កំពង់សោម។
+                                </p>
+                                <a href="booking-ticket-detail.html"
+                                    class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -751,7 +802,7 @@
         <!-- SectionTransport Discount -->
         <section class="py-5">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center text-my-default">
                     <div class="col-12 col-lg-5">
                         <h5 class="fs-1">ទទួលបានការបញ្ចុះតម្លៃ 50% ក្នុងខែដំបូង</h5>
                         <p class="fs-4">ទទួលបានការបញ្ចុះតម្លៃ 50% សម្រាប់ខែដំបូងនៃការប្រើប្រាស់សេវាកម្មរបស់ពួកយើង។</p>
@@ -896,7 +947,7 @@
                         បំពេញទម្រង់បែបបទ ឬហៅទូរសព្ទ</p>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 text-my-default">
                         <h5 class="fs-1">ទំនាក់ទំនងពួកយើង</h5>
                         <p class="fs-1-maximium mb-5">បើមានចម្ងល់ណាមួយលោកអ្នកអាចធ្វើការទាក់ទងមកកាន់យើងខ្ញុំបាន</p>
                         <h5>លេខទូរសព្ទ:</h5>
@@ -989,8 +1040,8 @@
     </main>
 
     <footer>
-        <div class="footer  bg-body-my-tertiary">
-            <div class="container my-5 my-5 mt-5">
+        <div class="footer bg-body-my-tertiary">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
                         <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">

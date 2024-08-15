@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="position-sticky top-0" style="z-index: 999;">
     <div class="navtop">
       <div class="container d-flex justify-content-between">
         <div class="quick-contact d-flex align-items-center">
@@ -40,7 +40,7 @@
               <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
               <span>ភាសាខ្មែរ</span>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="position: absolute; z-index: 9999!important;">
               <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
               <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
             </ul>
@@ -85,7 +85,8 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a>
+                  </li>
                   <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
                 </ul>
               </li>
@@ -135,7 +136,8 @@
                   <div class="form-floating mb-3">
                     <input type="email" class="form-control shadow-none" id="floatingInput"
                       placeholder="name@example.com" required>
-                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អុីម៉េល​
+                      ឬលេខទូរស័ព្ទ</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
                     </div>
@@ -143,7 +145,8 @@
                   <div class="form-floating mb-3">
                     <input type="password" class="form-control shadow-none outline" id="floatingPassword"
                       placeholder="Password" required>
-                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i> លេខសម្ងាត់</label>
+                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i>
+                      លេខសម្ងាត់</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
                     </div>
@@ -169,9 +172,10 @@
                 </form>
                 <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
                   class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
-                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ? <span><a href="#"
-                      type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span></p>
+                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ?
+                  <span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span>
+                </p>
               </div>
             </div>
           </div>
@@ -321,9 +325,9 @@
         data-bs-auto-close="outside" aria-expanded="false">
         <i class="fa-brands fa-facebook-messenger"></i>
       </button>
-      <div class="dropdown-menu chat-contain p-0 rounded-4 overflow-hidden">
+      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
         <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
-          <h5 class="text-white">ជំនួយការ ២៤ម៉ោង</h5>
+          <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
           <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
         </div>
         <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
@@ -336,7 +340,7 @@
             </div>
           </div>
         </div>
-        <p class="mx-4">Bot - អម្បាញ់មិញ</p>
+        <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
         <form action="" class="d-flex align-items-center mx-2">
           <div class="my-send-text d-flex mb-4">
             <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
@@ -352,7 +356,7 @@
                 <i class="fa-solid fa-paperclip"></i>
               </label>
               <input type="file" id="fileInput" style="display: none;" />
-              <button type="button" class="btn chat-bot-icon send-button p-1">
+              <button type="button" class="btn chat-bot-icon send-button">
                 <i class="fa-solid fa-paper-plane"></i>
               </button>
             </div>
@@ -362,7 +366,7 @@
     </div>
 
     <!-- SectionExpress Hero Banner -->
-    <section class="hero-banner-express bg-white py-5 position-relative">
+    <section class="hero-banner-express bg-white py-5 position-relative" style="margin-top: 93px;">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 z-2">
@@ -403,7 +407,7 @@
     <section class="mt-5">
       <div class="container">
         <div class="row justify-content-center">
-          <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
+          <h3 class="mb-3 text-center text-my-default">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
           <div class="col-7">
             <input type="text" class="form-control shadow-none py-3 input-tracking-customize" data-bs-toggle="modal"
               data-bs-target="#exampleModal" id="inputTrackingNumber" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
@@ -451,7 +455,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-4 py-3 py-lg-0">
-            <div class="card card-customize text-center rounded-4 py-5 border-0">
+            <div class="card card-customize text-center rounded-4 py-5 border-0 text-my-default">
               <div class="card-body">
                 <i class="fa-solid fa-truck-plane display-10-customize mb-4"></i>
                 <h5 class="card-title fs-4">ភស្តុភារពេញលេញ</h5>
@@ -461,7 +465,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 py-3 py-lg-0">
-            <div class="card card-customize text-center rounded-4 py-5 border-0">
+            <div class="card card-customize text-center rounded-4 py-5 border-0 text-my-default">
               <div class="card-body">
                 <i class="fa-solid fa-truck-fast display-10-customize mb-4"></i>
                 <h5 class="card-title fs-4">ការដឹកជញ្ជូនទូទាំងពិភពលោក</h5>
@@ -471,7 +475,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 py-3 py-lg-0">
-            <div class="card card-customize text-center rounded-4 py-5 border-0">
+            <div class="card card-customize text-center rounded-4 py-5 border-0 text-my-default">
               <div class="card-body">
                 <i class="fa-solid fa-shield display-10-customize mb-4"></i>
                 <h5 class="card-title fs-4">ការដឹកជញ្ជូនប្រកបដោយសុវត្ថិភាព</h5>
@@ -512,10 +516,10 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card">
+                  <div class="card card-swiper-customize">
                     <img src="assets/images/service-warehouse.png" class="card-img-top" alt="features">
                     <div class="card-body text-center">
                       <h5 class="card-title">ឃ្លាំងផ្ទុកអីវ៉ាន់</h5>
@@ -526,7 +530,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card">
+                  <div class="card card-swiper-customize">
                     <img src="assets/images/service-truck.png" class="card-img-top" alt="features">
                     <div class="card-body text-center">
                       <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវគោក</h5>
@@ -537,7 +541,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card">
+                  <div class="card card-swiper-customize">
                     <img src="assets/images/service-ship.png" class="card-img-top" alt="features">
                     <div class="card-body text-center">
                       <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវទឹក</h5>
@@ -548,7 +552,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card">
+                  <div class="card card-swiper-customize">
                     <img src="assets/images/service-airplane.png" class="card-img-top" alt="features">
                     <div class="card-body text-center">
                       <h5 class="card-title">ការដឹកជញ្ជូនតាមផ្លូវអាកាស</h5>
@@ -584,7 +588,7 @@
                 <h5 class="fs-3">1</h5>
               </div>
             </div>
-            <div class="text-center mt-4 m-auto w-75">
+            <div class="text-center mt-4 m-auto w-75 text-my-default">
               <h5>ជំហានទី 1: ទទួលកញ្ចប់អីវ៉ាន់</h5>
               <p>ពួកយើងនឹងធ្វើការទទួលនៅរាល់អីវ៉ាន់ណាដែលស្ថិតនៅក្នុងគោលការណ៍និងលក្ខខណ្ឌរបស់ក្រុមហ៊ុនយើងខ្ញុំ
                 ហើយធ្វើការត្រួតពិនិត្យកញ្ចប់នីមួយៗដោយប្រុងប្រយ័ត្ន</p>
@@ -600,7 +604,7 @@
                 <h5 class="fs-3">2</h5>
               </div>
             </div>
-            <div class="text-center mt-4 m-auto w-75">
+            <div class="text-center mt-4 m-auto w-75 text-my-default">
               <h5>ជំហានទី 2: ការដឹកជញ្ជូន</h5>
               <p>បន្ទាប់ពីធ្វើការពិនិត្យរួចរាល់និងគិតថ្លៃសេវារួចរាល់ ពួកយើងនឹងធ្វើការដឹកទៅតាមមធ្យោបាយនានា​
                 និងប្រាកដថាអីវ៉ាន់របស់លោកអ្នកស្ថិតក្នុងរូបភាពដើម ដោយមិនមានការខូចខាតអ្វីឡើយ
@@ -617,7 +621,7 @@
                 <h5 class="fs-3">3</h5>
               </div>
             </div>
-            <div class="text-center mt-4 m-auto w-75">
+            <div class="text-center mt-4 m-auto w-75 text-my-default">
               <h5>ជំហានទី 1: អីវ៉ាន់ដល់មុខផ្ទះអ្នក</h5>
               <p>ការដឹកជញ្ជូនទាន់ពេលវេលា គ្រប់ពេលវេលា ជាមួយនឹងជម្រើសនៃការទម្លាក់ចុះប្រកបដោយសុវត្ថិភាព
                 ហើយលោកអ្នកអាចរើសជម្រើសណាមួយក្នុងការទទួលយកអីវ៉ាន់</p>
@@ -708,8 +712,6 @@
     </section>
 
     <!-- SectionExpress Our Blog -->
-
-    <!-- SectionExpress Our Blog -->
     <section class="my-5">
       <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center mb-3">
@@ -719,7 +721,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
-            <div class="card rounded-4 border-0 overflow-hidden">
+            <div class="card rounded-4 border-0 overflow-hidden text-my-default bg-my-default">
               <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
               <div class="card-body p-0">
                 <ul class="rounded-0 list-unstyled px-4 pt-3">
@@ -757,7 +759,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
-            <div class="card rounded-4 border-0 overflow-hidden">
+            <div class="card rounded-4 border-0 overflow-hidden text-my-default bg-my-default">
               <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
               <div class="card-body p-0">
                 <ul class="rounded-0 list-unstyled px-4 pt-3">
@@ -795,7 +797,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
-            <div class="card rounded-4 border-0 overflow-hidden">
+            <div class="card rounded-4 border-0 overflow-hidden text-my-default bg-my-default">
               <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
               <div class="card-body p-0">
                 <ul class="rounded-0 list-unstyled px-4 pt-3">
@@ -837,10 +839,10 @@
     </section>
 
     <!-- SectionExpress DownMobileApp -->
-    <section class="bg-light">
+    <section class="dw-mb-app">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <h5 class="text-my-default fs-2">ទាញយកកម្មវិធីរបស់យើងនៅលើ AppStore ឬ Google Play Store!</h5>
             <p class="text-my-default fs-1-maximium">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
@@ -852,7 +854,7 @@
               <a href="#" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium" type="button">AppStore</a>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 d-none d-lg-flex">
             <img src="assets/images/appdownload.png" class="" alt="">
           </div>
         </div>
@@ -986,11 +988,11 @@
       slidesPerView: 3,
       centeredSlides: false,
       spaceBetween: 22,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      loop: true,
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      // loop: true,
       breakpoints: {
         768: {
           slidesPerView: 3,

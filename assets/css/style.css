@@ -27,17 +27,21 @@ body {
   --my-bg-contactus: #729268;
   --my-color-icon: #ffff;
   --my-qoute-color: #ffff;
+  --my-bgcolor-sys: #fff;
+  --my-color-primary-default: #669955;
 }
 
 [data-theme="dark"] {
-  --my-color-primary: #669955;
-  --my-color-secondary: #80C56D;
-  --my-color-subtle: #95D385;
+  --my-color-primary: #446633;
+  --my-color-secondary: #55894D;
+  --my-color-subtle: #6B9C66;
   --my-color-bg: #222;
   --my-color-text: #fff;
   --my-color-footer: #222;
   --my-bg-contactus: #222;
   --my-qoute-color: #0000;
+  --my-bgcolor-sys: #444;
+  --my-color-primary-default: #fff;
 }
 
 img {
@@ -148,6 +152,10 @@ img {
   background-color: var(--my-qoute-color);
 }
 
+.bg-my-default {
+  background-color: var(--my-bgcolor-sys);
+}
+
 .text-my-primary {
   color: var(--my-color-primary);
 }
@@ -174,6 +182,10 @@ img {
 
 .text-my-default {
   color: var(--my-color-text);
+}
+
+.text-my-primary-default{
+  color: var(--my-color-primary-default);
 }
 
 /* Buttons */
@@ -256,22 +268,16 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+
 }
 
 .navbar.scrolled {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 996;
   transition: top 0.3s;
-}
-
-.navtop {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
 }
 
 .navbar {
@@ -628,7 +634,7 @@ a {
 }
 
 .left-side-img img {
-  width: 400px!important;
+  width: 400px !important;
 }
 
 .icon-link {
@@ -641,7 +647,7 @@ a {
 }
 
 .icon {
-  width: 20px!important;
+  width: 20px !important;
 }
 
 .dropdown-menu-shadow {
@@ -983,7 +989,7 @@ input:focus {
 .banner-com-2,
 .award-part,
 .bus-img {
-  max-width: 280px!important;
+  max-width: 280px !important;
 }
 
 .bus-img {
@@ -1342,7 +1348,6 @@ input:focus {
 /* Page express_logistic*/
 /* SectionExpress Hero Banner */
 .hero-banner-express {
-  height: 600px;
   background-image: url(../images/world-map.webp);
   background-size: cover;
   background-attachment: fixed;
@@ -1356,6 +1361,10 @@ input:focus {
 }
 
 /*SectionExpress Why Choose Us*/
+.card-customize {
+  background-color: var(--my-bgcolor-sys);
+}
+
 .card-customize:hover {
   background-color: var(--my-color-primary);
   color: #fff;
@@ -1374,9 +1383,14 @@ input:focus {
   color: var(--color-primary);
 }
 
-/* SectionExpress Why Choose Us */
+/* SectionExpress Our Service */
 .bg-rounded-my-customize {
   width: 200px;
+}
+
+.card-swiper-customize {
+  background-color: var(--my-bgcolor-sys) !important;
+  color: var(--my-color-text);
 }
 
 /* SectionExpress Support */
@@ -1446,6 +1460,13 @@ input:focus {
 }
 
 /* SectionExpress DownMobileApp */
+@media screen and (max-width: 1024px) {
+  .dw-mb-app {
+    background-image: url(../images/appdownload.png);
+    background-size: cover;
+    background-position: top right;
+  }
+}
 
 /* Page bus-transportation */
 /* SectionTransport Carousel */
@@ -1476,7 +1497,7 @@ input:focus {
 
 /* SectionTransport Destination */
 .card-img-des {
-  height: 380px;
+  height: 300px !important;
 }
 
 .divider-separator {
@@ -1670,7 +1691,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Page step-payment*/
 .order-summary {
-  background-color: #f8f9fa;
   border-radius: 10px;
 }
 
@@ -1694,16 +1714,11 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 200px;
 }
 
-.item-details .sub-info {
-  color: #6c757d;
-}
-
 .input-box-customize {
   width: 50px;
 }
 
 .remove-item {
-  color: #6c757d;
   cursor: pointer;
 }
 
@@ -1805,4 +1820,22 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Page branch */
 .branch-image {
   border: 2px solid var(--my-color-primary);
+}
+
+/* Page promotion */
+.img-promotion-container {
+  background-image: url(../images/special-packages.png);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-blur-dis {
+  background: rgba(0, 0, 0, 0.10);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 80%;
+  height: 80%;
 }

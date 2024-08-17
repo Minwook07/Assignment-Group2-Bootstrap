@@ -7,320 +7,71 @@
     <title>CSC Express</title>
     <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
     <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .autoplay-progress {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            z-index: 10;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--swiper-theme-color);
+        }
+
+        .autoplay-progress svg {
+            --progress: 0;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            stroke-width: 4px;
+            stroke: var(--swiper-theme-color);
+            fill: none;
+            stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+            stroke-dasharray: 125.6;
+            transform: rotate(-90deg);
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="navtop">
-            <div class="container d-flex justify-content-between">
-                <div class="quick-contact d-flex align-items-center">
-                    <div class="phone_number me-4">
-                        <a href="#" class="d-flex align-items-center">
-                            <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
-                            <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
-                        </a>
-                    </div>
-                    <div class="send_email">
-                        <a href="#" class="d-flex align-items-center">
-                            <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
-                            <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <div class="dropdown me-4">
-                        <button
-                            class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
-                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
-                            <span>ភាសាខ្មែរ</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
-                            <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
-                            class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- Fixed or Sticky Navbar -->
-        <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
-            <div class="container">
-                <a class="navbar-brand logo" href="index.html" style="width: 150px;">
-                    <img src="assets/images/CSC-Express-LOGO.png" alt="#"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">CSC EXPRESS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-xl-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">ទំព័រដើម</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="branch.html">សាខា</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
-                                <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="express_logistic.html">ការដឹកជញ្ជូនរហ័ស</a></li>
-                                    <li><a class="dropdown-item" href="tracking-items.html">តាមដានទំនិញ</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
-                                <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">អំពីយើង</a>
-                                <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
-                                    <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="ms-3 d-flex">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
-                                <i class="fas fa-sign-in-alt"></i> Log in
-                            </button>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                                class="btn btn-my-secondary btn-my-outline-secondary fs-6">
-                                <i class="fas fa-user-plus"></i> Sign up
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <!-- login  modal -->
-        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header my-main-bg p-1">
-                        <a href="" class="logo-modal me-auto">
-                            <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
-                        </a>
-                        <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal"
-                            aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
-                    </div>
-                    <div class="modal-body my-main-bg p-0">
-                        <div class="row justify-content-center p-0 rounded">
-                            <div class="col-8 my-5 p-0">
-                                <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
-                                <form class="needs-validation" novalidate>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control shadow-none" id="floatingInput"
-                                            placeholder="name@example.com" required>
-                                        <label for="floatingInput"><i class="fa-regular fa-user"></i> អុីម៉េល​
-                                            ឬលេខទូរស័ព្ទ</label>
-                                        <div class="invalid-feedback">
-                                            សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
-                                        </div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="password" class="form-control shadow-none outline"
-                                            id="floatingPassword" placeholder="Password" required>
-                                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i>
-                                            លេខសម្ងាត់</label>
-                                        <div class="invalid-feedback">
-                                            សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
-                                        </div>
-                                    </div>
-                                    <div class=" form-check">
-                                        <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
-                                        <label class="form-check-label text-my-primary"
-                                            for="exampleCheck1">ចងចាំខ្ញុំ</label>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <a href="home.html"
-                                            class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</a>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
-                                            <img src="assets/images/facebook.png" alt="" class="icon">
-                                        </a>
-                                        <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
-                                            <img src="assets/images/google.png" alt="" class="icon">
-                                        </a>
-                                        <a href="#" type="button" class="btn mb-3 py-2 border bg-light icon-link">
-                                            <img src="assets/images/apple-logo.png" alt="" class="icon">
-                                        </a>
-                                    </div>
-                                </form>
-                                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
-                                    class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
-                                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ?
-                                    <span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                                            class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- forgot password Modal -->
-        <div class="modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content my-main-bg">
-                    <div class="modal-body">
-                        <h4 class="mb-3 text-my-primary"> ស្នើរសុំផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
-                        <p class="text-my-default">លោកអ្នកនឹងទទួលបានលេខកូដក្នុងរយៈ60វិនាទី</p>
-                        <div class="form-floating mb-3 needs-validation" novalidate>
-                            <input type="email" class="form-control shadow-none" id="floatingEmail"
-                                placeholder="name@example.com">
-                            <label for="floatingEmail">អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
-                            <div class="invalid-feedback">
-                                សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទ
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
-                            class="btn btn-my-primary text-light">បញ្ជូន</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- otp Modal -->
-        <div class="modal fade" id="otpcode" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="otppassword" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content my-main-bg">
-                    <div class="modal-header">
-                        <a href="" class="logo-modal me-auto">
-                            <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
-                        </a>
-                        <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal"
-                            aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="text-my-primary mb-3">សូមលោកអ្នកបញ្ជូលេខកូដ4ខ្ទង់</h4>
-                        <div class="d-flex justify-content-center mb-3">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
-                            class="btn btn-my-primary text-light">បញ្ជូន</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- sign in Modal -->
-        <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content my-main-bg">
-                    <div class="modal-header p-0">
-                        <a href="" class="logo-modal me-auto">
-                            <img src="assets/images/CSC-Express-LOGO.png" class="logo-modal p-0" alt="">
-                        </a>
-                        <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="text-my-primary mb-3">ចុះឈ្មោះ</h4>
-                        <form class="needs-validation" novalidate>
-                            <div class="row">
-                                <div class="form-floating col mb-3">
-                                    <input type="text" class="form-control shadow-none" id="floatingLastname"
-                                        placeholder="នាមត្រកូល" required>
-                                    <label for="floatingLastname" class="ms-2">នាមត្រកូល</label>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលនាមត្រកូលរបស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating col mb-3">
-                                    <input type="text" class="form-control shadow-none" id="floatingFirstname"
-                                        placeholder="នាមខ្លួន" required>
-                                    <label for="floatingFirstname" class="ms-2">នាមខ្លួន</label>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលនាមខ្លួនរបស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control shadow-none" id="floatingEmail"
-                                        placeholder="name@example.com" required>
-                                    <label for="floatingEmail" class="ms-2">អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលអុីម៉េល​របស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating mb-3 position-relative">
-                                    <input type="password" class="form-control shadow-none" id="floatingPassword1"
-                                        placeholder="ពាក្យសម្ងាត់" required>
-                                    <label for="floatingPassword1" class="ms-2">ពាក្យសម្ងាត់</label>
-                                    <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
-                                        style="cursor: pointer;"></i>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលពាក្យសម្ងាត់របស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating mb-3 position-relative">
-                                    <input type="password" class="form-control shadow-none" id="floatingPassword2"
-                                        placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
-                                    <label for="floatingPassword2" class="ms-2">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
-                                    <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
-                                        style="cursor: pointer;"></i>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលលេខសម្ងាត់លោកអ្នកដើម្បីផ្ទៀងផ្ទាត់
-                                    </div>
-                                </div>
-                                <div class="form-check ms-3 mb-md-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked
-                                        required>
-                                    <label class="form-check-label text-my-primary" for="checkpolicy">
-                                        យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <a href="home.html" class="btn btn-my-primary text-light">ចុះឈ្មោះ</a>
-                            </div>
-                        </form>
-                        <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#"
-                                    type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    class="color-text-primary text-my-primary">ចូលគណនីឥឡូវនេះ</a></span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <main>
         <!-- BackToTop Button -->
         <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
@@ -332,9 +83,9 @@
                 data-bs-auto-close="outside" aria-expanded="false">
                 <i class="fa-brands fa-facebook-messenger"></i>
             </button>
-            <div class="dropdown-menu chat-contain p-0 rounded-4 overflow-hidden">
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
                 <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
-                    <h5 class="text-white">ជំនួយការ ២៤ម៉ោង</h5>
+                    <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
                     <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
                 </div>
                 <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
@@ -347,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="mx-4">Bot - អម្បាញ់មិញ</p>
+                <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
                 <form action="" class="d-flex align-items-center mx-2">
                     <div class="my-send-text d-flex mb-4">
                         <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
@@ -363,7 +114,7 @@
                                 <i class="fa-solid fa-paperclip"></i>
                             </label>
                             <input type="file" id="fileInput" style="display: none;" />
-                            <button type="button" class="btn chat-bot-icon send-button p-1">
+                            <button type="button" class="btn chat-bot-icon send-button">
                                 <i class="fa-solid fa-paper-plane"></i>
                             </button>
                         </div>
@@ -371,65 +122,110 @@
                 </form>
             </div>
         </div>
+
         <section>
             <div class="container">
-                <div class="row">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                aria-selected="true">Home</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                                aria-selected="false">Profile</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">Contact</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
-                                aria-selected="false" disabled>Disabled</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="bg-danger text-center py-5">
-                                        <h5 class="fs-3">BLACK FRIDAY OFFER</h5>
-                                        <h5 class="fs-1">50% OFF</h5>
-                                        <a href="#" class="btn btn-outline-light">GET IT NOW</a>
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-7" data-aos="fade-right">
+                        <div class="img-promotion-container">
+                            <div class="text-blur-dis text-center d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="display-1">50%</h5>
+                                    <h5>បញ្ចុះតម្លៃ</h5>
+                                    <div class="d-flex flex-column gap-3">
+                                        <button type="button" href="#" class="btn btn-primary disabled">ប្រើកូដ :
+                                            CSCisNeed</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
-                            aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                        <div class="text-center mt-3" data-aos="fade-down">
+                            <button type="button" href="#" class="btn btn-outline-primary">ចូលប្រើប្រាស់</button>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="assets/images/angkor-poster.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col-12 col-lg-5" data-aos="fade-left">
+                        <div class="card overflow-hidden border-0">
+                            <div class="card-body p-0" style="height: 700px;">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="booking-ticket-detail.html">
+                                                <img src="assets/images/promotion6.png" alt="swiper-poster">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="booking-ticket-detail.html">
+                                                <img src="assets/images/promotion3.png" alt="swiper-poster">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="booking-ticket-detail.html">
+                                                <img src="assets/images/promotion4.png" alt="swiper-poster">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="autoplay-progress">
+                                        <svg viewBox="0 0 48 48">
+                                            <circle cx="24" cy="24" r="20"></circle>
+                                        </svg>
+                                        <span></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5" data-aos="fade-right">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="booking-ticket-detail.html">
+                                        <img src="assets/images/promotion1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="booking-ticket-detail.html">
+                                        <img src="assets/images/promotion2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="booking-ticket-detail.html">
+                                        <img src="assets/images/promotion5.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7" data-aos="fade-left">
+                        <div class="img-promotion-container img-promotion-container1">
+                            <div class="text-blur-dis text-center d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h5 class="display-1">50%</h5>
+                                    <h5>បញ្ចុះតម្លៃ</h5>
+                                    <div class="d-flex flex-column gap-3">
+                                        <button type="button" class="btn btn-primary disabled">ប្រើកូដ :
+                                            CSCEXPRESS2024</button>
+                                        <a href="booking-ticket-detail.html"
+                                            class="btn btn-outline-light">ទិញសំបុត្រ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -549,6 +345,46 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/headerfixed.js"></script>
     <script src="assets/js/backtotop.js"></script>
+    <script src="assets/libs/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

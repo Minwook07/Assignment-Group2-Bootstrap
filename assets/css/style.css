@@ -9,6 +9,7 @@
 
 section {
   overflow-x: hidden;
+  overflow-y: hidden!important;
 }
 
 body {
@@ -184,7 +185,7 @@ img {
   color: var(--my-color-text);
 }
 
-.text-my-primary-default{
+.text-my-primary-default {
   color: var(--my-color-primary-default);
 }
 
@@ -581,7 +582,6 @@ input:focus {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1350,7 +1350,6 @@ input:focus {
 .hero-banner-express {
   background-image: url(../images/world-map.webp);
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .foreimage-hero {
@@ -1830,6 +1829,10 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.img-promotion-container1 {
+  background-image: url(../images/promo-bus1.jpg);
 }
 
 .text-blur-dis {

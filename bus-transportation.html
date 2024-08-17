@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSC Express</title>
+    <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -38,327 +39,20 @@
 </head>
 
 <body>
-    <header>
-        <div class="navtop">
-            <div class="container d-flex justify-content-between">
-                <div class="quick-contact d-flex align-items-center">
-                    <div class="phone_number me-4">
-                        <a href="#" class="d-flex align-items-center">
-                            <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
-                            <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
-                        </a>
-                    </div>
-                    <div class="send_email">
-                        <a href="#" class="d-flex align-items-center">
-                            <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
-                            <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <div class="dropdown me-4">
-                        <button
-                            class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
-                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
-                            <span>ភាសាខ្មែរ</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
-                            <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
-                            class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- Fixed or Sticky Navbar -->
-        <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
-            <div class="container">
-                <a class="navbar-brand logo" href="index.html" style="width: 150px;">
-                    <img src="assets/images/CSC-Express-LOGO.png" alt="#"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">CSC EXPRESS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-xl-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">ទំព័រដើម</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="branch.html">សាខា</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
-                                <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="express_logistic.html">ការដឹកជញ្ជូនរហ័ស</a></li>
-                                    <li><a class="dropdown-item" href="tracking-items.html">តាមដានទំនិញ</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
-                                <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">អំពីយើង</a>
-                                <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
-                                    <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="ms-3 d-flex">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
-                                <i class="fas fa-sign-in-alt"></i> Log in
-                            </button>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                                class="btn btn-my-secondary btn-my-outline-secondary fs-6">
-                                <i class="fas fa-user-plus"></i> Sign up
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
 
-        <!-- login  modal -->
-        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header my-main-bg p-1">
-                        <a href="" class="logo-modal me-auto">
-                            <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
-                        </a>
-                        <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal"
-                            aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
-                    </div>
-                    <div class="modal-body my-main-bg p-0">
-                        <div class="row justify-content-center p-0 rounded">
-                            <div class="col-8 my-5 p-0">
-                                <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
-                                <form class="needs-validation" novalidate>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control shadow-none" id="floatingInput"
-                                            placeholder="name@example.com" required>
-                                        <label for="floatingInput"><i class="fa-regular fa-user"></i> អុីម៉េល​
-                                            ឬលេខទូរស័ព្ទ</label>
-                                        <div class="invalid-feedback">
-                                            សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
-                                        </div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="password" class="form-control shadow-none outline"
-                                            id="floatingPassword" placeholder="Password" required>
-                                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i>
-                                            លេខសម្ងាត់</label>
-                                        <div class="invalid-feedback">
-                                            សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
-                                        </div>
-                                    </div>
-                                    <div class=" form-check">
-                                        <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
-                                        <label class="form-check-label text-my-primary"
-                                            for="exampleCheck1">ចងចាំខ្ញុំ</label>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <a href="home.html"
-                                            class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</a>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
-                                            <img src="assets/images/facebook.png" alt="" class="icon">
-                                        </a>
-                                        <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
-                                            <img src="assets/images/google.png" alt="" class="icon">
-                                        </a>
-                                        <a href="#" type="button" class="btn mb-3 py-2 border bg-light icon-link">
-                                            <img src="assets/images/apple-logo.png" alt="" class="icon">
-                                        </a>
-                                    </div>
-                                </form>
-                                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
-                                    class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
-                                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ?
-                                    <span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                                            class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- forgot password Modal -->
-        <div class="modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content my-main-bg">
-                    <div class="modal-body">
-                        <h4 class="mb-3 text-my-primary"> ស្នើរសុំផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
-                        <p class="text-my-default">លោកអ្នកនឹងទទួលបានលេខកូដក្នុងរយៈ60វិនាទី</p>
-                        <div class="form-floating mb-3 needs-validation" novalidate>
-                            <input type="email" class="form-control shadow-none" id="floatingEmail"
-                                placeholder="name@example.com">
-                            <label for="floatingEmail">អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
-                            <div class="invalid-feedback">
-                                សូមបញ្ជូលអុីម៉េល​ ឬលេខទូរស័ព្ទ
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
-                            class="btn btn-my-primary text-light">បញ្ជូន</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- otp Modal -->
-        <div class="modal fade" id="otpcode" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="otppassword" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content my-main-bg">
-                    <div class="modal-header">
-                        <a href="" class="logo-modal me-auto">
-                            <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
-                        </a>
-                        <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal"
-                            aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="text-my-primary mb-3">សូមលោកអ្នកបញ្ជូលេខកូដ4ខ្ទង់</h4>
-                        <div class="d-flex justify-content-center mb-3">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                            <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
-                            class="btn btn-my-primary text-light">បញ្ជូន</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- sign in Modal -->
-        <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content my-main-bg">
-                    <div class="modal-header p-0">
-                        <a href="" class="logo-modal me-auto">
-                            <img src="assets/images/CSC-Express-LOGO.png" class="logo-modal p-0" alt="">
-                        </a>
-                        <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 class="text-my-primary mb-3">ចុះឈ្មោះ</h4>
-                        <form class="needs-validation" novalidate>
-                            <div class="row">
-                                <div class="form-floating col mb-3">
-                                    <input type="text" class="form-control shadow-none" id="floatingLastname"
-                                        placeholder="នាមត្រកូល" required>
-                                    <label for="floatingLastname" class="ms-2">នាមត្រកូល</label>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលនាមត្រកូលរបស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating col mb-3">
-                                    <input type="text" class="form-control shadow-none" id="floatingFirstname"
-                                        placeholder="នាមខ្លួន" required>
-                                    <label for="floatingFirstname" class="ms-2">នាមខ្លួន</label>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលនាមខ្លួនរបស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control shadow-none" id="floatingEmail"
-                                        placeholder="name@example.com" required>
-                                    <label for="floatingEmail" class="ms-2">អុីម៉េល​ ឬលេខទូរស័ព្ទ</label>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលអុីម៉េល​របស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating mb-3 position-relative">
-                                    <input type="password" class="form-control shadow-none" id="floatingPassword1"
-                                        placeholder="ពាក្យសម្ងាត់" required>
-                                    <label for="floatingPassword1" class="ms-2">ពាក្យសម្ងាត់</label>
-                                    <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
-                                        style="cursor: pointer;"></i>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលពាក្យសម្ងាត់របស់អ្នក
-                                    </div>
-                                </div>
-                                <div class="form-floating mb-3 position-relative">
-                                    <input type="password" class="form-control shadow-none" id="floatingPassword2"
-                                        placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
-                                    <label for="floatingPassword2" class="ms-2">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
-                                    <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
-                                        style="cursor: pointer;"></i>
-                                    <div class="invalid-feedback">
-                                        សូមបញ្ជូលលេខសម្ងាត់លោកអ្នកដើម្បីផ្ទៀងផ្ទាត់
-                                    </div>
-                                </div>
-                                <div class="form-check ms-3 mb-md-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked
-                                        required>
-                                    <label class="form-check-label text-my-primary" for="checkpolicy">
-                                        យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <a href="home.html" class="btn btn-my-primary text-light">ចុះឈ្មោះ</a>
-                            </div>
-                        </form>
-                        <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#"
-                                    type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    class="color-text-primary text-my-primary">ចូលគណនីឥឡូវនេះ</a></span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
         <!-- BackToTop Button -->
         <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
                 class="bi bi-arrow-up-short fs-5"></i></a>
-
         <!-- Chat Bot -->
         <div class="dropup-center dropstart">
             <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
                 data-bs-auto-close="outside" aria-expanded="false">
                 <i class="fa-brands fa-facebook-messenger"></i>
             </button>
-            <div class="dropdown-menu chat-contain p-0 rounded-4 overflow-hidden">
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
                 <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
-                    <h5 class="text-white">ជំនួយការ ២៤ម៉ោង</h5>
+                    <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
                     <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
                 </div>
                 <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
@@ -371,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="mx-4">Bot - អម្បាញ់មិញ</p>
+                <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
                 <form action="" class="d-flex align-items-center mx-2">
                     <div class="my-send-text d-flex mb-4">
                         <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
@@ -387,7 +81,7 @@
                                 <i class="fa-solid fa-paperclip"></i>
                             </label>
                             <input type="file" id="fileInput" style="display: none;" />
-                            <button type="button" class="btn chat-bot-icon send-button p-1">
+                            <button type="button" class="btn chat-bot-icon send-button">
                                 <i class="fa-solid fa-paper-plane"></i>
                             </button>
                         </div>
@@ -401,7 +95,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 mb-5 mb-md-0">
-                        <div>
+                        <div data-aos="fade-right">
                             <h5 class="fs-1 text-my-primary mb-3">CSC Express ធ្វើឱ្យការធ្វើដំណើរ <br>
                                 របស់អ្នកកាន់តែងាយស្រួល</h5>
                             <p class="fs-5 text-my-secondary mb-5">ពួកយើងធានានូវសុវត្ថិភាព គុណភាព ប្រសិទ្ធភាព
@@ -415,7 +109,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="card border-0 rounded-4 card-hero">
+                        <div class="card border-0 rounded-4 card-hero" data-aos="fade-left">
                             <div class="card-body">
                                 <form class="row g-3">
                                     <div class="col-12 col-md-6 col-lg-6">
@@ -505,13 +199,13 @@
         <!-- SectionTransport Info Booking -->
         <section class="info-booking py-5">
             <div class="container">
-                <div class="section-top-title text-center mb-5">
+                <div class="section-top-title text-center mb-5" data-aos="fade-down">
                     <h5 class="fs-3 text-my-default">ទិញសំបុត្រឡាន តាមរយៈវិធីខាងក្រោមនេះ</h5>
                     <hr class="divider-separator m-auto">
                     <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក</p>
                 </div>
                 <div class="row gy-5">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
                         <div class="icon-text d-flex">
                             <div class="bg-customize-box d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-couch fs-3 text-white"></i>
@@ -524,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                         <div class="icon-text d-flex">
                             <div class="bg-customize-box d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-ticket-simple fs-3 text-white"></i>
@@ -537,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
                         <div class="icon-text d-flex">
                             <div class="bg-customize-box d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-magnifying-glass-location fs-3 text-white"></i>
@@ -568,51 +262,56 @@
                             class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="assets/images/siemreap.png" class="card-img-des" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fs-5 pb-3">តំបន់អង្គរ</h5>
-                                <p class="card-text fs-6">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
-                                    និងក្នុងប្រាសាទ</p>
+                                <h5 class="card-title fs-5 pb-3">ប្រាសាទអង្គរវត្ត</h5>
+                                <p class="card-text fs-6">ប្រាសាទអង្គរវត្ត
+                                    មានទីតាំងស្ថិតនៅភាគខាងជើងនៃក្រុងសៀមរាបនៃខេត្តសៀមរាប ដែលមានចម្ងាយចំនួន
+                                    ៧គីឡូម៉ែត្រពីទីរួមខេត្តសៀមរាបតាមផ្លូវកូម៉ៃ ឬផ្លូវសាលដឺហ្គោល។</p>
                                 <a href="booking-ticket-detail.html"
                                     class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down">
                         <div
                             class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="assets/images/kampot.png" class="card-img-des" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fs-5 pb-3">តំបន់អង្គរ</h5>
-                                <p class="card-text fs-6">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
-                                    និងក្នុងប្រាសាទ</p>
+                                <h5 class="card-title fs-5 pb-3">ឧទ្យានជាតិព្រះមុនីវង្ស បូកគោ</h5>
+                                <p class="card-text fs-6">ឧទ្យាននេះ​មានចម្ងាយពីក្រុងកំពតប្រមាណ ៤៦
+                                    គីឡូម៉ែត្ររហូតដល់កំពូលភ្នំ។ រមណីយដ្ឋាននេះ បានរកឃើញដោយជនជាតិបារាំងម្នាក់ឈ្មោះ រូលួស
+                                    ក្នុងរជ្ជកាលព្រះបាទ ស៊ីសុវត្ថិ ។
+                                </p>
                                 <a href="booking-ticket-detail.html"
                                     class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-up">
                         <div
                             class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="assets/images/kampot2.png" class="card-img-des" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fs-5 pb-3">តំបន់អង្គរ</h5>
-                                <p class="card-text fs-6">លោកអ្នកនឹងបានដើរទស្សនាជុំវិញបរិវេនតំបន់ប្រាសាទនានា
-                                    និងក្នុងប្រាសាទ</p>
+                                <h5 class="card-title fs-5 pb-3">កំពត</h5>
+                                <p class="card-text fs-6">ឧទ្យាននេះ​មានចម្ងាយពីក្រុងកំពតប្រមាណ ៤៦
+                                    គីឡូម៉ែត្ររហូតដល់កំពូលភ្នំ។ រមណីយដ្ឋាននេះ បានរកឃើញដោយជនជាតិបារាំងម្នាក់ឈ្មោះ រូលួស
+                                    ក្នុងរជ្ជកាលព្រះបាទ ស៊ីសុវត្ថិ ។</p>
                                 <a href="booking-ticket-detail.html"
                                     class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-right">
+                    <div class="col-12 col-md-6 col-xl-3 py-3 py-xl-0" data-aos="fade-down-left">
                         <div
                             class="card border-2 border-my-primary bg-my-default text-my-default rounded-4 pb-2 border-2 overflow-hidden">
                             <img src="assets/images/kohkong.png" class="card-img-des" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fs-5 pb-3">កោះរ៉ុង</h5>
                                 <p class="card-text fs-6">កោះរ៉ុង ​ជា​កោះមួយ​ក្នុង​ខេត្ត​ព្រះ​សីហនុ។​
-                                    មានទីតាំងស្ថិតនៅខាងលិចនៃឆេ្នរក្រុងព្រះសីហនុ។ កោះនេះគឺជាកោះដ៏ស្រស់ស្អាតបំផុតនៃតំបន់កំពង់សោម។
+                                    មានទីតាំងស្ថិតនៅខាងលិចនៃឆេ្នរក្រុងព្រះសីហនុ។
+                                    កោះនេះគឺជាកោះដ៏ស្រស់ស្អាតបំផុតនៃតំបន់កំពង់សោម។
                                 </p>
                                 <a href="booking-ticket-detail.html"
                                     class="btn fs-6 btn-my-outline-primary p-2 px-3">កក់សំបុត្រឥឡូវនេះ<i
@@ -628,14 +327,14 @@
         <!-- SectionTransport Why Choose Us -->
         <section class="py-5">
             <div class="container">
-                <div class="section-top-title text-center mb-5">
+                <div class="section-top-title text-center mb-5" data-aos="fade-down">
                     <h5 class="fs-3 text-my-default">ហេតុអ្វីជ្រើសរើសសេវាកម្មរបស់ពួកយើង?</h5>
                     <hr class="divider-separator m-auto">
                     <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក</p>
                 </div>
                 <div class="row gy-5">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-driver.png" alt="why-our-driver">
                             </div>
@@ -649,7 +348,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-call-center-service.png" alt="why-our-driver">
                             </div>
@@ -663,7 +362,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-cashless-payment.png" alt="why-our-driver">
                             </div>
@@ -677,7 +376,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-calendar.png" alt="why-our-driver">
                             </div>
@@ -690,7 +389,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-disabled-people.png" alt="why-our-driver">
                             </div>
@@ -704,7 +403,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-eco-world.png" alt="why-our-driver">
                             </div>
@@ -718,7 +417,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-vip-card.png" alt="why-our-driver">
                             </div>
@@ -732,7 +431,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-mobile-app.png" alt="why-our-driver">
                             </div>
@@ -745,7 +444,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="icon-text d-flex">
+                        <div class="icon-text d-flex" data-aos="zoom-in">
                             <div class="choose-us-box bg-my-primary rounded-4">
                                 <img src="assets/images/why-free-wifi.png" alt="why-our-driver">
                             </div>
@@ -765,35 +464,36 @@
         <!-- SectionTransport Our Partner -->
         <section class="py-5">
             <div class="container">
-                <div class="section-top-title text-center mb-5">
+                <div class="section-top-title text-center mb-5" data-aos="fade-up">
                     <h5 class="fs-3 text-my-default">លក្ខណៈពិសេសដែលអ្នកនឹងស្រឡាញ់</h5>
                     <hr class="divider-separator m-auto">
                     <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក</p>
                 </div>
                 <div class="row">
                     <ul class="list-unstyled">
-                        <li class="tick-before text-my-default">មានតម្លៃសមរម្យ៖
+                        <li class="tick-before text-my-default" data-aos="fade-up">មានតម្លៃសមរម្យ៖
                             សំបុត្រដែលស័ក្តិសមនឹងថវិកាសម្រាប់ការធ្វើដំណើរបន្ថែមទៀត។
                         </li>
-                        <li class="tick-before text-my-default">ងាយស្រួល៖ ផ្លូវផ្ទាល់ គ្មានការផ្ទេរ
+                        <li class="tick-before text-my-default" data-aos="fade-up">ងាយស្រួល៖ ផ្លូវផ្ទាល់ គ្មានការផ្ទេរ
                             គ្មានការរំខានចរាចរណ៍។</li>
-                        <li class="tick-before text-my-default">អាចចូលប្រើបាន៖
+                        <li class="tick-before text-my-default" data-aos="fade-up">អាចចូលប្រើបាន៖
                             ទៅដល់គ្រប់ជ្រុងទាំងអស់ជាមួយនឹងបណ្តាញដ៏ធំទូលាយរបស់យើង។
                         </li>
-                        <li class="tick-before text-my-default">ភាពស្និទ្ធស្នាលនឹងបរិស្ថាន៖
+                        <li class="tick-before text-my-default" data-aos="fade-up">ភាពស្និទ្ធស្នាលនឹងបរិស្ថាន៖
                             កាត់បន្ថយកម្រិតកាបូនរបស់អ្នក។</li>
-                        <li class="tick-before text-my-default">ផាសុកភាព៖ កន្លែងអង្គុយដ៏ប្រណីត
+                        <li class="tick-before text-my-default" data-aos="fade-up">ផាសុកភាព៖ កន្លែងអង្គុយដ៏ប្រណីត
                             និងគ្រឿងបរិក្ខារនៅលើយន្តហោះ។</li>
-                        <li class="tick-before text-my-default">សុវត្ថិភាព៖
+                        <li class="tick-before text-my-default" data-aos="fade-up">សុវត្ថិភាព៖
                             អាទិភាពលើសុវត្ថិភាពរបស់អ្នកជាមួយអ្នកបើកបរដែលមានជំនាញវិជ្ជាជីវៈ។</li>
-                        <li class="tick-before text-my-default">សហគមន៍៖ ភ្ជាប់ និងចែករំលែកបទពិសោធន៍ជាមួយអ្នករួមដំណើរ។
+                        <li class="tick-before text-my-default" data-aos="fade-up">សហគមន៍៖ ភ្ជាប់
+                            និងចែករំលែកបទពិសោធន៍ជាមួយអ្នករួមដំណើរ។
                         </li>
-                        <li class="tick-before text-my-default">Wi-Fi | Entertainment៖ រក្សាទំនាក់ទំនង និងកម្សាន្ត។</li>
-                        <li class="tick-before text-my-default">ការកក់ដែលអាចបត់បែនបាន៖
+                        <li class="tick-before text-my-default" data-aos="fade-up">Wi-Fi | Entertainment៖
+                            រក្សាទំនាក់ទំនង និងកម្សាន្ត។</li>
+                        <li class="tick-before text-my-default" data-aos="fade-up">ការកក់ដែលអាចបត់បែនបាន៖
                             ការកក់តាមអ៊ីនធឺណិតងាយស្រួលជាមួយនឹងកាលវិភាគដែលអាចបត់បែនបាន។</li>
-                        <li class="tick-before text-my-default">កន្លែងដាក់ឥវ៉ាន់ធំទូលាយ៖
+                        <li class="tick-before text-my-default" data-aos="fade-up">កន្លែងដាក់ឥវ៉ាន់ធំទូលាយ៖
                             មានបន្ទប់ច្រើនសម្រាប់របស់របររបស់អ្នក។</li>
-                        <li class="tick-before text-my-default">វិធីបង់ប្រាក់ដែលយើងទទួលយក៖</li>
                     </ul>
                 </div>
             </div>
@@ -803,15 +503,15 @@
         <section class="py-5">
             <div class="container">
                 <div class="row align-items-center text-my-default">
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-5" data-aos="fade-right">
                         <h5 class="fs-1">ទទួលបានការបញ្ចុះតម្លៃ 50% ក្នុងខែដំបូង</h5>
                         <p class="fs-4">ទទួលបានការបញ្ចុះតម្លៃ 50% សម្រាប់ខែដំបូងនៃការប្រើប្រាស់សេវាកម្មរបស់ពួកយើង។</p>
                         <div class="d-flex gap-4">
                             <a href="#" class="btn btn-my-primary py-3 px-3">ទទួលបានការបញ្ចុះតម្លៃ</a>
-                            <a href="#" class="btn btn-my-outline-primary py-3 px-3">ទំនាក់ទំនងពួកយើង</a>
+                            <a href="#contact-us-more" class="btn btn-my-outline-primary py-3 px-3">ទំនាក់ទំនងពួកយើង</a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12 col-lg-7 mt-5 mt-lg-0" data-aos="fade-left">
                         <div class="row">
                             <div class="col-5 discount-banner">
                                 <div class="img-promotion-half h-50">
@@ -834,13 +534,14 @@
         <section class="bg-support-customize py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-up">
                         <div class="text-white">
-                            <h5>24/7</h5>
-                            <h5 class="fs-2">Quickly Support and Help of our Logistic of any Problem</h5>
-                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                default model text</p>
-                            <a href="#" class="btn btn-my-primary px-5 py-3">ទាក់ទងមកពួកយើង</a>
+                            <h5>២៤/៧</h5>
+                            <h5 class="fs-2">គាំទ្រ និងជំនួយការ២៤ ម៉ោង</h5>
+                            <p class="fs-1-maximium">​ដើម្បី​ភាព​ងាយស្រួល​សម្រាប់​អតិថិជន​
+                                យើង​បាន​ដាក់​ឲ្យ​ប្រើប្រាស់​ទូរស័ព្ទ​ចំនួន​ពីរ​ខ្សែ​ ដែល​លោក​អ្នក​អាច​ទាក់ទង​មក​បាន​
+                                គ្រប់ពេលវេលា​ ២៤ ម៉ោង​លើ​ ២៤ ម៉ោង​ ។</p>
+                            <a href="#contact-us-more" class="btn btn-my-primary px-5 py-3">ទាក់ទងមកពួកយើង</a>
                         </div>
                     </div>
                 </div>
@@ -852,14 +553,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
-                        <div class="section-top-title text-center mb-5">
+                        <div class="section-top-title text-center mb-5" data-aos="fade-up">
                             <h5 class="fs-3 text-my-default">ទិញសំបុត្រឡាន តាមរយៈវិធីខាងក្រោមនេះ</h5>
                             <hr class="divider-separator m-auto">
                             <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក
                             </p>
                         </div>
                         <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item accordion-item-customize bg-transparent">
+                            <div class="accordion-item accordion-item-customize bg-transparent" data-aos="fade-down">
                                 <h2 class="accordion-header">
                                     <button
                                         class="accordion-button accordion-button-cutomize collapsed fs-4 bg-none text-white"
@@ -877,7 +578,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item accordion-item-customize bg-transparent">
+                            <div class="accordion-item accordion-item-customize bg-transparent" data-aos="fade-down">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button accordion-button-cutomize collapsed fs-4 text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
@@ -894,7 +595,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item accordion-item-customize bg-transparent">
+                            <div class="accordion-item accordion-item-customize bg-transparent" data-aos="fade-down">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button accordion-button-cutomize collapsed fs-4 text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
@@ -910,7 +611,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item accordion-item-customize bg-transparent">
+                            <div class="accordion-item accordion-item-customize bg-transparent" data-aos="fade-down">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button accordion-button-cutomize collapsed fs-4 text-white"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
@@ -930,7 +631,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 d-none d-lg-flex">
+                    <div class="col-12 col-lg-6 d-none d-lg-flex" data-aos="fade-up">
                         <img src="assets/images/faqqs.png" alt="">
                     </div>
                 </div>
@@ -938,9 +639,9 @@
         </section>
 
         <!-- SectionTransport Form FAQs -->
-        <section class="form-faqs-more py-5">
+        <section class="form-faqs-more py-5" id="contact-us-more">
             <div class="container">
-                <div class="section-top-title text-center mb-5">
+                <div class="section-top-title text-center mb-5" data-aos="fade-down">
                     <h5 class="fs-3 text-my-default">ទាក់ទងមកយើង</h5>
                     <hr class="divider-separator m-auto">
                     <p class="fs-5 mt-3 text-my-default">តើអ្នកចង់ចាប់ផ្តើមកិច្ចសហប្រតិបត្តិការជាមួយយើងទេ? <br>
@@ -948,22 +649,22 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-6 text-my-default">
-                        <h5 class="fs-1">ទំនាក់ទំនងពួកយើង</h5>
-                        <p class="fs-1-maximium mb-5">បើមានចម្ងល់ណាមួយលោកអ្នកអាចធ្វើការទាក់ទងមកកាន់យើងខ្ញុំបាន</p>
-                        <h5>លេខទូរសព្ទ:</h5>
-                        <p class="mb-4">+855 0978383838</p>
-                        <h5>អ៊ីម៉េល:</h5>
-                        <p class="mb-4">cscexpress@gmail.com</p>
-                        <h5>ទីតាំង:</h5>
-                        <p class="mb-4">សង្កាត់បាក់ទូក ភ្នំពេញ</p>
+                        <h5 class="fs-1" data-aos="fade-right">ទំនាក់ទំនងពួកយើង</h5>
+                        <p class="fs-1-maximium mb-5" data-aos="fade-right">បើមានចម្ងល់ណាមួយលោកអ្នកអាចធ្វើការទាក់ទងមកកាន់យើងខ្ញុំបាន</p>
+                        <h5 data-aos="fade-right">លេខទូរសព្ទ:</h5>
+                        <p class="mb-4" data-aos="fade-right">+855 0978383838</p>
+                        <h5 data-aos="fade-right">អ៊ីម៉េល:</h5>
+                        <p class="mb-4" data-aos="fade-right">cscexpress@gmail.com</p>
+                        <h5 data-aos="fade-right">ទីតាំង:</h5>
+                        <p class="mb-4" data-aos="fade-right">សង្កាត់បាក់ទូក ភ្នំពេញ</p>
                         <div class="d-flex gap-4">
-                            <a href="#"><i class="fa-brands fa-facebook-f text-my-primary fs-5"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram text-my-primary fs-5"></i></a>
-                            <a href="#"><i class="fa-brands fa-tiktok text-my-primary fs-5"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in text-my-primary fs-5"></i></a>
+                            <a href="#" data-aos="fade-right"><i class="fa-brands fa-facebook-f text-my-primary fs-5"></i></a>
+                            <a href="#" data-aos="fade-right"><i class="fa-brands fa-instagram text-my-primary fs-5"></i></a>
+                            <a href="#" data-aos="fade-right"><i class="fa-brands fa-tiktok text-my-primary fs-5"></i></a>
+                            <a href="#" data-aos="fade-right"><i class="fa-brands fa-linkedin-in text-my-primary fs-5"></i></a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-left">
                         <div class="bg-my-subtle rounded-4 p-5">
                             <h5 class="text-white fs-1">ចង់សួរសំណួរបន្ថែម?</h5>
                             <form class="row g-3 needs-validation" novalidate>
@@ -1016,19 +717,19 @@
                     <div class="col-12 col-lg-6">
                         <div class="d-flex">
                             <div class="text-white">
-                                <h5 class="fw-bold">តាមដានទំនិញរបស់អ្នក</h5>
-                                <h5>តាមដានទំនិញរបស់អ្នកជាមួយនឹងការដឹកជញ្ជូន CSC Express</h5>
+                                <h5 class="fw-bold" data-aos="fade-right">ព័ត៌មានបន្ថែម</h5>
+                                <h5 data-aos="fade-left">បើលោកអ្នកចង់ទទួលបានព័ត៌មានថ្មីៗនិងរហ័សរបស់ CSC Express</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex align-items-center justify-content-start justify-content-lg-end">
                         <form class="row g-3">
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-right">
                                 <label for="inputPassword2" class="visually-hidden">Email</label>
                                 <input type="email" class="form-control shadow-none" id="inputPassword2"
                                     placeholder="បញ្ចូលអ៊ីម៉េល">
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto" data-aos="fade-left">
                                 <label for="inputPassword2" class="visually-hidden">Password</label>
                                 <button type="submit" class="btn btn-my-primary">ស្វែងរក</button>
                             </div>

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="position-sticky top-0" style="z-index: 999;">
     <div class="navtop">
       <div class="container d-flex justify-content-between">
         <div class="quick-contact d-flex align-items-center">
@@ -34,14 +34,14 @@
             </a>
           </div>
         </div>
-        <div class="d-flex">
+        <div class="d-none d-xl-flex">
           <div class="dropdown me-4">
             <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
               type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
               <span>ភាសាខ្មែរ</span>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
               <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
               <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
             </ul>
@@ -49,6 +49,63 @@
           <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
               class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
         </div>
+        <ul class="list-unstyled d-flex d-xl-none align-items-center text-my-primary m-0 gap-2 gap-lg-0">
+          <li class="nav-item icon-item">
+            <a class="nav-link notificaton position-relative" href="#"><i class="fa-solid fa-heart fs-5 notificaton-icon"></i></a>
+          </li>
+          <li class="nav-item icon-item">
+            <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell fs-5 notificaton-icon"></i>
+              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
+            </a>
+          </li>
+          <li class="nav-item icon-item">
+            <div class="dropdown">
+              <a class="border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="user-profile ms-1">
+                  <div class="profile">
+                    <img src="assets/images/cute.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
+                <li class="d-flex">
+                  <div class="user-profile">
+                    <div class="ms-2 d-flex">
+                      <div class="image-profile  me-3">
+                        <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
+                      </div>
+                     <div>
+                      <div class="fw-bold text-my-default" >CSC Express</div>
+                      <div class="d-flex">
+                        <div class="online ms-0 m-2"></div>
+                        <p class="text-my-default">online</p>
+                      </div>
+                     </div>
+                      
+                    </div>
+                    
+                  </div>
+                </li>
+                <hr class="text-my-default mt-0">
+                <li><a class="dropdown-item " href="setting-edit-profile.html"><i
+                      class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
+                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
+                      class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
+                <li><a class="dropdown-item" href="index.html"><i
+                      class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+
       </div>
     </div>
     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
@@ -56,17 +113,20 @@
         <a class="navbar-brand logo" href="#" style="width: 150px;">
           <img src="assets/images/CSC-Express-LOGO.png" alt="#" style="width: 100%; height: 100%; object-fit: cover;">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">CSC EXPRESS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
+              <img src="assets/images/my-logo-csc.png" alt="">
+            </div>
+            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i
+              class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav ms-xl-auto">
+            <ul class="navbar-nav m-auto">
               <li class="nav-item">
                 <a class="nav-link active" href="#">ទំព័រដើម</a>
               </li>
@@ -99,70 +159,97 @@
                   <li><a class="dropdown-item" href="#">ក្រុមយើងខ្ញុំ</a></li>
                 </ul>
               </li>
-              <li class="nav-item icon-item">
-                <a class="nav-link notificaton position-relative" href="#"><i class="fa-solid fa-heart fs-4"></i></a>
-              </li>
-              <li class="nav-item icon-item">
-                <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell fs-4"></i>
-                  <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
-                </a>
-              </li>
-              <li class="nav-item icon-item">
-                <div class="dropdown dropstart">
-                  <a class="border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="user-profile ms-1">
-                      <div class="profile">
-                        <img src="assets/images/cute.jpg" alt="">
-                      </div>
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
-                    <li class="p-3 d-flex">
-                      <div class="user-profile d-flex">
-                        <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle me-3">
-                        <div class="ms-2">
-                          <div class="fw-bold text-my-default">CSC Express</div>
-                          <div class="d-flex">
-                            <div class="online ms-0 m-2"></div>
-                            <p class="text-my-default">online</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <hr class="text-my-default mt-0">
-                    <li><a class="dropdown-item " href="setting-edit-profile.html"><i
-                          class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
-                          class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
-                    <li><a class="dropdown-item" href="#"><i
-                          class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
-                          class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
-                    <li><a class="dropdown-item" href="#"><i
-                          class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
-                          class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
-                    <li><a class="dropdown-item" href="index.html"><i
-                          class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
-                          class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
-                  </ul>
-                </div>
-              </li>
             </ul>
+            <div class="d-flex d-lg-none">
+              <div class="dropdown me-4">
+                <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                  <span>ភាសាខ្មែរ</span>
+                </button>
+                <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
+                  <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+                  <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-mode border-0 bg-transparent m-0" data-theme-toggle> <i
+                  class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+            </div>
           </div>
+          
+        </div>
+
+         <!--  -->
+         <div class="d-flex justify-content-center align-items-center text-center gap-2 " style="height: 40px;">
+          <li class="nav-item icon-item d-none d-xl-block p-0 ">
+            <a class="nav-link position-relative p-0 " href="#"><i class="fa-solid fa-heart fs-5 text-my-primary notificaton-icon "></i></a>
+          </li>
+          <li class="nav-item icon-item d-none d-xl-block">
+            <a class="nav-link position-relative p-0" href="#"><i class="fa-solid fa-bell fs-5 text-my-primary notificaton-icon"></i>
+              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
+            </a>
+          </li>
+          <li class="nav-item icon-item d-none d-xl-block p-0">
+            <div class="dropdown dropstart">
+              <a class="border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="user-profile">
+                  <div class="profile">
+                    <img src="assets/images/cute.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
+                <li class="d-flex">
+                  <div class="user-profile">
+                    <div class="ms-2 d-flex">
+                      <div class="image-profile  me-3">
+                        <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
+                      </div>
+                     <div>
+                      <div class="fw-bold text-my-default" >CSC Express</div>
+                      <div class="d-flex">
+                        <div class="online ms-0 m-2"></div>
+                        <p class="text-my-default">online</p>
+                      </div>
+                     </div>
+                      
+                    </div>
+                    
+                  </div>
+                </li>
+                <hr class="text-my-default mt-0">
+                <li><a class="dropdown-item " href="setting-edit-profile.html"><i
+                      class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
+                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
+                      class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
+                <li><a class="dropdown-item" href="index.html"><i
+                      class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
+              </ul>
+             
+            </div>
+          </li>
         </div>
       </div>
     </nav>
   </header>
-
+  <main class="pt-70">
   <!-- Home Section -->
-  <section class="hero-banner-home">
+  <section class="hero-banner-home ">
     <div class="overlay-now">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-6">
             <div class="hero-title">
-              <h1 class="mb-5 fw-bold text-white">កាន់តែងាយស្រួលជាមួយ<span class="text-my-primary fw-bold"> CSC
+              <h1 class="mb-5 fw-bold text-white" data-aos="fade-right">កាន់តែងាយស្រួលជាមួយ<span class="text-my-primary fw-bold"> CSC
                   EXPRESS</span> មានទាំងសេវាកម្មដឹកជញ្ជូន និងសេវាក​​ម្ម​ធ្វើដំណើរ​ </h1>
-              <h4 class="mb-5 fw-bold text-white">"Fast Delivery, Safe Packages, Fast Responce"</h4>
-              <p class="fs-4  mb-5 fw-bold text-white">គុណភាព សុវតិ្ថភាព លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span
+              <h4 class="mb-5 fw-bold text-white" data-aos="fade-down">"Fast Delivery, Safe Packages, Fast Responce"</h4>
+              <p class="fs-4  mb-5 fw-bold text-white" data-aos="fade-left">គុណភាព សុវតិ្ថភាព លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span
                   class="text-my-primary fw-bold"> CSC EXPRESS</span> តែមួយគត់​</p>
               <div>
                 <button type="button" class="btn btn-coustom me-3">Contact Now</button>
@@ -357,7 +444,7 @@
       <div class="container mt-4">
         <h3 class="text-center text-my-secondary pb-4 fw-bold">ដំណើរការផ្លាស់ទីអីវ៉ាន់</h3>
         <div class="row align-items-center justify-content-between">
-          <div class="col-12 col-md-6 col-xl-3 step">
+          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-right">
             <div class="step-circle">
               <div class="step-number position-absolute z-2">01</div>
               <div class="step-icon position-absolute overflow-hidden">
@@ -375,7 +462,7 @@
             <p class="text-my-default fs-5">គ្រាន់តែផ្ញើទីតាំងដែលអ្នកបានបញ្ជាទិញមកកាន់យើង
               រួចរងចាំទទួលអីវ៉ាន់ជាការស្រេច</p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 step">
+          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-down">
             <div class="step-circle">
               <div class="step-number position-absolute z-2">02</div>
               <div class="step-icon position-absolute overflow-hidden">
@@ -393,7 +480,7 @@
             <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​កម្ពុជា​ដោយយន្តហោះ​ កប៉ាល់ទឹកនិង​
               កុងតឺនឺជាដើម</p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 step">
+          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-up">
             <div class="step-circle">
               <div class="step-number position-absolute z-2">03</div>
               <div class="step-icon position-absolute overflow-hidden">
@@ -411,7 +498,7 @@
             <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​ កម្ពុជា​
               និងពីឃ្លាំងទៅទីតាំងអតិថិនជនផ្ទាល់រក្សាគុណភាព​ ប្រសិទ្ធភាពទំនិញជូនអតិថិជន</p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 step">
+          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-left">
             <div class="step-circle">
               <div class="step-number position-absolute z-2">04</div>
               <div class="step-icon position-absolute overflow-hidden">
@@ -519,7 +606,7 @@
             <!-- Swiper -->
             <div #swiperRef="" class="swiper mySwiper">
               <div class="swiper-wrapper ">
-                <div class="swiper-slide rounded shadow-sm">
+                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                   <div class="customer d-flex p-4 pb-0">
                     <div class="profile">
                       <img src="assets/images/customer1.jpg" alt="">
@@ -543,7 +630,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="swiper-slide rounded shadow-sm">
+                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                   <div class="customer d-flex p-4 pb-0">
                     <div class="profile">
                       <img src="assets/images/customer5.jpg" alt="">
@@ -567,7 +654,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="swiper-slide  rounded shadow-sm">
+                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                   <div class="customer d-flex p-4 pb-0">
                     <div class="profile">
                       <img src="assets/images/customer2.jpg" alt="">
@@ -592,7 +679,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="swiper-slide rounded shadow-sm">
+                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                   <div class="customer d-flex p-4 pb-0">
                     <div class="profile">
                       <img src="assets/images/customer3.jpg" alt="">
@@ -616,7 +703,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="swiper-slide rounded shadow-sm">
+                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                   <div class="customer d-flex p-4 pb-0">
                     <div class="profile">
                       <img src="assets/images/customer4.jpg" alt="">
@@ -641,7 +728,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="swiper-slide rounded shadow-sm">
+                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                   <div class="customer d-flex p-4 pb-0">
                     <div class="profile">
                       <img src="assets/images/Nika.jpg" alt="">
@@ -881,9 +968,9 @@
       <h3 class="text-center mb-4 text-my-default">ហេតុអ្វីអ្នកត្រូវតែជ្រើសរើសប្រើសេវាកម្មយើងខ្ញុំ</h3>
       <p class="text-center fs-3 mb-4 fw-bold text-my-subtle">WHY CHOOSE CSC EXPRESS!</p>
       <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
           <div
-            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4">
+            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
             <div class="choose-us-icon bg-my-primary rounded-4">
               <img src="assets/images/driver (2).png" alt="pic">
             </div>
@@ -896,9 +983,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down">
           <div
-            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4">
+            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
             <div class="choose-us-icon bg-body-my-tertiary rounded-4">
               <img src="assets/images/online-support.png" alt="pic">
             </div>
@@ -911,9 +998,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
           <div
-            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4">
+            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
             <div class="choose-us-icon bg-my-primary rounded-4">
               <img src="assets/images/vip.png" alt="pic">
             </div>
@@ -926,9 +1013,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
           <div
-            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4">
+            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
             <div class="choose-us-icon bg-body-my-tertiary rounded-4">
               <img src="assets/images/express-delivery (2).png" alt="pic">
             </div>
@@ -940,9 +1027,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
           <div
-            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4">
+            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
             <div class="choose-us-icon bg-my-primary rounded-4">
               <img src="assets/images/home-delivery (1).png" alt="pic">
             </div>
@@ -954,9 +1041,9 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
           <div
-            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4">
+            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
             <div class="choose-us-icon bg-body-my-tertiary rounded-4">
               <img src="assets/images/delivery (1).png" alt="pic">
             </div>
@@ -1074,7 +1161,7 @@
           <div class="col-12 col-md-6 col-lg-4 col-xl-4">
             <div class="card border-0">
               <div class="image d-flex justify-content-center align-items-center">
-                <img class="rounded-top" src="assets/images/cute.jpg" alt="team">
+                <img class="rounded-top" src="assets/images/chenny.jpg" alt="team">
                 <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
                   <div class="social-icon d-flex justify-content-center align-items-center">
                     <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
@@ -1101,7 +1188,7 @@
           <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
             <div class="card border-0 ">
               <div class="image d-flex justify-content-center align-items-center">
-                <img class="rounded-top" src="assets/images/cute.jpg" alt="team">
+                <img class="rounded-top" src="assets/images/Chet.jpg" alt="team">
                 <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
                   <div class="social-icon d-flex justify-content-center align-items-center">
                     <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
@@ -1128,7 +1215,7 @@
           <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
             <div class="card border-0">
               <div class="image d-flex justify-content-center align-items-center">
-                <img class="rounded-top" src="assets/images/cute.jpg" alt="team">
+                <img class="rounded-top" src="assets/images/nita.jpg" alt="team">
                 <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
                   <div class="social-icon d-flex justify-content-center align-items-center">
                     <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
@@ -1156,6 +1243,7 @@
       </div>
     </div>
   </section>
+</main>
 
   <footer>
     <div class="footer  bg-body-my-tertiary">
@@ -1180,13 +1268,13 @@
             </div>
           </div>
 
-        <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-          <div class=" mt-5   ">
-            <h4 class="text-my-primary">Quick-links</h4>
-          </div>
-          <div class="mb-2">
-            <a class="text-my-secondary fs-5" href="#">ទំព័រដើម</a>
-          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5   ">
+              <h4 class="text-my-primary">Quick-links</h4>
+            </div>
+            <div class="mb-2">
+              <a class="text-my-secondary fs-5" href="#">ទំព័រដើម</a>
+            </div>
 
             <div class="mb-2">
               <a class=" text-my-secondary fs-5 " href="#">សាខា</a>
@@ -1223,10 +1311,10 @@
             </div>
           </div>
 
-        <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-          <div class=" mt-5 mb-4 ">
-            <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
-          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5 mb-4 ">
+              <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
+            </div>
 
             <div class="contactus">
               <div class="mb-2">
@@ -1439,4 +1527,5 @@
     });
   });
 </script>
+
 </html>

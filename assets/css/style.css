@@ -27,6 +27,7 @@ body {
   --my-bg-contactus: #729268;
   --my-color-icon: #ffff;
   --my-qoute-color: #ffff;
+  --my-bgcolor-sys: #fff;
 }
 
 [data-theme="dark"] {
@@ -38,6 +39,7 @@ body {
   --my-color-footer: #222;
   --my-bg-contactus: #222;
   --my-qoute-color: #0000;
+  --my-bgcolor-sys: #444;
 }
 
 img {
@@ -145,6 +147,10 @@ img {
 
 .bg-my-qoute-color {
   background-color: var(--my-qoute-color);
+}
+
+.bg-my-default{
+  background-color: var(--my-bgcolor-sys);
 }
 
 .text-my-primary {
@@ -255,22 +261,16 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+
 }
 
 .navbar.scrolled {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 996;
   transition: top 0.3s;
-}
-
-.navtop {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
 }
 
 .navbar {
@@ -380,17 +380,47 @@ input:focus {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
 
 }
+.notificaton-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #ffff;
+  border: 1px solid #669955 ;
+  border-radius: 50%;
+}
 
 .dropdown-menu .dropdown-item {
   font-size: 18px;
   color: var(--my-color-secondary);
 }
-
+.my-offcanvas-image{
+  width: 100px;
+ 
+}
+.my-offcanvas-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .dropdown-menu-color {
   --bs-dropdown-link-active-bg: var(--my-color-subtle) !important;
 }
+.user-profile{
+  width: 100%;
+  height: 100%;
+}
 
-.user-profile,
+.image-profile{
+  width: 35px;
+  height: 35px;
+}
+.image-profile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .profile {
   width: 35px;
   height: 35px;
@@ -426,7 +456,10 @@ input:focus {
   background-position: center;
   overflow: hidden;
 }
+.pt-70{
+  padding-top: 60px;
 
+}
 .hero-banner-home {
   width: 100%;
   height: 700px;
@@ -438,6 +471,7 @@ input:focus {
   overflow: hidden;
 }
 
+
 .favorite-page {
   width: 100%;
   height: 700px;
@@ -448,11 +482,17 @@ input:focus {
   overflow: hidden;
 }
 
-@media (max-width: 850px) {
+
+
+
+/* @media (max-width: 768px) {
   .hero-baner {
     height: 500px;
   }
-}
+  .hero-banner-home{
+    margin-top: 100px;
+  }
+} */
 
 .overlay-now {
   position: absolute;
@@ -526,6 +566,17 @@ input:focus {
   font-weight: 600;
   border-radius: 33% 66% 70% 30%/49% 62% 38% 51%;
 }
+/*  */
+.pt-70{
+  padding-top: 70px;
+}
+.logo-thankful{
+  max-width: 200px;
+
+}
+.thankful-detail {
+  padding: 40px 0;
+}
 
 .card-hover {
   transition: transform 0.3s ease;
@@ -545,7 +596,6 @@ input:focus {
   height: 100%;
 }
 
-}
 .service-icon{
   width: 100px;
   height: 100%;
@@ -578,7 +628,6 @@ input:focus {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -677,18 +726,40 @@ a {
 .our-team {
   width: 100%;
 }
-
+.card .image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .card .image:hover img {
   transform: scale(1.1);
+ 
 }
 
 .card .image img {
   transition: 0.5s;
 }
 
-.card .image {
+.card .image:hover {
   overflow: hidden;
   position: relative;
+  
+}
+
+.image-fav {
+  position: relative;
+}
+
+.remove-fav {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  opacity: 0;
+  transition: opacity 0.5s ease, right 0.5s ease; 
+}
+.image-fav:hover .remove-fav {
+  opacity: 1;
+  right: 15px;
 }
 
 .social-hover {
@@ -1302,6 +1373,10 @@ input:focus {
 
 .nav-link-hover {
   color: var(--my-color-text);
+}
+
+.modal-backdrop{
+  z-index: 3!important;
 }
 
 @media (max-width: 1024px) {

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="position-sticky top-0" style="z-index: 999;">
     <div class="navtop">
       <div class="container d-flex justify-content-between">
         <div class="quick-contact d-flex align-items-center">
@@ -34,20 +34,30 @@
             </a>
           </div>
         </div>
-        <div class="d-flex">
+        <div class="d-none d-lg-flex ">
           <div class="dropdown me-4">
             <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
               type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
               <span>ភាសាខ្មែរ</span>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
               <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
               <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
             </ul>
           </div>
           <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
               class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+        </div>
+        <div class="ms-3 d-md-flex d-xl-none">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
+            <i class="fas fa-sign-in-alt"></i> ចូលគណនី
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
+            class="btn btn-my-secondary btn-my-outline-secondary fs-6">
+            <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
+          </button>
         </div>
       </div>
     </div>
@@ -63,8 +73,12 @@
         </button>
         <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">CSC EXPRESS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
+
+              <img src="assets/images/my-logo-csc.png" alt="">
+            </div>
+            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i
+              class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-xl-auto">
@@ -101,7 +115,7 @@
                 </ul>
               </li>
             </ul>
-            <div class="ms-3 d-flex">
+            <div class="ms-3 d-none d-xl-flex">
               <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
                 <i class="fas fa-sign-in-alt"></i> Log in
@@ -111,6 +125,21 @@
                 <i class="fas fa-user-plus"></i> Sign up
               </button>
             </div>
+            <div class="d-flex d-lg-none">
+              <div class="dropdown me-4">
+                <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                  <span>ភាសាខ្មែរ</span>
+                </button>
+                <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
+                  <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+                  <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+                  class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+            </div>
           </div>
         </div>
       </div>
@@ -119,9 +148,9 @@
 
 
     <!-- login  modal -->
-    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered" >
         <div class="modal-content">
           <div class="modal-header my-main-bg p-1">
             <a href="" class="logo-modal me-auto">
@@ -130,7 +159,7 @@
             <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
                 class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
           </div>
-          <div class="modal-body my-main-bg p-0">
+          <div class="modal-body my-main-bg p-0 " >
             <div class="row justify-content-center p-0 rounded">
               <div class="col-8 my-5 p-0">
                 <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
@@ -321,10 +350,10 @@
             <div class="row">
               <div class="col-12 col-lg-7 ">
                 <div class="hero-title">
-                  <h1 class="mb-5 text-white fw-bold">កាន់តែងាយស្រួលជាមួយ<span class="text-my-primary fw-bold"> CSC
+                  <h1 class="mb-5 text-white fw-bold" data-aos="fade-right">កាន់តែងាយស្រួលជាមួយ<span class="text-my-primary fw-bold"> CSC
                       EXPRESS</span> មានទាំងសេវាកម្មដឹកជញ្ជូន និងសេវាក​​ម្ម​ធ្វើដំណើរ​ </h1>
-                  <h4 class="mb-5 text-white fw-bold">"Connecting you to the world, one delivery at a time."</h4>
-                  <p class="fs-4  mb-5 text-white fw-bold">គុណភាព សុវតិ្ថភាព លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span
+                  <h4 class="mb-5 text-white fw-bold" data-aos="fade-down">"Connecting you to the world, one delivery at a time."</h4>
+                  <p class="fs-4  mb-5 text-white fw-bold" data-aos="fade-left">គុណភាព សុវតិ្ថភាព លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span
                       class="text-my-primary fw-bold"> CSC EXPRESS</span> តែមួយគត់​</p>
                   <div>
                     <button type="button" class="btn btn-coustom me-3">Contact Now</button>
@@ -510,7 +539,7 @@
         <div class="container mt-4">
           <h3 class="text-center text-my-secondary pb-4 fw-bold">ដំណើរការផ្លាស់ទីអីវ៉ាន់</h3>
           <div class="row align-items-center justify-content-between">
-            <div class="col-12 col-md-6 col-xl-3 step">
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-right">
               <div class="step-circle">
                 <div class="step-number position-absolute z-2">01</div>
                 <div class="step-icon position-absolute overflow-hidden">
@@ -529,7 +558,7 @@
                 រួចរងចាំទទួលអីវ៉ាន់ជាការស្រេច</p>
 
             </div>
-            <div class="col-12 col-md-6 col-xl-3 step">
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-down">
               <div class="step-circle">
                 <div class="step-number position-absolute z-2">02</div>
                 <div class="step-icon position-absolute overflow-hidden">
@@ -547,7 +576,7 @@
               <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​កម្ពុជា​ដោយយន្តហោះ​ កប៉ាល់ទឹកនិង​
                 កុងតឺនឺជាដើម</p>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 step">
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-up">
               <div class="step-circle">
                 <div class="step-number position-absolute z-2">03</div>
                 <div class="step-icon position-absolute overflow-hidden">
@@ -565,7 +594,7 @@
               <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​ កម្ពុជា​
                 និងពីឃ្លាំងទៅទីតាំងអតិថិនជនផ្ទាល់រក្សាគុណភាព​ ប្រសិទ្ធភាពទំនិញជូនអតិថិជន</p>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 step">
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-left">
               <div class="step-circle">
                 <div class="step-number position-absolute z-2">04</div>
                 <div class="step-icon position-absolute overflow-hidden">
@@ -673,7 +702,7 @@
               <!-- Swiper -->
               <div #swiperRef="" class="swiper mySwiper">
                 <div class="swiper-wrapper ">
-                  <div class="swiper-slide rounded shadow-sm">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                     <div class="customer d-flex p-4 pb-0">
                       <div class="profile">
                         <img src="assets/images/customer1.jpg" alt="">
@@ -696,9 +725,8 @@
                         <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
                       </span>
                     </div>
-
                   </div>
-                  <div class="swiper-slide rounded shadow-sm">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                     <div class="customer d-flex p-4 pb-0">
                       <div class="profile">
                         <img src="assets/images/customer5.jpg" alt="">
@@ -722,7 +750,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="swiper-slide  rounded shadow-sm">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                     <div class="customer d-flex p-4 pb-0">
                       <div class="profile">
                         <img src="assets/images/customer2.jpg" alt="">
@@ -747,7 +775,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="swiper-slide rounded shadow-sm">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                     <div class="customer d-flex p-4 pb-0">
                       <div class="profile">
                         <img src="assets/images/customer3.jpg" alt="">
@@ -771,7 +799,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="swiper-slide rounded shadow-sm">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                     <div class="customer d-flex p-4 pb-0">
                       <div class="profile">
                         <img src="assets/images/customer4.jpg" alt="">
@@ -796,14 +824,14 @@
                       </span>
                     </div>
                   </div>
-                  <div class="swiper-slide rounded shadow-sm">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
                     <div class="customer d-flex p-4 pb-0">
                       <div class="profile">
                         <img src="assets/images/Nika.jpg" alt="">
                       </div>
                       <div class="ms-3">
                         <div class="profile-name fs-5 fw-medium">Kim Monika</div>
-
+  
                         <div class="ratting-star fs-6">
                           <i class="fa-solid fa-star "></i>
                           <i class="fa-solid fa-star"></i>
@@ -827,8 +855,8 @@
           </div>
         </div>
       </div>
-
     </section>
+  
 
 
     <section class="my-5 faq-section">
@@ -1039,9 +1067,9 @@
         <h3 class="text-center mb-4 text-my-default">ហេតុអ្វីអ្នកត្រូវតែជ្រើសរើសប្រើសេវាកម្មយើងខ្ញុំ</h3>
         <p class="text-center fs-3 mb-4 fw-bold text-my-subtle">WHY CHOOSE CSC EXPRESS!</p>
         <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
             <div
-              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4">
+              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
               <div class="choose-us-icon bg-my-primary rounded-4">
                 <img src="assets/images/driver (2).png" alt="pic">
               </div>
@@ -1054,9 +1082,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down">
             <div
-              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4">
+              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
               <div class="choose-us-icon bg-body-my-tertiary rounded-4">
                 <img src="assets/images/online-support.png" alt="pic">
               </div>
@@ -1069,9 +1097,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
             <div
-              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4">
+              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
               <div class="choose-us-icon bg-my-primary rounded-4">
                 <img src="assets/images/vip.png" alt="pic">
               </div>
@@ -1085,9 +1113,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
             <div
-              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4">
+              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
               <div class="choose-us-icon bg-body-my-tertiary rounded-4">
                 <img src="assets/images/express-delivery (2).png" alt="pic">
               </div>
@@ -1099,9 +1127,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down">
             <div
-              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4">
+              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
               <div class="choose-us-icon bg-my-primary rounded-4">
                 <img src="assets/images/home-delivery (1).png" alt="pic">
               </div>
@@ -1113,9 +1141,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
             <div
-              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4">
+              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
               <div class="choose-us-icon bg-body-my-tertiary rounded-4">
                 <img src="assets/images/delivery (1).png" alt="pic">
               </div>
@@ -1233,7 +1261,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xl-4">
               <div class="card border-0">
                 <div class="image d-flex justify-content-center align-items-center">
-                  <img class="rounded-top" src="assets/images/cute.jpg" alt="team">
+                  <img class="rounded-top" src="assets/images/Chenny.jpg" alt="team">
                   <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
                     <div class="social-icon d-flex justify-content-center align-items-center">
                       <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
@@ -1261,7 +1289,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
               <div class="card border-0 ">
                 <div class="image d-flex justify-content-center align-items-center">
-                  <img class="rounded-top" src="assets/images/cute.jpg" alt="team">
+                  <img class="rounded-top" src="assets/images/Chet.jpg" alt="team">
                   <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
                     <div class="social-icon d-flex justify-content-center align-items-center">
                       <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
@@ -1289,7 +1317,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
               <div class="card border-0">
                 <div class="image d-flex justify-content-center align-items-center">
-                  <img class="rounded-top" src="assets/images/cute.jpg" alt="team">
+                  <img class="rounded-top" src="assets/images/nita.jpg" alt="team">
                   <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
                     <div class="social-icon d-flex justify-content-center align-items-center">
                       <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>

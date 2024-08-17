@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thankful</title>
+    <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/aos-master/aos-master/dist/aos.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="position-sticky top-0" style="z-index: 999;">
+    <div class="navtop">
+      <div class="container d-flex justify-content-between">
+        <div class="quick-contact d-flex align-items-center">
+          <div class="phone_number me-4">
+            <a href="#" class="d-flex align-items-center">
+              <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
+              <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
+            </a>
+          </div>
+          <div class="send_email">
+            <a href="#" class="d-flex align-items-center">
+              <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
+              <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="d-none d-xl-flex">
+          <div class="dropdown me-4">
+            <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+              type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+              <span>ភាសាខ្មែរ</span>
+            </button>
+            <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
+              <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+              <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+              class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+        </div>
+        <ul class="list-unstyled d-flex d-xl-none align-items-center text-my-primary m-0 gap-2 gap-lg-0">
+          <li class="nav-item icon-item">
+            <a class="nav-link notificaton position-relative" href="#"><i class="fa-solid fa-heart fs-5 notificaton-icon"></i></a>
+          </li>
+          <li class="nav-item icon-item">
+            <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell fs-5 notificaton-icon"></i>
+              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
+            </a>
+          </li>
+          <li class="nav-item icon-item">
+            <div class="dropdown">
+              <a class="border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="user-profile ms-1">
+                  <div class="profile">
+                    <img src="assets/images/cute.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
+                <li class="d-flex">
+                  <div class="user-profile">
+                    <div class="ms-2 d-flex">
+                      <div class="image-profile  me-3">
+                        <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
+                      </div>
+                     <div>
+                      <div class="fw-bold text-my-default" >CSC Express</div>
+                      <div class="d-flex">
+                        <div class="online ms-0 m-2"></div>
+                        <p class="text-my-default">online</p>
+                      </div>
+                     </div>
+                      
+                    </div>
+                    
+                  </div>
+                </li>
+                <hr class="text-my-default mt-0">
+                <li><a class="dropdown-item " href="setting-edit-profile.html"><i
+                      class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
+                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
+                      class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
+                <li><a class="dropdown-item" href="index.html"><i
+                      class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#" style="width: 150px;">
+          <img src="assets/images/CSC-Express-LOGO.png" alt="#" style="width: 100%; height: 100%; object-fit: cover;">
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
+              <img src="assets/images/my-logo-csc.png" alt="">
+            </div>
+            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i
+              class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">សាខា</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="#">ការដឹកជញ្ជូនរហ័ស</a></li>
+                  <li><a class="dropdown-item" href="#">តាមដានទំនិញ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="#">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                  <li><a class="dropdown-item" href="#">ទិញសំបុត្រ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ទំនាក់ទំនង</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="#">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" href="#">ក្រុមយើងខ្ញុំ</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex d-lg-none">
+              <div class="dropdown me-4">
+                <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                  <span>ភាសាខ្មែរ</span>
+                </button>
+                <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
+                  <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+                  <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-mode border-0 bg-transparent m-0" data-theme-toggle> <i
+                  class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+            </div>
+          </div>
+          
+        </div>
+
+         <!--  -->
+         <div class="d-flex justify-content-center align-items-center text-center gap-2 " style="height: 40px;">
+          <li class="nav-item icon-item d-none d-xl-block p-0 ">
+            <a class="nav-link position-relative p-0 " href="#"><i class="fa-solid fa-heart fs-5 text-my-primary notificaton-icon "></i></a>
+          </li>
+          <li class="nav-item icon-item d-none d-xl-block">
+            <a class="nav-link position-relative p-0" href="#"><i class="fa-solid fa-bell fs-5 text-my-primary notificaton-icon"></i>
+              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
+            </a>
+          </li>
+          <li class="nav-item icon-item d-none d-xl-block p-0">
+            <div class="dropdown dropstart">
+              <a class="border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="user-profile">
+                  <div class="profile">
+                    <img src="assets/images/cute.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
+                <li class="d-flex">
+                  <div class="user-profile">
+                    <div class="ms-2 d-flex">
+                      <div class="image-profile  me-3">
+                        <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
+                      </div>
+                     <div>
+                      <div class="fw-bold text-my-default" >CSC Express</div>
+                      <div class="d-flex">
+                        <div class="online ms-0 m-2"></div>
+                        <p class="text-my-default">online</p>
+                      </div>
+                     </div>
+                      
+                    </div>
+                    
+                  </div>
+                </li>
+                <hr class="text-my-default mt-0">
+                <li><a class="dropdown-item " href="setting-edit-profile.html"><i
+                      class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
+                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
+                      class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
+                <li><a class="dropdown-item" href="index.html"><i
+                      class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
+              </ul>
+             
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main class="pt-70">
+        <section>
+            <div class="thankful">
+                <div class="container my-5">
+                    <h3 class="text-center fw-bold text-my-primary mb-sm-5">សូមគោរពនិងថ្លែងអំណរគុណយ៉ាងជ្រាវជ្រៅ</h3>
+                    <div class="row  text-center flex-wrap g-5">
+                        <div class="col-12 col-md-6">
+                            <div class="logo-thankful mx-auto mb-3">
+
+                            <img src="assets/images/ant-logo.png" alt="Sponsor 1">
+                        </div>
+                            <p class="text-my-default">ANT ជាវេបសាយបណ្ដុះបណ្ដាលមួយមានទាំងចំណេះដឹងទូទៅ របៀបម្ហូបអាហារ​ កំប្លែង ការទស្សន៏ទាយ អ្វីដែលពិសេសគឺទាក់ទងបចេ្ចកវិទ្យា​ ព័ត៌មានវិទ្យា​ វគ្គជំនាញកុំព្យូទ័រជាដើមនិងផុសពីស្នាដៃរបស់សិស្សនិស្សិតផងដែរ
+                            </p>
+                            <a href="http://www.antkh.com/" class="btn btn-outline-primary">Visit Website</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="logo-thankful mx-auto mb-3">
+                            <img src="assets/images/dcc_logo-crop.png" alt="Sponsor 1">
+                        </div>
+                            <p class="text-my-default">  DCC គឺជាផ្នែកមួយនៃយុទ្ធសាស្ត្រទូលំទូលាយរបស់រដ្ឋាភិបាលក្នុងការធ្វើទំនើបកម្មសេវាសាធារណៈតាមរយៈបច្ចេកវិទ្យាឌីជីថល។ គេហទំព័រនេះផ្តល់នូវព័ត៌មាន ធនធាន និងសេវាកម្មដើម្បីកែលម្អតម្លាភាព ប្រសិទ្ធភាព និងលទ្ធភាពប្រើប្រាស់ក្នុងការគ្រប់គ្រងសាធារណៈ។ វាបម្រើជាមជ្ឈមណ្ឌលសម្រាប់គំនិតផ្តួចផ្តើមឌីជីថលផ្សេងៗដែលមានគោលបំណងជំរុញសេដ្ឋកិច្ចឌីជីថល និងការកែលម្អគុណភាពនៃអភិបាលកិច្ចនៅកម្ពុជា។
+                            </p>
+                            <a href="https://dcc.gov.kh/" class="btn btn-outline-primary">Visit Website</a>
+                        </div>
+                   
+                        <div class="col-12 col-md-6">
+                            <div class="logo-thankful mx-auto mb-3">
+                            <img src="assets/images/cbrd-logo.png" alt="Sponsor 1">
+                        </div>
+                            <p class="text-my-default">  1 - Description of contributionSponsor
+                                 Description of contribution 
+                                Sponsor 1 - Description of contribution
+                            </p>
+                            <a href="https://sponsor1.com" class="btn btn-outline-primary">Visit Website</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="logo-thankful mx-auto mb-3">
+                                <img src="assets/images/mptc-Logo-label.png" alt="Sponsor 1">
+                        </div>
+                            <p class="text-my-default">  1 - Description of contributionSponsor
+                                 Description of contribution 
+                                Sponsor 1 - Description of contribution
+                            </p>
+                            <a href="https://sponsor1.com" class="btn btn-outline-primary">Visit Website</a>
+                        </div>
+                       
+                    </div>
+                </div>
+                    <div class="thankful-detail bg-body-my-tertiary text-center">
+                        <div class="container">
+                            <p class="fs-5 text-my-default">ជាដំបូងសូមថ្លែងអំណរគុណយ៉ាងស្មោះស្ម័គ្រចំពោះ សាលាបណ្ដុះបណ្ដាលអាន ​និងក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍សម្រាប់អាហារូបករណ៍និងការគាំទ្រដ៏សប្បុរស និងជឿជាក់លើសក្តានុពលរបស់ពួកយើង។ អាហារូបករណ៍នេះមិនត្រឹមតែជួយសម្រាលបន្ទុកហិរញ្ញវត្ថុនៃការសិក្សារបស់ពួកយើងប៉ុណ្ណោះទេ ប៉ុន្តែថែមទាំងជំរុញឱ្យពួកយើងខិតខំដើម្បីឧត្តមភាពក្នុងការខិតខំសិក្សា និងមា​នវិជ្ជាជីវៈខ្ពស់ដើម្បីកសាងខ្លួនឲក៏ដូចជាជួយសង្គមជាតិនាពេលអនាគត។
+                              ខ្ញុំប្ដេជ្ញាថានឹងខិតខំប្រឹងប្រែងឱ្យអស់ពីសមត្ថភាពពីឱកាសនេះ និងប្រើប្រាស់ចំណេះដឹងដែលទទួលបាន ដើម្បីរួមចំណែកក្នុងការអភិវឌ្ឍន៍វិស័យបច្ចេកវិទ្យានៅកម្ពុជា។ សូមអរគុណម្តងទៀតសម្រាប់ការគាំទ្រដ៏មានតម្លៃនេះ។</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        
+        </section>
+    </main>
+    
+  <footer>
+    <div class="footer  bg-body-my-tertiary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+            <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">
+              <img class="me-md-5" src="assets/images/CSC-Express-LOGO.png" alt="#"
+                style="width: 100%; height: auto; object-fit: contain;">
+            </a>
+            <div class="mt-0">
+              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់ គុណភាព
+                សុវតិ្ថភាព
+                លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
+            </div>
+            <div class="mb-2 ms-3 ms-md-0">
+              <a class="text-my-secondary  fs-5" href="#">ប្រវតិ្តក្រុមហ៊ុន</a>
+            </div>
+
+            <div class="mb-2 ms-3 ms-md-0">
+              <a class=" text-my-secondary fs-5 " href="#">ក្រុមយើងខ្ញុំ</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5   ">
+              <h4 class="text-my-primary">Quick-links</h4>
+            </div>
+            <div class="mb-2">
+              <a class="text-my-secondary fs-5" href="#">ទំព័រដើម</a>
+            </div>
+
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សាខា</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">ទំនាក់ទំនង</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">អំពីយើង</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5 mb-4 ">
+              <h4 class="text-my-primary">សេវាកម្ម</h4>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">ប្រូម៉ូសិន</a>
+            </div>
+            <div class="mb-2">
+              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មបានកាតបញ្ចុះតម្លៃ</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class=" mt-5 mb-4 ">
+              <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
+            </div>
+
+            <div class="contactus">
+              <div class="mb-2">
+                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-secondary"></i>
+                  <span class="ms-2  text-my-secondary fs-5">Ant Trainning Center</span>
+                </a>
+              </div>
+              <div class="mb-2">
+                <a href="#">
+                  <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
+                  <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
+                </a>
+              </div>
+              <div class="mb-4">
+                <a href="#">
+                  <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
+                  <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="mb-2">
+              <a href="#"><i
+                  class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+              <a href="#"><i
+                  class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footers">
+      <div class="d-flex justify-content-center">
+        <p class="fs-6 text-white mb-0">@copy right csc express 2024</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/headerfixed.js"></script>
+<script src="assets/js/backtotop.js"></script>
+
+</html>

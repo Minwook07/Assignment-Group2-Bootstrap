@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
+    <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+            class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
     <main>
         <!-- BackToTop Button -->
         <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
@@ -66,41 +69,71 @@
             </div>
         </div>
 
-        <section class="my-main-bg about-us-banner overflow-hidden py-4">
+        <section class="my-main-bg about-us-banner overflow-hidden py-4 mb-5">
             <div class="container py-4">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <h1 class="text-my-primary">អំពីយើង.</h1>
-                        <h1 class="text-my-primary">Web Developer</h1>
-                        <p class="text-my-default fs-5">We learn and grow together, striving to elevate the tech
-                            industry in Cambodia.</p>
-                        <div class="my-type-1 bg-my-primary text-center text-white p-3 mb-3">
-                            <h3>Experince</h3>
-                        </div>
-                        <div class="my-type-2 bg-my-primary text-center text-white p-3 mb-3">
-                            <h3>Experince</h3>
-                        </div>
-                        <div class="my-type-3 bg-my-primary text-center text-white p-3">
-                            <h3>Experince</h3>
+                    <div class="col-12 col-lg-4 mb-3" >
+                        <h1 class="text-my-primary" data-aos="fade-right">អំពីយើង.</h1>
+                        <h1 class="text-my-primary mb-4" data-aos="fade-right">Web Developer</h1>
+                        <p class="text-my-default fs-4 mb-4" data-aos="fade-left"><i
+                                class="fa-solid fa-quote-left text-my-primary fs-3"></i>&nbsp;ពួកយើងគឺជានិស្សិតដែលសិក្សាជំនាញផ្នែកអភិវឌ្ឍវេបសាយនៅមជ្ឍមណ្ឌលបណ្តុះបណ្តាលANT&nbsp;<i
+                                class="fa-solid fa-quote-right text-my-primary fs-3"></i>
+
+                        </p>
+                        <div>
+                            <a href="#sonita" class="btn btn-my-primary fs-4" data-aos="fade-down-right">អានបន្ថែម</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 d-flex gap-3 ">
+                    <div class="col-12 col-lg-8 d-flex gap-3 ">
                         <div class="card-pf-img position-relative rounded-4">
-                            <img src="assets/images/nita.jpg" alt="">
-                            <div class="our-name my-main-bg rounded-4 position-absolute p-3">
-                                <h3 class="text-my-primary mb-0">មិត​ ចិត</h3>
+                            <img src="assets/images/nita.jpg" alt="" class="rounded-4" data-aos="fade-down-left">
+                            <div class="social-hover my-social-hover d-flex gap-4 justify-content-center align-items-center position-absolute rounded-5">
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-twitter text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-solid fa-paper-plane text-color-icon fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="card-pf-img position-relative rounded-4">
+                            <img src="assets/images/chet.jpg" alt="" class="rounded-4" data-aos="fade-up-left">
+                            <div class="social-hover my-social-hover d-flex gap-4 justify-content-center align-items-center position-absolute rounded-5">
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-twitter text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-solid fa-paper-plane text-color-icon fs-5"></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="card-pf-img position-relative rounded-4">
-                            <img src="assets/images/chenny.png" alt="">
-                            <div class="our-name our-name-rotate my-main-bg rounded-4 position-absolute p-3">
-                                <h3 class="text-my-primary mb-0">មិត​ ចិត</h3>
-                            </div>
-                        </div>
-                        <div class="card-pf-img position-relative rounded-4">
-                            <img src="assets/images/cute.jpg" alt="">
-                            <div class="our-name our-name-rotate my-main-bg rounded-4 position-absolute p-3">
-                                <h3 class="text-my-primary mb-0">ងន់ ចេន្នី</h3>
+                            <img src="assets/images/chen.jpg" alt="" class="rounded-4" data-aos="fade-down-left">
+                            <div class="social-hover my-social-hover d-flex gap-4 justify-content-center align-items-center position-absolute rounded-5">
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-twitter text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon fs-5"></i></a>
+                                </div>
+                                <div class="social-icon my-social-icon d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fa-solid fa-paper-plane text-color-icon fs-5"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -108,13 +141,13 @@
             </div>
         </section>
 
-        <section>
+        <section class="mb-5" id="sonita">
             <div class="container">
                 <div class="row position-relative">
-                    <div class="col-12 col-lg-5 my-main-bg" style="height: 500px;">
-                        <h1 class="text-my-primary mb-5">សមាជិកក្រុម<span class="dot-member display-1">&bull;</span>
+                    <div class="col-12 col-lg-6 my-main-bg" style="height: 418px;">
+                        <h1 class="text-my-primary mb-5" data-aos="fade-up-right">សមាជិកក្រុម<span class="dot-member display-1">&bull;</span>
                         </h1>
-                        <div class="my-qoute-border rounded position-relative">
+                        <div class="my-qoute-border rounded position-relative" data-aos="fade-down-right">
                             <div class="my-descrition bg-white p-3 rounded position-absolute shadow">
                                 <p class="mb-0 fs-4 text-my-primary"><i
                                         class="fa-solid fa-quote-left text-my-primary fs-1"></i>
@@ -129,30 +162,182 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-7 bg-my-primary rounded position-absolute py-5"
-                        style=" height: 500px; right: -95px;">
-                        <div class="my-quote bg-white rounded shadow mb-3">
+                    <div class="col-12 col-lg-6 bg-my-primary rounded  py-5" style=" height: 550px;">
+                        <div class="my-quote bg-white rounded shadow mb-3" data-aos="fade-up-left">
                             <p class="mb-0 fs-4 text-my-primary p-3"><i class="fa-solid fa-quote-left fs-1"></i>
                                 Programming isn't about
                                 what you know; it's about what you can figure out
                                 <i class="fa-solid fa-quote-right fs-1"></i>
                             </p>
                         </div>
-                        <div class="my-range-skill mb-3">
-                            <label for="disabledRange" class="text-white fs-4">HTML</label>
-                            <input type="range" class="form-range" id="disabledRange" disabled>
-                        </div>
-                        <div class="my-range-skill mb-3">
-                            <label for="disabledRange" class="text-white fs-4">CSS&Boostrap</label>
-                            <input type="range" class="form-range" id="disabledRange" disabled>
-                        </div>
-                        <div class="my-range-skill mb-3">
-                            <label for="disabledRange" class="text-white fs-4">JavaScript</label>
-                            <input type="range" class="form-range" id="disabledRange" disabled>
+                        <div class="skills" data-aos="fade-down-left">
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">HTML&CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">Boosrtap</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">Photoshop</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="80%"></div>
+                                </div>
+                                <span class="skill-percent">80%
+                                </span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="70%"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
                         </div>
                     </div>
                     <div class="our-profile-img position-absolute rounded">
-                        <img src="assets/images/nita.jpg" alt="" class="rounded">
+                        <img src="assets/images/nita.jpg" alt="" class="rounded" data-aos="fade-up">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="container">
+                <div class="row position-relative">
+                    <div class="col-12 col-lg-6 my-main-bg" style="height: 418px;">
+                        <h1 class="text-my-primary mb-5" data-aos="fade-up-right">សមាជិកក្រុម<span class="dot-member display-1">&bull;</span>
+                        </h1>
+                        <div class="my-qoute-border rounded position-relative" data-aos="fade-down-right">
+                            <div class="my-descrition bg-white p-3 rounded position-absolute shadow">
+                                <p class="mb-0 fs-4 text-my-primary"><i
+                                        class="fa-solid fa-quote-left text-my-primary fs-1"></i>
+                                    និស្សិតដែលសិក្សាជំនាញWeb
+                                    DevelopmentនៅANT
+                                    Training Center និងជានិស្សិតឆ្នាំទី3នៅសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ <i
+                                        class="fa-solid fa-quote-right text-my-primary fs-1"></i>
+                                </p>
+                            </div>
+                            <div class="myprofile-name bg-my-primary mt-5 py-2 px-3 position-absolute">
+                                <p class="text-white text-center fw-bold fs-3 mb-0 ">មិត​ ចិត</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 bg-my-primary rounded  py-5" style=" height: 550px;">
+                        <div class="my-quote bg-white rounded shadow mb-3" data-aos="fade-up-left">
+                            <p class="mb-0 fs-4 text-my-primary p-3"><i class="fa-solid fa-quote-left fs-1"></i>
+                                Programming isn't about
+                                what you know; it's about what you can figure out
+                                <i class="fa-solid fa-quote-right fs-1"></i>
+                            </p>
+                        </div>
+                        <div class="skills" data-aos="fade-down-left">
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">HTML&CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">Boosrtap</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">Photoshop</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="80%"></div>
+                                </div>
+                                <span class="skill-percent">80%
+                                </span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="70%"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-profile-img position-absolute rounded">
+                        <img src="assets/images/chet.jpg" alt="" class="rounded" data-aos="fade-up">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="container">
+                <div class="row position-relative">
+                    <div class="col-12 col-lg-6 my-main-bg" style="height: 418px;">
+                        <h1 class="text-my-primary mb-5" data-aos="fade-up-right">សមាជិកក្រុម<span class="dot-member display-1">&bull;</span>
+                        </h1>
+                        <div class="my-qoute-border rounded position-relative" data-aos="fade-down-right">
+                            <div class="my-descrition bg-white p-3 rounded position-absolute shadow">
+                                <p class="mb-0 fs-4 text-my-primary"><i
+                                        class="fa-solid fa-quote-left text-my-primary fs-1"></i>
+                                    និស្សិតដែលសិក្សាជំនាញWeb
+                                    DevelopmentនៅANT
+                                    Training Center និងជានិស្សិតឆ្នាំទី3នៅសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ <i
+                                        class="fa-solid fa-quote-right text-my-primary fs-1"></i>
+                                </p>
+                            </div>
+                            <div class="myprofile-name bg-my-primary mt-5 py-2 px-3 position-absolute">
+                                <p class="text-white text-center fw-bold fs-3 mb-0 ">ងន់​ ចេន្នី</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 bg-my-primary rounded py-5" style=" height: 550px;">
+                        <div class="my-quote bg-white rounded shadow mb-3" data-aos="fade-up-left">
+                            <p class="mb-0 fs-4 text-my-primary p-3"><i class="fa-solid fa-quote-left fs-1"></i>
+                                Programming isn't about
+                                what you know; it's about what you can figure out
+                                <i class="fa-solid fa-quote-right fs-1"></i>
+                            </p>
+                        </div>
+                        <div class="skills" data-aos="fade-down-right">
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">HTML&CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">Boosrtap</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">Photoshop</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="80%"></div>
+                                </div>
+                                <span class="skill-percent">80%
+                                </span>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name text-my-primary">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="70%"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-profile-img position-absolute rounded">
+                        <img src="assets/images/chen.jpg" alt="" class="rounded" data-aos="fade-up">
                     </div>
                 </div>
             </div>
@@ -276,33 +461,30 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/headerfixed.js"></script>
     <script src="assets/js/backtotop.js"></script>
-    <!-- <script>
+    <script src="assets/libs/aos-master/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const cardImgs = document.querySelectorAll('.card-img');
-            cardImgs.forEach(cardImg => {
-                cardImg.addEventListener('mouseover', function () {
-                    cardImgs.forEach(img => img.classList.remove('default-hover'));
-                });
+            const skillProgressBars = document.querySelectorAll('.skill-progress');
 
-                cardImg.addEventListener('mouseout', function () {
-                    if (!Array.from(cardImgs).some(img => img.matches(':hover'))) {
-                        cardImgs[0].classList.add('default-hover');
+            function animateProgressBars() {
+                skillProgressBars.forEach(bar => {
+                    const percentage = bar.getAttribute('data-percentage');
+                    const barTop = bar.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (barTop < windowHeight) {
+                        bar.style.width = percentage;
                     }
                 });
-            });
-            
-            // Initialize the default hover state
-            cardImgs[0].classList.add('default-hover');
+            }
+
+            window.addEventListener('scroll', animateProgressBars);
+            animateProgressBars(); // Initial check in case elements are already in view
         });
-        document.addEventListener("DOMContentLoaded", () => {
-            const cartImg = document.getElementById("cart-img");
-            const ourName = document.getElementById("our-name");
-            ourName.addEventListener('mouseout', () => {
-                ourName.classList.remove('our-name-rotate');
-                ourName.classList.add('rotate-zero');
-            });
-        });
-    </script> -->
+    </script>
 </body>
 
 </html>

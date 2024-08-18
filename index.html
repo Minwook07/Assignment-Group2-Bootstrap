@@ -77,8 +77,8 @@
 
               <img src="assets/images/my-logo-csc.png" alt="">
             </div>
-            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i
-              class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
+            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas"
+              aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-xl-auto">
@@ -86,43 +86,58 @@
                 <a class="nav-link active" href="index.html">ទំព័រដើម</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="branch.html">សាខា</a>
+                <a class="nav-link" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាខា</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="express_logistic.html">ការដឹកជញ្ជូនរហ័ស</a></li>
-                  <li><a class="dropdown-item" href="tracking-items.html">តាមដានទំនិញ</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">ការដឹកជញ្ជូនរហ័ស</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">តាមដានទំនិញ</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a></li>
-                  <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">ទិញសំបុត្រ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">សេវាកម្មកំពុងពេញនិយម</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">សេវាកម្មប្រូម៉ូសិន</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
+                <a class="nav-link" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ទំនាក់ទំនង</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
-                  <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" role="button" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">ក្រុមយើងខ្ញុំ</a></li>
                 </ul>
               </li>
             </ul>
             <div class="ms-3 d-none d-xl-flex">
               <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
-                <i class="fas fa-sign-in-alt"></i> Log in
+                class="btn btn-outline-primary fs-6 me-3">
+                <i class="fas fa-sign-in-alt"></i> ចូលគណនី
               </button>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                class="btn btn-my-secondary btn-my-outline-secondary fs-6">
-                <i class="fas fa-user-plus"></i> Sign up
+              <button type="button" data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-primary fs-6">
+                <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
               </button>
             </div>
             <div class="d-flex d-lg-none">
@@ -150,7 +165,7 @@
     <!-- login  modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header my-main-bg p-1">
             <a href="" class="logo-modal me-auto">
@@ -159,7 +174,7 @@
             <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
                 class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
           </div>
-          <div class="modal-body my-main-bg p-0 " >
+          <div class="modal-body my-main-bg p-0 ">
             <div class="row justify-content-center p-0 rounded">
               <div class="col-8 my-5 p-0">
                 <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
@@ -350,14 +365,17 @@
             <div class="row">
               <div class="col-12 col-lg-7 ">
                 <div class="hero-title">
-                  <h1 class="mb-5 text-white fw-bold" data-aos="fade-right">កាន់តែងាយស្រួលជាមួយ<span class="text-my-primary fw-bold"> CSC
+                  <h1 class="mb-5 text-white fw-bold" data-aos="fade-right">កាន់តែងាយស្រួលជាមួយ<span
+                      class="text-my-primary fw-bold"> CSC
                       EXPRESS</span> មានទាំងសេវាកម្មដឹកជញ្ជូន និងសេវាក​​ម្ម​ធ្វើដំណើរ​ </h1>
-                  <h4 class="mb-5 text-white fw-bold" data-aos="fade-down">"Connecting you to the world, one delivery at a time."</h4>
-                  <p class="fs-4  mb-5 text-white fw-bold" data-aos="fade-left">គុណភាព សុវតិ្ថភាព លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span
-                      class="text-my-primary fw-bold"> CSC EXPRESS</span> តែមួយគត់​</p>
+                  <h4 class="mb-5 text-white fw-bold" data-aos="fade-down">"Connecting you to the world, one delivery at
+                    a time."</h4>
+                  <p class="fs-4  mb-5 text-white fw-bold" data-aos="fade-left">គុណភាព សុវតិ្ថភាព
+                    លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span class="text-my-primary fw-bold"> CSC EXPRESS</span> តែមួយគត់​
+                  </p>
                   <div>
-                    <button type="button" class="btn btn-coustom me-3">Contact Now</button>
-                    <button type="button" class="btn btn-coustom">Booking Now</button>
+                    <a href="#contactnow-us" class="btn btn-coustom me-3">ទំនាក់ទំនង</a>
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-coustom">ចូលប្រើប្រាស់សេវាកម្ម</a>
                   </div>
                 </div>
               </div>
@@ -387,9 +405,9 @@
                 </div>
                 <div class="col-5 col-sm-4 col-lg-3">
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary py-3 w-100">
+                  <a role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary py-3 w-100">
                     តាមដានអីវ៉ាន់
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -403,7 +421,7 @@
         <div class="container mt-5">
           <h3 class="text-center mb-5 text-my-secondary fw-bold">សេវាកម្មយើងខ្ញុំ</h3>
           <div class="row flex-wrap">
-            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-right">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0" data-aos="fade-right">
               <div class="card  shadow py-4 px-4 mb-md-3 mb-sm-3 style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/flight.png" alt="">
@@ -414,12 +432,12 @@
                     អាស្រ័យលើទីតាំងដែលអតិជនបានបញ្ជាទិញដោយផ្ដោតលើការដឹកជញ្ជូ​នអីវ៉ាន់ពីចិនមកកាន់កម្ពុជាតាមរយះផ្លូវគោក
                     ផ្លូវសមុទ្រ ផ្លូវអាកាស​​</p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0" data-aos="fade-up">
               <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/asset.png" alt="">
@@ -430,12 +448,12 @@
                     យើងមានបុគ្គិលច្រើននាក់ទូទាំងប្រទេសកម្ពុជា​និង​ប្រទេសចិន​ដែលប្រកបដោយសេចក្ដីថ្លៃថ្នូរព្រមទាំងមានទំនួលខុសត្រួវខ្ពស់
                   </p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-down">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0" data-aos="fade-down">
               <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/express-delivery (1).png" alt="">
@@ -446,12 +464,11 @@
                     ឬអតិថិជនអាចតាមដានលើwebsite
                   </p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-
-            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-left">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0" data-aos="fade-left">
               <div class="card shadow py-4 px-4  mb-sm-3  style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/qr-code.png" alt="">
@@ -462,11 +479,11 @@
                     កាន់តែងាយស្រួលនិងរហ័សជាងមុនក្រុមហ៊ុនយើងខ្ញុំបានសហការជាមួយធានាគារដៃគូរទួទាត់ធំៗប្រចាំប្រទេសចិន​និងកម្ពុជា
                   </p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-right">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0 " data-aos="fade-right">
               <div class="card  shadow py-4 px-4 mb-md-3 mb-sm-3 style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/online-booking (1).png" alt="">
@@ -477,13 +494,13 @@
                     លោកអ្នកអាចទិញនិងកក់សំបុត្រសម្រាប់ធ្វើដំណើរ២៥ខេត្តក្រុងនៅព្រះរាជាណាចក្រកម្ពុជា
                     ធានាបាននូវសុវត្ថិភាព​​ និងផាសុកភាពខ្ពស់​​</p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-down">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0" data-aos="fade-down">
               <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
                 <div class="service-icon1 mb-4">
                   <img src="assets/images/bus-station (2).png" alt="">
@@ -494,11 +511,11 @@
                     រាល់អតិថិជនដែលបានទិញឬកក់សំបុត្ររួចហើយគឺមានកន្លែងសម្រាប់អង្គុយរងចាំនិងមានកន្លែងញាំអាហារមុនចេញដំណើរផងដែរ
                   </p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0" data-aos="fade-up">
               <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/vehicles.png" alt="">
@@ -509,11 +526,11 @@
                     ឡានក្រុងVIP និង Toyota Hiace VIP អតិថិជនអាចជ្រើសរើសរថយន្តធ្វើដំណើរបាននៅពេលកក់សំបុត្រឬទិញសំបុត្រ
                   </p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-left">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0 " data-aos="fade-left">
               <div class="card shadow py-4 px-4  mb-sm-3  style-frame card-hover">
                 <div class="service-icon mb-3">
                   <img src="assets/images/destination (1).png" alt="">
@@ -525,7 +542,7 @@
                     ពីខេត្តមួយទៅខេត្តទៀតផងដែរ
                   </p>
                   <div class="line-team my-4"></div>
-                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="text-my-secondary fs-5" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -539,7 +556,7 @@
         <div class="container mt-4">
           <h3 class="text-center text-my-secondary pb-4 fw-bold">ដំណើរការផ្លាស់ទីអីវ៉ាន់</h3>
           <div class="row align-items-center justify-content-between">
-            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-right">
+            <div class="col-12 col-md-6 col-xl-3 mb-5 mb-xl-0 step" data-aos="fade-right">
               <div class="step-circle">
                 <div class="step-number position-absolute z-2">01</div>
                 <div class="step-icon position-absolute overflow-hidden">
@@ -683,8 +700,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center mt-4">
-                  <button type="button"
-                    class="btn-coustom py-2 px-4 fs-5 fw-medium text-white shadow-sm border-0 rounded-2">ព័ត៌មានលម្អិត</button>
+                  <a role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" 
+                    class="btn-coustom py-2 px-4 fs-5 fw-medium text-white shadow-sm border-0 rounded-2">ព័ត៌មានលម្អិត</a>
                 </div>
               </form>
             </div>
@@ -831,7 +848,7 @@
                       </div>
                       <div class="ms-3">
                         <div class="profile-name fs-5 fw-medium">Kim Monika</div>
-  
+
                         <div class="ratting-star fs-6">
                           <i class="fa-solid fa-star "></i>
                           <i class="fa-solid fa-star"></i>
@@ -856,8 +873,6 @@
         </div>
       </div>
     </section>
-  
-
 
     <section class="my-5 faq-section">
       <div class="container mt-5">
@@ -1159,7 +1174,7 @@
       </div>
     </section>
 
-    <section class="mb-5">
+    <section class="mb-5" id="contactnow-us">
       <div class="contact-us">
         <div class="container my-5 my-5">
           <div class="section-title text-center">
@@ -1251,6 +1266,7 @@
         </div>
       </div>
     </section>
+
     <section class="my-5">
       <div class="our-team my-border">
         <div class="container my-5 my-5 my-5">
@@ -1258,7 +1274,7 @@
               Member</span>
           </h3>
           <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5">
               <div class="card border-0">
                 <div class="image d-flex justify-content-center align-items-center">
                   <img class="rounded-top" src="assets/images/Chenny.jpg" alt="team">
@@ -1286,7 +1302,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5">
               <div class="card border-0 ">
                 <div class="image d-flex justify-content-center align-items-center">
                   <img class="rounded-top" src="assets/images/Chet.jpg" alt="team">
@@ -1346,9 +1362,10 @@
       </div>
     </section>
   </main>
+
   <footer>
-    <div class="footer  bg-body-my-tertiary">
-      <div class="container my-5 my-5 mt-5">
+    <div class="footer bg-body-my-tertiary">
+      <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
             <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">
@@ -1356,16 +1373,17 @@
                 style="width: 100%; height: auto; object-fit: contain;">
             </a>
             <div class="mt-0">
-              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់ គុណភាព
+              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់
+                គុណភាព
                 សុវតិ្ថភាព
                 លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
             </div>
             <div class="mb-2 ms-3 ms-md-0">
-              <a class="text-my-secondary  fs-5" href="#">ប្រវតិ្តក្រុមហ៊ុន</a>
+              <a class="text-my-secondary  fs-5" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a>
             </div>
 
             <div class="mb-2 ms-3 ms-md-0">
-              <a class=" text-my-secondary fs-5 " href="#">ក្រុមយើងខ្ញុំ</a>
+              <a class=" text-my-secondary fs-5 " href="about-us.html">ក្រុមយើងខ្ញុំ</a>
             </div>
 
           </div>
@@ -1375,23 +1393,23 @@
               <h4 class="text-my-primary">Quick-links</h4>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="#">ទំព័រដើម</a>
+              <a class="text-my-secondary fs-5" href="index.html">ទំព័រដើម</a>
             </div>
 
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សាខា</a>
+              <a class="text-my-secondary fs-5" href="branch.html">សាខា</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">ទំនាក់ទំនង</a>
+              <a class="text-my-secondary fs-5" href="contact-us.html">ទំនាក់ទំនង</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">អំពីយើង</a>
+              <a class="text-my-secondary fs-5" href="about-us.html">អំពីយើង</a>
             </div>
 
           </div>
@@ -1400,16 +1418,16 @@
               <h4 class="text-my-primary">សេវាកម្ម</h4>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">ប្រូម៉ូសិន</a>
+              <a class="text-my-secondary fs-5" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មបានកាតបញ្ចុះតម្លៃ</a>
+              <a class="text-my-secondary fs-5" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
             </div>
 
           </div>
@@ -1426,26 +1444,26 @@
                 </a>
               </div>
               <div class="mb-2">
-                <a href="#">
+                <a href="tel:+855 86359562">
                   <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
                   <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
                 </a>
               </div>
               <div class="mb-4">
-                <a href="#">
+                <a href="mailto:csc.express@gmail.com">
                   <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
                   <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
                 </a>
               </div>
             </div>
             <div class="mb-2">
-              <a href="#"><i
+              <a href="www.facebook.com" target="_blank"><i
                   class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
-              <a href="#"><i
+              <a href="#" target="_blank"><i
                   class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
-              <a href="#"><i
+              <a href="www.instagram.com" target="_blank"><i
                   class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
-              <a href="#"><i
+              <a href="wwww.linkedin.com" target="_blank"><i
                   class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
             </div>
           </div>

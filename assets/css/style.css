@@ -295,6 +295,18 @@ input:focus {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 1024px) {
+  .btn-hover-grop {
+    position: relative;
+  }
+
+  .btn-hover-grop:hover .dropdown-hover-item {
+    display: block !important;
+    right: 0;
+    position: absolute;
+  }
+}
+
 @media(max-width: 1199px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 16px !important;
@@ -1332,7 +1344,7 @@ input:focus {
 }
 
 /* notification section */
-.nav-notification{
+.nav-notification {
   width: 350px;
 }
 

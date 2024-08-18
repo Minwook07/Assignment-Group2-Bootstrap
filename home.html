@@ -22,13 +22,13 @@
       <div class="container d-flex justify-content-between">
         <div class="quick-contact d-flex align-items-center">
           <div class="phone_number me-4">
-            <a href="#" class="d-flex align-items-center">
+            <a href="tel:+855 86359562" class="d-flex align-items-center">
               <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
               <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
             </a>
           </div>
           <div class="send_email">
-            <a href="#" class="d-flex align-items-center">
+            <a href="mailto:csc.express@gmail.com" class="d-flex align-items-center">
               <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
               <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
             </a>
@@ -51,12 +51,247 @@
         </div>
         <ul class="list-unstyled d-flex d-xl-none align-items-center text-my-primary m-0 gap-2 gap-lg-0">
           <li class="nav-item icon-item">
-            <a class="nav-link notificaton position-relative" href="#"><i class="fa-solid fa-heart fs-5 notificaton-icon"></i></a>
+            <a class="nav-link notificaton position-relative" href="favorite.html"><i
+                class="fa-solid fa-heart fs-5 notificaton-icon"></i></a>
           </li>
           <li class="nav-item icon-item">
-            <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell fs-5 notificaton-icon"></i>
-              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
+            <a class="nav-link position-relative" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i
+                class="fa-solid fa-bell fs-5 notificaton-icon"></i>
+              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+
+              </div>
             </a>
+            <ul class="dropdown-menu  dropdown-menu-end dropdown-menu-shadow border-0 dropdown-menu-blur"
+              style="z-index: 9999;">
+              <div>
+                <h2 class="fw-bold fs-5 text-my-default mb-3 ps-4 pt-2">ការបញ្ជូនដំណឹង</h2>
+              </div>
+              <ul class="nav nav-notification nav-pills" id="pills-tab1" role="tablist">
+                <li class="nav-item position-relative" role="presentation">
+                  <button
+                    class="nav-link btn-notifications active rounded-0 ps-4 pe-2 py-0 d-flex align-items-center mb-1"
+                    id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true">ទាំងអស់<span
+                      class="badge bg-black rounded-circle my-badge ms-1">9</span></button>
+                </li>
+
+                <li class="nav-item position-relative" role="presentation">
+                  <button class="nav-link btn-notifications rounded-0 px-2 py-0" id="pills-profile1-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">សេវាកម្ម</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-0 px-2 py-0" id="pills-contact1-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">មតិកែលម្អ</button>
+                </li>
+                <hr>
+              </ul>
+              <div class="tab-content" id="pills-tabContent1">
+                <div class="tab-pane fade show active" id="pills-home1" role="tabpanel"
+                  aria-labelledby="pills-home1-tab" tabindex="0">
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-4" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab"
+                  tabindex="0">
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-4" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact1-tab"
+                  tabindex="0">
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
           </li>
           <li class="nav-item icon-item">
             <div class="dropdown">
@@ -67,32 +302,33 @@
                   </div>
                 </div>
               </a>
-              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
+              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur position-absolute"
+                style="z-index: 9999;" aria-labelledby="dropdown">
                 <li class="d-flex">
                   <div class="user-profile">
                     <div class="ms-2 d-flex">
                       <div class="image-profile  me-3">
                         <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
                       </div>
-                     <div>
-                      <div class="fw-bold text-my-default" >CSC Express</div>
-                      <div class="d-flex">
-                        <div class="online ms-0 m-2"></div>
-                        <p class="text-my-default">online</p>
+                      <div>
+                        <div class="fw-bold text-my-default">CSC Express</div>
+                        <div class="d-flex">
+                          <div class="online ms-0 m-2"></div>
+                          <p class="text-my-default">online</p>
+                        </div>
                       </div>
-                     </div>
-                      
+
                     </div>
-                    
+
                   </div>
                 </li>
                 <hr class="text-my-default mt-0">
                 <li><a class="dropdown-item " href="setting-edit-profile.html"><i
                       class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
                       class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
-                <li><a class="dropdown-item" href="#"><i
-                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
-                      class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
+                <li><a class="dropdown-item" href="privacy-policy.html"><i
+                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span class="text-my-default">ការកំណត់
+                      និងឯកជនភាព</span></a></li>
                 <li><a class="dropdown-item" href="#"><i
                       class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
                       class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
@@ -102,15 +338,12 @@
               </ul>
             </div>
           </li>
-
         </ul>
-
-
       </div>
     </div>
     <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
       <div class="container">
-        <a class="navbar-brand logo" href="#" style="width: 150px;">
+        <a class="navbar-brand logo" href="home.html" style="width: 150px;">
           <img src="assets/images/CSC-Express-LOGO.png" alt="#" style="width: 100%; height: 100%; object-fit: cover;">
         </a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
@@ -122,41 +355,49 @@
             <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
               <img src="assets/images/my-logo-csc.png" alt="">
             </div>
-            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i
-              class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
+            <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas"
+              aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#">ទំព័រដើម</a>
+                <a class="nav-link active" href="home.html">ទំព័រដើម</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">សាខា</a>
+                <a class="nav-link" href="branch.html">សាខា</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="#">ការដឹកជញ្ជូនរហ័ស</a></li>
-                  <li><a class="dropdown-item" href="#">តាមដានទំនិញ</a></li>
+                  <li><a class="dropdown-item" href="express_logistic.html">ការដឹកជញ្ជូនរហ័ស</a></li>
+                  <li><a class="dropdown-item" href="tracking-items.html">តាមដានទំនិញ</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="#">ធ្វើដំណើរតាមឡានក្រុង</a></li>
-                  <li><a class="dropdown-item" href="#">ទិញសំបុត្រ</a></li>
+                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                  <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
+                <ul class="dropdown-menu border-0 dropdown-menu-color">
+                  <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a></li>
+                  <li><a class="dropdown-item" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ទំនាក់ទំនង</a>
+                <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="#">ប្រវតិ្តក្រុមហ៊ុន</a></li>
-                  <li><a class="dropdown-item" href="#">ក្រុមយើងខ្ញុំ</a></li>
+                  <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
                 </ul>
               </li>
             </ul>
@@ -176,1078 +417,1371 @@
                   class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
             </div>
           </div>
-          
+
         </div>
 
-         <!--  -->
-         <div class="d-flex justify-content-center align-items-center text-center gap-2 " style="height: 40px;">
+        <!--  -->
+        <div class="d-flex justify-content-center align-items-center text-center gap-2 " style="height: 40px;">
           <li class="nav-item icon-item d-none d-xl-block p-0 ">
-            <a class="nav-link position-relative p-0 " href="#"><i class="fa-solid fa-heart fs-5 text-my-primary notificaton-icon "></i></a>
+            <a class="nav-link position-relative p-0 " href="favorite.html"><i
+                class="fa-solid fa-heart fs-5 text-my-primary notificaton-icon "></i></a>
           </li>
-          <li class="nav-item icon-item d-none d-xl-block">
-            <a class="nav-link position-relative p-0" href="#"><i class="fa-solid fa-bell fs-5 text-my-primary notificaton-icon"></i>
-              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+</div>
+
+          <!-- btn-notification -->
+          <div class="btn-group d-none d-xl-block btn-hover-grop">
+            <a class="border-0" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              data-bs-display="static" aria-expanded="false">
+              <i class="fa-solid fa-bell fs-5 text-my-primary notificaton-icon"></i>
+              <div class="notification-badge badge d-flex justify-content-center align-items-center">9+
+              </div>
             </a>
-          </li>
-          <li class="nav-item icon-item d-none d-xl-block p-0">
-            <div class="dropdown dropstart">
-              <a class="border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="user-profile">
-                  <div class="profile">
-                    <img src="assets/images/cute.jpg" alt="">
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-shadow border-0 dropdown-menu-blur dropdown-hover-item">
+              <div>
+                <h2 class="fw-bold fs-5 text-my-default mb-3 ps-4 pt-2">ការបញ្ជូនដំណឹង</h2>
+              </div>
+              <ul class="nav nav-notification nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item position-relative" role="presentation">
+                  <button
+                    class="nav-link btn-notifications active rounded-0 ps-4 pe-2 py-0 d-flex align-items-center mb-1"
+                    id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true">ទាំងអស់<span
+                      class="badge bg-black rounded-circle my-badge ms-1">9</span></button>
+                </li>
+
+                <li class="nav-item position-relative" role="presentation">
+                  <button class="nav-link btn-notifications rounded-0 px-2 py-0" id="pills-profile-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">សេវាកម្ម</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-0 px-2 py-0" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">មតិកែលម្អ</button>
+                </li>
+                <hr>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                  tabindex="0">
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
                   </div>
                 </div>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur" aria-labelledby="dropdown">
-                <li class="d-flex">
-                  <div class="user-profile">
-                    <div class="ms-2 d-flex">
-                      <div class="image-profile  me-3">
-                        <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
+
+                <div class="tab-pane fade ps-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                  tabindex="0">
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
                       </div>
-                     <div>
-                      <div class="fw-bold text-my-default" >CSC Express</div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/promotion.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default">
+                        ឱកាសពិសេសប្រូម៉ូសិនបញ្ចុះតម្លៃ50% រាល់ការទិញសំបុត្រឡានក្រុងទី2&nbsp;
+                        &nbsp; <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default fw-bold"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        តម្លៃសំបុត្រទី2 ត្រឹមតែ30000រៀល <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">2 ថ្ញៃមុន</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade ps-4" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                  tabindex="0">
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center ps-4 py-2 cursor">
+                    <div class="notification-img position-relative">
+                      <div class="rounded-circle overflow-hidden notification-img-2 position-relative">
+                        <img src="assets/images/cute.jpg" alt="">
+                      </div>
+                      <div class="dot-online px-2 rounded-circle">
+                        <i class="fa-solid fa-message text-white timer"></i>
+                      </div>
+                    </div>
+                    <div class="my-comment ps-3 pe-4">
+                      <p class="mb-0 text-my-default"><span class="fw-bold fs-5">សៀន​
+                          សូនីតា</span>
+                        បានបញេ្ជញមតិថ្មីចំពោះសេវាកម្មដដឹកជញ្ជូន&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><i class="fa-solid fa-ellibsis fs-3 opacity-75"></i></span>
+                      </p>
+                      <p class="mb-0 text-my-default"><i class="fa-solid fa-quote-left text-my-primary"></i>
+                        សេវាកម្មរហ័ស
+                        ថែមទាំងតម្លៃសមរម្យ <i class="fa-solid fa-quote-right text-my-primary"></i></p>
+                      <p class="mb-0 text-my-default opacity-50 fs-6">10នាទីមុន</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+
+          <!-- btn-profile -->
+          <div class="btn-group d-none d-xl-block btn-hover-grop">
+            <a class="border-0" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              data-bs-display="static" aria-expanded="false">
+              <div class="user-profile">
+                <div class="profile">
+                  <img src="assets/images/cute.jpg" alt="">
+                </div>
+              </div>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-shadow border-0 dropdown-menu-blur dropdown-hover-item">
+              <li class="d-flex">
+                <div class="user-profile">
+                  <div class="ms-2 d-flex">
+                    <div class="image-profile  me-3">
+                      <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
+                    </div>
+                    <div>
+                      <div class="fw-bold text-my-default">CSC Express</div>
                       <div class="d-flex">
                         <div class="online ms-0 m-2"></div>
                         <p class="text-my-default">online</p>
                       </div>
-                     </div>
-                      
                     </div>
-                    
+
                   </div>
-                </li>
-                <hr class="text-my-default mt-0">
-                <li><a class="dropdown-item " href="setting-edit-profile.html"><i
-                      class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
-                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
-                <li><a class="dropdown-item" href="#"><i
-                      class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
-                      class="text-my-default">ការកំណត់ និងឯកជនភាព</span></a></li>
-                <li><a class="dropdown-item" href="#"><i
-                      class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
-                      class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
-                <li><a class="dropdown-item" href="index.html"><i
-                      class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
-                      class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
-              </ul>
-             
-            </div>
-          </li>
+
+                </div>
+              </li>
+              <hr class="text-my-default mt-0">
+              <li><a class="dropdown-item " href="setting-edit-profile.html"><i
+                    class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
+                    class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
+              <li><a class="dropdown-item" href="privacy-policy.html"><i
+                    class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span class="text-my-default">ការកំណត់
+                    និងឯកជនភាព</span></a></li>
+              <li><a class="dropdown-item" href="#"><i
+                    class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
+                    class="text-my-default">ជំនួយនិងគាំទ្រ</span></a></li>
+              <li><a class="dropdown-item" href="index.html"><i
+                    class="bi bi-box-arrow-right  fs-5 text text-my-default me-3"></i><span
+                    class="text-my-default">ចាក់ចេញពីគណនី</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+
   <main class="pt-70">
-  <!-- Home Section -->
-  <section class="hero-banner-home ">
-    <div class="overlay-now">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-6">
-            <div class="hero-title">
-              <h1 class="mb-5 fw-bold text-white" data-aos="fade-right">កាន់តែងាយស្រួលជាមួយ<span class="text-my-primary fw-bold"> CSC
-                  EXPRESS</span> មានទាំងសេវាកម្មដឹកជញ្ជូន និងសេវាក​​ម្ម​ធ្វើដំណើរ​ </h1>
-              <h4 class="mb-5 fw-bold text-white" data-aos="fade-down">"Fast Delivery, Safe Packages, Fast Responce"</h4>
-              <p class="fs-4  mb-5 fw-bold text-white" data-aos="fade-left">គុណភាព សុវតិ្ថភាព លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span
-                  class="text-my-primary fw-bold"> CSC EXPRESS</span> តែមួយគត់​</p>
-              <div>
-                <button type="button" class="btn btn-coustom me-3">Contact Now</button>
-                <button type="button" class="btn btn-coustom">Booking Now</button>
-              </div>
+    <!-- BackToTop Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+        class="bi bi-arrow-up-short fs-5"></i></a>
+    <!-- Chat Bot -->
+    <div class="dropup-center dropstart">
+      <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
+        data-bs-auto-close="outside" aria-expanded="false">
+        <i class="fa-brands fa-facebook-messenger"></i>
+      </button>
+      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
+        <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
+          <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
+          <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
+          <div class="card-body">
+            <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
+            <div class="d-grid gap-3 col-6">
+              <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
+              <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
+              <button class="btn btn-my-outline-primary" type="button">ចិន</button>
             </div>
           </div>
-          <div class="col-6">
-            <img src="assets/images/picture-home.png" alt="">
-          </div>
         </div>
+        <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
+        <form action="" class="d-flex align-items-center mx-2">
+          <div class="my-send-text d-flex mb-4">
+            <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
+              placeholder="Message..." rows="1"></textarea>
+            <div class="d-flex align-items-center my-btn-fill w-25">
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-face-smile"></i>
+              </button>
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-file-image"></i>
+              </button>
+              <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                <i class="fa-solid fa-paperclip"></i>
+              </label>
+              <input type="file" id="fileInput" style="display: none;" />
+              <button type="button" class="btn chat-bot-icon send-button">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
 
-  <!-- SectionExpress Tracking Item -->
-  <section class="mt-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
-        <div class="col-7">
-          <input type="text" class="form-control shadow-none py-3 input-tracking-customize" data-bs-toggle="modal"
-            data-bs-target="#exampleModal" id="inputTrackingNumber" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
-        </div>
-        <div class="col-auto">
-          <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            តាមដានអីវ៉ាន់
-          </button>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="row p-0 m-0 justify-content-center">
-                <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
-                <div class="col-7 col-sm-8 col-lg-9">
-                  <input type="text" class="form-control shadow-none py-3" id="inputTrackingNumber1"
-                    placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
-                </div>
-                <div class="col-5 col-sm-4 col-lg-3">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary py-3 w-100">
-                    តាមដានអីវ៉ាន់
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="my-5">
-    <div class="services" style="overflow-y: hidden;">
-      <div class="container mt-5">
-        <h3 class="text-center mb-5 text-my-secondary fw-bold">សេវាកម្មយើងខ្ញុំ</h3>
-        <div class="row flex-wrap">
-          <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-right">
-            <div class="card  shadow py-4 px-4 mb-md-3 mb-sm-3 style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/flight.png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3"> សេវាកម្មផ្ញើ</h4>
-                <p class="mb-3 fs-5">
-                  អាស្រ័យលើទីតាំងដែលអតិជនបានបញ្ជាទិញដោយផ្ដោតលើការដឹកជញ្ជូ​នអីវ៉ាន់ពីចិនមកកាន់កម្ពុជាតាមរយះផ្លូវគោក
-                  ផ្លូវសមុទ្រ ផ្លូវអាកាស​​</p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up">
-            <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/asset.png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3"> ការគ្រប់គ្រងស្ដុក</h4>
-                <p class="mb-3 fs-5">
-                  យើងមានបុគ្គិលច្រើននាក់ទូទាំងប្រទេសកម្ពុជា​និង​ប្រទេសចិន​ដែលប្រកបដោយសេចក្ដីថ្លៃថ្នូរព្រមទាំងមានទំនួលខុសត្រួវខ្ពស់
-                </p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3" data-aos="fade-down">
-            <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/express-delivery (1).png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3"> ការដឹកជញ្ជូន</h4>
-                <p class="mb-3 fs-5">នៅពេលដែលទំនិញបានមកដល់ឃ្លាំងកម្ពុជា ក្រុមហ៊ុនយើងនឹងទាក់ទងទៅគ្រប់អតិថិជនទាំងអស់​
-                  ឬអតិថិជនអាចតាមដានលើwebsite
-                </p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-left">
-            <div class="card shadow py-4 px-4  mb-sm-3  style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/qr-code.png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3"> ការទូទាត់</h4>
-                <p class="mb-3 fs-5">
-                  កាន់តែងាយស្រួលនិងរហ័សជាងមុនក្រុមហ៊ុនយើងខ្ញុំបានសហការជាមួយធានាគារដៃគូរទួទាត់ធំៗប្រចាំប្រទេសចិន​និងកម្ពុជា
-                </p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-right">
-            <div class="card  shadow py-4 px-4 mb-md-3 mb-sm-3 style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/online-booking (1).png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3">ទិញនិងកក់សំបុត្ររថយន្ត</h4>
-                <p class="mb-3 fs-5">
-                  លោកអ្នកអាចទិញនិងកក់សំបុត្រសម្រាប់ធ្វើដំណើរ២៥ខេត្តក្រុងនៅព្រះរាជាណាចក្រកម្ពុជា
-                  ធានាបាននូវសុវត្ថិភាព​​ និងផាសុកភាពខ្ពស់​​</p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3" data-aos="fade-down">
-            <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
-              <div class="service-icon1 mb-4">
-                <img src="assets/images/bus-station (2).png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3"> កន្លែងរងចាំធ្វើដំណើរ</h4>
-                <p class="mb-3 fs-5">
-                  រាល់អតិថិជនដែលបានទិញឬកក់សំបុត្ររួចហើយគឺមានកន្លែងសម្រាប់អង្គុយរងចាំនិងមានកន្លែងញាំអាហារមុនចេញដំណើរផងដែរ
-                </p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up">
-            <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/vehicles.png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3">ប្រភេទឡានធ្វើដំណើរនិងជួល</h4>
-                <p class="mb-3 fs-5">
-                  ឡានក្រុងVIP និង Toyota Hiace VIP អតិថិជនអាចជ្រើសរើសរថយន្តធ្វើដំណើរបាននៅពេលកក់សំបុត្រឬទិញសំបុត្រ
-                </p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-left">
-            <div class="card shadow py-4 px-4  mb-sm-3  style-frame card-hover">
-              <div class="service-icon mb-3">
-                <img src="assets/images/destination (1).png" alt="">
-              </div>
-              <div class="card-title">
-                <h4 class="mb-3">ធ្វើដំណើរ២៥ខេត្តក្រុង</h4>
-                <p class="mb-3 fs-5">
-                  ជើងចេញដំណើរគឺពីភ្នំពេញទៅបណ្តាខេត្តនានា និងពីបណ្ដាខេត្តផ្សេងៗមករាជធានីវិញ​ និង
-                  ពីខេត្តមួយទៅខេត្តទៀតផងដែរ
-                </p>
-                <div class="line-team my-4"></div>
-                <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="moving-process">
-      <div class="container mt-4">
-        <h3 class="text-center text-my-secondary pb-4 fw-bold">ដំណើរការផ្លាស់ទីអីវ៉ាន់</h3>
-        <div class="row align-items-center justify-content-between">
-          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-right">
-            <div class="step-circle">
-              <div class="step-number position-absolute z-2">01</div>
-              <div class="step-icon position-absolute overflow-hidden">
-                <img class=" overflow-hidden" src="assets/images/warehouse (2).gif" alt="">
-              </div>
-            </div>
-            <div class="dot-animation py-4 d-none d-md-flex m-md-auto">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <h4 class="font-weight-bold text-my-default my-3">អ្នកផ្គត់ផ្គង់ផ្ញើទៅកាន់ឃ្លាំង</h4>
-            <p class="text-my-default fs-5">គ្រាន់តែផ្ញើទីតាំងដែលអ្នកបានបញ្ជាទិញមកកាន់យើង
-              រួចរងចាំទទួលអីវ៉ាន់ជាការស្រេច</p>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-down">
-            <div class="step-circle">
-              <div class="step-number position-absolute z-2">02</div>
-              <div class="step-icon position-absolute overflow-hidden">
-                <img class=" overflow-hidden" src="assets/images/delivery-truck.gif" alt="">
-              </div>
-            </div>
-            <div class="dot-animation text-center py-4 text-md-center d-none d-md-flex m-md-auto">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <h4 class="font-weight-bold text-my-default my-3">មធ្យោបាយដឹកជញ្ជូន</h4>
-            <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​កម្ពុជា​ដោយយន្តហោះ​ កប៉ាល់ទឹកនិង​
-              កុងតឺនឺជាដើម</p>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-up">
-            <div class="step-circle">
-              <div class="step-number position-absolute z-2">03</div>
-              <div class="step-icon position-absolute overflow-hidden">
-                <img class=" overflow-hidden" src="assets/images/house.gif" alt="">
-              </div>
-            </div>
-            <div class="dot-animation py-4 d-none d-md-flex m-md-auto">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <h4 class="font-weight-bold text-my-default my-3">ឃ្លាំងអីវ៉ាន់នៅកម្ពុជា</h4>
-            <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​ កម្ពុជា​
-              និងពីឃ្លាំងទៅទីតាំងអតិថិនជនផ្ទាល់រក្សាគុណភាព​ ប្រសិទ្ធភាពទំនិញជូនអតិថិជន</p>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-left">
-            <div class="step-circle">
-              <div class="step-number position-absolute z-2">04</div>
-              <div class="step-icon position-absolute overflow-hidden">
-                <img class=" overflow-hidden" src="assets/images/package.gif" alt="">
-              </div>
-            </div>
-            <div class="dot-animation py-4 d-none d-md-flex m-md-auto">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <h4 class="font-weight-bold text-my-default my-3">សេវាកម្មដឹកជញ្ជូន</h4>
-            <p class="text-my-default fs-5">អតិថិជនអាចមកយកផ្ទាល់ឬ
-              ជ្រើសរើសប្រើសេវាកម្មដឹកដល់មុខផ្ទះធានាទៅដល់តាមពេលវេលា។</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="my-5">
-    <div class="test-price">
-      <div class="container my-5">
-        <div class="row justify-content-center">
-          <div class="card border-0 py-5 px-4 shadow-sm">
-            <div class="card-title text-center text-my-secondary mb-4">
-              <h4 class="fw-bold">ការប៉ានស្មានតម្លៃដឹកជញ្ជូន</h4>
-            </div>
-            <form>
-              <div class="row">
-                <!-- Stock Location -->
-                <div class="col-12 col-md-6 mb-4">
-                  <label for="stock" class="form-label fs-5 fw-semibold">ស្ដុកទុក</label>
-                  <select class="form-select" id="stock" aria-label="Stock Location">
-                    <option selected disabled>សូមជ្រើសរើសទីតាំង</option>
-                    <option value="1">កម្ពុជា</option>
-                    <option value="2">ចិន</option>
-                    <option value="3">តាមបណ្ដាខេត្ត</option>
-                  </select>
-                </div>
-                <!-- Shipping Method -->
-                <div class="col-12 col-md-6 mb-4">
-                  <label for="shipping-method" class="form-label fs-5 fw-semibold">មធ្យាបាយដឹកជញ្ជូន</label>
-                  <select class="form-select" id="shipping-method" aria-label="Shipping Method">
-                    <option selected disabled>សូមជ្រើសរើសទីតាំង</option>
-                    <option value="1">ម៉ូតូ</option>
-                    <option value="2">ឡាន</option>
-                    <option value="3">កុងតឺនឺ</option>
-                    <option value="4">កប៉ាល់ទឺក</option>
-                    <option value="5">យន្តហោះ</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <!-- Dimensions -->
-                <div class="col-12 col-md-6 mb-4">
-                  <div class="row">
-                    <div class="col-6 mb-3">
-                      <label for="length" class="form-label fs-5 fw-semibold">ប្រវែង (cm)</label>
-                      <input type="text" class="form-control" id="length" placeholder="Example: 50 cm"
-                        aria-label="Length">
-                    </div>
-                    <div class="col-6 mb-3">
-                      <label for="width" class="form-label fs-5 fw-semibold">ទទឹង (cm)</label>
-                      <input type="text" class="form-control" id="width" placeholder="Example: 30 cm"
-                        aria-label="Width">
-                    </div>
-                  </div>
-                </div>
-                <!-- Height and Weight -->
-                <div class="col-12 col-md-6 mb-4">
-                  <div class="row">
-                    <div class="col-6 mb-3">
-                      <label for="height" class="form-label fs-5 fw-semibold">កម្ពស់ (m)</label>
-                      <input type="text" class="form-control" id="height" placeholder="Example: 1.5 m"
-                        aria-label="Height">
-                    </div>
-                    <div class="col-6 mb-3">
-                      <label for="weight" class="form-label fs-5 fw-semibold">ទម្ងន់ (Kg)</label>
-                      <input type="text" class="form-control" id="weight" placeholder="Example: 10 kg"
-                        aria-label="Weight">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex align-items-center justify-content-center mt-4">
-                <button type="button"
-                  class="btn-coustom py-2 px-4 fs-5 fw-medium text-white shadow-sm border-0 rounded-2">ព័ត៌មានលម្អិត</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="my-5">
-    <div class="feedback">
-      <div class="container">
-        <h3 class="text-my-secondary text-center mb-5  fw-bold">មិតកែលម្អរបស់អតិថិជនកន្លងមក</h3>
-        <div class="row">
-          <div class="px-0">
-            <!-- Swiper -->
-            <div #swiperRef="" class="swiper mySwiper">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
-                  <div class="customer d-flex p-4 pb-0">
-                    <div class="profile">
-                      <img src="assets/images/customer1.jpg" alt="">
-                    </div>
-                    <div class="ms-3">
-                      <div class="profile-name fs-5 fw-medium">Hong China</div>
-                      <div class="ratting-star fs-6">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback-decription p-4">
-                    <span><i class="fa-solid fa-quote-left icons fa-star fs-5"></i>
-                      ខ្ញុំមានការចាប់អារម្មណ៍យ៉ាងខ្លាំងជាមួយនឹងភាពរហ័សរហួនរបស់ CSC Express Delivery
-                      កញ្ចប់របស់ខ្ញុំបានមកដល់លឿនជាងការរំពឹងទុក។សូមអរគុណចំពោះសេវាកម្មដ៏ល្អនេះ!
-                      <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
-                  <div class="customer d-flex p-4 pb-0">
-                    <div class="profile">
-                      <img src="assets/images/customer5.jpg" alt="">
-                    </div>
-                    <div class="ms-3">
-                      <div class="profile-name fs-5 fw-medium">Ngorn Rey</div>
-                      <div class="ratting-star fs-6">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback-decription p-4">
-                    <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
-                      ក្រុមដឹកជញ្ជូនបានចាត់ចែងកញ្ចប់របស់ខ្ញុំដោយយកចិត្តទុកដាក់បំផុត ហើយពួកគេបានមកដល់ក្នុងស្ថានភាពល្អ។
-                      ខ្ញុំសូមកោតសរសើរចំពោះការយកចិត្តទុកដាក់ចំពោះការវិចខ្ចប់!
-                      <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
-                  <div class="customer d-flex p-4 pb-0">
-                    <div class="profile">
-                      <img src="assets/images/customer2.jpg" alt="">
-                    </div>
-                    <div class="ms-3">
-                      <div class="profile-name fs-5 fw-medium">Khin SreyKeo</div>
-                      <div class="ratting-star fs-6">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback-decription p-4">
-                    <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
-                      អ្នកបើកបរដឹកជញ្ជូនមានភាពគួរសម និងប្រកបដោយវិជ្ជាជីវៈ។
-                      ពួកគេថែមទាំងឆ្លៀតពេលទូរស័ព្ទមកខ្ញុំមុនពេលមកដល់ ដើម្បីធានាថាខ្ញុំនៅផ្ទះ។
-                      សេវាកម្មអតិថិជនដ៏អស្ចារ្យ!
-                      <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
-                  <div class="customer d-flex p-4 pb-0">
-                    <div class="profile">
-                      <img src="assets/images/customer3.jpg" alt="">
-                    </div>
-                    <div class="ms-3">
-                      <div class="profile-name fs-5 fw-medium">Ah Jingouy</div>
-                      <div class="ratting-star fs-6">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback-decription p-4">
-                    <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
-                      ខ្ញុំចង់ឃើញជម្រើសនៃការដឹកជញ្ជូនដែលមានលក្ខណៈស្និទ្ធស្នាលនឹងបរិស្ថានបន្ថែមទៀត ដូចជារថយន្តអគ្គិសនី
-                      ឬការវេចខ្ចប់ដែលអាចកែច្នៃឡើងវិញបាន។ និរន្តរភាពគឺមានសារៈសំខាន់សម្រាប់ខ្ញុំក្នុងនាមជាអតិថិជន
-                      <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
-                  <div class="customer d-flex p-4 pb-0">
-                    <div class="profile">
-                      <img src="assets/images/customer4.jpg" alt="">
-                    </div>
-                    <div class="ms-3">
-                      <div class="profile-name fs-5 fw-medium">Runn Mom</div>
-                      <div class="ratting-star fs-6">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback-decription p-4">
-                    <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
-                      ខ្ញុំមានអារម្មណ៍ថាមានសុវត្ថិភាពខ្លាំងណាស់ក្នុងអំឡុងពេលជិះ។
-                      អ្នកបើកបរបានប្រកាន់ខ្ជាប់នូវច្បាប់ចរាចរណ៍ ហើយរថយន្តក្រុងត្រូវបានបំពាក់ដោយខ្សែក្រវ៉ាត់សុវត្ថិភាព
-                      និងមុខងារសុវត្ថិភាពផ្សេងទៀត។
-                      <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
-                  <div class="customer d-flex p-4 pb-0">
-                    <div class="profile">
-                      <img src="assets/images/Nika.jpg" alt="">
-                    </div>
-                    <div class="ms-3">
-                      <div class="profile-name fs-5 fw-medium">Kim Monika</div>
-
-                      <div class="ratting-star fs-6">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback-decription p-4">
-                    <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
-                      ឡានក្រុងស្អាត និងមានផាសុខភាព មានជើងច្រើន កៅអីមានផាសុកភាព ហើយខ្ញុំពេញចិត្តក្នុងការជិះដោយរលូន
-                      ជាពិសេសមានបំពាក់នៅ Wi-Fi និងមានកន្លែងសាកថ្ម បទពិសោធន៍ដ៏អស្ចារ្យ!
-                      <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="my-5 faq-section">
-    <div class="container mt-5">
-      <div class="faqs-header text-center text-my-secondary mb-5">
-        <h3><span class="text-my-default fw-bold">FAQs</span> រាល់ចម្ងល់និងសំណួរទាំងឡាយមានចម្លើយនៅទីនេះ</h3>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-4 bg-body-tertiary dropdown-menu-shadow py-3 rounded-3">
-          <div class="nav flex-column nav-pills nav-pill-style" id="v-pills-tab" role="tablist"
-            aria-orientation="vertical">
-            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-              type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-              <span class="fs-4">អំពី Website</span>
-            </button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-              type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-              <span class="fs-4">សេវាកម្មដឹកជញ្ជូន</span>
-            </button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-              type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-              <span class="fs-4">សេវាកម្មធ្វើដំណើរ</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-8 rounded-3">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-              tabindex="0">
-              <div class="card border-0 dropdown-menu-shadow">
-                <div class="card-body">
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button accordion-button-cutomize fs-4" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                          aria-controls="collapseOne">
-                          តើ CSC Expressផ្តល់សេវាកម្មអ្វីខ្លះ?
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body fs-5 text-black">
-                          CSC Express ផ្ដល់នូវសេវាកម្មធំៗពីរគឺ​សេវាធ្វើដំណើរនិងសេវាកម្មដឹកជញ្ជូន។ សូមអរគុណ។
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button accordion-button-cutomize collapsed fs-4" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                          aria-controls="collapseTwo">
-                          តើWebsite អ្នកឬក្រុមហ៊ុន CSC Express មានអ្នកគ្រប់គ្រងចំនួនប៉ុន្មានអ្នក?
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body fs-5 text-black">
-                          Website CSC Express គ្រប់គ្រងដោយ Team
-                          ទាំង៣នាក់ក្នុងគោលបំណងតែមួយគឺជួយសម្រួលដល់ការធ្វើដំណើរក្នងស្រុកនិងផ្ញើអីវ៉ាន់ក្រៅប្រទេស។
-                          សូមអរគុណ។
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button accordion-button-cutomize collapsed fs-4" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                          aria-controls="collapseThree">
-                          តើ​គោលដៅ​ណា​ខ្លះ​សម្រាប់​សេវា​ដឹក​ជញ្ជូន​និងសេវាកម្មធ្វើដំណើររបស់ CSC Express?
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body fs-5 text-black">
-                          សម្រាប់​សេវា​ដឹក​ជញ្ជូនអីវ៉ាន់មាននៅក្នុងស្រុកនិងក្រៅប្រទេសហើយសេវាកម្មធ្វើដំណើរមានតែនៅក្នុងស្រុកខ្មែរទេ។
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-              tabindex="0">
-              <div class="card border-0 dropdown-menu-shadow">
-                <div class="card-body">
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                          aria-controls="flush-collapseOne">
-                          តើការផ្ញើអីវ៉ាន់ជាមួយ CSC Express មានតម្លៃប៉ុន្មាន?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body fs-5 text-black">
-                          អាស្រ័យលើអីវ៉ាន់របស់អតិថិជន គិតពីទំហំ ទម្ងន់ និងប្រវែងជាពិសេស។
-                          យើងមានប្រូម៉ូសិនសម្រាប់ការផ្ញើផងដែរពេលមានបុណ្យជាតិជាដើម។ សូមអរគុណ។
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                          aria-controls="flush-collapseTwo">
-                          តើអ្នកធានាសុវត្ថិភាពនៃកញ្ចប់របស់ខ្ញុំក្នុងអំឡុងពេលដឹកជញ្ជូនដោយរបៀបណា?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body fs-5 text-black">
-                          បុគ្គលិកត្រូវបានបណ្តុះបណ្តាលយ៉ាងម៉ត់ចត់ ការវេចខ្ចប់ប្រកបដោយសុវត្ថិភាព
-                          ការដឹកជញ្ជូនប្រកបដោយសុវត្ថិភាព។ ប្រសិនបើមានបញ្ហាកំឡុងពេលដឹកជញ្ជូន
-                          យើងធ្វើការយ៉ាងឆាប់រហ័សដើម្បីដោះស្រាយវា ហើយធានាថាកញ្ចប់របស់អ្នកមានសុវត្ថិភាព។ សូមអរគុណ។
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                          aria-controls="flush-collapseThree">
-                          តើខ្ញុំអាចផ្តល់មតិកែលម្អអំពីបទពិសោធន៍ដឹកជញ្ជូនរបស់ខ្ញុំដោយរបៀបណា?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body fs-5 text-black">
-                          លោកអ្នកអាចផ្ញើសារតាមព័ត៌មានទំនាក់ទំនង(Contact Our Team)តាមបណ្ដាញសង្គមដូចជា​ Facebook,
-                          Telegram, IG, LinkedIn... សូមអរគុណ។
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-              tabindex="0">
-              <div class="card border-0 dropdown-menu-shadow">
-                <div class="card-body">
-                  <div class="accordion accordion-flush" id="accordionFlushExample2">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne-2">
-                        <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-2" aria-expanded="false"
-                          aria-controls="flush-collapseOne-2">
-                          តើការធ្វើដំណើរជាមួយ CSC Express មានភាពសុខសាន្តយ៉ាងណា?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne-2" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingOne-2" data-bs-parent="#accordionFlushExample2">
-                        <div class="accordion-body fs-5 text-black">
-                          យើងមានសុវត្ថិភាពនៃការធ្វើដំណើរ អាចទាក់ទងទូរស័ព្ទបានបើមានបញ្ហា
-                          មានការចុះតាមកន្លែងលំអិតក្នុងដំណើរ ទោះបីជាយប់ឬថ្ងៃក៏ដោយ ។ សូមអរគុណ។
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo-2">
-                        <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-2" aria-expanded="false"
-                          aria-controls="flush-collapseTwo-2">
-                          តើ​សំបុត្រ​សម្រាប់​គោលដៅ​ផ្សេង​គ្នា​តម្លៃ​ប៉ុន្មាន?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo-2" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingTwo-2" data-bs-parent="#accordionFlushExample2">
-                        <div class="accordion-body fs-5 text-black">
-                          សម្រាប់ការទិញសំបុត្រមានតម្លៃស្មើៗគ្នាចំពោះ២៥ខេត្តក្រុងនៃប្រទេសកម្ពុជានិងរាជធានីភ្នំពេញ
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree-2">
-                        <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-2" aria-expanded="false"
-                          aria-controls="flush-collapseThree-2">
-                          តើអ្វីដែលពិសេសសម្រាប់ការធ្វើដំណើរនេះ?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree-2" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree-2" data-bs-parent="#accordionFlushExample2">
-                        <div class="accordion-body fs-5 text-black">
-                          យើងមានការធានាសុវត្ថិភាពនិងតាមដាននៅក្នុងកំឡុងពេលធ្វើដំណើរជាមួយនឹងការទទួលខុសត្រូវពេញលេញ
-                          ពិសេសមានបំពាក់នៅ Wi-Fi និងមានកន្លែងសាកថ្មគ្រឿងអេឡិចត្រូនិចផ្សេងៗ
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section>
-    <div class="container my-5">
-      <h3 class="text-center mb-4 text-my-default">ហេតុអ្វីអ្នកត្រូវតែជ្រើសរើសប្រើសេវាកម្មយើងខ្ញុំ</h3>
-      <p class="text-center fs-3 mb-4 fw-bold text-my-subtle">WHY CHOOSE CSC EXPRESS!</p>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
-          <div
-            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
-            <div class="choose-us-icon bg-my-primary rounded-4">
-              <img src="assets/images/driver (2).png" alt="pic">
-            </div>
-            <div class="mt-3">
-              <h4>អ្នកបើកបរ</h4>
-              <p class="choose-us-text">
-                អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ
-                ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down">
-          <div
-            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
-            <div class="choose-us-icon bg-body-my-tertiary rounded-4">
-              <img src="assets/images/online-support.png" alt="pic">
-            </div>
-            <div class="text-white mt-3">
-              <h4>សេវាកម្មអតិថិជន</h4>
-              <p class="choose-us-text">
-                អាចទាក់ទងមកខាងយើងខ្ញុំរៀងរាល់ម៉ោងធ្វើការ លោកអ្នកអាចសន្ទនាដោយនិយាយខ្មែរ អង់គ្លេស
-                និងចិន។
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
-          <div
-            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
-            <div class="choose-us-icon bg-my-primary rounded-4">
-              <img src="assets/images/vip.png" alt="pic">
-            </div>
-            <div class="mt-3">
-              <h4>សេវាកម្មVIP</h4>
-              <p class="choose-us-text">
-                ផ្តល់ជូននូវកន្លែងអង្គុយដ៏ល្អប្រណិត
-                និងសេវាកម្មផ្តាច់មុខសម្រាប់អ្នកដែលចង់បានឯកជនភាព។
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
-          <div
-            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
-            <div class="choose-us-icon bg-body-my-tertiary rounded-4">
-              <img src="assets/images/express-delivery (2).png" alt="pic">
-            </div>
-            <div class="text-white mt-3">
-              <h4>កុងសូលប្រចាំថ្ងៃ</h4>
-              <p class="choose-us-text">
-                ការដឹកជញ្ជូនចរាចរណ៍រៀងរាល់ថ្ងៃ ជាពិសេសយើងមានឃ្លាំងក្នុងស្រុកនិងក្រៅស្រុកផ្ទាល់
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
-          <div
-            class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
-            <div class="choose-us-icon bg-my-primary rounded-4">
-              <img src="assets/images/home-delivery (1).png" alt="pic">
-            </div>
-            <div class="mt-3">
-              <h4>សេវាកម្មដឹកដល់មុខផ្ទះ</h4>
-              <p class="choose-us-text">
-                អតិថិជនអាចមកយកផ្ទាល់នៅឃ្លាំងដែលមានទីតាំងជិតបំផុតនិងអាចប្រើប្រាស់សេវាកម្មដឹកដល់មុខផ្ទះ
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
-          <div
-            class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
-            <div class="choose-us-icon bg-body-my-tertiary rounded-4">
-              <img src="assets/images/delivery (1).png" alt="pic">
-            </div>
-            <div class="text-white mt-3">
-              <h4>សុវតិ្ថភាពនិងអាចទុកចិត្តបាន</h4>
-              <p class="choose-us-text">
-                ធានាការដឹកជញ្ជូនទៅដល់តាមលំដាប់លំដោយដោយពុំមានខូចខាតនិងបាត់បង់ គុណភាពភាពស្មោះត្រង់ជាចម្បង
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-5">
-    <div class="contact-us">
-      <div class="container my-5 my-5">
-        <div class="section-title text-center">
-          <h3 class="text-my-subtle mb-5 fw-bold"><span class="text-my-default">ព័ត៌មានទំនាក់ទំនង</span> Contact
-            information</h3>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-6 ">
-            <div class="card border-0 rounded-4 shadow-sm mb-3  mb-mxl-0 ">
-              <div class="card-title">
-                <h4 class="text-black text-center mt-3">Contact Our<span class="text-my-secondary"> Team</span>
+    <!-- Home Section -->
+    <section class="hero-banner-home ">
+      <div class="overlay-now">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-6">
+              <div class="hero-title">
+                <h1 class="mb-5 fw-bold text-white" data-aos="fade-right">កាន់តែងាយស្រួលជាមួយ<span
+                    class="text-my-primary fw-bold"> CSC
+                    EXPRESS</span> មានទាំងសេវាកម្មដឹកជញ្ជូន និងសេវាក​​ម្ម​ធ្វើដំណើរ​ </h1>
+                <h4 class="mb-5 fw-bold text-white" data-aos="fade-down">"Fast Delivery, Safe Packages, Fast Responce"
                 </h4>
-              </div>
-              <div class="card-body">
-                <div class="row g-3 mb-3" novalidate>
-                  <div class="col">
-                    <label for="firstname" class="form-label">នាមខ្លួន</label>
-                    <input type="text" class="form-control shadow-form" id="firstname" placeholder="នាមខ្លួន"
-                      aria-label="First name">
-                  </div>
-                  <div class="col">
-                    <label for="lastname" class="form-label">នាមត្រកូល</label>
-                    <input type="text" id="lastname" class="form-control shadow-none" placeholder="នាមត្រកូល"
-                      aria-label="Last name">
-                  </div>
+                <p class="fs-4  mb-5 fw-bold text-white" data-aos="fade-left">គុណភាព សុវតិ្ថភាព
+                  លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ <span class="text-my-primary fw-bold"> CSC EXPRESS</span> តែមួយគត់​</p>
+                <div>
+                  <a href="#contactnow-us" class="btn btn-coustom me-3">ទំនាក់ទំនង</a>
+                  <a href="#" class="btn btn-coustom">ប្រើប្រាស់សេវាកម្ម</a>
                 </div>
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">អ៊ីម៉ែល</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="csc.express@gmail.com" required>
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>label
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">ពាក្យសម្ងាត់</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">សំណូមពរផ្សេងៗ</label>
-                    <textarea class="form-control no-reside" id="message" rows="3"></textarea>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-coustom fs-5">ផ្ញើសារ</button>
-                  </div>
-                </form>
               </div>
+            </div>
+            <div class="col-6">
+              <img src="assets/images/picture-home.png" alt="">
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-6 ">
-            <div class="card py-3 border-0 rounded-4 shadow-sm">
-              <div class="contactus mx-3">
-                <div class="mb-3">
-                  <a href="#"><i class="bi bi-geo-alt text-my-primary fs-5"></i>
-                    <span class="ms-2 text-black">ផ្ទះលេខ ៨៦បេ ផ្លូវ ៣១៣ កែងនឹងផ្លូវ ៦០៦ សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក
-                      រាជធានីភ្នំពេញ</span>
-                  </a>
-                </div>
-                <div class="mb-3 ">
-                  <a href="#">
-                    <i class="bi bi-telephone fs-5 text-my-primary"></i>
-                    <span class="ms-2 text-black">086 35 95 62</span>
-                  </a>
-                </div>
-                <div class="mb-3">
-                  <a href="#">
-                    <i class="bi bi-envelope fs-5 text-my-primary"></i>
-                    <span class=" ms-2 text-black">csc.express@gmail.com</span>
-                  </a>
-                </div>
-              </div>
-              <div class="mb-3 mx-3">
-                <a href="#"><i
-                    class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2"></i></a>
-                <a href="#"><i class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2"></i></a>
-              </div>
-            </div>
-            <div class="card mt-4 rounded-4 shadow-sm">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125078.8386280728!2d104.80785640330666!3d11.572369639197966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e706d9cdf%3A0xb0bf13884e6cd05f!2sANT%20Technology%20Training%20Center!5e0!3m2!1sen!2skh!4v1722177203685!5m2!1sen!2skh"
-                height="440px" style="border:0; " class="rounded-4 shadow" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="my-5">
-    <div class="our-team my-border">
-      <div class="container my-5 my-5 my-5">
-        <h3 class="m-5 text-center text-my-default fw-bold">សមាជិកក្រុម <span class="text-my-secondary">Team
-            Member</span>
-        </h3>
+    <!-- SectionExpress Tracking Item -->
+    <section class="mt-5">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card border-0">
-              <div class="image d-flex justify-content-center align-items-center">
-                <img class="rounded-top" src="assets/images/chenny.jpg" alt="team">
-                <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="card-footer text-center text-my-primary line-team">
-                  <h5>Co-Leader : <span class="text-my-secondary ">ងន​​​ ចេន្នី</span></h5>
-                  <h5>Tel: 086 35 95 62</h5>
-                </div>
-              </div>
-            </div>
+          <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
+          <div class="col-7">
+            <input type="text" class="form-control shadow-none py-3 input-tracking-customize" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" id="inputTrackingNumber" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
-            <div class="card border-0 ">
-              <div class="image d-flex justify-content-center align-items-center">
-                <img class="rounded-top" src="assets/images/Chet.jpg" alt="team">
-                <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="card-footer text-center text-my-primary line-team">
-                  <h5>Co-Leader : <span class="text-my-secondary ">មិត ចិត</span></h5>
-                  <h5>Tel: 086 35 95 62</h5>
-                </div>
-              </div>
-            </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              តាមដានអីវ៉ាន់
+            </button>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
-            <div class="card border-0">
-              <div class="image d-flex justify-content-center align-items-center">
-                <img class="rounded-top" src="assets/images/nita.jpg" alt="team">
-                <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row p-0 m-0 justify-content-center">
+                  <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
+                  <div class="col-7 col-sm-8 col-lg-9">
+                    <input type="text" class="form-control shadow-none py-3" id="inputTrackingNumber1"
+                      placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
                   </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                  <div class="col-5 col-sm-4 col-lg-3">
+                    <!-- Button trigger modal -->
+                    <a href="tracking-items.html" class="btn btn-primary py-3 w-100">
+                      តាមដានអីវ៉ាន់
+                    </a>
                   </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
-                  </div>
-                  <div class="social-icon d-flex justify-content-center align-items-center">
-                    <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="card-footer text-center text-my-primary line-team">
-                  <h5>Co-Leader : <span class="text-my-secondary ">សៀន សូនីតា</span></h5>
-                  <h5>Tel: 086 35 95 62</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <section class="my-5">
+      <div class="services" style="overflow-y: hidden;">
+        <div class="container mt-5">
+          <h3 class="text-center mb-5 text-my-secondary fw-bold">សេវាកម្មយើងខ្ញុំ</h3>
+          <div class="row flex-wrap">
+            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-right">
+              <div class="card  shadow py-4 px-4 mb-md-3 mb-sm-3 style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/flight.png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3"> សេវាកម្មផ្ញើ</h4>
+                  <p class="mb-3 fs-5">
+                    អាស្រ័យលើទីតាំងដែលអតិជនបានបញ្ជាទិញដោយផ្ដោតលើការដឹកជញ្ជូ​នអីវ៉ាន់ពីចិនមកកាន់កម្ពុជាតាមរយះផ្លូវគោក
+                    ផ្លូវសមុទ្រ ផ្លូវអាកាស​​</p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up">
+              <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/asset.png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3"> ការគ្រប់គ្រងស្ដុក</h4>
+                  <p class="mb-3 fs-5">
+                    យើងមានបុគ្គិលច្រើននាក់ទូទាំងប្រទេសកម្ពុជា​និង​ប្រទេសចិន​ដែលប្រកបដោយសេចក្ដីថ្លៃថ្នូរព្រមទាំងមានទំនួលខុសត្រួវខ្ពស់
+                  </p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-down">
+              <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/express-delivery (1).png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3"> ការដឹកជញ្ជូន</h4>
+                  <p class="mb-3 fs-5">នៅពេលដែលទំនិញបានមកដល់ឃ្លាំងកម្ពុជា ក្រុមហ៊ុនយើងនឹងទាក់ទងទៅគ្រប់អតិថិជនទាំងអស់​
+                    ឬអតិថិជនអាចតាមដានលើwebsite
+                  </p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-left">
+              <div class="card shadow py-4 px-4  mb-sm-3  style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/qr-code.png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3"> ការទូទាត់</h4>
+                  <p class="mb-3 fs-5">
+                    កាន់តែងាយស្រួលនិងរហ័សជាងមុនក្រុមហ៊ុនយើងខ្ញុំបានសហការជាមួយធានាគារដៃគូរទួទាត់ធំៗប្រចាំប្រទេសចិន​និងកម្ពុជា
+                  </p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-right">
+              <div class="card  shadow py-4 px-4 mb-md-3 mb-sm-3 style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/online-booking (1).png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3">ទិញនិងកក់សំបុត្ររថយន្ត</h4>
+                  <p class="mb-3 fs-5">
+                    លោកអ្នកអាចទិញនិងកក់សំបុត្រសម្រាប់ធ្វើដំណើរ២៥ខេត្តក្រុងនៅព្រះរាជាណាចក្រកម្ពុជា
+                    ធានាបាននូវសុវត្ថិភាព​​ និងផាសុកភាពខ្ពស់​​</p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-down">
+              <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
+                <div class="service-icon1 mb-4">
+                  <img src="assets/images/bus-station (2).png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3"> កន្លែងរងចាំធ្វើដំណើរ</h4>
+                  <p class="mb-3 fs-5">
+                    រាល់អតិថិជនដែលបានទិញឬកក់សំបុត្ររួចហើយគឺមានកន្លែងសម្រាប់អង្គុយរងចាំនិងមានកន្លែងញាំអាហារមុនចេញដំណើរផងដែរ
+                  </p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up">
+              <div class="card shadow py-4 px-4  mb-sm-3 style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/vehicles.png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3">ប្រភេទឡានធ្វើដំណើរនិងជួល</h4>
+                  <p class="mb-3 fs-5">
+                    ឡានក្រុងVIP និង Toyota Hiace VIP អតិថិជនអាចជ្រើសរើសរថយន្តធ្វើដំណើរបាននៅពេលកក់សំបុត្រឬទិញសំបុត្រ
+                  </p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 " data-aos="fade-left">
+              <div class="card shadow py-4 px-4  mb-sm-3  style-frame card-hover">
+                <div class="service-icon mb-3">
+                  <img src="assets/images/destination (1).png" alt="">
+                </div>
+                <div class="card-title">
+                  <h4 class="mb-3">ធ្វើដំណើរ២៥ខេត្តក្រុង</h4>
+                  <p class="mb-3 fs-5">
+                    ជើងចេញដំណើរគឺពីភ្នំពេញទៅបណ្តាខេត្តនានា និងពីបណ្ដាខេត្តផ្សេងៗមករាជធានីវិញ​ និង
+                    ពីខេត្តមួយទៅខេត្តទៀតផងដែរ
+                  </p>
+                  <div class="line-team my-4"></div>
+                  <a class="text-my-secondary fs-5" href="#">សាកសួរបន្ថែម <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="moving-process">
+        <div class="container mt-4">
+          <h3 class="text-center text-my-secondary pb-4 fw-bold">ដំណើរការផ្លាស់ទីអីវ៉ាន់</h3>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-right">
+              <div class="step-circle">
+                <div class="step-number position-absolute z-2">01</div>
+                <div class="step-icon position-absolute overflow-hidden">
+                  <img class=" overflow-hidden" src="assets/images/warehouse (2).gif" alt="">
+                </div>
+              </div>
+              <div class="dot-animation py-4 d-none d-md-flex m-md-auto">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h4 class="font-weight-bold text-my-default my-3">អ្នកផ្គត់ផ្គង់ផ្ញើទៅកាន់ឃ្លាំង</h4>
+              <p class="text-my-default fs-5">គ្រាន់តែផ្ញើទីតាំងដែលអ្នកបានបញ្ជាទិញមកកាន់យើង
+                រួចរងចាំទទួលអីវ៉ាន់ជាការស្រេច</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-down">
+              <div class="step-circle">
+                <div class="step-number position-absolute z-2">02</div>
+                <div class="step-icon position-absolute overflow-hidden">
+                  <img class=" overflow-hidden" src="assets/images/delivery-truck.gif" alt="">
+                </div>
+              </div>
+              <div class="dot-animation text-center py-4 text-md-center d-none d-md-flex m-md-auto">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h4 class="font-weight-bold text-my-default my-3">មធ្យោបាយដឹកជញ្ជូន</h4>
+              <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​កម្ពុជា​ដោយយន្តហោះ​ កប៉ាល់ទឹកនិង​
+                កុងតឺនឺជាដើម</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-up">
+              <div class="step-circle">
+                <div class="step-number position-absolute z-2">03</div>
+                <div class="step-icon position-absolute overflow-hidden">
+                  <img class=" overflow-hidden" src="assets/images/house.gif" alt="">
+                </div>
+              </div>
+              <div class="dot-animation py-4 d-none d-md-flex m-md-auto">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h4 class="font-weight-bold text-my-default my-3">ឃ្លាំងអីវ៉ាន់នៅកម្ពុជា</h4>
+              <p class="text-my-default fs-5">ពីកន្លែងដែលអតិជនកម៉្មងមក​កាន់​ កម្ពុជា​
+                និងពីឃ្លាំងទៅទីតាំងអតិថិនជនផ្ទាល់រក្សាគុណភាព​ ប្រសិទ្ធភាពទំនិញជូនអតិថិជន</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 step" data-aos="fade-left">
+              <div class="step-circle">
+                <div class="step-number position-absolute z-2">04</div>
+                <div class="step-icon position-absolute overflow-hidden">
+                  <img class=" overflow-hidden" src="assets/images/package.gif" alt="">
+                </div>
+              </div>
+              <div class="dot-animation py-4 d-none d-md-flex m-md-auto">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <h4 class="font-weight-bold text-my-default my-3">សេវាកម្មដឹកជញ្ជូន</h4>
+              <p class="text-my-default fs-5">អតិថិជនអាចមកយកផ្ទាល់ឬ
+                ជ្រើសរើសប្រើសេវាកម្មដឹកដល់មុខផ្ទះធានាទៅដល់តាមពេលវេលា។</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <div class="test-price">
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="card border-0 py-5 px-4 shadow-sm">
+              <div class="card-title text-center text-my-secondary mb-4">
+                <h4 class="fw-bold">ការប៉ានស្មានតម្លៃដឹកជញ្ជូន</h4>
+              </div>
+              <form>
+                <div class="row">
+                  <!-- Stock Location -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <label for="stock" class="form-label fs-5 fw-semibold">ស្ដុកទុក</label>
+                    <select class="form-select" id="stock" aria-label="Stock Location">
+                      <option selected disabled>សូមជ្រើសរើសទីតាំង</option>
+                      <option value="1">កម្ពុជា</option>
+                      <option value="2">ចិន</option>
+                      <option value="3">តាមបណ្ដាខេត្ត</option>
+                    </select>
+                  </div>
+                  <!-- Shipping Method -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <label for="shipping-method" class="form-label fs-5 fw-semibold">មធ្យាបាយដឹកជញ្ជូន</label>
+                    <select class="form-select" id="shipping-method" aria-label="Shipping Method">
+                      <option selected disabled>សូមជ្រើសរើសទីតាំង</option>
+                      <option value="1">ម៉ូតូ</option>
+                      <option value="2">ឡាន</option>
+                      <option value="3">កុងតឺនឺ</option>
+                      <option value="4">កប៉ាល់ទឺក</option>
+                      <option value="5">យន្តហោះ</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Dimensions -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <label for="length" class="form-label fs-5 fw-semibold">ប្រវែង (cm)</label>
+                        <input type="text" class="form-control" id="length" placeholder="Example: 50 cm"
+                          aria-label="Length">
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="width" class="form-label fs-5 fw-semibold">ទទឹង (cm)</label>
+                        <input type="text" class="form-control" id="width" placeholder="Example: 30 cm"
+                          aria-label="Width">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Height and Weight -->
+                  <div class="col-12 col-md-6 mb-4">
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <label for="height" class="form-label fs-5 fw-semibold">កម្ពស់ (m)</label>
+                        <input type="text" class="form-control" id="height" placeholder="Example: 1.5 m"
+                          aria-label="Height">
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="weight" class="form-label fs-5 fw-semibold">ទម្ងន់ (Kg)</label>
+                        <input type="text" class="form-control" id="weight" placeholder="Example: 10 kg"
+                          aria-label="Weight">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-4">
+                  <button type="button"
+                    class="btn-coustom py-2 px-4 fs-5 fw-medium text-white shadow-sm border-0 rounded-2">ព័ត៌មានលម្អិត</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <div class="feedback">
+        <div class="container">
+          <h3 class="text-my-secondary text-center mb-5  fw-bold">មិតកែលម្អរបស់អតិថិជនកន្លងមក</h3>
+          <div class="row">
+            <div class="px-0">
+              <!-- Swiper -->
+              <div #swiperRef="" class="swiper mySwiper">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
+                    <div class="customer d-flex p-4 pb-0">
+                      <div class="profile">
+                        <img src="assets/images/customer1.jpg" alt="">
+                      </div>
+                      <div class="ms-3">
+                        <div class="profile-name fs-5 fw-medium">Hong China</div>
+                        <div class="ratting-star fs-6">
+                          <i class="fa-solid fa-star "></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback-decription p-4">
+                      <span><i class="fa-solid fa-quote-left icons fa-star fs-5"></i>
+                        ខ្ញុំមានការចាប់អារម្មណ៍យ៉ាងខ្លាំងជាមួយនឹងភាពរហ័សរហួនរបស់ CSC Express Delivery
+                        កញ្ចប់របស់ខ្ញុំបានមកដល់លឿនជាងការរំពឹងទុក។សូមអរគុណចំពោះសេវាកម្មដ៏ល្អនេះ!
+                        <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
+                    <div class="customer d-flex p-4 pb-0">
+                      <div class="profile">
+                        <img src="assets/images/customer5.jpg" alt="">
+                      </div>
+                      <div class="ms-3">
+                        <div class="profile-name fs-5 fw-medium">Ngorn Rey</div>
+                        <div class="ratting-star fs-6">
+                          <i class="fa-solid fa-star "></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback-decription p-4">
+                      <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
+                        ក្រុមដឹកជញ្ជូនបានចាត់ចែងកញ្ចប់របស់ខ្ញុំដោយយកចិត្តទុកដាក់បំផុត ហើយពួកគេបានមកដល់ក្នុងស្ថានភាពល្អ។
+                        ខ្ញុំសូមកោតសរសើរចំពោះការយកចិត្តទុកដាក់ចំពោះការវិចខ្ចប់!
+                        <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
+                    <div class="customer d-flex p-4 pb-0">
+                      <div class="profile">
+                        <img src="assets/images/customer2.jpg" alt="">
+                      </div>
+                      <div class="ms-3">
+                        <div class="profile-name fs-5 fw-medium">Khin SreyKeo</div>
+                        <div class="ratting-star fs-6">
+                          <i class="fa-solid fa-star "></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback-decription p-4">
+                      <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
+                        អ្នកបើកបរដឹកជញ្ជូនមានភាពគួរសម និងប្រកបដោយវិជ្ជាជីវៈ។
+                        ពួកគេថែមទាំងឆ្លៀតពេលទូរស័ព្ទមកខ្ញុំមុនពេលមកដល់ ដើម្បីធានាថាខ្ញុំនៅផ្ទះ។
+                        សេវាកម្មអតិថិជនដ៏អស្ចារ្យ!
+                        <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
+                    <div class="customer d-flex p-4 pb-0">
+                      <div class="profile">
+                        <img src="assets/images/customer3.jpg" alt="">
+                      </div>
+                      <div class="ms-3">
+                        <div class="profile-name fs-5 fw-medium">Ah Jingouy</div>
+                        <div class="ratting-star fs-6">
+                          <i class="fa-solid fa-star "></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback-decription p-4">
+                      <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
+                        ខ្ញុំចង់ឃើញជម្រើសនៃការដឹកជញ្ជូនដែលមានលក្ខណៈស្និទ្ធស្នាលនឹងបរិស្ថានបន្ថែមទៀត ដូចជារថយន្តអគ្គិសនី
+                        ឬការវេចខ្ចប់ដែលអាចកែច្នៃឡើងវិញបាន។ និរន្តរភាពគឺមានសារៈសំខាន់សម្រាប់ខ្ញុំក្នុងនាមជាអតិថិជន
+                        <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
+                    <div class="customer d-flex p-4 pb-0">
+                      <div class="profile">
+                        <img src="assets/images/customer4.jpg" alt="">
+                      </div>
+                      <div class="ms-3">
+                        <div class="profile-name fs-5 fw-medium">Runn Mom</div>
+                        <div class="ratting-star fs-6">
+                          <i class="fa-solid fa-star "></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback-decription p-4">
+                      <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
+                        ខ្ញុំមានអារម្មណ៍ថាមានសុវត្ថិភាពខ្លាំងណាស់ក្នុងអំឡុងពេលជិះ។
+                        អ្នកបើកបរបានប្រកាន់ខ្ជាប់នូវច្បាប់ចរាចរណ៍ ហើយរថយន្តក្រុងត្រូវបានបំពាក់ដោយខ្សែក្រវ៉ាត់សុវត្ថិភាព
+                        និងមុខងារសុវត្ថិភាពផ្សេងទៀត។
+                        <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-my-default text-my-default rounded shadow-sm">
+                    <div class="customer d-flex p-4 pb-0">
+                      <div class="profile">
+                        <img src="assets/images/Nika.jpg" alt="">
+                      </div>
+                      <div class="ms-3">
+                        <div class="profile-name fs-5 fw-medium">Kim Monika</div>
+
+                        <div class="ratting-star fs-6">
+                          <i class="fa-solid fa-star "></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback-decription p-4">
+                      <span><i class="fa-solid fa-quote-left icons fa-star me-3 fs-5"></i>
+                        ឡានក្រុងស្អាត និងមានផាសុខភាព មានជើងច្រើន កៅអីមានផាសុកភាព ហើយខ្ញុំពេញចិត្តក្នុងការជិះដោយរលូន
+                        ជាពិសេសមានបំពាក់នៅ Wi-Fi និងមានកន្លែងសាកថ្ម បទពិសោធន៍ដ៏អស្ចារ្យ!
+                        <i class="fa-solid fa-quote-right icons fa-star px-2 fs-5"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 faq-section">
+      <div class="container mt-5">
+        <div class="faqs-header text-center text-my-secondary mb-5">
+          <h3><span class="text-my-default fw-bold">FAQs</span> រាល់ចម្ងល់និងសំណួរទាំងឡាយមានចម្លើយនៅទីនេះ</h3>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 bg-body-tertiary dropdown-menu-shadow py-3 rounded-3">
+            <div class="nav flex-column nav-pills nav-pill-style" id="v-pills-tab" role="tablist"
+              aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <span class="fs-4">អំពី Website</span>
+              </button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <span class="fs-4">សេវាកម្មដឹកជញ្ជូន</span>
+              </button>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">
+                <span class="fs-4">សេវាកម្មធ្វើដំណើរ</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-8 rounded-3">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab" tabindex="0">
+                <div class="card border-0 dropdown-menu-shadow">
+                  <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button accordion-button-cutomize fs-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            តើ CSC Expressផ្តល់សេវាកម្មអ្វីខ្លះ?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body fs-5 text-black">
+                            CSC Express ផ្ដល់នូវសេវាកម្មធំៗពីរគឺ​សេវាធ្វើដំណើរនិងសេវាកម្មដឹកជញ្ជូន។ សូមអរគុណ។
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button accordion-button-cutomize collapsed fs-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            តើWebsite អ្នកឬក្រុមហ៊ុន CSC Express មានអ្នកគ្រប់គ្រងចំនួនប៉ុន្មានអ្នក?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body fs-5 text-black">
+                            Website CSC Express គ្រប់គ្រងដោយ Team
+                            ទាំង៣នាក់ក្នុងគោលបំណងតែមួយគឺជួយសម្រួលដល់ការធ្វើដំណើរក្នងស្រុកនិងផ្ញើអីវ៉ាន់ក្រៅប្រទេស។
+                            សូមអរគុណ។
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button accordion-button-cutomize collapsed fs-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            តើ​គោលដៅ​ណា​ខ្លះ​សម្រាប់​សេវា​ដឹក​ជញ្ជូន​និងសេវាកម្មធ្វើដំណើររបស់ CSC Express?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body fs-5 text-black">
+                            សម្រាប់​សេវា​ដឹក​ជញ្ជូនអីវ៉ាន់មាននៅក្នុងស្រុកនិងក្រៅប្រទេសហើយសេវាកម្មធ្វើដំណើរមានតែនៅក្នុងស្រុកខ្មែរទេ។
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                tabindex="0">
+                <div class="card border-0 dropdown-menu-shadow">
+                  <div class="card-body">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            តើការផ្ញើអីវ៉ាន់ជាមួយ CSC Express មានតម្លៃប៉ុន្មាន?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body fs-5 text-black">
+                            អាស្រ័យលើអីវ៉ាន់របស់អតិថិជន គិតពីទំហំ ទម្ងន់ និងប្រវែងជាពិសេស។
+                            យើងមានប្រូម៉ូសិនសម្រាប់ការផ្ញើផងដែរពេលមានបុណ្យជាតិជាដើម។ សូមអរគុណ។
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            តើអ្នកធានាសុវត្ថិភាពនៃកញ្ចប់របស់ខ្ញុំក្នុងអំឡុងពេលដឹកជញ្ជូនដោយរបៀបណា?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body fs-5 text-black">
+                            បុគ្គលិកត្រូវបានបណ្តុះបណ្តាលយ៉ាងម៉ត់ចត់ ការវេចខ្ចប់ប្រកបដោយសុវត្ថិភាព
+                            ការដឹកជញ្ជូនប្រកបដោយសុវត្ថិភាព។ ប្រសិនបើមានបញ្ហាកំឡុងពេលដឹកជញ្ជូន
+                            យើងធ្វើការយ៉ាងឆាប់រហ័សដើម្បីដោះស្រាយវា ហើយធានាថាកញ្ចប់របស់អ្នកមានសុវត្ថិភាព។ សូមអរគុណ។
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            តើខ្ញុំអាចផ្តល់មតិកែលម្អអំពីបទពិសោធន៍ដឹកជញ្ជូនរបស់ខ្ញុំដោយរបៀបណា?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body fs-5 text-black">
+                            លោកអ្នកអាចផ្ញើសារតាមព័ត៌មានទំនាក់ទំនង(Contact Our Team)តាមបណ្ដាញសង្គមដូចជា​ Facebook,
+                            Telegram, IG, LinkedIn... សូមអរគុណ។
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                tabindex="0">
+                <div class="card border-0 dropdown-menu-shadow">
+                  <div class="card-body">
+                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne-2">
+                          <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-2" aria-expanded="false"
+                            aria-controls="flush-collapseOne-2">
+                            តើការធ្វើដំណើរជាមួយ CSC Express មានភាពសុខសាន្តយ៉ាងណា?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne-2" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne-2" data-bs-parent="#accordionFlushExample2">
+                          <div class="accordion-body fs-5 text-black">
+                            យើងមានសុវត្ថិភាពនៃការធ្វើដំណើរ អាចទាក់ទងទូរស័ព្ទបានបើមានបញ្ហា
+                            មានការចុះតាមកន្លែងលំអិតក្នុងដំណើរ ទោះបីជាយប់ឬថ្ងៃក៏ដោយ ។ សូមអរគុណ។
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo-2">
+                          <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-2" aria-expanded="false"
+                            aria-controls="flush-collapseTwo-2">
+                            តើ​សំបុត្រ​សម្រាប់​គោលដៅ​ផ្សេង​គ្នា​តម្លៃ​ប៉ុន្មាន?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo-2" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingTwo-2" data-bs-parent="#accordionFlushExample2">
+                          <div class="accordion-body fs-5 text-black">
+                            សម្រាប់ការទិញសំបុត្រមានតម្លៃស្មើៗគ្នាចំពោះ២៥ខេត្តក្រុងនៃប្រទេសកម្ពុជានិងរាជធានីភ្នំពេញ
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree-2">
+                          <button class="accordion-button accordion-button-cutomize fs-4 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-2" aria-expanded="false"
+                            aria-controls="flush-collapseThree-2">
+                            តើអ្វីដែលពិសេសសម្រាប់ការធ្វើដំណើរនេះ?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree-2" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree-2" data-bs-parent="#accordionFlushExample2">
+                          <div class="accordion-body fs-5 text-black">
+                            យើងមានការធានាសុវត្ថិភាពនិងតាមដាននៅក្នុងកំឡុងពេលធ្វើដំណើរជាមួយនឹងការទទួលខុសត្រូវពេញលេញ
+                            ពិសេសមានបំពាក់នៅ Wi-Fi និងមានកន្លែងសាកថ្មគ្រឿងអេឡិចត្រូនិចផ្សេងៗ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container my-5">
+        <h3 class="text-center mb-4 text-my-default">ហេតុអ្វីអ្នកត្រូវតែជ្រើសរើសប្រើសេវាកម្មយើងខ្ញុំ</h3>
+        <p class="text-center fs-3 mb-4 fw-bold text-my-subtle">WHY CHOOSE CSC EXPRESS!</p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+            <div
+              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
+              <div class="choose-us-icon bg-my-primary rounded-4">
+                <img src="assets/images/driver (2).png" alt="pic">
+              </div>
+              <div class="mt-3">
+                <h4>អ្នកបើកបរ</h4>
+                <p class="choose-us-text">
+                  អ្នកបើកបររបស់យើងមានគុណសម្បត្តិ សុជីវធម៌ល្អ
+                  ការបើកបរប្រកបដោយសុវត្ថិភាពនិងច្បាស់លាស់។
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down">
+            <div
+              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
+              <div class="choose-us-icon bg-body-my-tertiary rounded-4">
+                <img src="assets/images/online-support.png" alt="pic">
+              </div>
+              <div class="text-white mt-3">
+                <h4>សេវាកម្មអតិថិជន</h4>
+                <p class="choose-us-text">
+                  អាចទាក់ទងមកខាងយើងខ្ញុំរៀងរាល់ម៉ោងធ្វើការ លោកអ្នកអាចសន្ទនាដោយនិយាយខ្មែរ អង់គ្លេស
+                  និងចិន។
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
+            <div
+              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
+              <div class="choose-us-icon bg-my-primary rounded-4">
+                <img src="assets/images/vip.png" alt="pic">
+              </div>
+              <div class="mt-3">
+                <h4>សេវាកម្មVIP</h4>
+                <p class="choose-us-text">
+                  ផ្តល់ជូននូវកន្លែងអង្គុយដ៏ល្អប្រណិត
+                  និងសេវាកម្មផ្តាច់មុខសម្រាប់អ្នកដែលចង់បានឯកជនភាព។
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+            <div
+              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
+              <div class="choose-us-icon bg-body-my-tertiary rounded-4">
+                <img src="assets/images/express-delivery (2).png" alt="pic">
+              </div>
+              <div class="text-white mt-3">
+                <h4>កុងសូលប្រចាំថ្ងៃ</h4>
+                <p class="choose-us-text">
+                  ការដឹកជញ្ជូនចរាចរណ៍រៀងរាល់ថ្ងៃ ជាពិសេសយើងមានឃ្លាំងក្នុងស្រុកនិងក្រៅស្រុកផ្ទាល់
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div
+              class="card rounded-4 border-0 shadow-sm d-flex justify-content-center text-center align-items-center p-4 card-hover">
+              <div class="choose-us-icon bg-my-primary rounded-4">
+                <img src="assets/images/home-delivery (1).png" alt="pic">
+              </div>
+              <div class="mt-3">
+                <h4>សេវាកម្មដឹកដល់មុខផ្ទះ</h4>
+                <p class="choose-us-text">
+                  អតិថិជនអាចមកយកផ្ទាល់នៅឃ្លាំងដែលមានទីតាំងជិតបំផុតនិងអាចប្រើប្រាស់សេវាកម្មដឹកដល់មុខផ្ទះ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
+            <div
+              class="card rounded-4 border-0 shadow-sm d-flex bg-my-primary justify-content-center text-center align-items-center p-4 card-hover">
+              <div class="choose-us-icon bg-body-my-tertiary rounded-4">
+                <img src="assets/images/delivery (1).png" alt="pic">
+              </div>
+              <div class="text-white mt-3">
+                <h4>សុវតិ្ថភាពនិងអាចទុកចិត្តបាន</h4>
+                <p class="choose-us-text">
+                  ធានាការដឹកជញ្ជូនទៅដល់តាមលំដាប់លំដោយដោយពុំមានខូចខាតនិងបាត់បង់ គុណភាពភាពស្មោះត្រង់ជាចម្បង
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="contactnow-us">
+      <div class="contact-us">
+        <div class="container my-5 my-5">
+          <div class="section-title text-center">
+            <h3 class="text-my-subtle mb-5 fw-bold"><span class="text-my-default">ព័ត៌មានទំនាក់ទំនង</span> Contact
+              information</h3>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 ">
+              <div class="card border-0 rounded-4 shadow-sm mb-3  mb-mxl-0 ">
+                <div class="card-title">
+                  <h4 class="text-black text-center mt-3">Contact Our<span class="text-my-secondary"> Team</span>
+                  </h4>
+                </div>
+                <div class="card-body">
+                  <div class="row g-3 mb-3" novalidate>
+                    <div class="col">
+                      <label for="firstname" class="form-label">នាមខ្លួន</label>
+                      <input type="text" class="form-control shadow-form" id="firstname" placeholder="នាមខ្លួន"
+                        aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <label for="lastname" class="form-label">នាមត្រកូល</label>
+                      <input type="text" id="lastname" class="form-control shadow-none" placeholder="នាមត្រកូល"
+                        aria-label="Last name">
+                    </div>
+                  </div>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">អ៊ីម៉ែល</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="csc.express@gmail.com" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>label
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">ពាក្យសម្ងាត់</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">សំណូមពរផ្សេងៗ</label>
+                      <textarea class="form-control no-reside" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-coustom fs-5">ផ្ញើសារ</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 ">
+              <div class="card py-3 border-0 rounded-4 shadow-sm">
+                <div class="contactus mx-3">
+                  <div class="mb-3">
+                    <a href="#"><i class="bi bi-geo-alt text-my-primary fs-5"></i>
+                      <span class="ms-2 text-black">ផ្ទះលេខ ៨៦បេ ផ្លូវ ៣១៣ កែងនឹងផ្លូវ ៦០៦ សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក
+                        រាជធានីភ្នំពេញ</span>
+                    </a>
+                  </div>
+                  <div class="mb-3 ">
+                    <a href="#">
+                      <i class="bi bi-telephone fs-5 text-my-primary"></i>
+                      <span class="ms-2 text-black">086 35 95 62</span>
+                    </a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#">
+                      <i class="bi bi-envelope fs-5 text-my-primary"></i>
+                      <span class=" ms-2 text-black">csc.express@gmail.com</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="mb-3 mx-3">
+                  <a href="#"><i
+                      class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2"></i></a>
+                  <a href="#"><i class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2"></i></a>
+                </div>
+              </div>
+              <div class="card mt-4 rounded-4 shadow-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125078.8386280728!2d104.80785640330666!3d11.572369639197966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e706d9cdf%3A0xb0bf13884e6cd05f!2sANT%20Technology%20Training%20Center!5e0!3m2!1sen!2skh!4v1722177203685!5m2!1sen!2skh"
+                  height="440px" style="border:0; " class="rounded-4 shadow" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <div class="our-team my-border">
+        <div class="container my-5 my-5 my-5">
+          <h3 class="m-5 text-center text-my-default fw-bold">សមាជិកក្រុម <span class="text-my-secondary">Team
+              Member</span>
+          </h3>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="card border-0">
+                <div class="image d-flex justify-content-center align-items-center">
+                  <img class="rounded-top" src="assets/images/chenny.jpg" alt="team">
+                  <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-footer text-center text-my-primary line-team">
+                    <h5>Co-Leader : <span class="text-my-secondary ">ងន​​​ ចេន្នី</span></h5>
+                    <h5>Tel: 086 35 95 62</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
+              <div class="card border-0 ">
+                <div class="image d-flex justify-content-center align-items-center">
+                  <img class="rounded-top" src="assets/images/Chet.jpg" alt="team">
+                  <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-footer text-center text-my-primary line-team">
+                    <h5>Co-Leader : <span class="text-my-secondary ">មិត ចិត</span></h5>
+                    <h5>Tel: 086 35 95 62</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-md-4">
+              <div class="card border-0">
+                <div class="image d-flex justify-content-center align-items-center">
+                  <img class="rounded-top" src="assets/images/nita.jpg" alt="team">
+                  <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
+                    </div>
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-footer text-center text-my-primary line-team">
+                    <h5>Co-Leader : <span class="text-my-secondary ">សៀន សូនីតា</span></h5>
+                    <h5>Tel: 086 35 95 62</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer  bg-body-my-tertiary">
-      <div class="container my-5 my-5 mt-5">
+    <div class="footer bg-body-my-tertiary">
+      <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
             <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">
@@ -1255,17 +1789,19 @@
                 style="width: 100%; height: auto; object-fit: contain;">
             </a>
             <div class="mt-0">
-              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់ គុណភាព
+              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់
+                គុណភាព
                 សុវតិ្ថភាព
                 លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
             </div>
             <div class="mb-2 ms-3 ms-md-0">
-              <a class="text-my-secondary  fs-5" href="#">ប្រវតិ្តក្រុមហ៊ុន</a>
+              <a class="text-my-secondary  fs-5" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a>
             </div>
 
             <div class="mb-2 ms-3 ms-md-0">
-              <a class=" text-my-secondary fs-5 " href="#">ក្រុមយើងខ្ញុំ</a>
+              <a class=" text-my-secondary fs-5 " href="about-us.html">ក្រុមយើងខ្ញុំ</a>
             </div>
+
           </div>
 
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
@@ -1273,42 +1809,43 @@
               <h4 class="text-my-primary">Quick-links</h4>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="#">ទំព័រដើម</a>
+              <a class="text-my-secondary fs-5" href="home.html.html">ទំព័រដើម</a>
             </div>
 
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សាខា</a>
+              <a class="text-my-secondary fs-5" href="branch.html">សាខា</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">ទំនាក់ទំនង</a>
+              <a class="text-my-secondary fs-5" href="contact-us.html">ទំនាក់ទំនង</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">អំពីយើង</a>
+              <a class="text-my-secondary fs-5" href="about-us.html">អំពីយើង</a>
             </div>
+
           </div>
-
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5 mb-4 ">
               <h4 class="text-my-primary">សេវាកម្ម</h4>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">ប្រូម៉ូសិន</a>
+              <a class="text-my-secondary fs-5" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a>
             </div>
             <div class="mb-2">
-              <a class=" text-my-secondary fs-5 " href="#">សេវាកម្មបានកាតបញ្ចុះតម្លៃ</a>
+              <a class="text-my-secondary fs-5" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
             </div>
+
           </div>
 
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
@@ -1323,26 +1860,26 @@
                 </a>
               </div>
               <div class="mb-2">
-                <a href="#">
+                <a href="tel:+855 86359562">
                   <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
                   <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
                 </a>
               </div>
               <div class="mb-4">
-                <a href="#">
+                <a href="mailto:csc.express@gmail.com">
                   <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
                   <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
                 </a>
               </div>
             </div>
             <div class="mb-2">
-              <a href="#"><i
+              <a href="www.facebook.com" target="_blank"><i
                   class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
-              <a href="#"><i
+              <a href="#" target="_blank"><i
                   class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
-              <a href="#"><i
+              <a href="www.instagram.com" target="_blank"><i
                   class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
-              <a href="#"><i
+              <a href="wwww.linkedin.com" target="_blank"><i
                   class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
             </div>
           </div>

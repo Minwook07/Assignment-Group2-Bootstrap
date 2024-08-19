@@ -30,6 +30,11 @@ body {
   --my-qoute-color: #ffff;
   --my-bgcolor-sys: #fff;
   --my-color-primary-default: #669955;
+  --my-color-primary-mode: #669955;
+  --my-card-default-blur-bg: rgba(255, 255, 255, 0.7);
+  --my-card-default-blur-border: rgba(255, 255, 255, 0.25);
+  --my-card-default-blur-backdrop: blur(2px);
+  --hero-banner-bustransport-image: url('../images/bus-tran-hero.png');
 }
 
 [data-theme="dark"] {
@@ -43,6 +48,11 @@ body {
   --my-qoute-color: #0000;
   --my-bgcolor-sys: #444;
   --my-color-primary-default: #fff;
+  --my-color-primary-mode: #66FF99;
+  --my-card-default-blur-bg: rgba(0, 0, 0, 0.7);
+  --my-card-default-blur-border: rgba(0, 0, 0, 0.35);
+  --my-card-default-blur-backdrop: blur(2px);
+  --hero-banner-bustransport-image: url('../images/bus-tran-hero-dark.png');
 }
 
 img {
@@ -189,6 +199,14 @@ img {
   color: var(--my-color-primary-default);
 }
 
+.text-my-primary-mode {
+  color: var(--my-color-primary-mode) !important;
+}
+
+.text-my-primary-mode:hover {
+  color: var(--my-color-text) !important;
+}
+
 /* Buttons */
 .btn-my-primary {
   color: #fff;
@@ -302,6 +320,7 @@ input:focus {
 
   .btn-hover-grop:hover .dropdown-hover-item {
     display: block !important;
+    margin-top: 10px;
     right: 0;
     position: absolute;
   }
@@ -731,7 +750,7 @@ a {
 }
 
 .dropdown-menu-shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--my-bgcolor-sys);
 }
 
 /* not showing the validation */
@@ -1773,15 +1792,15 @@ input:focus {
   align-items: center;
   background-color: #fff;
   padding: 100px 0 !important;
-  background-image: url(../images/bus-tran-hero.png);
+  background-image: var(--hero-banner-bustransport-image);
   background-size: cover;
 }
 
 .card-hero {
-  background: rgba(255, 255, 255, 0.7);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--my-card-default-blur-bg);
+  -webkit-backdrop-filter: var(--my-card-default-blur-backdrop);
+  backdrop-filter: var(--my-card-default-blur-backdrop);
+  border: 1px solid var(--my-card-default-blur-border);
 }
 
 /* SectionTransport Info Booking */
@@ -1889,7 +1908,7 @@ input:focus {
 }
 
 .accordion-button-cutomize:not(.collapsed) {
-  background-color: #222 !important;
+  background-color: #2A3B2E !important;
   color: #fff;
 }
 

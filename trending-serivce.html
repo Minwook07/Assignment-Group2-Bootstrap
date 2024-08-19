@@ -70,22 +70,22 @@
                                 <li class="nav-item position-relative" role="presentation">
                                     <button
                                         class="nav-link btn-notifications active rounded-0 ps-4 pe-2 py-0 d-flex align-items-center mb-1"
-                                        id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                                        type="button" role="tab" aria-controls="pills-home"
+                                        id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home1"
+                                        type="button" role="tab" aria-controls="pills-home1"
                                         aria-selected="true">ទាំងអស់<span
                                             class="badge bg-black rounded-circle my-badge ms-1">9</span></button>
                                 </li>
 
                                 <li class="nav-item position-relative" role="presentation">
                                     <button class="nav-link btn-notifications rounded-0 px-2 py-0"
-                                        id="pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                                        type="button" role="tab" aria-controls="pills-profile"
+                                        id="pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#pills-profile1"
+                                        type="button" role="tab" aria-controls="pills-profile1"
                                         aria-selected="false">សេវាកម្ម</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link rounded-0 px-2 py-0" id="pills-contact1-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">មតិកែលម្អ</button>
+                                        data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab"
+                                        aria-controls="pills-contact1" aria-selected="false">មតិកែលម្អ</button>
                                 </li>
                                 <hr>
                             </ul>
@@ -417,21 +417,23 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
+                                    aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
                                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                  <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a></li>
-                                  <li><a class="dropdown-item" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a></li>
+                                    <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a></li>
                                 </ul>
-                              </li>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">អំពីយើង</a>
+                                    data-bs-toggle="dropdown">អំពីពួកយើង</a>
                                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                                    <li><a class="dropdown-item" href="about-company.html">ប្រវត្តិក្រុមហ៊ុន</a></li>
                                     <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
+                                    <li><a class="dropdown-item" href="thankful.html">សារថ្លែងអំណរគុណ</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -783,18 +785,22 @@
 
     <main>
         <!-- BackToTop Button -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-                class="bi bi-arrow-up-short fs-5"></i></a>
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+            <i class="bi bi-arrow-up-short fs-5"></i>
+        </a>
+
         <!-- Chat Bot -->
         <div class="dropup-center dropstart">
-            <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
-                data-bs-auto-close="outside" aria-expanded="false">
+            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 <i class="fa-brands fa-facebook-messenger"></i>
             </button>
-            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
                 <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
                     <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-                    <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
                 </div>
                 <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
                     <div class="card-body">
@@ -845,7 +851,8 @@
                             ផ្តល់ជូននូវសេវាកម្មជាច្រើនរួមមានសេវាកម្មដឹកជញ្ជូនព្រមទាំងសេវាកម្មដឹកអ្នកដំណើរ</p>
                         <div>
                             <a href="" class="btn btn-my-primary fs-4 me-3" data-aos="fade-up-left">កក់សំបុត្រ</a>
-                            <a href="" class="btn btn-my-outline-primary fs-4" data-aos="fade-up-right">ប្រើសេវាកម្ម</a>
+                            <a href="" class="btn btn-my-outline-primary text-my-primary-mode fs-4"
+                                data-aos="fade-up-right">ប្រើសេវាកម្ម</a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-7 d-block d-md-flex me-auto">
@@ -920,7 +927,8 @@
                             <img src="assets/images/private-bus.jpeg" alt=""
                                 class="border-flower-1 position-absolute my-img-position-trend-1">
                             <div class="my-trend-hover position-absolute p-5">
-                                <h3 class="text-white mb-3"><i class="fa-solid fa-quote-left text-my-primary fs-2"></i>&nbsp;
+                                <h3 class="text-white mb-3"><i
+                                        class="fa-solid fa-quote-left text-my-primary fs-2"></i>&nbsp;
                                     ឡានជាលក្ខណៈឯកជន&nbsp;<i
                                         class="fa-solid fa-quote-right text-my-primary fs-2 fw-bold"></i></h3>
                                 <p class="text-white fs-5 d-none d-xl-block">
@@ -931,14 +939,15 @@
                                     ឬអាជីវកម្ម។
                                 </p>
                                 <div class="d-flex justify-content-center">
-                                    <a href="booking-ticket-detail.html" class="btn btn-my-primary fs-5 me-3">កក់សំបុត្រ</a>
+                                    <a href="booking-ticket-detail.html"
+                                        class="btn btn-my-primary fs-5 me-3">កក់សំបុត្រ</a>
                                     <a href="favorite.html" class="btn btn-my-primary d-flex align-items-center"><i
                                             class="fa-regular fa-heart fs-5"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 d-flex mb-4 my-trending-hover"> 
+                    <div class="col-12 col-lg-6 d-flex mb-4 my-trending-hover">
                         <div class="border-flower-2 my-img-delivery position-relative p-5">
                             <img src="assets/images/my-vip-bus .jpeg" alt=""
                                 class="border-flower-2 position-absolute my-img-position-trend-2"
@@ -954,7 +963,8 @@
                                     Wi-Fi លឿន, Tablet និងការផ្តល់ជូនអាហារនិងភេសជ្ជៈផ្តល់ជូនអតិថិជន។
                                 </p>
                                 <div class="d-flex justify-content-center">
-                                    <a href="booking-ticket-detail.html" class="btn btn-my-primary fs-5 me-3">កក់សំបុត្រ</a>
+                                    <a href="booking-ticket-detail.html"
+                                        class="btn btn-my-primary fs-5 me-3">កក់សំបុត្រ</a>
                                     <a href="favorite.html" class="btn btn-my-primary d-flex align-items-center"><i
                                             class="fa-regular fa-heart fs-5"></i></a>
                                 </div>
@@ -966,11 +976,13 @@
                             <img src="assets/images/ship-4.jpeg" alt=""
                                 class="border-flower-1 position-absolute my-img-position-trend-1">
                             <div class="my-trend-hover position-absolute p-5">
-                                <h3 class="text-white mb-3"><i class="fa-solid fa-quote-left text-my-primary fs-2"></i>&nbsp;
+                                <h3 class="text-white mb-3"><i
+                                        class="fa-solid fa-quote-left text-my-primary fs-2"></i>&nbsp;
                                     ដឹកជញ្ជូនតាមផ្លូវទឹក&nbsp;<i
                                         class="fa-solid fa-quote-right text-my-primary fs-2 fw-bold"></i></h3>
                                 <div class="d-flex justify-content-center">
-                                    <a href="tracking-items.html" class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
+                                    <a href="tracking-items.html"
+                                        class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
                                     <a href="favorite.html" class="btn btn-my-primary d-flex align-items-center"><i
                                             class="fa-regular fa-heart fs-5"></i></a>
                                 </div>
@@ -985,16 +997,17 @@
                             <div class="my-trend-hover-1 position-absolute p-5">
                                 <h3 class="text-white ms-5 mb-3"><i
                                         class="fa-solid fa-quote-left text-my-primary fs-2"></i>&nbsp;
-                                        ដឹកជញ្ជូននៅក្នុងស្រុក&nbsp;<i
+                                    ដឹកជញ្ជូននៅក្នុងស្រុក&nbsp;<i
                                         class="fa-solid fa-quote-right text-my-primary fs-2 fw-bold"></i></h3>
                                 <div class="d-flex justify-content-center">
-                                    <a href="tracking-items.html" class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
+                                    <a href="tracking-items.html"
+                                        class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
                                     <a href="favorite.html" class="btn btn-my-primary d-flex align-items-center"><i
                                             class="fa-regular fa-heart fs-5"></i></a>
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     <div class="col-12 col-lg-6 d-none d-lg-flex mb-4">
                         <div class="border-flower-2 my-img-delivery my-trending-hover position-relative p-5">
                             <img src="assets/images/ship-4.jpeg" alt=""
@@ -1012,7 +1025,8 @@
                                     និងបច្ចេកវិទ្យាថ្មីៗ។
                                 </p>
                                 <div class="d-flex justify-content-center">
-                                    <a href="tracking-items.html" class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
+                                    <a href="tracking-items.html"
+                                        class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
                                     <a href="favorite.html" class="btn btn-my-primary d-flex align-items-center"><i
                                             class="fa-regular fa-heart fs-5"></i></a>
                                 </div>
@@ -1035,7 +1049,8 @@
                                     និងសម្ភារៈផ្សេងៗដោយទាន់ពេលវេលា និងទំនុកចិត្ត។
                                 </p>
                                 <div class="d-flex justify-content-center">
-                                    <a href="tracking-items.html" class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
+                                    <a href="tracking-items.html"
+                                        class="btn btn-my-primary fs-5 me-3">ចូលប្រើសេវាកម្ម</a>
                                     <a href="favorite.html" class="btn btn-my-primary d-flex align-items-center"><i
                                             class="fa-regular fa-heart fs-5"></i></a>
                                 </div>
@@ -1053,7 +1068,7 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
                         <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">
-                            <img class="me-md-5" src="assets/images/CSC-Express-LOGO.png" alt="#"
+                            <img class="me-md-5" src="assets/images/my-logo-csc.png" alt="#"
                                 style="width: 100%; height: auto; object-fit: contain;">
                         </a>
                         <div class="mt-0">
@@ -1164,6 +1179,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/headerfixed.js"></script>
     <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/chatbot.js"></script>
     <script src="assets/libs/aos-master/aos-master/dist/aos.js"></script>
     <script>
         AOS.init();

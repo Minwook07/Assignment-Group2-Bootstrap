@@ -783,54 +783,58 @@
 </header>
 
   <main>
-    <!-- BackToTop Button -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-        class="bi bi-arrow-up-short fs-5"></i></a>
-    <!-- Chat Bot -->
-    <div class="dropup-center dropstart">
-      <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
-        data-bs-auto-close="outside" aria-expanded="false">
-        <i class="fa-brands fa-facebook-messenger"></i>
-      </button>
-      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
-        <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
-          <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-          <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
-        </div>
-        <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
-          <div class="card-body">
-            <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
-            <div class="d-grid gap-3 col-6">
-              <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
-              <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
-              <button class="btn btn-my-outline-primary" type="button">ចិន</button>
+        <!-- BackToTop Button -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+            <i class="bi bi-arrow-up-short fs-5"></i>
+        </a>
+
+        <!-- Chat Bot -->
+        <div class="dropup-center dropstart">
+            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </button>
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
+                <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
+                    <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
+                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+                <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
+                    <div class="card-body">
+                        <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
+                        <div class="d-grid gap-3 col-6">
+                            <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
+                            <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
+                            <button class="btn btn-my-outline-primary" type="button">ចិន</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
+                <form action="" class="d-flex align-items-center mx-2">
+                    <div class="my-send-text d-flex mb-4">
+                        <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
+                            placeholder="Message..." rows="1"></textarea>
+                        <div class="d-flex align-items-center my-btn-fill w-25">
+                            <button type="button" class="btn chat-bot-icon border-0 p-1">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </button>
+                            <button type="button" class="btn chat-bot-icon border-0 p-1">
+                                <i class="fa-solid fa-file-image"></i>
+                            </button>
+                            <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" id="fileInput" style="display: none;" />
+                            <button type="button" class="btn chat-bot-icon send-button">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </div>
         </div>
-        <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
-        <form action="" class="d-flex align-items-center mx-2">
-          <div class="my-send-text d-flex mb-4">
-            <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
-              placeholder="Message..." rows="1"></textarea>
-            <div class="d-flex align-items-center my-btn-fill w-25">
-              <button type="button" class="btn chat-bot-icon border-0 p-1">
-                <i class="fa-solid fa-face-smile"></i>
-              </button>
-              <button type="button" class="btn chat-bot-icon border-0 p-1">
-                <i class="fa-solid fa-file-image"></i>
-              </button>
-              <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
-                <i class="fa-solid fa-paperclip"></i>
-              </label>
-              <input type="file" id="fileInput" style="display: none;" />
-              <button type="button" class="btn chat-bot-icon send-button">
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
 
     <div class="container text-my-default" style="margin-top: 100px;">
       <div class="row">
@@ -1060,6 +1064,7 @@
   <script src="assets/js/script.js"></script>
   <script src="assets/js/headerfixed.js"></script>
   <script src="assets/js/backtotop.js"></script>
+  <script src="assets/js/chatbot.js"></script>
 </body>
 
 </html>

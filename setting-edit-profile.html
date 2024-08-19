@@ -784,18 +784,22 @@
 
     <main>
         <!-- BackToTop Button -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-                class="bi bi-arrow-up-short fs-5"></i></a>
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+            <i class="bi bi-arrow-up-short fs-5"></i>
+        </a>
+
         <!-- Chat Bot -->
         <div class="dropup-center dropstart">
-            <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
-                data-bs-auto-close="outside" aria-expanded="false">
+            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 <i class="fa-brands fa-facebook-messenger"></i>
             </button>
-            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
                 <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
                     <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-                    <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
                 </div>
                 <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
                     <div class="card-body">
@@ -892,9 +896,11 @@
                                                 </a>
                                             </div>
                                             <div class="d-grid gap-3 col-3 col-lg-2 ms-5">
-                                                <button class="btn btn-primary rounded-3" type="button">ប្តូររូបភាព</button>
-                                                <button class="btn btn-outline-danger rounded-3" type="button">លុបរូប</button>
-                                              </div>
+                                                <button class="btn btn-primary rounded-3"
+                                                    type="button">ប្តូររូបភាព</button>
+                                                <button class="btn btn-outline-danger rounded-3"
+                                                    type="button">លុបរូប</button>
+                                            </div>
                                         </div>
                                         <h5 class="mt-3 mb-4">Kim Eun-Kyung</h5>
                                         <form class="row g-3 needs-validation" novalidate>
@@ -906,17 +912,11 @@
                                                 <label for="validationCustom01" class="form-label">នាមត្រកូល</label>
                                                 <input type="text" class="form-control shadow-none"
                                                     id="validationCustom01" value="Kim" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
                                                 <input type="text" class="form-control shadow-none"
                                                     id="validationCustom02" value="Eun-Kyung" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <label for="validationCustomUsername"
@@ -927,7 +927,7 @@
                                                         id="validationCustomUsername" value="eun-kyung_kim"
                                                         aria-describedby="inputGroupPrepend" required>
                                                     <div class="invalid-feedback">
-                                                        Please choose a username.
+                                                        សូមបញ្ចូលឈ្មោះហៅក្រៅរបស់អ្នក
                                                     </div>
                                                 </div>
                                             </div>
@@ -936,7 +936,17 @@
                                                 <input type="email" class="form-control shadow-none"
                                                     id="validationCustom05" value="kim_eunkyung@gmail.com" required>
                                                 <div class="invalid-feedback">
-                                                    Please input an email.
+                                                    សូមបញ្ចូលអាស័យដ្ឋានអ៊ីម៉េល
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom09" class="form-label">ទីតាំង</label>
+                                                <input type="text" class="form-control shadow-none"
+                                                    id="validationCustom09"
+                                                    value="ផ្ទះលេខ១២អា ផ្លូវ២៧១ សង្កាត់ចាក់អង្រែ ខណ្ឌមានជ័យ រាជធានីភ្នំពេញ"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    សូមបញ្ចូលទីលំនៅបច្ចុប្បន្នរបស់អ្នក
                                                 </div>
                                             </div>
                                             <div class="col-12">
@@ -1232,6 +1242,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/headerfixed.js"></script>
     <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/chatbot.js"></script>
     <script src="assets/js/formValidation.js"></script>
     <script src="assets/libs/aos-master/dist/aos.js"></script>
     <script>

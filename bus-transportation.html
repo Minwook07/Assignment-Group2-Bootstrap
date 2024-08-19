@@ -807,18 +807,22 @@
 
     <main>
         <!-- BackToTop Button -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-                class="bi bi-arrow-up-short fs-5"></i></a>
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+            <i class="bi bi-arrow-up-short fs-5"></i>
+        </a>
+
         <!-- Chat Bot -->
         <div class="dropup-center dropstart">
-            <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
-                data-bs-auto-close="outside" aria-expanded="false">
+            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 <i class="fa-brands fa-facebook-messenger"></i>
             </button>
-            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
                 <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
                     <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-                    <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
                 </div>
                 <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
                     <div class="card-body">
@@ -1273,7 +1277,8 @@
                         <p class="fs-4">ទទួលបានការបញ្ចុះតម្លៃ 50% សម្រាប់ខែដំបូងនៃការប្រើប្រាស់សេវាកម្មរបស់ពួកយើង។</p>
                         <div class="d-flex gap-4">
                             <a href="#" class="btn btn-my-primary py-3 px-3">ទទួលបានការបញ្ចុះតម្លៃ</a>
-                            <a href="#contact-us-more" class="btn btn-my-outline-primary text-my-primary-mode py-3 px-3">ទំនាក់ទំនងពួកយើង</a>
+                            <a href="#contact-us-more"
+                                class="btn btn-my-outline-primary text-my-primary-mode py-3 px-3">ទំនាក់ទំនងពួកយើង</a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-7 mt-5 mt-lg-0" data-aos="fade-left">
@@ -1628,6 +1633,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/headerfixed.js"></script>
     <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/chatbot.js"></script>
     <script src="assets/js/formValidation.js"></script>
     <script src="assets/libs/aos-master/dist/aos.js"></script>
     <script>

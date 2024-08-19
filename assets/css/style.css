@@ -248,7 +248,8 @@ img {
 
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border: 1px solid var(--my-color-bg) !important;
 }
 
@@ -914,14 +915,14 @@ input:focus {
   padding-top: 110px;
 }
 
-.pt-135 {
-  padding-top: 135px;
+.pt-145 {
+  padding-top: 145px;
 }
 
 .banner-contact-us {
   width: 100%;
-  height: 450px;
-  background-position: center;
+  height: 545px;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -942,6 +943,10 @@ input:focus {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.my-color-icon {
+  color: #ffff;
 }
 
 .line {
@@ -991,9 +996,22 @@ input:focus {
   padding-top: 10px;
 }
 
+.my-color-icon {
+  transition: 0.6s ease-in-out;
+}
+
+.my-contact-icon:hover {
+  color: #ffff;
+}
+
 .btn-coustom {
+  background: #ffff;
+  color: var(--my-color-primary);
+  transition: 0.6s ease-in-out;
+}
+
+.btn-coustom:hover {
   background: linear-gradient(45deg, #669955 0%, #91d680);
-  color: #fff;
 }
 
 .my-type-1 {
@@ -1029,7 +1047,7 @@ input:focus {
   transition: flex 0.4s ease;
 }
 
-.social-hover {
+.social-hovers {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1057,6 +1075,19 @@ input:focus {
   width: 300px;
   left: 35.5%;
   top: 17%;
+}
+
+.my-social-icon,
+.my-social-icon i {
+  transition: 0.6s ease;
+}
+
+.my-social-icon:hover {
+  background-color: var(--my-color-primary) !important;
+}
+
+.my-social-icon:hover i {
+  color: #ffff !important;
 }
 
 .my-descrition {
@@ -1163,7 +1194,7 @@ input:focus {
   }
 
   .card-pf-img:hover .social-hovers {
-    left: 70%!important;
+    left: 70% !important;
     opacity: 1;
   }
 
@@ -1177,9 +1208,10 @@ input:focus {
   .my-social-icon {
     margin-left: -20px;
   }
+
 }
 
-@media (max-width:415px) {
+@media (max-width:440px) {
 
   .my-quote,
   .skills {
@@ -1187,8 +1219,8 @@ input:focus {
     margin: auto;
   }
 
-  .my-quote {
-    margin-top: 30px;
+  .my-left-skills {
+    margin-top: 320px;
   }
 
   .my-qoute-border {
@@ -1207,10 +1239,6 @@ input:focus {
     top: 25.5%;
   }
 
-  .my-skill-ranges-side {
-    margin-top: 320px;
-  }
-
   .myprofile-name {
     top: -90px;
   }
@@ -1218,8 +1246,9 @@ input:focus {
   .my-profile-name {
     font-size: 16.5px !important;
   }
+
   .card-pf-img:hover .social-hovers {
-    left: 50%!important;
+    left: 50% !important;
     opacity: 1;
   }
 }
@@ -1278,7 +1307,7 @@ input:focus {
 }
 
 .company {
-  margin-bottom: 150px;
+  margin-bottom: 110px;
 }
 
 .office {
@@ -1605,7 +1634,7 @@ input:focus {
 .my-trending-hover:hover .my-trend-hover-2 {
   border-radius: 180px 5px 210px 5px;
   opacity: 1;
-  bottom: -19px;
+  bottom: -28px;
   cursor: pointer;
 }
 
@@ -1621,8 +1650,17 @@ input:focus {
 .my-trending-hover:hover .my-trend-hover-3 {
   border-radius: 5px 180px 5px 210px;
   opacity: 1;
-  bottom: -19px;
+  bottom: -25px;
   cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .my-trend-hover-2 {
+    left: 0px;
+  }
+  .my-trend-hover-3{
+    right: 0px;
+  }
 }
 
 /* blog or read more */

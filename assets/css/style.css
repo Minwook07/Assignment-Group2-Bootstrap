@@ -336,6 +336,7 @@ textarea:focus {
 
   .navbar-nav .nav-item .nav-link:hover {
     color: var(--my-color-primary) !important;
+  
   }
 
   .navbar .navbar-nav .nav-item {
@@ -433,6 +434,15 @@ textarea:focus {
   --bs-dropdown-link-active-bg: var(--my-color-subtle) !important;
 }
 
+.dropdown-item:hover{
+  background-color:#669955!important;
+}
+
+.dropdown-item:hover i,
+.dropdown-item:hover span{
+  color: #fff;
+}
+
 .user-profile {
   width: 100%;
   height: 100%;
@@ -488,7 +498,6 @@ textarea:focus {
 
 .pt-70 {
   padding-top: 60px;
-
 }
 
 .hero-banner-home {
@@ -502,7 +511,6 @@ textarea:focus {
   overflow: hidden;
 }
 
-
 .favorite-page {
   width: 100%;
   height: 700px;
@@ -512,18 +520,6 @@ textarea:focus {
   background-position: center;
   overflow: hidden;
 }
-
-
-
-
-/* @media (max-width: 768px) {
-  .hero-baner {
-    height: 500px;
-  }
-  .hero-banner-home{
-    margin-top: 100px;
-  }
-} */
 
 .overlay-now {
   position: absolute;
@@ -796,6 +792,16 @@ a {
   transition: opacity 0.5s ease, right 0.5s ease;
 }
 
+.card-fav{
+  height: 60px;
+}
+.fav-icon{
+  color: #669955;
+}
+.fav-icon:hover{
+  color: #80C56D;
+}
+
 .image-fav:hover .remove-fav {
   opacity: 1;
   right: 15px;
@@ -917,6 +923,10 @@ input:focus {
 
 .pt-145 {
   padding-top: 145px;
+}
+
+.pt-135 {
+  padding-top: 135px;
 }
 
 .banner-contact-us {
@@ -1047,7 +1057,7 @@ input:focus {
   transition: flex 0.4s ease;
 }
 
-.social-hovers {
+.social-hover {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1996,7 +2006,6 @@ input:focus {
   background-color: #222 !important;
   color: #fff;
 }
-
 .accordion-button-cutomize:not(.collapsed)::after {
   content: '\f068';
   font-family: 'Font Awesome 6 Free';

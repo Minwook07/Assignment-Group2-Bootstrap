@@ -335,6 +335,7 @@ input:focus {
 
   .navbar-nav .nav-item .nav-link:hover {
     color: var(--my-color-primary) !important;
+  
   }
 
   .navbar .navbar-nav .nav-item {
@@ -432,6 +433,15 @@ input:focus {
   --bs-dropdown-link-active-bg: var(--my-color-subtle) !important;
 }
 
+.dropdown-item:hover{
+  background-color:#669955!important;
+}
+
+.dropdown-item:hover i,
+.dropdown-item:hover span{
+  color: #fff;
+}
+
 .user-profile {
   width: 100%;
   height: 100%;
@@ -485,10 +495,6 @@ input:focus {
   overflow: hidden;
 }
 
-.pt-70 {
-  padding-top: 60px;
-
-}
 
 .hero-banner-home {
   width: 100%;
@@ -511,18 +517,6 @@ input:focus {
   background-position: center;
   overflow: hidden;
 }
-
-
-
-
-/* @media (max-width: 768px) {
-  .hero-baner {
-    height: 500px;
-  }
-  .hero-banner-home{
-    margin-top: 100px;
-  }
-} */
 
 .overlay-now {
   position: absolute;
@@ -601,7 +595,6 @@ input:focus {
 .pt-70 {
   padding-top: 70px;
 }
-
 .logo-thankful {
   max-width: 200px;
 
@@ -794,7 +787,15 @@ a {
   opacity: 0;
   transition: opacity 0.5s ease, right 0.5s ease;
 }
-
+.card-fav{
+  height: 60px;
+}
+.fav-icon{
+  color: #669955;
+}
+.fav-icon:hover{
+  color: #80C56D;
+}
 .image-fav:hover .remove-fav {
   opacity: 1;
   right: 15px;
@@ -1892,7 +1893,6 @@ input:focus {
   background-color: #222 !important;
   color: #fff;
 }
-
 .accordion-button-cutomize:not(.collapsed)::after {
   content: '\f068';
   font-family: 'Font Awesome 6 Free';

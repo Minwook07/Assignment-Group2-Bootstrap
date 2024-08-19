@@ -69,22 +69,22 @@
                                 <li class="nav-item position-relative" role="presentation">
                                     <button
                                         class="nav-link btn-notifications active rounded-0 ps-4 pe-2 py-0 d-flex align-items-center mb-1"
-                                        id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                                        type="button" role="tab" aria-controls="pills-home"
+                                        id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home1"
+                                        type="button" role="tab" aria-controls="pills-home1"
                                         aria-selected="true">ទាំងអស់<span
                                             class="badge bg-black rounded-circle my-badge ms-1">9</span></button>
                                 </li>
 
                                 <li class="nav-item position-relative" role="presentation">
                                     <button class="nav-link btn-notifications rounded-0 px-2 py-0"
-                                        id="pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                                        type="button" role="tab" aria-controls="pills-profile"
+                                        id="pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#pills-profile1"
+                                        type="button" role="tab" aria-controls="pills-profile1"
                                         aria-selected="false">សេវាកម្ម</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link rounded-0 px-2 py-0" id="pills-contact1-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">មតិកែលម្អ</button>
+                                        data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab"
+                                        aria-controls="pills-contact1" aria-selected="false">មតិកែលម្អ</button>
                                 </li>
                                 <hr>
                             </ul>
@@ -416,21 +416,23 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
+                                    aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
                                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                  <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a></li>
-                                  <li><a class="dropdown-item" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a></li>
+                                    <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a></li>
                                 </ul>
-                              </li>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">អំពីយើង</a>
+                                    data-bs-toggle="dropdown">អំពីពួកយើង</a>
                                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                                    <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                                    <li><a class="dropdown-item" href="about-company.html">ប្រវត្តិក្រុមហ៊ុន</a></li>
                                     <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
+                                    <li><a class="dropdown-item" href="thankful.html">សារថ្លែងអំណរគុណ</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -782,18 +784,22 @@
 
     <main>
         <!-- BackToTop Button -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-                class="bi bi-arrow-up-short fs-5"></i></a>
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+            <i class="bi bi-arrow-up-short fs-5"></i>
+        </a>
+
         <!-- Chat Bot -->
         <div class="dropup-center dropstart">
-            <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
-                data-bs-auto-close="outside" aria-expanded="false">
+            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 <i class="fa-brands fa-facebook-messenger"></i>
             </button>
-            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
                 <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
                     <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-                    <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
                 </div>
                 <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
                     <div class="card-body">
@@ -830,17 +836,17 @@
             </div>
         </div>
 
-        <section class="pt-5" style="margin-top: 150px;">
+        <section class="pt-5 mb-5" style="margin-top: 150px;">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
                         <div class="card rounded-4 border-0 bg-my-default">
                             <div class="card-body p-4">
-                                <ul class="nav nav-pills d-flex flex-column fs-5 gap-2" id="pills-tab" role="tablist">
+                                <ul class="nav nav-pills d-flex flex-column fs-5 gap-2" id="pills-tab2" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link w-100 text-start active" id="pills-home-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
-                                            aria-controls="pills-home" aria-selected="true">
+                                        <button class="nav-link w-100 text-start active" id="pills-home-tab2"
+                                            data-bs-toggle="pill" data-bs-target="#pills-home2" type="button" role="tab"
+                                            aria-controls="pills-home2" aria-selected="true">
                                             <i class="fa-solid fa-user"></i>
                                             កែសម្រួលប្រវត្តិរូប
                                         </button>
@@ -876,19 +882,27 @@
                     <div class="col-12 col-md-7 col-lg-8" data-aos="fade-left">
                         <div class="card rounded-4 border-0 bg-my-default text-my-default">
                             <div class="card-body p-4">
-                                <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-content" id="pills-tabContent2">
                                     <!-- Change-Information-Section -->
-                                    <div class="tab-pane show active fade " id="pills-home" role="tabpanel"
-                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="tab-pane show active fade" id="pills-home2" role="tabpanel"
+                                        aria-labelledby="pills-home-tab2" tabindex="0">
                                         <h5 class="card-title">ព័ត៌មានផ្ទាល់ខ្លួន</h5>
-                                        <div class="profile-setting">
-                                            <a href="#"
-                                                onclick="document.getElementById('profilePicture').click(); return false;">
-                                                <img src="assets/images/woman-hero-1.jpeg" class="card-img-top"
-                                                    alt="setting-pf" id="profile-pic">
-                                            </a>
+                                        <div class="d-flex">
+                                            <div class="profile-setting">
+                                                <a href="#"
+                                                    onclick="document.getElementById('profilePicture').click(); return false;">
+                                                    <img src="assets/images/woman-hero-1.jpeg" class="card-img-top"
+                                                        alt="setting-pf" id="profile-pic">
+                                                </a>
+                                            </div>
+                                            <div class="d-grid gap-3 col-3 col-lg-2 ms-5">
+                                                <button class="btn btn-primary rounded-3"
+                                                    type="button">ប្តូររូបភាព</button>
+                                                <button class="btn btn-outline-danger rounded-3"
+                                                    type="button">លុបរូប</button>
+                                            </div>
                                         </div>
-                                        <h5>Kim Eun-Kyung</h5>
+                                        <h5 class="mt-3 mb-4">Kim Eun-Kyung</h5>
                                         <form class="row g-3 needs-validation" novalidate>
                                             <div class="col-md-12" style="display: none;">
                                                 <input type="file" class="form-control shadow-none" id="profilePicture"
@@ -898,17 +912,11 @@
                                                 <label for="validationCustom01" class="form-label">នាមត្រកូល</label>
                                                 <input type="text" class="form-control shadow-none"
                                                     id="validationCustom01" value="Kim" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
                                                 <input type="text" class="form-control shadow-none"
                                                     id="validationCustom02" value="Eun-Kyung" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <label for="validationCustomUsername"
@@ -919,7 +927,7 @@
                                                         id="validationCustomUsername" value="eun-kyung_kim"
                                                         aria-describedby="inputGroupPrepend" required>
                                                     <div class="invalid-feedback">
-                                                        Please choose a username.
+                                                        សូមបញ្ចូលឈ្មោះហៅក្រៅរបស់អ្នក
                                                     </div>
                                                 </div>
                                             </div>
@@ -928,7 +936,17 @@
                                                 <input type="email" class="form-control shadow-none"
                                                     id="validationCustom05" value="kim_eunkyung@gmail.com" required>
                                                 <div class="invalid-feedback">
-                                                    Please input an email.
+                                                    សូមបញ្ចូលអាស័យដ្ឋានអ៊ីម៉េល
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom09" class="form-label">ទីតាំង</label>
+                                                <input type="text" class="form-control shadow-none"
+                                                    id="validationCustom09"
+                                                    value="ផ្ទះលេខ១២អា ផ្លូវ២៧១ សង្កាត់ចាក់អង្រែ ខណ្ឌមានជ័យ រាជធានីភ្នំពេញ"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    សូមបញ្ចូលទីលំនៅបច្ចុប្បន្នរបស់អ្នក
                                                 </div>
                                             </div>
                                             <div class="col-12">
@@ -1224,6 +1242,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/headerfixed.js"></script>
     <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/chatbot.js"></script>
     <script src="assets/js/formValidation.js"></script>
     <script src="assets/libs/aos-master/dist/aos.js"></script>
     <script>

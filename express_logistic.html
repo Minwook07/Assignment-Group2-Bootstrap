@@ -69,19 +69,19 @@
                 <li class="nav-item position-relative" role="presentation">
                   <button
                     class="nav-link btn-notifications active rounded-0 ps-4 pe-2 py-0 d-flex align-items-center mb-1"
-                    id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
-                    aria-controls="pills-home" aria-selected="true">ទាំងអស់<span
+                    id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab"
+                    aria-controls="pills-home1" aria-selected="true">ទាំងអស់<span
                       class="badge bg-black rounded-circle my-badge ms-1">9</span></button>
                 </li>
 
                 <li class="nav-item position-relative" role="presentation">
                   <button class="nav-link btn-notifications rounded-0 px-2 py-0" id="pills-profile1-tab"
-                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
-                    aria-controls="pills-profile" aria-selected="false">សេវាកម្ម</button>
+                    data-bs-toggle="pill" data-bs-target="#pills-profile1" type="button" role="tab"
+                    aria-controls="pills-profile1" aria-selected="false">សេវាកម្ម</button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link rounded-0 px-2 py-0" id="pills-contact1-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1"
                     aria-selected="false">មតិកែលម្អ</button>
                 </li>
                 <hr>
@@ -378,7 +378,8 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                  <li><a class="dropdown-item" href="bus-transportation.html">ធ្វើដំណើរតាមឡានក្រុង</a>
+                  </li>
                   <li><a class="dropdown-item" href="booking-ticket-detail.html">ទិញសំបុត្រ</a></li>
                 </ul>
               </li>
@@ -386,7 +387,8 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a></li>
+                  <li><a class="dropdown-item" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
+                  </li>
                   <li><a class="dropdown-item" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a></li>
                 </ul>
               </li>
@@ -394,10 +396,11 @@
                 <a class="nav-link" href="contact-us.html">ទំនាក់ទំនង</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីពួកយើង</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" href="about-company.html">ប្រវត្តិក្រុមហ៊ុន</a></li>
                   <li><a class="dropdown-item" href="about-us.html">ក្រុមយើងខ្ញុំ</a></li>
+                  <li><a class="dropdown-item" href="thankful.html">សារថ្លែងអំណរគុណ</a></li>
                 </ul>
               </li>
             </ul>
@@ -721,18 +724,22 @@
 
   <main>
     <!-- BackToTop Button -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
-        class="bi bi-arrow-up-short fs-5"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+      <i class="bi bi-arrow-up-short fs-5"></i>
+    </a>
+
     <!-- Chat Bot -->
     <div class="dropup-center dropstart">
-      <button class="btn btn-secondary chat-bot rounded-circle" type="button" data-bs-toggle="dropdown"
-        data-bs-auto-close="outside" aria-expanded="false">
+      <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
         <i class="fa-brands fa-facebook-messenger"></i>
       </button>
-      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden">
+      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
         <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
           <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-          <button type="reset" class="btn text-white fs-4"><i class="fa-solid fa-circle-xmark"></i></button>
+          <button type="button" class="btn text-white fs-4" id="closeChatBot">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
         </div>
         <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
           <div class="card-body">
@@ -779,7 +786,7 @@
               និងមិនធ្លាប់មានពីមុន។ <br> ចង់ដឹងថាពួកយើងមានសេវាកម្មដែលបំពេញតម្រូវការរបស់លោកអ្នក <br>
               កុំភ្លេចចាប់ផ្តើមជាមួយពួកយើង</p>
             <div class="d-flex gap-4">
-              <a href="#" class="btn btn-my-primary py-3 px-5 fs-1-maximium">ចាប់ផ្តើម</a>
+              <a href="#tracking-start" class="btn btn-my-primary py-3 px-5 fs-1-maximium">ចាប់ផ្តើម</a>
               <a href="contact-us.html" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium">ព័ត៌មានបន្ថែម</a>
             </div>
             <div class="row mt-5">
@@ -837,9 +844,9 @@
                   </div>
                   <div class="col-5 col-sm-4 col-lg-3">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary py-3 w-100">
+                    <a href="tracking-items.html" class="btn btn-primary py-3 w-100">
                       តាមដានអីវ៉ាន់
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1126,7 +1133,7 @@
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0" data-aos="fade-down">
             <div class="card rounded-4 border-0 overflow-hidden text-my-default bg-my-default">
-              <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
+              <img src="assets/images/card-features-7.png" class="card-img-top" alt="card-features-7">
               <div class="card-body p-0">
                 <ul class="rounded-0 list-unstyled px-4 pt-3">
                   <li>
@@ -1146,7 +1153,7 @@
                 <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
                 <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
                   និងរហ័សទាន់ចិត្ត...</p>
-                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
+                <a href="blog.html" class="btn text-my-primary-mode fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                     class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
               <div class="card-footer">
@@ -1155,16 +1162,16 @@
                     <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
                   </div>
                   <time class="metabit dt-published" datetime="2022-07-28"><i
-                      class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                      class="fa-regular fa-calendar me-1 text-my-primary-mode"></i>២៣-មករា-២០២៤</time>
                   <span class="metabit disqus-comment-count comment-count"><i
-                      class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                      class="fa-regular fa-message ms-3 me-1 text-my-primary-mode"></i>2 មតិ</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0" data-aos="fade-up">
             <div class="card rounded-4 border-0 overflow-hidden text-my-default bg-my-default">
-              <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
+              <img src="assets/images/card-features-8.png" class="card-img-top" alt="card-features-8">
               <div class="card-body p-0">
                 <ul class="rounded-0 list-unstyled px-4 pt-3">
                   <li>
@@ -1184,7 +1191,7 @@
                 <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
                 <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
                   និងរហ័សទាន់ចិត្ត...</p>
-                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
+                <a href="blog.html" class="btn text-my-primary-mode fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                     class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
               <div class="card-footer">
@@ -1193,16 +1200,16 @@
                     <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
                   </div>
                   <time class="metabit dt-published" datetime="2022-07-28"><i
-                      class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                      class="fa-regular fa-calendar me-1 text-my-primary-mode"></i>២៣-មករា-២០២៤</time>
                   <span class="metabit disqus-comment-count comment-count"><i
-                      class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                      class="fa-regular fa-message ms-3 me-1 text-my-primary-mode"></i>2 មតិ</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0" data-aos="fade-down">
             <div class="card rounded-4 border-0 overflow-hidden text-my-default bg-my-default">
-              <img src="assets/images/card-features-7.png" class="card-img-top" alt="...">
+              <img src="assets/images/card-features-9.png" class="card-img-top" alt="card-features-9">
               <div class="card-body p-0">
                 <ul class="rounded-0 list-unstyled px-4 pt-3">
                   <li>
@@ -1222,7 +1229,7 @@
                 <h5 class="card-title fs-4 pb-3 px-4">តើការទិញអីវ៉ាន់ពិតជាងាយស្រួលណាស់មែនទេ?</h5>
                 <p class="card-text fs-5 px-4">ជាមួយសេវាកម្មយើងខ្ញុំលោកអ្នកនឹងទទួលបាននូវបទពិសោធន៍ថ្មី
                   និងរហ័សទាន់ចិត្ត...</p>
-                <a href="#" class="btn text-my-primary fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
+                <a href="blog.html" class="btn text-my-primary-mode fs-5 p-0 m-0 px-4 mb-3">អានអត្ថបទ<i
                     class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
               <div class="card-footer">
@@ -1231,9 +1238,9 @@
                     <img src="assets/images/us-delivery.jpg" class="img-top-src" alt="transportation">
                   </div>
                   <time class="metabit dt-published" datetime="2022-07-28"><i
-                      class="fa-regular fa-calendar me-1 text-my-primary"></i>២៣-មករា-២០២៤</time>
+                      class="fa-regular fa-calendar me-1 text-my-primary-mode"></i>២៣-មករា-២០២៤</time>
                   <span class="metabit disqus-comment-count comment-count"><i
-                      class="fa-regular fa-message ms-3 me-1 text-my-primary"></i>2 មតិ</span>
+                      class="fa-regular fa-message ms-3 me-1 text-my-primary-mode"></i>2 មតិ</span>
                 </div>
               </div>
             </div>
@@ -1257,7 +1264,8 @@
               sequi? Magni, dignissimos quis.</p>
             <div class="d-flex gap-4" data-aos="fade-down">
               <a href="#" class="btn btn-my-primary py-3 px-5 fs-1-maximium" type="button">Google Play</a>
-              <a href="#" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium" type="button">AppStore</a>
+              <a href="#" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium text-my-primary-mode"
+                type="button">AppStore</a>
             </div>
           </div>
           <div class="col-6 d-none d-lg-flex" data-aos="fade-left">
@@ -1385,6 +1393,7 @@
   <script src="assets/js/script.js"></script>
   <script src="assets/js/headerfixed.js"></script>
   <script src="assets/js/backtotop.js"></script>
+  <script src="assets/js/chatbot.js"></script>
   <script src="assets/js/numCount.js"></script>
   <script src="assets/libs/aos-master/dist/aos.js"></script>
   <script>

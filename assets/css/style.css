@@ -2022,7 +2022,7 @@ input:focus {
 }
 
 .accordion-button-cutomize:not(.collapsed) {
-  background-color: #2A3B2E !important;
+  background-color: #669955 !important;
   color: #fff;
 }
 .accordion-button-cutomize:not(.collapsed)::after {

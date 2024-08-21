@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Express</title>
+    <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="position-sticky top-0" style="z-index: 999;">
+        <div class="navtop">
+          <div class="container d-flex justify-content-between">
+            <div class="quick-contact d-flex align-items-center">
+              <div class="phone_number me-4">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
+                  <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
+                </a>
+              </div>
+              <div class="send_email">
+                <a href="#" class="d-flex align-items-center">
+                  <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
+                  <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="d-none d-lg-flex ">
+              <div class="dropdown me-4">
+                <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                  <span>ភាសាខ្មែរ</span>
+                </button>
+                <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
+                  <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+                  <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+                  class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+            </div>
+            <div class="ms-3 d-md-flex d-xl-none">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
+                <i class="fas fa-sign-in-alt"></i> ចូលគណនី
+              </button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                class="btn btn-my-secondary btn-my-outline-secondary fs-6">
+                <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fixed or Sticky Navbar -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+          <div class="container">
+            <a class="navbar-brand logo" href="index.html" style="width: 150px;">
+              <img src="assets/images/CSC-Express-LOGO.png" alt="#" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
+    
+                  <img src="assets/images/my-logo-csc.png" alt="">
+                </div>
+                <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas"
+                  aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bolder fs-4"></i></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav ms-xl-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">ទំព័រដើម</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="branch-lnd.html">សាខា</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
+                    <ul class="dropdown-menu border-0 dropdown-menu-color">
+                      <li><a class="dropdown-item" href="express_logistic-lnd.html">ការដឹកជញ្ជូនរហ័ស</a></li>
+                      <li><a class="dropdown-item" href="tracking-items-lnd.html">តាមដានទំនិញ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">សេវាកម្មធ្វើដំណើរ</a>
+                    <ul class="dropdown-menu border-0 dropdown-menu-color">
+                      <li><a class="dropdown-item" href="bus-transportation-lnd.html">ធ្វើដំណើរតាមឡានក្រុង</a></li>
+                      <li><a class="dropdown-item" href="buy-ticket-lnd.html">ទិញសំបុត្រ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">សេវាកម្មផ្សេងៗ</a>
+                    <ul class="dropdown-menu border-0 dropdown-menu-color">
+                      <li><a class="dropdown-item" href="trending-serivce-lnd.html">សេវាកម្មកំពុងពេញនិយម</a></li>
+                      <li><a class="dropdown-item" href="promotion-lnd.html">សេវាកម្មប្រូម៉ូសិន</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact-us-lnd.html">ទំនាក់ទំនង</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
+                    <ul class="dropdown-menu border-0 dropdown-menu-color">
+                      <li><a class="dropdown-item" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                      <li><a class="dropdown-item" href="about-us-lnd.html">ក្រុមយើងខ្ញុំ</a></li>
+                      <li><a class="dropdown-item" href="thankful-lnd.html">សារថ្លែងអំណរគុណ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="ms-3 d-none d-xl-flex">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    class="btn btn-outline-primary fs-6 me-3">
+                    <i class="fas fa-sign-in-alt"></i> ចូលគណនី
+                  </button>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-primary fs-6">
+                    <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
+                  </button>
+                </div>
+                <div class="d-flex d-lg-none">
+                  <div class="dropdown me-4">
+                    <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                      <span>ភាសាខ្មែរ</span>
+                    </button>
+                    <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
+                      <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
+                      <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
+                      class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    
+        <!-- login  modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header my-main-bg p-1">
+                <a href="" class="logo-modal me-auto">
+                  <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
+                </a>
+                <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
+                    class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
+              </div>
+              <div class="modal-body my-main-bg p-0 ">
+                <div class="row justify-content-center p-0 rounded">
+                  <div class="col-8 my-5 p-0">
+                    <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
+                    <!-- Alert for messages -->
+                    <div id="loginAlert" class="alert d-none" role="alert"></div>
+                    <form class="needs-validation" novalidate id="loginForm">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control shadow-none" id="floatingInput"
+                          placeholder="name@example.com" required>
+                        <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ី​ ឬលេខទូរស័ព្ទ</label>
+                        <div class="invalid-feedback">
+                          សូមបញ្ជូលអ៊ីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control shadow-none outline" id="floatingPassword"
+                          placeholder="Password" required>
+                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i> លេខសម្ងាត់</label>
+                        <div class="invalid-feedback">
+                          សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
+                        </div>
+                      </div>
+                      <div class=" form-check">
+                        <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
+                        <label class="form-check-label text-my-primary" for="exampleCheck1">ចងចាំខ្ញុំ</label>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</button>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
+                          <img src="assets/images/facebook.png" alt="" class="icon">
+                        </a>
+                        <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
+                          <img src="assets/images/google.png" alt="" class="icon">
+                        </a>
+                        <a href="#" type="button" class="btn mb-3 py-2 border bg-light icon-link">
+                          <img src="assets/images/apple-logo.png" alt="" class="icon">
+                        </a>
+                      </div>
+                    </form>
+                    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
+                      class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
+                    <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ? <span><a href="#"
+                          type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                          class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- forgot password Modal -->
+        <div class="modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content my-main-bg">
+              <div class="modal-body">
+                <h4 class="mb-3 text-my-primary"> ស្នើរសុំផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
+                <p class="text-my-default">លោកអ្នកនឹងទទួលបានលេខកូដក្នុងរយៈ60វិនាទី</p>
+                <div class="form-floating mb-3 needs-validation" novalidate>
+                  <input type="email" class="form-control shadow-none" id="floatingEmail" placeholder="name@example.com">
+                  <label for="floatingEmail">អ៊ីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលអ៊ីម៉េល​ ឬលេខទូរស័ព្ទ
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+                  class="btn btn-my-primary text-light">បញ្ជូន</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- otp Modal -->
+        <div class="modal fade" id="otpcode" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="otppassword" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content my-main-bg">
+              <div class="modal-header">
+                <a href="" class="logo-modal me-auto">
+                  <img src="assets/images/CSC-Express-LOGO.png" class=" logo-modal p-0" alt="">
+                </a>
+                <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
+                    class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-my-primary mb-3">សូមលោកអ្នកបញ្ជូលេខកូដ4ខ្ទង់</h4>
+                <div class="d-flex justify-content-center mb-3">
+                  <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+                  <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+                  <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+                  <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <a href="home.html" type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+                  class="btn btn-my-primary text-light">បញ្ជូន</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- sign in Modal -->
+        <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content my-main-bg">
+              <div class="modal-header p-0">
+                <a href="" class="logo-modal me-auto">
+                  <img src="assets/images/CSC-Express-LOGO.png" class="logo-modal p-0" alt="">
+                </a>
+                <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-my-primary mb-3 p-3">ចុះឈ្មោះ</h4>
+                <!-- Alert for messages -->
+                <div id="signupAlert" class="alert d-none" role="alert"></div>
+                <form class="needs-validation" novalidate id="signupForm">
+                  <div class="row p-3">
+                    <div class="form-floating col mb-3">
+                      <input type="text" class="form-control shadow-none" id="floatingLastname" placeholder="នាមត្រកូល"
+                        required>
+                      <label for="floatingLastname" class="ms-2">នាមត្រកូល</label>
+                      <div class="invalid-feedback">
+                        សូមបញ្ជូលនាមត្រកូលរបស់អ្នក
+                      </div>
+                    </div>
+                    <div class="form-floating col mb-3">
+                      <input type="text" class="form-control shadow-none" id="floatingFirstname" placeholder="នាមខ្លួន"
+                        required>
+                      <label for="floatingFirstname" class="ms-2">នាមខ្លួន</label>
+                      <div class="invalid-feedback">
+                        សូមបញ្ជូលនាមខ្លួនរបស់អ្នក
+                      </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control shadow-none" id="floatingEmail3"
+                        placeholder="name@example.com" required>
+                      <label for="floatingEmail3" class="ms-2">អ៊ីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                      <div class="invalid-feedback">
+                        សូមបញ្ជូលអ៊ីម៉េល​របស់អ្នក
+                      </div>
+                    </div>
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="password" class="form-control shadow-none" id="floatingPassword1"
+                        placeholder="ពាក្យសម្ងាត់" required>
+                      <label for="floatingPassword1" class="ms-2">ពាក្យសម្ងាត់</label>
+                      <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                        style="cursor: pointer;"></i>
+                      <div class="invalid-feedback">
+                        សូមបញ្ជូលពាក្យសម្ងាត់របស់អ្នក
+                      </div>
+                    </div>
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="password" class="form-control shadow-none" id="floatingPassword2"
+                        placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
+                      <label for="floatingPassword2" class="ms-2">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                      <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                        style="cursor: pointer;"></i>
+                      <div class="invalid-feedback">
+                        សូមបញ្ជូលលេខសម្ងាត់លោកអ្នកដើម្បីផ្ទៀងផ្ទាត់
+                      </div>
+                    </div>
+                    <div class="form-check ms-3 mb-md-3">
+                      <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked required>
+                      <label class="form-check-label text-my-primary" for="checkpolicy">
+                        យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-my-primary text-light">ចុះឈ្មោះ</button>
+                  </div>
+                </form>
+                <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#" type="button"
+                      data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                      class="color-text-primary text-my-primary">ចូលគណនីឥឡូវនេះ</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <main>
+        <!-- BackToTop Button -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+            <i class="bi bi-arrow-up-short fs-5"></i>
+        </a>
+
+        <!-- Chat Bot -->
+        <div class="dropup-center dropstart">
+            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </button>
+            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
+                <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
+                    <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
+                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+                <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
+                    <div class="card-body">
+                        <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
+                        <div class="d-grid gap-3 col-6">
+                            <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
+                            <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
+                            <button class="btn btn-my-outline-primary" type="button">ចិន</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
+                <form action="" class="d-flex align-items-center mx-2">
+                    <div class="my-send-text d-flex mb-4">
+                        <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
+                            placeholder="Message..." rows="1"></textarea>
+                        <div class="d-flex align-items-center my-btn-fill w-25">
+                            <button type="button" class="btn chat-bot-icon border-0 p-1">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </button>
+                            <button type="button" class="btn chat-bot-icon border-0 p-1">
+                                <i class="fa-solid fa-file-image"></i>
+                            </button>
+                            <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" id="fileInput" style="display: none;" />
+                            <button type="button" class="btn chat-bot-icon send-button">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container text-my-default" style="margin-top: 100px;">
+            <div class="row">
+                <div>
+                    <div class="text-center">
+                        <h5 class="fs-2">លក្ខខណ្ឌ​នៃ​សេវាកម្ម</h5>
+                        <p class="fs-1-maximium">
+                            ការការពារព័ត៌មានផ្ទាល់ខ្លួនគឺជាទំនួលខុសត្រូវមួយដែលយើងយកចិត្តទុកដាក់យ៉ាងធ្ងន់ធ្ងរ
+                        </p>
+                        <p class="w-50 fs-1-maximium text-center m-auto">
+                            ហើយយើងក៏រំពឹងដូចគ្នាពីអ្នកដែរ។ ដំណោះស្រាយសូហ្វវែរ CSC Express ប្តេជ្ញាចំពោះតម្លាភាព
+                            និងជម្រើសទាក់ទងនឹងការការពារឯកជនភាពនៃព័ត៌មានផ្ទាល់ខ្លួនរបស់អតិថិជនរបស់យើង
+                            ក៏ដូចជាអ្នកទស្សនាទាំងអស់ដែលមកកាន់គេហទំព័ររបស់យើង។
+                        </p>
+                    </div>
+                    <h5 class="fs-4">1. ការទទួលស្គាល់ និងការទទួលយក</h5>
+                    <p class="fs-1-maximium">ទំព័រនេះចែងអំពី "លក្ខខណ្ឌ" ដែលអ្នកអាចប្រើប្រាស់គេហទំព័រមួយនេះ។
+                        តាមរយៈការចូលប្រើគេហទំព័ររបស់យើង
+                        អ្នកយល់ព្រមឱ្យនឹងលក្ខខណ្ឌទាំងឡាយ។ CSC Express
+                        មានការប្តេជ្ញាចិត្តខ្ពស់ក្នុងការការពារឯកជនភាពរបស់អ្នក។
+                        អ្នកអាចរុករកគេហទំព័ររបស់យើងដោយមិនបន្សល់ទុកនូវព័ត៌មានផ្ទាល់ខ្លួនណាមួយ
+                        ប៉ុន្តែយើងត្រូវការព័ត៌មានទំនាក់ទំនងមួយចំនួនដើម្បីឆ្លើយតបទៅនឹងសំណើ និងសំណួររបស់អ្នក។
+                        គោលការណ៍ឯកជនភាពនេះត្រូវបានស្នើឡើងដើម្បីពណ៌នាអំពីរបៀបដែលព័ត៌មានផ្ទាល់ខ្លួនត្រូវបានប្រើប្រាស់
+                        និងដំណើរការ។
+
+                        CSC Express រក្សាសិទ្ធិក្នុងការកែប្រែ និងធ្វើបច្ចុប្បន្នភាពព័ត៌មាននៅពេលណាក៏បាន។
+                        ចូរអ្នកមើល 'លក្ខខណ្ឌនៃសេវាកម្ម' ជាទៀងទាត់។</p>
+
+                    <h5 class="fs-4">2. ការប្រើប្រាស់គេហទំព័រ</h5>
+                    <p class="fs-1-maximium">អ្នកចូលមើល ដែលកំពុងរុករកគេហទំព័រនេះ មិនមានសិទ្ធិក្នុងការចែកចាយ ផ្លាស់ប្តូរ
+                        ឬ
+                        លក់ព័ត៌មានណាមួយដែលបានចេញផ្សាយនៅលើគេហទំព័រនេះ រួមទាំងវីដេអូ រូបភាព សំឡេង
+                        និងព័ត៌មានអាជីវកម្មណាមួយឡើយ។ គ្រប់សកម្មភាពបង្ខូចកេរ្តិ៍ឈ្មោះ អាសអាភាស
+                        ឬខុសច្បាប់ មិនត្រូវបានអនុញ្ញាតនៅលើគេហទំព័ររបស់យើងទេ។</p>
+                    <h5 class="fs-4">3. រក្សាសិទ្ធិ</h5>
+                    <p class="fs-1-maximium">ដោយអនុលោមតាមច្បាប់រក្សាសិទ្ធិ CSC Express
+                        គឺជាម្ចាស់កម្មសិទ្ធិបញ្ញាគ្រប់យ៉ាងដែលបានចេញផ្សាយ និងធ្វើបច្ចុប្បន្នភាពនៅលើគេហទំព័រនេះ
+                        លុះត្រាតែមានចែងផ្សេងពីនេះ។
+                        ព័ត៌មានដែលបានចេញផ្សាយនៅលើគេហទំព័រនេះគឺមានសម្រាប់តែការប្រើប្រាស់ផ្ទាល់ខ្លួន
+                        និងការប្រើប្រាស់សាធារណៈដែលមិនមែនជាពាណិជ្ជកម្មប៉ុណ្ណោះ។
+                        ស្វែងយល់បន្ថែមអំពីគោលការណ៍រក្សាសិទ្ធិរបស់យើង និងពិនិត្យមើលលក្ខខណ្ឌរបស់យើង។</p>
+
+                    <h5 class="fs-4">4. យើងប្រើខូឃីដើម្បី</h5>
+                    <p class="fs-1-maximium">ចងក្រងទិន្នន័យសរុបអំពីចរាចរណ៍គេហទំព័រ និងអន្តរកម្មគេហទំព័រ
+                        ដើម្បីផ្តល់ជូននូវបទពិសោធន៍
+                        និងឧបករណ៍កាន់តែប្រសើរឡើងនាពេលអនាគតរបស់គេហទំព័រ។ យើងក៏អាចប្រើសេវាកម្មភាគីទីបីដែលអាចទុកចិត្តបាន
+                        ដែលតាមដានព័ត៌មាននេះក្នុងនាមជាពួកយើង។
+                        អ្នកអាចជ្រើសរើសឱ្យកុំព្យូទ័ររបស់អ្នកព្រមានអ្នករាល់ពេលដែលខូគីត្រូវបានផ្ញើ
+                        ឬអ្នកអាចជ្រើសរើសបិទខូឃីទាំងអស់។ អ្នកធ្វើដូចនេះតាមរយៈកម្មវិធីរុករករបស់អ្នក (ដូចជា Internet
+                        Explorer, Firefox, Microsoft Edge ឬ Google Chrome) ការកំណត់។
+                        កម្មវិធីរុករកតាមអ៊ីនធឺណិតនីមួយៗមានភាពខុសប្លែកគ្នាបន្តិចបន្តួច
+                        ដូច្នេះសូមមើលម៉ឺនុយជំនួយរបស់កម្មវិធីរុករកតាមអ៊ីនធឺណិតរបស់អ្នក
+                        ដើម្បីស្វែងយល់ពីវិធីត្រឹមត្រូវក្នុងការកែប្រែខូគីរបស់អ្នក។ ប្រសិនបើអ្នកបិទខូគីបិទ
+                        មុខងារមួយចំនួននឹងត្រូវបានបិទ។
+                        វានឹងមិនប៉ះពាល់ដល់បទពិសោធន៍របស់អ្នកប្រើដែលធ្វើឱ្យបទពិសោធន៍គេហទំព័ររបស់អ្នកកាន់តែមានប្រសិទ្ធភាព
+                        ហើយសេវាកម្មមួយចំនួនរបស់យើងនឹងមិនដំណើរការត្រឹមត្រូវទេ។ ទោះយ៉ាងណាក៏ដោយ
+                        អ្នកនៅតែអាចប្រើប្រាស់បានធម្មតា។
+                    </p>
+
+                    <h5 class="fs-4">5. គោលការណ៍ឯកជនភាពអនុលោមតាម GDPR
+                    </h5>
+                    <ul class="list-unstyled policy-collect-icon">
+                        <li class="fs-5">ព័ត៌មានដែលយើងប្រមូល</li>
+                        <p class="fs-1-minimium">
+                            នៅពេលអ្នកចុះឈ្មោះជាមួយយើង យើងប្រមូលព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកដូចជា ឈ្មោះពេញ អាសយដ្ឋានអ៊ីមែល
+                            និងលេខទូរស័ព្ទរបស់អ្នក។ ព័ត៌មាននេះត្រូវបានប្រមូលសម្រាប់ការទំនាក់ទំនងកាន់តែប្រសើរឡើង
+                            និងដើម្បីផ្តល់ឱ្យអ្នកនូវសេវាកម្មរបស់យើង។
+
+                            ជាមួយគ្នានេះផងដែរ ព័ត៌មានដែលប្រមូលបានបម្រើគោលបំណងផ្លូវច្បាប់ កិច្ចសន្យា និងច្បាប់របស់យើង។
+                            របៀបដែលយើងប្រើសម្រាប់ការប្រមូលទិន្នន័យគឺតាមរយៈទម្រង់អនឡាញ chatbots និង CVs របស់បុគ្គលិក។
+
+                            យើងប្រមូលតែព័ត៌មានដែលយើងអាចប្រើដើម្បីទាក់ទងអ្នក និងប្រាប់អ្នកបន្ថែមអំពីសេវាកម្មរបស់យើង។
+                        </p>
+                        <li class="fs-5">របៀបដែលយើងប្រើប្រាស់ព័ត៌មានរបស់អ្នក</li>
+                        <p class="fs-1-minimium">
+                            យើងប្រើប្រាស់ព័ត៌មានដែលប្រមូលបានដោយពួកយើង ដើម្បីរក្សាគេហទំព័រ
+                            និងសេវាកម្មរបស់យើងឱ្យទាន់សម័យតាមតម្រូវការរបស់អតិថិជន។ ជាមួយគ្នានេះផងដែរ
+                            ព័ត៌មាននេះត្រូវបានប្រើដើម្បីឆ្លើយសំណួររបស់អ្នក ផ្តល់ឱ្យអ្នកនូវដំណោះស្រាយសមស្រប
+                            និងធ្វើឱ្យអ្នកធ្វើបច្ចុប្បន្នភាពអំពីសេវាកម្មរបស់យើងតាមរយៈព្រឹត្តិបត្រទីផ្សារ អ៊ីមែល
+                            និងបច្ចុប្បន្នភាពប្លុករបស់យើង។
+                        </p>
+                        <li class="fs-5">របៀបដែលយើងចែករំលែកព័ត៌មានរបស់អ្នក</li>
+                        <p class="fs-1-minimium">
+                            យើងមិនដែលចែករំលែក លក់
+                            ឬបង្ហាញប្រភេទព័ត៌មានដែលអាចកំណត់អត្តសញ្ញាណផ្ទាល់ខ្លួនណាមួយដែលអ្នកផ្តល់ឱ្យយើងទេ។
+                            មានតែព័ត៌មានមួយចំនួនប៉ុណ្ណោះដែលអាចចូលប្រើប្រាស់ជាសាធារណៈបាន
+                            ដូចជាការបង្ហាញមតិរបស់អ្នកដែលបានបន្សល់ទុកនៅលើការបង្ហោះប្លក់ណាមួយរបស់យើង។
+
+                            លើសពីនេះ
+                            ទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកមិនត្រូវបានចែករំលែកទៅនរណាម្នាក់ដោយគ្មានការយល់ព្រមពីអ្នកទេ
+                            លុះត្រាតែវាត្រូវបានទាមទារនៅក្រោមច្បាប់ និងការបង្គាប់របស់ច្បាប់ប៉ុណ្ណោះ។
+                        </p>
+                        <li class="fs-5">របៀបដែលព័ត៌មានរបស់អ្នកត្រូវបានការពារ</li>
+                        <p class="fs-1-minimium">
+                            CSC Express មានគោលការណ៍តឹងរឹងក្នុងការការពារព័ត៌មានរបស់អ្នកចូលមើលគេហទំព័រ
+                            និងអតិថិជនរបស់ខ្លួន។ យើងប្រកាន់យកភាពឯកជនរបស់អ្នកយ៉ាងខ្លាំង។ ដូច្នេះហើយ
+                            យើងចាត់វិធានការត្រឹមត្រូវដើម្បីការពារទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នក។
+
+                            ដូច្នេះ អ្នកអាចធានាបានថា ព័ត៌មានផ្ទាល់ខ្លួនណាមួយដែលអ្នកដាក់ស្នើជាមួយយើង
+                            គឺមានសុវត្ថិភាពពីការផ្លាស់ប្តូរ ការលាតត្រដាង ការប្រើប្រាស់ខុស ការបំផ្លាញដោយការបំពាន
+                            និងការចូលប្រើប្រាស់ដោយគ្មានការអនុញ្ញាត។
+                            យើងការពារទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកដោយទទួលយកវិធានការការពារផ្នែកបច្ចេកទេស ការពារដោយផ្ទាល់
+                            និងការគ្រប់គ្រងដែលត្រូវការទាំងអស់។ Secure Socket Layer (SSL), firewalls, malware
+                            ការចូលប្រើដែលបានដាក់កម្រិត ការផ្ទៀងផ្ទាត់ IT និងស្រទាប់ការពារជាច្រើនទៀតដែលប្រើដោយពួកយើង
+                            ត្រូវប្រាកដថាទិន្នន័យរបស់អ្នកមានសុវត្ថិភាព និងសុវត្ថិភាព។
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer bg-body-my-tertiary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+                        <a class="navbar-brand logo mt-3 p-0" href="#" style="display: block; width: 200px;">
+                            <img class="me-md-5" src="assets/images/my-logo-csc.png" alt="#"
+                                style="width: 100%; height: auto; object-fit: contain;">
+                        </a>
+                        <div class="mt-0">
+                            <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់
+                                គុណភាព
+                                សុវតិ្ថភាព
+                                លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
+                        </div>
+                        <div class="mb-2 ms-3 ms-md-0">
+                            <a class="text-my-secondary  fs-5" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a>
+                        </div>
+
+                        <div class="mb-2 ms-3 ms-md-0">
+                            <a class=" text-my-secondary fs-5 " href="about-us.html">ក្រុមយើងខ្ញុំ</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class=" mt-5   ">
+                            <h4 class="text-my-primary">Quick-links</h4>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="home.html">ទំព័រដើម</a>
+                        </div>
+
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="branch.html">សាខា</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="contact-us.html">ទំនាក់ទំនង</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="about-us.html">អំពីយើង</a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class=" mt-5 mb-4 ">
+                            <h4 class="text-my-primary">សេវាកម្ម</h4>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="text-my-secondary fs-5" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class=" mt-5 mb-4 ">
+                            <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
+                        </div>
+
+                        <div class="contactus">
+                            <div class="mb-2">
+                                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-secondary"></i>
+                                    <span class="ms-2  text-my-secondary fs-5">Ant Trainning Center</span>
+                                </a>
+                            </div>
+                            <div class="mb-2">
+                                <a href="tel:+855 86359562">
+                                    <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
+                                    <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
+                                </a>
+                            </div>
+                            <div class="mb-4">
+                                <a href="mailto:csc.express@gmail.com">
+                                    <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
+                                    <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <a href="www.facebook.com" target="_blank"><i
+                                    class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="fa-solid fa-paper-plane fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+                            <a href="www.instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+                            <a href="wwww.linkedin.com" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footers">
+            <div class="d-flex justify-content-center">
+                <p class="fs-6 text-white mb-0">@copy right csc express 2024</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/headerfixed.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+    <script src="assets/js/formValidation.js"></script>
+    <script src="assets/js/alertsuccessfullogin.js"></script>
+</body>
+
+</html>

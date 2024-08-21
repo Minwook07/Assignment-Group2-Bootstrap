@@ -180,7 +180,9 @@
             <div class="row justify-content-center p-0 rounded">
               <div class="col-8 my-5 p-0">
                 <h4 class="mb-3 fs-4 text-my-primary">ចូលគណនី</h4>
-                <form class="needs-validation" novalidate>
+                <!-- Alert for messages -->
+            <div id="loginAlert" class="alert d-none" role="alert"></div>
+                <form class="needs-validation" novalidate id="loginForm">
                   <div class="form-floating mb-3">
                     <input type="email" class="form-control shadow-none" id="floatingInput"
                       placeholder="name@example.com" required>
@@ -202,7 +204,7 @@
                     <label class="form-check-label text-my-primary" for="exampleCheck1">ចងចាំខ្ញុំ</label>
                   </div>
                   <div class="d-flex justify-content-center align-items-center">
-                    <a href="home.html" class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</a>
+                    <button type="submit" class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</button>
                   </div>
                   <div class="d-flex justify-content-center">
                     <a href="#" type="button" class="btn mb-3 py-2 border me-2 bg-light icon-link">
@@ -293,7 +295,9 @@
           </div>
           <div class="modal-body">
             <h4 class="text-my-primary mb-3 p-3">ចុះឈ្មោះ</h4>
-            <form class="needs-validation" novalidate>
+            <!-- Alert for messages -->
+        <div id="signupAlert" class="alert d-none" role="alert"></div>
+            <form class="needs-validation" novalidate id="signupForm">
               <div class="row p-3">
                 <div class="form-floating col mb-3">
                   <input type="text" class="form-control shadow-none" id="floatingLastname" placeholder="នាមត្រកូល"
@@ -347,7 +351,7 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center">
-                <a href="home.html" class="btn btn-my-primary text-light">ចុះឈ្មោះ</a>
+                <button type="submit" class="btn btn-my-primary text-light">ចុះឈ្មោះ</button>
               </div>
             </form>
             <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#" type="button"
@@ -1510,6 +1514,7 @@
 <script src="assets/js/headerfixed.js"></script>
 <script src="assets/js/backtotop.js"></script>
 <script src="assets/js/chatbot.js"></script>
+<script src="assets/js/alertsuccessfullogin.js"></script>
 <!-- navbar-fixed -->
 <script>
   // Ensure the script runs after the document is fully loaded

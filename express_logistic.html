@@ -18,7 +18,7 @@
 
 <body>
   <header class="position-sticky top-0" style="z-index: 999;">
-    <div class="navtop">
+    <div class="navtop bg-body-my-main">
       <div class="container d-flex justify-content-between">
         <div class="quick-contact d-flex align-items-center">
           <div class="phone_number me-4">
@@ -341,7 +341,7 @@
         </ul>
       </div>
     </div>
-    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-xl bg-body-my-main fixed-top">
       <div class="container">
         <a class="navbar-brand logo" href="home.html" style="width: 150px;">
           <img src="assets/images/CSC-Express-LOGO.png" alt="#" style="width: 100%; height: 100%; object-fit: cover;">
@@ -781,15 +781,16 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 z-2" data-aos="fade-right">
-            <h5 class="display-5 fw-medium">ស្វែងរកសេវាកម្មទំនិញនៅទីនេះជាមួយCSC Express</h5>
-            <p class="fs-1-maximium mb-5">ជាមួយនឹងសេវាកម្មយើងខ្ញុំ ផ្តល់ឱ្យអ្នកនូវអ្វីដែលថ្មី
+            <h5 class="display-5 fw-medium text-my-primary">ស្វែងរកសេវាកម្មទំនិញនៅទីនេះជាមួយCSC Express</h5>
+            <p class="fs-1-maximium mb-5 text-my-primary-mode">ជាមួយនឹងសេវាកម្មយើងខ្ញុំ ផ្តល់ឱ្យអ្នកនូវអ្វីដែលថ្មី
               និងមិនធ្លាប់មានពីមុន។ <br> ចង់ដឹងថាពួកយើងមានសេវាកម្មដែលបំពេញតម្រូវការរបស់លោកអ្នក <br>
               កុំភ្លេចចាប់ផ្តើមជាមួយពួកយើង</p>
             <div class="d-flex gap-4">
               <a href="#tracking-start" class="btn btn-my-primary py-3 px-5 fs-1-maximium">ចាប់ផ្តើម</a>
-              <a href="contact-us.html" class="btn btn-my-outline-primary py-3 px-5 fs-1-maximium">ព័ត៌មានបន្ថែម</a>
+              <a href="contact-us.html"
+                class="btn btn-my-outline-primary text-my-primary-mode py-3 px-5 fs-1-maximium">ព័ត៌មានបន្ថែម</a>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 text-white">
               <div class="col-4">
                 <h5 class="num fs-1" data-val="280" data-suffix="K+">0</h5>
                 <p class="fs-5">អ្នកប្រើប្រាស់ជាប្រចាំ</p>
@@ -807,7 +808,7 @@
           <div
             class="col-12 col-lg-6 d-none d-lg-flex justify-content-center justify-content-lg-end align-items-center z-2">
             <div class="box-circle-hero">
-              <img src="assets/images/bs-hero.webp" class="foreimage-hero" alt="foreimage-hero">
+              <!-- <img src="assets/images/bs-hero.webp" class="foreimage-hero" alt="foreimage-hero"> -->
             </div>
           </div>
         </div>
@@ -824,33 +825,9 @@
               data-bs-target="#exampleModal" id="inputTrackingNumber" placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
           </div>
           <div class="col-auto" data-aos="fade-left">
-            <button type="button" class="btn btn-primary button-width-customize py-3" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+            <a href="tracking-items.html" class="btn btn-primary button-width-customize py-3">
               តាមដានអីវ៉ាន់
-            </button>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="row p-0 m-0 justify-content-center">
-                  <h3 class="mb-3 text-center">តាមដានទំនិញរបស់លោកអ្នកទីនេះ</h3>
-                  <div class="col-7 col-sm-8 col-lg-9">
-                    <input type="text" class="form-control shadow-none py-3" id="inputTrackingNumber1"
-                      placeholder="បញ្ចូលលេខទំនិញរបស់អ្នក">
-                  </div>
-                  <div class="col-5 col-sm-4 col-lg-3">
-                    <!-- Button trigger modal -->
-                    <a href="tracking-items.html" class="btn btn-primary py-3 w-100">
-                      តាមដានអីវ៉ាន់
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

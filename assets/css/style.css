@@ -24,6 +24,7 @@ body {
   --my-color-subtle: #95D385;
   --my-color-bg: #eee;
   --my-color-text: #000;
+  --my-color-header: #ffff;
   --my-color-footer: #ffff;
   --my-bg-contactus: #729268;
   --my-color-icon: #ffff;
@@ -43,6 +44,7 @@ body {
   --my-color-subtle: #6B9C66;
   --my-color-bg: #222;
   --my-color-text: #fff;
+  --my-color-header: #222;
   --my-color-footer: #222;
   --my-bg-contactus: #222;
   --my-qoute-color: #0000;
@@ -145,6 +147,10 @@ img {
 
 .bg-my-primary {
   background-color: var(--my-color-primary);
+}
+
+.bg-body-my-main {
+  background-color: var(--my-color-header);
 }
 
 .bg-body-my-tertiary {
@@ -288,7 +294,6 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
 
 }
 
@@ -324,6 +329,14 @@ textarea:focus {
     margin-top: 10px;
     right: 0;
     position: absolute;
+  }
+
+  .overlay-disabled {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    top: -50%;
+    left: -20%;
   }
 }
 
@@ -402,6 +415,15 @@ textarea:focus {
   }
 }
 
+.alert-customize {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+}
+
 .navbar .navbar-toggler {
   color: #95D385 !important;
   border-color: var(--my-color-secondary) !important;
@@ -465,6 +487,16 @@ textarea:focus {
 .user-profile {
   width: 100%;
   height: 100%;
+}
+
+.nav-item-acc-after {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item-acc-after::after {
+  content: '>';
 }
 
 .image-profile {
@@ -1854,7 +1886,7 @@ input:focus {
 /* Page express_logistic*/
 /* SectionExpress Hero Banner */
 .hero-banner-express {
-  background-image: url(../images/world-map.webp);
+  background-image: url(../images/map-logistic1.png);
   background-size: cover;
 }
 
@@ -2034,7 +2066,7 @@ input:focus {
   width: 80%;
 }
 
-/* SectionTransport Our Partner */
+/* SectionTransport Our Type */
 .tick-before {
   font-size: 20px !important;
 }
@@ -2045,6 +2077,47 @@ input:focus {
   font-weight: 400;
   margin-right: 10px;
   color: var(--my-color-primary);
+}
+
+.portfolio {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.portfolio img {
+  transition: transform 0.5s ease;
+}
+
+.content-hover {
+  width: 90%;
+  margin: auto;
+  background: rgba(102, 153, 85, 0.4);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(102, 153, 85, 0.2);
+  padding: 30px 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+
+.portfolio:hover .content-hover {
+  opacity: 1;
+}
+
+.portfolio:hover img {
+  transform: scale(1.1);
+}
+
+.content-hover .content-text {
+  text-align: center;
+  color: white;
 }
 
 /* SectionTransport Discount */

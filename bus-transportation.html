@@ -13,6 +13,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
     <style>
         .swiper-slide {
             text-align: center;
@@ -493,6 +495,7 @@
                             <i class="fa-solid fa-bell fs-5 text-my-primary notificaton-icon"></i>
                             <div class="notification-badge badge d-flex justify-content-center align-items-center">9+
                             </div>
+                            <div class="overlay-disabled position-absolute"></div>
                         </a>
                         <ul
                             class="dropdown-menu dropdown-menu-end dropdown-menu-shadow border-0 dropdown-menu-blur dropdown-hover-item">
@@ -764,6 +767,7 @@
                                     <img src="assets/images/cute.jpg" alt="">
                                 </div>
                             </div>
+                            <div class="overlay-disabled position-absolute"></div>
                         </a>
                         <ul
                             class="dropdown-menu dropdown-menu-end dropdown-menu-shadow border-0 dropdown-menu-blur dropdown-hover-item">
@@ -1230,7 +1234,7 @@
             </div>
         </section>
 
-        <!-- SectionTransport Our Partner -->
+        <!-- SectionTransport Our Type -->
         <section class="py-5">
             <div class="container">
                 <div class="section-top-title text-center mb-5" data-aos="fade-up">
@@ -1239,31 +1243,145 @@
                     <p class="fs-5 mt-3 text-my-default">ពួកយើងផ្តល់ឱ្យអ្នកនូវអ្វីដែលល្អ និងមិនធ្លាប់មានពីមុនមក</p>
                 </div>
                 <div class="row">
-                    <ul class="list-unstyled">
-                        <li class="tick-before text-my-default" data-aos="fade-up">មានតម្លៃសមរម្យ៖
-                            សំបុត្រដែលស័ក្តិសមនឹងថវិកាសម្រាប់ការធ្វើដំណើរបន្ថែមទៀត។
+                    <ul class="nav nav-pills mb-3" id="pills-tab-type" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fs-1-maximium" id="pills-normal-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-normal" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">ប្រភេទឡានធម្មតា</button>
                         </li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">ងាយស្រួល៖ ផ្លូវផ្ទាល់ គ្មានការផ្ទេរ
-                            គ្មានការរំខានចរាចរណ៍។</li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">អាចចូលប្រើបាន៖
-                            ទៅដល់គ្រប់ជ្រុងទាំងអស់ជាមួយនឹងបណ្តាញដ៏ធំទូលាយរបស់យើង។
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fs-1-maximium" id="pills-vip-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-vip" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">ប្រភេទឡានវីអាយភី</button>
                         </li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">ភាពស្និទ្ធស្នាលនឹងបរិស្ថាន៖
-                            កាត់បន្ថយកម្រិតកាបូនរបស់អ្នក។</li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">ផាសុកភាព៖ កន្លែងអង្គុយដ៏ប្រណីត
-                            និងគ្រឿងបរិក្ខារនៅលើយន្តហោះ។</li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">សុវត្ថិភាព៖
-                            អាទិភាពលើសុវត្ថិភាពរបស់អ្នកជាមួយអ្នកបើកបរដែលមានជំនាញវិជ្ជាជីវៈ។</li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">សហគមន៍៖ ភ្ជាប់
-                            និងចែករំលែកបទពិសោធន៍ជាមួយអ្នករួមដំណើរ។
+                        <li class="nav-item fs-1-maximium" role="presentation">
+                            <button class="nav-link" id="pills-premium-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-premium" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">ប្រភេទឡានPremium</button>
                         </li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">Wi-Fi | Entertainment៖
-                            រក្សាទំនាក់ទំនង និងកម្សាន្ត។</li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">ការកក់ដែលអាចបត់បែនបាន៖
-                            ការកក់តាមអ៊ីនធឺណិតងាយស្រួលជាមួយនឹងកាលវិភាគដែលអាចបត់បែនបាន។</li>
-                        <li class="tick-before text-my-default" data-aos="fade-up">កន្លែងដាក់ឥវ៉ាន់ធំទូលាយ៖
-                            មានបន្ទប់ច្រើនសម្រាប់របស់របររបស់អ្នក។</li>
                     </ul>
+                    <div class="tab-content" id="pills-tabContent-type-bus">
+                        <div class="tab-pane fade show active" id="pills-normal" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="container">
+                                <div class="row" id="lightgallery">
+                                    <div class="col-4" data-src="assets/images/Normal-bus.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Normal-bus.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" data-src="assets/images/Normal-bus-1.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Normal-bus-1.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" data-src="assets/images/Normal-bus-2.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Normal-bus-2.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-vip" role="tabpanel" aria-labelledby="pills-profile-tab"
+                            tabindex="0">
+                            <div class="container">
+                                <div class="row" id="lightgallery1">
+                                    <div class="col-4" data-src="assets/images/Vip-bus.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Vip-bus.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" data-src="assets/images/Vip-bus-1.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Vip-bus-1.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" data-src="assets/images/Vip-bus-2.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Vip-bus-2.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-premium" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="container">
+                                <div class="row" id="lightgallery2">
+                                    <div class="col-4" data-src="assets/images/Premium-bus.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Premium-bus.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" data-src="assets/images/Premium-bus-1.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Premium-bus-1.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" data-src="assets/images/Premium-bus-2.jpg">
+                                        <div class="portfolio">
+                                            <img src="assets/images/Premium-bus-2.jpg" alt="">
+                                            <div class="content-hover">
+                                                <div class="content-text">
+                                                    <p><i class="fa-solid fa-circle-info me-2"></i>មើលព័ត៌មានបន្ថែម</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1639,6 +1757,31 @@
     <script>
         AOS.init();
     </script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail, lgFullscreen],
+            speed: 500,
+        });
+    </script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery1'), {
+            plugins: [lgZoom, lgThumbnail, lgFullscreen],
+            speed: 500,
+        });
+    </script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery2'), {
+            plugins: [lgZoom, lgThumbnail, lgFullscreen],
+            speed: 500,
+        });
+    </script>
+
+    </body>
 
 </html>

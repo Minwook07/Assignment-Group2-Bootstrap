@@ -23,14 +23,14 @@
         <div class="quick-contact d-flex align-items-center">
           <div class="phone_number me-4">
             <a href="#" class="d-flex align-items-center">
-              <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
-              <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
+              <i class="bi bi-telephone-fill fs-4 text-my-primary-mode"></i>
+              <span class="ms-3 text-my-primary-mode d-none d-md-flex">+086 35 95 62</span>
             </a>
           </div>
           <div class="send_email">
             <a href="#" class="d-flex align-items-center">
-              <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
-              <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
+              <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary-mode"></i>
+              <span class="text-my-primary-mode d-none d-md-flex">csc.express@gmail.com</span>
             </a>
           </div>
         </div>
@@ -38,24 +38,23 @@
           <div class="dropdown me-4">
             <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
               type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
-              <span>ភាសាខ្មែរ</span>
+              <i class="bi bi-globe2 fs-4 me-3 text-my-primary-mode"></i>
+              <span class="text-my-primary-mode">ភាសាខ្មែរ</span>
             </button>
             <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
-              <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
-              <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+              <li><a class="dropdown-item text-my-primary-mode " href="#">English</a></li>
+              <li><a class="dropdown-item text-my-primary-mode" href="#">中國人</a></li>
             </ul>
           </div>
           <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
-              class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+              class="bi bi-cloud-moon-fill fs-3 text-my-primary-mode"></i></button>
         </div>
         <div class="ms-3 d-md-flex d-xl-none">
           <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-            class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
+            class="btn btn-my-outline-primary  fs-6 me-3">
             <i class="fas fa-sign-in-alt"></i> ចូលគណនី
           </button>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
-            class="btn btn-my-secondary btn-my-outline-secondary fs-6">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-my-primary fs-6">
             <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
           </button>
         </div>
@@ -74,7 +73,6 @@
         <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
             <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
-
               <img src="assets/images/my-logo-csc.png" alt="">
             </div>
             <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas"
@@ -92,7 +90,8 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="express_logistic-lnd.html">ការដឹកជញ្ជូនរហ័ស</a></li>
+                  <li><a class="dropdown-item" href="express_logistic-lnd.html">ការដឹកជញ្ជូនរហ័ស</a>
+                  </li>
                   <li><a class="dropdown-item" href="tracking-items-lnd.html">តាមដានទំនិញ</a></li>
                 </ul>
               </li>
@@ -118,7 +117,8 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a>
+                  </li>
                   <li><a class="dropdown-item" href="about-us-lnd.html">ក្រុមយើងខ្ញុំ</a></li>
                   <li><a class="dropdown-item" href="thankful-lnd.html">សារថ្លែងអំណរគុណ</a></li>
                 </ul>
@@ -175,7 +175,7 @@
                   <div class="form-floating mb-3">
                     <input type="email" class="form-control shadow-none" id="floatingInput"
                       placeholder="name@example.com" required>
-                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ីម៉េលឬលេខទូរស័ព្ទ</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលអ៊ីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
                     </div>
@@ -183,7 +183,8 @@
                   <div class="form-floating mb-3">
                     <input type="password" class="form-control shadow-none outline" id="floatingPassword"
                       placeholder="Password" required>
-                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i> លេខសម្ងាត់</label>
+                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i>
+                      លេខសម្ងាត់</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
                     </div>
@@ -209,9 +210,10 @@
                 </form>
                 <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
                   class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
-                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ? <span><a href="#"
-                      type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span></p>
+                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ?
+                  <span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span>
+                </p>
               </div>
             </div>
           </div>
@@ -335,7 +337,7 @@
                 <div class="form-check ms-3 mb-md-3">
                   <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked required>
                   <label class="form-check-label text-my-primary" for="checkpolicy">
-                    យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
+                    <a href="terms-of-use-lnd.html">យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ</a>
                   </label>
                 </div>
               </div>
@@ -1207,7 +1209,8 @@
               <div class="detail rounded-4 p-4 text-black">
                 <h5 class="mb-4" data-aos="fade-right">រស់រាន់ឡើងៗ! អតិថិជនដែលបានប្រើប្រាស់សេវាកម្មរបស់យើង <span
                     class="fs-3 text-white">៥</span> ដងឡើងទៅ នឹងទទួលបានកាតសមាជិកជាពិសេស។</h5>
-                <h5 class="mb-4" data-aos="fade-up">បើកឱកាសពិសេស! អតិថិជនដែលបានទទួល<span class="text-white">កាតសមាជិក VIP</span>
+                <h5 class="mb-4" data-aos="fade-up">បើកឱកាសពិសេស! អតិថិជនដែលបានទទួល<span class="text-white">កាតសមាជិក
+                    VIP</span>
                   នឹងមានការចូលប្រើសេវាកម្មតាមអាទិភាព និងទទួលការបញ្ចុះតម្លៃបន្ថែមសម្រាប់ការប្រើប្រាស់សេវាកម្ម។</h5>
                 <h5 class="mb-4" data-aos="fade-up">
                   សម្រាប់អតិថិជនថ្មី ដែលបានចូលគណនីនិងចុះឈ្មោះ ដើម្បីមើលសេវាកម្មរបស់យើង អ្នកនឹងទទួលបានការបញ្ចុះតម្លៃ
@@ -1215,7 +1218,7 @@
                 </h5>
               </div>
             </div>
-       
+
             <div class="col-3">
               <div class="card member-card border-0 shadow-sm bg-my-default" data-aos="fade-up">
                 <div class="card-header">

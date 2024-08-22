@@ -379,6 +379,10 @@
               <button class="btn btn-my-outline-primary" type="button">ចិន</button>
             </div>
           </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+              class="btn btn-my-primary text-light">បញ្ជូន</a>
+          </div>
         </div>
         <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
         <form action="" class="d-flex align-items-center mx-2">
@@ -430,6 +434,32 @@
                     <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
                   </div>
                 </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="password" class="form-control shadow-none" id="floatingPassword1"
+                    placeholder="ពាក្យសម្ងាត់" required>
+                  <label for="floatingPassword1" class="ms-2">ពាក្យសម្ងាត់</label>
+                  <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                    style="cursor: pointer;"></i>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលពាក្យសម្ងាត់របស់អ្នក
+                  </div>
+                </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="password" class="form-control shadow-none" id="floatingPassword2"
+                    placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
+                  <label for="floatingPassword2" class="ms-2">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                  <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                    style="cursor: pointer;"></i>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលលេខសម្ងាត់លោកអ្នកដើម្បីផ្ទៀងផ្ទាត់
+                  </div>
+                </div>
+                <div class="form-check ms-3 mb-md-3">
+                  <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked required>
+                  <label class="form-check-label text-my-primary" for="checkpolicy">
+                    យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
+                  </label>
+                </div>
               </div>
               <div class="col-6 col-lg-3 d-flex justify-content-center">
                 <div>
@@ -450,7 +480,10 @@
                   <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
                 </div>
               </div>
-            </div>
+            </form>
+            <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#" type="button"
+                  data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  class="color-text-primary text-my-primary">ចូលគណនីឥឡូវនេះ</a></span></p>
           </div>
         </div>
         <div class="card bg-my-default text-my-default mb-4 border-0">
@@ -976,6 +1009,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <div class="footers">

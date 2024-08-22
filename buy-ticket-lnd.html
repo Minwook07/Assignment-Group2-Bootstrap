@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSC Express</title>
-  <link rel="icon" href="assets/images/CSC-Express-LOGO.png">
+  <link rel="icon" href="assets/images/Logo-H.png">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -174,7 +174,7 @@
                   <div class="form-floating mb-3">
                     <input type="email" class="form-control shadow-none" id="floatingInput"
                       placeholder="name@example.com" required>
-                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ី​ ឬលេខទូរស័ព្ទ</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលអ៊ីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
                     </div>
@@ -350,13 +350,72 @@
       </div>
     </div>
   </header>
+
   <main>
-    <section class="mb-5" style="margin-top: 130px;">
+    <!-- BackToTop Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+      <i class="bi bi-arrow-up-short fs-5"></i>
+    </a>
+
+    <!-- Chat Bot -->
+    <div class="dropup-center dropstart">
+      <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+        <i class="fa-brands fa-facebook-messenger"></i>
+      </button>
+      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
+        <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
+          <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
+          <button type="button" class="btn text-white fs-4" id="closeChatBot">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+        <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
+          <div class="card-body">
+            <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
+            <div class="d-grid gap-3 col-6">
+              <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
+              <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
+              <button class="btn btn-my-outline-primary" type="button">ចិន</button>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+              class="btn btn-my-primary text-light">បញ្ជូន</a>
+          </div>
+        </div>
+        <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
+        <form action="" class="d-flex align-items-center mx-2">
+          <div class="my-send-text d-flex mb-4">
+            <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
+              placeholder="Message..." rows="1"></textarea>
+            <div class="d-flex align-items-center my-btn-fill w-25">
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-face-smile"></i>
+              </button>
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-file-image"></i>
+              </button>
+              <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                <i class="fa-solid fa-paperclip"></i>
+              </label>
+              <input type="file" id="fileInput" style="display: none;" />
+              <button type="button" class="btn chat-bot-icon send-button">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section style="margin-top: 130px;">
       <div class="container">
-        <div class="card border-0">
+        <div class="card bg-my-default text-my-default mb-4 border-0">
           <div class="card-header">
             <div class="">
-              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី</p>
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
             </div>
           </div>
           <div class="card-body py-4">
@@ -365,18 +424,44 @@
                 <div class="d-flex justify-content-between">
                   <div>
                     <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
-                    <a href="#" class="btn p-0 fs-1-maximium">ភ្នំពេញ</a>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
                   </div>
                   <div class="div">
                     <i class="fa-solid fa-arrow-right-long"></i>
                   </div>
                   <div>
                     <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
-                    <a href="#" class="btn p-0 fs-1-maximium">សៀមរាប</a>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
                   </div>
                 </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="password" class="form-control shadow-none" id="floatingPassword1"
+                    placeholder="ពាក្យសម្ងាត់" required>
+                  <label for="floatingPassword1" class="ms-2">ពាក្យសម្ងាត់</label>
+                  <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                    style="cursor: pointer;"></i>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលពាក្យសម្ងាត់របស់អ្នក
+                  </div>
+                </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="password" class="form-control shadow-none" id="floatingPassword2"
+                    placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
+                  <label for="floatingPassword2" class="ms-2">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                  <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-4 toggle-password"
+                    style="cursor: pointer;"></i>
+                  <div class="invalid-feedback">
+                    សូមបញ្ជូលលេខសម្ងាត់លោកអ្នកដើម្បីផ្ទៀងផ្ទាត់
+                  </div>
+                </div>
+                <div class="form-check ms-3 mb-md-3">
+                  <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked required>
+                  <label class="form-check-label text-my-primary" for="checkpolicy">
+                    យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
+                  </label>
+                </div>
               </div>
-              <div class="col-6 col-lg-3">
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
                 <div>
                   <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
                   </h5>
@@ -392,7 +477,424 @@
               <div class="col-6 col-lg-3 mt-3 mt-lg-0">
                 <div>
                   <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
-                  <a href="booking-ticket-detail.html" class="btn btn-primary w-100">ទិញសំបុត្រ</a>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </form>
+            <p class="fs-6 text-center color-text mt-3 text-my-default">មានគណនីហើយមែនទេ? <span><a href="#" type="button"
+                  data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                  class="color-text-primary text-my-primary">ចូលគណនីឥឡូវនេះ</a></span></p>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-my-default text-my-default mb-4 border-0">
+          <div class="card-header">
+            <div class="">
+              <p class="fs-5 fw-medium m-0">ឡានក្រុង ៣៩កៅអី<span class="mx-3">|</span><a href="#"
+                  class="text-my-primary">វីអាយភី</a></p>
+            </div>
+          </div>
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-6 col-lg-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០៨:៣០ ព្រឹក</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">ភ្នំពេញ</a>
+                  </div>
+                  <div class="div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title"><i class="fa-regular fa-clock me-1"></i>០១:១៥ ល្ងាច</h5>
+                    <a href="#" class="btn p-0 fs-1-maximium text-my-default">សៀមរាប</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-clock-rotate-left me-1"></i>៥ម៉ោង ១៥នាទី
+                  </h5>
+                  <p class="card-text fs-1-maximium">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាព</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-solid fa-chair me-1"></i>ចំនួនកៅអី</h5>
+                  <input type="number" min="1" max="40" value="1" class="form-control shadow-none" id="input-seat">
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+                <div>
+                  <h5 class="card-title"><i class="fa-regular fa-credit-card me-1"></i>តម្លៃ ៤០០០០រៀល</h5>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary w-100">ទិញសំបុត្រ</button>
                 </div>
               </div>
             </div>
@@ -401,6 +903,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer bg-body-my-tertiary">
       <div class="container">
@@ -506,6 +1009,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <div class="footers">

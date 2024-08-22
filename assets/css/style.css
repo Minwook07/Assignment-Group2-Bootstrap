@@ -2263,10 +2263,31 @@ input:focus {
 
 /* Page Setting */
 .profile-setting {
+  position: relative;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.overlay-camera-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.profile-setting:hover .overlay-camera-image {
+  opacity: 1;
 }
 
 .form-control.no-resize {

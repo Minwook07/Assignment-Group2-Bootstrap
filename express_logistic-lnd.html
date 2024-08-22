@@ -23,14 +23,14 @@
         <div class="quick-contact d-flex align-items-center">
           <div class="phone_number me-4">
             <a href="#" class="d-flex align-items-center">
-              <i class="bi bi-telephone-fill fs-4 text-my-primary"></i>
-              <span class="ms-3 text-my-primary d-none d-md-flex">+086 35 95 62</span>
+              <i class="bi bi-telephone-fill fs-4 text-my-primary-mode"></i>
+              <span class="ms-3 text-my-primary-mode d-none d-md-flex">+086 35 95 62</span>
             </a>
           </div>
           <div class="send_email">
             <a href="#" class="d-flex align-items-center">
-              <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary"></i>
-              <span class="text-my-primary d-none d-md-flex">csc.express@gmail.com</span>
+              <i class="bi bi-envelope-fill fs-4 me-3 text-my-primary-mode"></i>
+              <span class="text-my-primary-mode d-none d-md-flex">csc.express@gmail.com</span>
             </a>
           </div>
         </div>
@@ -38,24 +38,23 @@
           <div class="dropdown me-4">
             <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
               type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
-              <span>ភាសាខ្មែរ</span>
+              <i class="bi bi-globe2 fs-4 me-3 text-my-primary-mode"></i>
+              <span class="text-my-primary-mode">ភាសាខ្មែរ</span>
             </button>
             <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
-              <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
-              <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+              <li><a class="dropdown-item text-my-primary-mode " href="#">English</a></li>
+              <li><a class="dropdown-item text-my-primary-mode" href="#">中國人</a></li>
             </ul>
           </div>
           <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
-              class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
+              class="bi bi-cloud-moon-fill fs-3 text-my-primary-mode"></i></button>
         </div>
         <div class="ms-3 d-md-flex d-xl-none">
           <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-            class="btn btn-my-secondary btn-my-outline-secondary fs-6 me-3">
+            class="btn btn-my-outline-primary  fs-6 me-3">
             <i class="fas fa-sign-in-alt"></i> ចូលគណនី
           </button>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#signin"
-            class="btn btn-my-secondary btn-my-outline-secondary fs-6">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-my-primary fs-6">
             <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
           </button>
         </div>
@@ -74,7 +73,6 @@
         <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
             <div class="offcanvas-title my-offcanvas-image" id="offcanvasExampleLabel">
-
               <img src="assets/images/my-logo-csc.png" alt="">
             </div>
             <button type="button" class="bg-transparent border-0 ms-auto" data-bs-dismiss="offcanvas"
@@ -92,7 +90,8 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">សេវាកម្មដឹកជញ្ជូន</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="express_logistic-lnd.html">ការដឹកជញ្ជូនរហ័ស</a></li>
+                  <li><a class="dropdown-item" href="express_logistic-lnd.html">ការដឹកជញ្ជូនរហ័ស</a>
+                  </li>
                   <li><a class="dropdown-item" href="tracking-items-lnd.html">តាមដានទំនិញ</a></li>
                 </ul>
               </li>
@@ -118,7 +117,8 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">អំពីយើង</a>
                 <ul class="dropdown-menu border-0 dropdown-menu-color">
-                  <li><a class="dropdown-item" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a></li>
+                  <li><a class="dropdown-item" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a>
+                  </li>
                   <li><a class="dropdown-item" href="about-us-lnd.html">ក្រុមយើងខ្ញុំ</a></li>
                   <li><a class="dropdown-item" href="thankful-lnd.html">សារថ្លែងអំណរគុណ</a></li>
                 </ul>
@@ -175,7 +175,7 @@
                   <div class="form-floating mb-3">
                     <input type="email" class="form-control shadow-none" id="floatingInput"
                       placeholder="name@example.com" required>
-                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+                    <label for="floatingInput"><i class="fa-regular fa-user"></i> អ៊ីម៉េលឬលេខទូរស័ព្ទ</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលអ៊ីម៉េល​ ឬលេខទូរស័ព្ទលោកអ្នក
                     </div>
@@ -183,7 +183,8 @@
                   <div class="form-floating mb-3">
                     <input type="password" class="form-control shadow-none outline" id="floatingPassword"
                       placeholder="Password" required>
-                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i> លេខសម្ងាត់</label>
+                    <label for="floatingPassword"><i class="fa-solid fa-lock"></i>
+                      លេខសម្ងាត់</label>
                     <div class="invalid-feedback">
                       សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
                     </div>
@@ -209,9 +210,10 @@
                 </form>
                 <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
                   class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
-                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ? <span><a href="#"
-                      type="button" data-bs-toggle="modal" data-bs-target="#signin"
-                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span></p>
+                <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ?
+                  <span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signin"
+                      class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span>
+                </p>
               </div>
             </div>
           </div>
@@ -335,7 +337,7 @@
                 <div class="form-check ms-3 mb-md-3">
                   <input class="form-check-input" type="checkbox" value="" id="checkpolicy" checked required>
                   <label class="form-check-label text-my-primary" for="checkpolicy">
-                    យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ
+                    <a href="terms-of-use-lnd.html">យល់ព្រមតាមគោលការណ៍របស់យើងខ្ញុំ</a>
                   </label>
                 </div>
               </div>
@@ -894,86 +896,87 @@
                 style="width: 100%; height: auto; object-fit: contain;">
             </a>
             <div class="mt-0">
-              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់
+              <p class="fs-5 text-my-primary-mode">ផ្ដល់នូវទំនុកចិត្ត​​​
+                មានទំនួលខុសត្រូវខ្ពស់
                 គុណភាព
                 សុវតិ្ថភាព
                 លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
             </div>
-            <div class="mb-2 ms-3 ms-md-0">
-              <a class="text-my-secondary  fs-5" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a>
+            <div class="mb-2">
+              <a class="text-my-primary-mode  fs-5" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a>
             </div>
 
-            <div class="mb-2 ms-3 ms-md-0">
-              <a class=" text-my-secondary fs-5 " href="about-us.html">ក្រុមយើងខ្ញុំ</a>
+            <div class="mb-2">
+              <a class=" text-my-primary-mode fs-5 " href="about-us-lnd.html">ក្រុមយើងខ្ញុំ</a>
             </div>
 
           </div>
 
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5   ">
-              <h4 class="text-my-primary">Quick-links</h4>
+              <h4 class="text-my-primary-mode">Quick-links</h4>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="home.html">ទំព័រដើម</a>
+              <a class="text-my-primary-mode fs-5" href="index.html">ទំព័រដើម</a>
             </div>
 
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="branch.html">សាខា</a>
+              <a class="text-my-primary-mode fs-5" href="branch-lnd.html">សាខា</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-primary-mode fs-5" href="express_logistic-lnd.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-primary-mode fs-5" href="bus-transportation-lnd.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="contact-us.html">ទំនាក់ទំនង</a>
+              <a class="text-my-primary-mode fs-5" href="contact-us-lnd.html">ទំនាក់ទំនង</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="about-us.html">អំពីយើង</a>
+              <a class="text-my-primary-mode fs-5" href="about-us-lnd.html">អំពីយើង</a>
             </div>
 
           </div>
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5 mb-4 ">
-              <h4 class="text-my-primary">សេវាកម្ម</h4>
+              <h4 class="text-my-primary-mode">សេវាកម្ម</h4>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-primary-mode fs-5" href="express_logistic-lnd.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-primary-mode fs-5" href="bus-transportation-lnd.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a>
+              <a class="text-my-primary-mode fs-5" href="promotion-lnd.html">សេវាកម្មប្រូម៉ូសិន</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
+              <a class="text-my-primary-mode fs-5" href="trending-serivce-lnd.html">សេវាកម្មកំពុងពេញនិយម</a>
             </div>
 
           </div>
 
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5 mb-4 ">
-              <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
+              <h4 class="text-my-primary-mode">ទំនាក់ទំនង</h4>
             </div>
 
             <div class="contactus">
               <div class="mb-2">
-                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-secondary"></i>
-                  <span class="ms-2  text-my-secondary fs-5">Ant Trainning Center</span>
+                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-primary-mode"></i>
+                  <span class="ms-2  text-my-primary-mode fs-5">Ant Trainning Center</span>
                 </a>
               </div>
               <div class="mb-2">
                 <a href="tel:+855 86359562">
-                  <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
-                  <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
+                  <i class="bi bi-telephone-fill fs-4 text-my-primary-mode"></i>
+                  <span class="ms-2 text-my-primary-mode fs-5">086 35 95 62</span>
                 </a>
               </div>
               <div class="mb-4">
                 <a href="mailto:csc.express@gmail.com">
-                  <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
-                  <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
+                  <i class="bi bi-envelope-fill fs-4 text-my-primary-mode"></i>
+                  <span class="ms-2 text-my-primary-mode fs-5">csc.express@gmail.com</span>
                 </a>
               </div>
             </div>
@@ -997,6 +1000,7 @@
       </div>
     </div>
   </footer>
+
   <script src="assets/js/bootstrap.bundle.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/headerfixed.js"></script>

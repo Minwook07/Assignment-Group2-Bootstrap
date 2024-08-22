@@ -550,54 +550,66 @@ textarea:focus {
   background-position: center;
   overflow: hidden;
 }
-.special-offers .detail{
+
+.special-offers .detail {
   width: 100%;
   height: 100%;
   background-image: url(../images/my-home-banner.png);
   background-size: contain;
 }
+
 .member-card {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
-  
+
 }
+
 .member-card .card-header {
-  background-color:#669955;
+  background-color: #669955;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 .member-card .card-body {
   padding: 20px;
   text-align: center;
 }
+
 .pic-member {
-  width: 90px; 
-  height: 90px; 
+  width: 90px;
+  height: 90px;
   margin-bottom: 15px;
 }
+
 .pic-member img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 50%;
 }
+
 .member-card h5 {
   margin-bottom: 10px;
   font-weight: bold;
 }
+
 .member-card p {
   margin-bottom: 5px;
 }
+
 .member-card hr {
   margin: 10px 0;
 }
-.detail,h4,h3{
+
+.detail,
+h4,
+h3 {
   line-height: 40px;
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
 }
 
 
@@ -637,6 +649,7 @@ textarea:focus {
 .my-service-home:hover h4,
 .my-service-home:hover a {
   color: #fff !important;
+}
 
 .my-line-home {
   width: 50px;
@@ -672,6 +685,7 @@ textarea:focus {
   /* transform: rotate(-30deg); */
   background: #ffff !important;
   /* margin: 20px auto!important; */
+}
 
 @keyframes fadeInDown {
   from {
@@ -841,10 +855,12 @@ textarea:focus {
   background-attachment: fixed;
   width: 100%;
 }
-.my-tran-top{
+
+.my-tran-top {
   width: 380px;
 }
-.border-left-home{
+
+.border-left-home {
   border-left: 3px solid var(--my-color-primary);
 }
 

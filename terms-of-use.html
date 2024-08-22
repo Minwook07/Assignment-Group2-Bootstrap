@@ -784,349 +784,78 @@
     </header>
 
     <main>
-        <!-- BackToTop Button -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
-            <i class="bi bi-arrow-up-short fs-5"></i>
-        </a>
-
-        <!-- Chat Bot -->
-        <div class="dropup-center dropstart">
-            <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
-                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                <i class="fa-brands fa-facebook-messenger"></i>
-            </button>
-            <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
-                <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
-                    <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
-                    <button type="button" class="btn text-white fs-4" id="closeChatBot">
-                        <i class="fa-solid fa-circle-xmark"></i>
-                    </button>
-                </div>
-                <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
-                    <div class="card-body">
-                        <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
-                        <div class="d-grid gap-3 col-6">
-                            <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
-                            <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
-                            <button class="btn btn-my-outline-primary" type="button">ចិន</button>
-                        </div>
+        <section style="margin-top: 91px;">
+            <div class="container my-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-my-primary text-white text-center py-4">
+                        <h2 class="mb-0">លក្ខខណ្ឌប្រើប្រាស់ - Terms of Use</h2>
                     </div>
-                </div>
-                <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
-                <form action="" class="d-flex align-items-center mx-2">
-                    <div class="my-send-text d-flex mb-4">
-                        <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
-                            placeholder="Message..." rows="1"></textarea>
-                        <div class="d-flex align-items-center my-btn-fill w-25">
-                            <button type="button" class="btn chat-bot-icon border-0 p-1">
-                                <i class="fa-solid fa-face-smile"></i>
-                            </button>
-                            <button type="button" class="btn chat-bot-icon border-0 p-1">
-                                <i class="fa-solid fa-file-image"></i>
-                            </button>
-                            <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
-                                <i class="fa-solid fa-paperclip"></i>
-                            </label>
-                            <input type="file" id="fileInput" style="display: none;" />
-                            <button type="button" class="btn chat-bot-icon send-button">
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+                    <div class="card-body bg-my-default text-my-default p-4">
+                        <p class="text-muted"><strong>កាលបរិច្ឆេទមានប្រសិទ្ធភាព:</strong>៣០ សីហា ២០២៤</p>
+                        <p>សូមស្វាគមន៍មកកាន់ CSC Express ដែលជាដៃគូដ៏គួរឱ្យទុកចិត្តរបស់អ្នកក្នុងការដឹកជញ្ជូន
+                            និងសេវាកម្មធ្វើដំណើរ។ ដោយ
+                            ការចូលប្រើ និងប្រើប្រាស់គេហទំព័ររបស់យើង អ្នកយល់ព្រមគោរពតាម
+                            និងត្រូវចងភ្ជាប់ដោយលក្ខខណ្ឌខាងក្រោម
+                            ប្រើ។ សូមអានពួកវាដោយប្រុងប្រយ័ត្ន។</p>
 
-        <section class="pt-5 mb-5" style="margin-top: 150px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-5 col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
-                        <div class="card rounded-4 border-0 bg-my-default">
-                            <div class="card-body p-4">
-                                <ul class="nav nav-pills d-flex flex-column fs-5 gap-2" id="pills-tab2" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link w-100 text-start active" id="pills-home-tab2"
-                                            data-bs-toggle="pill" data-bs-target="#pills-home2" type="button" role="tab"
-                                            aria-controls="pills-home2" aria-selected="true">
-                                            <i class="fa-solid fa-user"></i>
-                                            កែសម្រួលប្រវត្តិរូប
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link w-100 text-start" id="pills-passwd-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-passwd" type="button"
-                                            role="tab" aria-controls="pills-passwd" aria-selected="false">
-                                            <i class="fa-solid fa-lock"></i>
-                                            ប្តូរលេខកូដសម្ងាត់
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link w-100 text-start" id="pills-graphicdesign-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-graphicdesign" type="button"
-                                            role="tab" aria-controls="pills-graphicdesign" aria-selected="false">
-                                            <i class="fa-regular fa-bell"></i>
-                                            ការជូនដំណឹង
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link w-100 text-start" id="pills-marketing-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-marketing" type="button"
-                                            role="tab" aria-controls="pills-marketing" aria-selected="false">
-                                            <i class="fa-regular fa-comment-dots"></i>
-                                            មតិស្ថាបនា
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7 col-lg-8" data-aos="fade-left">
-                        <div class="card rounded-4 border-0 bg-my-default text-my-default">
-                            <div class="card-body p-4">
-                                <div class="tab-content" id="pills-tabContent2">
-                                    <!-- Change-Information-Section -->
-                                    <div class="tab-pane show active fade" id="pills-home2" role="tabpanel"
-                                        aria-labelledby="pills-home-tab2" tabindex="0">
-                                        <h5 class="card-title">ព័ត៌មានផ្ទាល់ខ្លួន</h5>
-                                        <div class="d-flex">
-                                            <div class="profile-setting position-relative">
-                                                <a href="#"
-                                                    onclick="document.getElementById('profilePicture').click(); return false;">
-                                                    <img src="assets/images/woman-hero-1.jpeg" class="card-img-top"
-                                                        alt="setting-pf" id="profile-pic">
-                                                </a>
-                                                <div class="overlay-camera-image position-absolute">
-                                                    <i class="fa-solid fa-camera"></i>
-                                                </div>
-                                            </div>
-                                            <div class="d-grid gap-3 col-3 col-lg-2 ms-5">
-                                                <button class="btn btn-primary rounded-3" type="button"
-                                                    onclick="document.getElementById('profilePicture').click();">
-                                                    ប្តូររូបភាព
-                                                </button>
-                                                <button class="btn btn-outline-danger rounded-3" type="button"
-                                                    onclick="removeImage();">
-                                                    លុបរូប
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <h5 class="mt-3 mb-4">Kim Eun-Kyung</h5>
-                                        <form class="row g-3 needs-validation" novalidate>
-                                            <div class="col-md-12" style="display: none;">
-                                                <input type="file" class="form-control shadow-none" id="profilePicture"
-                                                    accept="image/*" onchange="previewImage(event)">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="validationCustom01" class="form-label">នាមត្រកូល</label>
-                                                <input type="text" class="form-control shadow-none"
-                                                    id="validationCustom01" value="Kim" required>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
-                                                <input type="text" class="form-control shadow-none"
-                                                    id="validationCustom02" value="Eun-Kyung" required>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationCustomUsername"
-                                                    class="form-label">ឈ្មោះអ្នកប្រើប្រាស់</label>
-                                                <div class="input-group has-validation">
-                                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                    <input type="text" class="form-control shadow-none"
-                                                        id="validationCustomUsername" value="eun-kyung_kim"
-                                                        aria-describedby="inputGroupPrepend" required>
-                                                    <div class="invalid-feedback">
-                                                        សូមបញ្ចូលឈ្មោះហៅក្រៅរបស់អ្នក
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationCustom05" class="form-label">អ៊ីម៉ែល</label>
-                                                <input type="email" class="form-control shadow-none"
-                                                    id="validationCustom05" value="kim_eunkyung@gmail.com" required>
-                                                <div class="invalid-feedback">
-                                                    សូមបញ្ចូលអាស័យដ្ឋានអ៊ីម៉េល
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationCustom09" class="form-label">ទីតាំង</label>
-                                                <input type="text" class="form-control shadow-none"
-                                                    id="validationCustom09"
-                                                    value="ផ្ទះលេខ១២អា ផ្លូវ២៧១ សង្កាត់ចាក់អង្រែ ខណ្ឌមានជ័យ រាជធានីភ្នំពេញ"
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    សូមបញ្ចូលទីលំនៅបច្ចុប្បន្នរបស់អ្នក
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button class="btn btn-my-primary" type="submit">រក្សាទុក</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- Change-Password-Section -->
-                                    <div class="tab-pane fade" id="pills-passwd" role="tabpanel"
-                                        aria-labelledby="pills-passwd-tab">
-                                        <h5 class="card-title">Change Password</h5>
-                                        <form class="row g-3 needs-validation" novalidate>
-                                            <div class="col-md-12">
-                                                <label for="validationCustom08"
-                                                    class="form-label">លេខសម្ងាត់បច្ចុប្បន្ន</label>
-                                                <input type="password" class="form-control shadow-none"
-                                                    id="validationCustom08" required>
-                                                <div class="invalid-feedback">
-                                                    សូមបញ្ចូលពាក្យសម្ងាត់ចាស់
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationCustom06"
-                                                    class="form-label">លេខសម្ងាត់ថ្មី</label>
-                                                <input type="password" class="form-control shadow-none"
-                                                    id="validationCustom06" required>
-                                                <div class="invalid-feedback">
-                                                    សូមបញ្ចូលពាក្យសម្ងាត់ថ្មី
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationCustom07"
-                                                    class="form-label">លេខសម្ងាត់ថ្មី</label>
-                                                <input type="password" class="form-control shadow-none"
-                                                    id="validationCustom07" required>
-                                                <div class="invalid-feedback">
-                                                    សូមបញ្ចូលពាក្យសម្ងាត់ថ្មីម្តងទៀត
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button class="btn btn-my-primary"
-                                                    type="submit">ប្តូរលេខកូដសម្ងាត់</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                        <h4 class="mt-4">1. ការទទួលយកលក្ខខណ្ឌ</h4>
+                        <p>ដោយប្រើគេហទំព័រ និងសេវាកម្មរបស់យើង អ្នកទទួលស្គាល់ថាអ្នកបានអាន យល់ និងយល់ព្រម
+                            ក្លាយជា
+                            កំណត់ដោយលក្ខខណ្ឌប្រើប្រាស់ទាំងនេះ។ ប្រសិនបើអ្នកមិនយល់ព្រមជាមួយផ្នែកណាមួយនៃលក្ខខណ្ឌទាំងនេះទេ
+                            អ្នកត្រូវតែ
+                            បញ្ឈប់
+                            ការប្រើប្រាស់គេហទំព័រ និងសេវាកម្មរបស់យើង។</p>
 
-                                    <!-- Change Notification -->
-                                    <div class="tab-pane fade" id="pills-graphicdesign" role="tabpanel"
-                                        aria-labelledby="pills-graphicdesign-tab" tabindex="0">
-                                        <h5 class="card-title">Notifications</h5>
-                                        <!-- Content for 'ការជូនដំណឹង' tab -->
-                                        <div class="container">
-                                            <div class="row gy-2">
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h5>ការជូនដំណឹងលេចឡើងនៅលើកុំព្យូទ័រ</h5>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push" class="toggle-push-none">
-                                                    <label for="toggle-push" class="btn-toggle"></label>
-                                                </div>
-                                                <hr>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h5>បើកការជូនដំណឹងអំពីការជជែកទាំងអស់</h5>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push1" checked
-                                                        class="toggle-push-none">
-                                                    <label for="toggle-push1" class="btn-toggle"></label>
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h5>បើកការជូនដំណឹងអំពីការអាប់ដេតថ្មី</h5>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push2" class="toggle-push-none">
-                                                    <label for="toggle-push2" class="btn-toggle"></label>
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <div>
-                                                        <h5>បញ្ចេញមតិ</h5>
-                                                        <p>ការបញ្ចេញមតិនៅលើការបង្ហោះរបស់អ្នក និងការតបមតិ</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push3" checked
-                                                        class="toggle-push-none">
-                                                    <label for="toggle-push3" class="btn-toggle"></label>
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <div>
-                                                        <h5>ការរំលឹក</h5>
-                                                        <p>បើកការរំលឹកនៃការអាប់ដេតរបស់អ្នកដែលអាចភ្លេច</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push4" class="toggle-push-none">
-                                                    <label for="toggle-push4" class="btn-toggle"></label>
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <div>
-                                                        <h5>ផុសBlogថ្មី</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push5" class="toggle-push-none">
-                                                    <label for="toggle-push5" class="btn-toggle"></label>
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <div>
-                                                        <h5>Feedback ពីអ្នកប្រើប្រាស់</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push6" class="toggle-push-none">
-                                                    <label for="toggle-push6" class="btn-toggle"></label>
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <div>
-                                                        <h5>ការផ្តល់មតិត្រឡប់</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <input type="checkbox" id="toggle-push7" class="toggle-push-none">
-                                                    <label for="toggle-push7" class="btn-toggle"></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <h4 class="mt-4">2. ទំនួលខុសត្រូវរបស់អ្នកប្រើប្រាស់</h4>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item bg-my-default text-my-default">អ្នកប្រើប្រាស់ទទួលខុសត្រូវក្នុងការរក្សាការសម្ងាត់របស់ពួកគេ។
+                                លិខិតសម្គាល់គណនី និងសម្រាប់សកម្មភាពទាំងអស់ដែលកើតឡើងនៅក្រោមគណនីរបស់ពួកគេ។</li>
+                            <li class="list-group-item bg-my-default text-my-default">អ្នកប្រើប្រាស់យល់ព្រមគោរពតាមច្បាប់ បទបញ្ជា និង
+                                គោលការណ៍នៅពេលប្រើប្រាស់សេវាកម្មរបស់យើង។</li>
+                            <li class="list-group-item bg-my-default text-my-default">អ្នកប្រើប្រាស់អាចមិនចូលរួមក្នុងសកម្មភាពដែលរំលោភលើសិទ្ធិរបស់
+                                ផ្សេងទៀត រំខានដល់គេហទំព័រ ឬសេវាកម្ម ឬពាក់ព័ន្ធនឹងការក្លែងបន្លំ ការបំភាន់ ឬបោកបញ្ឆោត
+                                ការអនុវត្ត។</li>
+                        </ul>
 
-                                    <!-- Feedback-Section -->
-                                    <div class="tab-pane fade" id="pills-marketing" role="tabpanel"
-                                        aria-labelledby="pills-marketing-tab" tabindex="0">
-                                        <h5 class="card-title">Feedback</h5>
-                                        <form class="row g-3 needs-validation" novalidate>
-                                            <div class="col-md-12">
-                                                <label for="validationCustomUsername1"
-                                                    class="form-label">ឈ្មោះអ្នកប្រើប្រាស់</label>
-                                                <div class="input-group has-validation">
-                                                    <span class="input-group-text" id="inputGroupPrepend1">@</span>
-                                                    <input type="text" class="form-control shadow-none"
-                                                        id="validationCustomUsername1"
-                                                        aria-describedby="inputGroupPrepend1" required>
-                                                    <div class="invalid-feedback">
-                                                        សូមបំពេញឈ្មោះហៅក្រៅរបស់អ្នក
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationCustom10" class="form-label">អ៊ីម៉ែល</label>
-                                                <input type="email" class="form-control shadow-none"
-                                                    id="validationCustom10" required>
-                                                <div class="invalid-feedback">
-                                                    បញ្ចូលអាស័យដ្ឋានអ៊ីម៉ែល
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label for="validationTextarea" class="form-label">សារ</label>
-                                                <textarea class="form-control no-resize shadow-none"
-                                                    id="validationTextarea" placeholder="បញ្ចូលសារទីនេះ"
-                                                    required></textarea>
-                                                <div class="invalid-feedback">
-                                                    បញ្ចូលសារ
-                                                </div>
-                                            </div>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <a href="#" class="btn btn-outline-danger">បោះបង់</a>
-                                                <button class="btn btn-my-primary" type="submit">ផ្ញើសារ</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h4 class="mt-4">3. ដែនកំណត់សេវាកម្ម</h4>
+                        <p>ខណៈពេលដែលយើងខិតខំផ្តល់សេវាកម្មដែលអាចទុកចិត្តបាន និងទាន់ពេលវេលា CSC Express មិនធានានោះទេ។
+                            សេវាកម្ម
+                            នឹងមិនមានការរំខាន គ្មានកំហុស ឬបំពេញតាមការរំពឹងទុករបស់អ្នកប្រើប្រាស់ទាំងអស់។</p>
+                        <p>CSC Express មិនទទួលខុសត្រូវចំពោះការខូចខាតដោយផ្ទាល់ ប្រយោល ចៃដន្យ ឬជាផលវិបាកណាមួយឡើយ។
+                            លទ្ធផល
+                            ពីការប្រើប្រាស់សេវាកម្មរបស់យើង រួមទាំងប៉ុន្តែមិនកំណត់ចំពោះការពន្យារពេល
+                            ការបាត់បង់ការដឹកជញ្ជូន ឬមិនត្រឹមត្រូវ
+                            ការដឹកជញ្ជូន។</p>
+
+                        <h4 class="mt-4">4. ការទូទាត់ និងថ្លៃសេវា</h4>
+                        <p>អ្នកប្រើប្រាស់យល់ព្រមបង់ថ្លៃសេវា និងថ្លៃសេវាដែលអាចអនុវត្តបានទាំងអស់សម្រាប់សេវាកម្មដែលផ្តល់ដោយ
+                            CSC Express។ ការទូទាត់
+                            គឺ
+                            ដល់ពេលនៃសេវាកម្ម ហើយ CSC Express រក្សាសិទ្ធិក្នុងការផ្អាក ឬបញ្ចប់សេវាកម្ម
+                            សម្រាប់
+                            ការមិនបង់ប្រាក់។</p>
+
+                        <h4 class="mt-4">5. កម្មសិទ្ធិបញ្ញា</h4>
+                        <p>ខ្លឹមសារទាំងអស់នៅលើគេហទំព័ររបស់យើង រួមទាំង ប៉ុន្តែមិនកំណត់ចំពោះអត្ថបទ ក្រាហ្វិក ឡូហ្គោ
+                            និងរូបភាព
+                            នេះ។
+                            ទ្រព្យសម្បត្តិរបស់ CSC Express ឬអ្នកផ្គត់ផ្គង់មាតិការបស់វា
+                            ហើយត្រូវបានការពារដោយច្បាប់កម្មសិទ្ធិបញ្ញា។
+                            អ្នកប្រើប្រាស់មិនអាចផលិតឡើងវិញ ចែកចាយ ឬបង្កើតស្នាដៃចម្លងពីមាតិការបស់យើងដោយគ្មានមុន។
+                            ការយល់ព្រមជាលាយលក្ខណ៍អក្សរ។</p>
+
+                        <h4 class="mt-4">6. ច្បាប់គ្រប់គ្រង</h4>
+                        <p>លក្ខខណ្ឌនៃការប្រើប្រាស់ទាំងនេះត្រូវបានគ្រប់គ្រងដោយ និងបកស្រាយស្របតាមច្បាប់នៃ [បញ្ចូល
+                            យុត្តាធិការ] ដោយមិនគិតពីជម្លោះនៃគោលការណ៍ច្បាប់។</p>
+
+                        <h4 class="mt-4">7. ព័ត៌មានទំនាក់ទំនង</h4>
+                        <p>ប្រសិន​បើ​អ្នក​មាន​សំណួរ ឬ​ការ​ព្រួយ​បារម្ភ​អំពី​លក្ខខណ្ឌ​ប្រើប្រាស់​ទាំង​នេះ
+                            សូម​ទាក់ទង​មក​យើង​តាម​រយៈ៖</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-my-default text-my-default"><strong>Email:</strong>csc.express@gmail.com</li>
+                            <li class="list-group-item bg-my-default text-my-default"><strong>Phone:</strong>086 35 95 62</li>
+                            <li class="list-group-item bg-my-default text-my-default"><strong>Address:</strong>Ant Trainning Center</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -1255,20 +984,6 @@
     <script src="assets/libs/aos-master/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script>
-        function previewImage(event) {
-            const reader = new FileReader();
-            reader.onload = function () {
-                const output = document.getElementById('profile-pic');
-                output.src = reader.result;
-            };
-            reader.readAsDataURL(event.target.files[0]);
-        }
-        function removeImage() {
-            document.getElementById('profile-pic').src = 'assets/images/default-image.jpg'; // Default or placeholder image
-            document.getElementById('profilePicture').value = ''; // Clear the file input
-        }
     </script>
 </body>
 

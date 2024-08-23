@@ -34,16 +34,17 @@
             </a>
           </div>
         </div>
-        <div class="d-none d-xl-flex">
+        <div class="d-flex ms-auto">
           <div class="dropdown me-4">
-            <button class="btn btn-color btn-my-outline-secondary dropdown-toggle d-flex align-items-center"
+            <button
+              class="btn my-lan-color d-none d-xl-flex btn-my-outline-secondary dropdown-toggle d-flex align-items-center"
               type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-globe2 fs-4 me-3 text-my-primary-mode"></i>
-              <span class="text-my-primary-mode">ភាសាខ្មែរ</span>
+              <i class="bi bi-globe2 fs-4 me-3"></i>
+              <span>ភាសាខ្មែរ</span>
             </button>
-            <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
-              <li><a class="dropdown-item text-my-primary-mode " href="#">English</a></li>
-              <li><a class="dropdown-item text-my-primary-mode" href="#">中國人</a></li>
+            <ul class="dropdown-menu bg-my-default" style="position: absolute; z-index: 9999;">
+              <li><a class="dropdown-item my-lan-color " href="#">English</a></li>
+              <li><a class="dropdown-item my-lan-color" href="#">中國人</a></li>
             </ul>
           </div>
           <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
@@ -293,6 +294,7 @@
               </div>
             </ul>
           </li>
+
           <li class="nav-item icon-item">
             <div class="dropdown">
               <a class="border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -304,10 +306,10 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-shadow border-0 dropdown-menu-blur position-absolute"
                 style="z-index: 9999;" aria-labelledby="dropdown">
-                <li class="d-flex">
+                <li class="ms-2 d-flex">
                   <div class="user-profile">
-                    <div class="ms-2 d-flex">
-                      <div class="image-profile  me-3">
+                    <div class="d-flex">
+                      <div class="image-profile me-3">
                         <img src="assets/images/cute.jpg" alt="User Image" class="rounded-circle">
                       </div>
                       <div>
@@ -323,13 +325,13 @@
                   </div>
                 </li>
                 <hr class="text-my-default mt-0">
-                <li><a class="dropdown-item " href="setting-edit-profile.html"><i
-                      class="bi bi-person-circle fs-5  text text-my-default me-3 "></i> <span
-                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span> </a></li>
+                <li><a class="dropdown-item" href="setting-edit-profile.html"><i
+                      class="bi bi-person-circle  fs-5 text text-my-default me-3"></i><span
+                      class="text-my-default">កែសម្រួលប្រវតិ្តរូប</span></a></li>
                 <li><a class="dropdown-item" href="privacy-policy.html"><i
                       class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
                       class="text-my-default">គោលការណ៍ឯកជនភាព</span></a></li>
-                <li><a class="dropdown-item" href="#"><i
+                <li><a class="dropdown-item" href="terms-of-use.html"><i
                       class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
                       class="text-my-default">លក្ខខណ្ឌប្រើប្រាស់</span></a></li>
                 <li><a class="dropdown-item" href="index.html"><i
@@ -404,20 +406,18 @@
                 </ul>
               </li>
             </ul>
-            <div class="d-flex d-lg-none">
+            <div class="d-flex d-xl-none">
               <div class="dropdown me-4">
-                <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                <button class="btn my-lan-color btn-my-outline-secondary dropdown-toggle d-flex align-items-center"
                   type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                  <i class="bi bi-globe2 fs-4 me-3"></i>
                   <span>ភាសាខ្មែរ</span>
                 </button>
-                <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
-                  <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
-                  <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                <ul class="dropdown-menu bg-my-default" style="position: absolute; z-index: 9999;">
+                  <li><a class="dropdown-item my-lan-color " href="#">English</a></li>
+                  <li><a class="dropdown-item my-lan-color" href="#">中國人</a></li>
                 </ul>
               </div>
-              <button type="button" class="btn-mode border-0 bg-transparent m-0" data-theme-toggle> <i
-                  class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
             </div>
           </div>
 
@@ -711,7 +711,7 @@
               <li><a class="dropdown-item" href="privacy-policy.html"><i
                     class="bi bi-gear-fill  fs-5 text text-my-default me-3"></i><span
                     class="text-my-default">គោលការណ៍ឯកជនភាព</span></a></li>
-              <li><a class="dropdown-item" href="#"><i
+              <li><a class="dropdown-item" href="terms-of-use.html"><i
                     class="bi bi-question-circle-fill  fs-5  text text-my-default me-3"></i><span
                     class="text-my-default">លក្ខខណ្ឌប្រើប្រាស់</span></a></li>
               <li><a class="dropdown-item" href="index.html"><i
@@ -790,7 +790,7 @@
             <div class="d-flex gap-4">
               <a href="#tracking-start" class="btn btn-my-primary py-3 px-5 fs-1-maximium">ចាប់ផ្តើម</a>
               <a href="contact-us.html"
-                class="btn btn-my-outline-primary text-my-primary-mode py-3 px-5 fs-1-maximium">ព័ត៌មានបន្ថែម</a>
+                class="btn btn-my-outline-primary text-my-primary-mode text-my-dark-light py-3 px-5 fs-1-maximium">ព័ត៌មានបន្ថែម</a>
             </div>
             <div class="row mt-5 text-white">
               <div class="col-4">

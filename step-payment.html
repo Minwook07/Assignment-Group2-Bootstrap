@@ -957,14 +957,14 @@
                                     <button class="nav-link nav-link-customize active" id="pills-home-tab-us"
                                         data-bs-toggle="pill" data-bs-target="#pills-home-us" type="button" role="tab"
                                         aria-controls="pills-home" aria-selected="true">
-                                        <i class="fa-solid fa-credit-card fs-1"></i>
+                                        <i class="fa-solid fa-credit-card fs-1 text-my-dark-light"></i>
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link nav-link-customize" id="pills-profile-tab-us"
                                         data-bs-toggle="pill" data-bs-target="#pills-profile-us" type="button"
                                         role="tab" aria-controls="pills-profile" aria-selected="false">
-                                        <i class="fa-solid fa-qrcode fs-1"></i>
+                                        <i class="fa-solid fa-qrcode fs-1 text-my-dark-light"></i>
                                     </button>
                                 </li>
                             </ul>
@@ -1009,7 +1009,7 @@
                                             </div>
                                             <div class="col-12">
                                                 <a href="e-ticket.html" class="btn btn-primary w-100"
-                                                    type="submit">ទូទាត់ឥឡូវនេះ</a>
+                                                    id="payNowBtn">ទូទាត់ឥឡូវនេះ</a>
                                             </div>
                                         </form>
                                     </div>
@@ -1032,8 +1032,8 @@
                                                         onclick="document.getElementById('file-input').click();">
                                                         បញ្ចូលរូបភាពការទូទាត់ទីនេះ
                                                     </button>
-                                                    <a href="e-ticket.html"
-                                                        class="btn btn-primary w-100">ទូទាត់ឥឡូវនេះ</a>
+                                                    <a href="e-ticket.html" class="btn btn-primary w-100"
+                                                        id="otherPayBtn">ទូទាត់ឥឡូវនេះ</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -1044,6 +1044,17 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <!-- Toast Container -->
+            <div class="toast-container position-fixed end-0 p-3" style="bottom: 150px;">
+                <div class="toast" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        សូមអរគុណ លោកអ្នកបានបញ្ជាទិញបានដោយជោគជ័យ! សូមរង់ចាំ
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -1172,6 +1183,33 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        // Function to show the toast and then redirect
+        function showToastAndRedirect(toastElementId, redirectUrl) {
+            var toastElement = document.getElementById(toastElementId);
+            var toast = new bootstrap.Toast(toastElement);
+            toast.show();
+
+            setTimeout(function () {
+                window.location.href = redirectUrl;
+            }, 2000); // 2 seconds delay
+        }
+
+        // Add event listener to the "payNowBtn" button
+        document.getElementById('payNowBtn').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default click action
+            showToastAndRedirect('myToast', 'e-ticket.html'); // Show toast and redirect to e-ticket.html
+        });
+
+        // Add event listener to the "otherBtn" button (if needed)
+        document.getElementById('otherPayBtn').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default click action
+            showToastAndRedirect('myToast', 'e-ticket.html'); // Show toast and redirect to another-page.html
+        });
+    </script>
+
+
+
 </body>
 
 </html>

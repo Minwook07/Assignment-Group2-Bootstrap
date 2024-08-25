@@ -355,6 +355,59 @@
   </header>
 
   <main>
+    <!-- BackToTop Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+      <i class="bi bi-arrow-up-short fs-5"></i>
+    </a>
+
+    <!-- Chat Bot -->
+    <div class="dropup-center dropstart">
+      <button class="btn btn-secondary chat-bot rounded-circle" id="chatBotButton" type="button"
+        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+        <i class="fa-brands fa-facebook-messenger"></i>
+      </button>
+      <div class="dropdown-menu bg-my-default chat-contain p-0 rounded-4 overflow-hidden" id="chatBotDropdown">
+        <div class="bg-my-primary p-2 d-flex align-items-center justify-content-between">
+          <h5 class="text-white ms-2">ជំនួយការ ២៤ម៉ោង</h5>
+          <button type="button" class="btn text-white fs-4" id="closeChatBot">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+        <div class="card bg-light border-0 m-4 mb-0 ms-3 w-75">
+          <div class="card-body">
+            <p>សូមស្វាគមន៍មកកាន់ជំនួយការដោយស្វ័យប្រវត្តិ សូមជ្រើសរើសភាសា</p>
+            <div class="d-grid gap-3 col-6">
+              <button class="btn btn-my-outline-primary" type="button">ខ្មែរ</button>
+              <button class="btn btn-my-outline-primary" type="button">អង់គ្លេស</button>
+              <button class="btn btn-my-outline-primary" type="button">ចិន</button>
+            </div>
+          </div>
+        </div>
+        <p class="mx-4 text-my-default">Bot - អម្បាញ់មិញ</p>
+        <form action="" class="d-flex align-items-center mx-2">
+          <div class="my-send-text d-flex mb-4">
+            <textarea class="form-control shadow-none border-0 my-input-textarea" id="my-chat-bot"
+              placeholder="Message..." rows="1"></textarea>
+            <div class="d-flex align-items-center my-btn-fill w-25">
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-face-smile"></i>
+              </button>
+              <button type="button" class="btn chat-bot-icon border-0 p-1">
+                <i class="fa-solid fa-file-image"></i>
+              </button>
+              <label for="fileInput" class="btn chat-bot-icon border-0 p-1 m-0">
+                <i class="fa-solid fa-paperclip"></i>
+              </label>
+              <input type="file" id="fileInput" style="display: none;" />
+              <button type="button" class="btn chat-bot-icon send-button">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <section>
       <div class="hero-baner mt-5">
         <div class="overlay-now d-flex justify-content-center align-items-center">
@@ -1406,86 +1459,87 @@
                 style="width: 100%; height: auto; object-fit: contain;">
             </a>
             <div class="mt-0">
-              <p class="ms-3 ms-md-0 fs-5 text-my-secondary">ផ្ដល់នូវទំនុកចិត្ត​​​ មានទំនួលខុសត្រូវខ្ពស់
+              <p class="fs-5 text-my-primary-mode">ផ្ដល់នូវទំនុកចិត្ត​​​
+                មានទំនួលខុសត្រូវខ្ពស់
                 គុណភាព
                 សុវតិ្ថភាព
                 លឿនរហ័សទាន់ចិត្តគឺមានលើវេបសាយ CSC EXPRESS តែមួយគត់​</p>
             </div>
-            <div class="mb-2 ms-3 ms-md-0">
-              <a class="text-my-secondary  fs-5" href="about-company.html">ប្រវតិ្តក្រុមហ៊ុន</a>
+            <div class="mb-2">
+              <a class="text-my-primary-mode  fs-5" href="about-company-lnd.html">ប្រវតិ្តក្រុមហ៊ុន</a>
             </div>
 
-            <div class="mb-2 ms-3 ms-md-0">
-              <a class=" text-my-secondary fs-5 " href="about-us.html">ក្រុមយើងខ្ញុំ</a>
+            <div class="mb-2">
+              <a class=" text-my-primary-mode fs-5 " href="about-us-lnd.html">ក្រុមយើងខ្ញុំ</a>
             </div>
 
           </div>
 
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5   ">
-              <h4 class="text-my-primary">Quick-links</h4>
+              <h4 class="text-my-primary-mode">Quick-links</h4>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="index.html">ទំព័រដើម</a>
+              <a class="text-my-primary-mode fs-5" href="index.html">ទំព័រដើម</a>
             </div>
 
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="branch.html">សាខា</a>
+              <a class="text-my-primary-mode fs-5" href="branch-lnd.html">សាខា</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-primary-mode fs-5" href="express_logistic-lnd.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-primary-mode fs-5" href="bus-transportation-lnd.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="contact-us.html">ទំនាក់ទំនង</a>
+              <a class="text-my-primary-mode fs-5" href="contact-us-lnd.html">ទំនាក់ទំនង</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="about-us.html">អំពីយើង</a>
+              <a class="text-my-primary-mode fs-5" href="about-us-lnd.html">អំពីយើង</a>
             </div>
 
           </div>
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5 mb-4 ">
-              <h4 class="text-my-primary">សេវាកម្ម</h4>
+              <h4 class="text-my-primary-mode">សេវាកម្ម</h4>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="express_logistic.html">សេវាកម្មដឹកជញ្ជូន</a>
+              <a class="text-my-primary-mode fs-5" href="express_logistic-lnd.html">សេវាកម្មដឹកជញ្ជូន</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="bus-transportation.html">សេវាកម្មធ្វើដំណើរ</a>
+              <a class="text-my-primary-mode fs-5" href="bus-transportation-lnd.html">សេវាកម្មធ្វើដំណើរ</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="promotion.html">សេវាកម្មប្រូម៉ូសិន</a>
+              <a class="text-my-primary-mode fs-5" href="promotion-lnd.html">សេវាកម្មប្រូម៉ូសិន</a>
             </div>
             <div class="mb-2">
-              <a class="text-my-secondary fs-5" href="trending-serivce.html">សេវាកម្មកំពុងពេញនិយម</a>
+              <a class="text-my-primary-mode fs-5" href="trending-serivce-lnd.html">សេវាកម្មកំពុងពេញនិយម</a>
             </div>
 
           </div>
 
           <div class="col-12 col-md-6 col-lg-6 col-xl-3">
             <div class=" mt-5 mb-4 ">
-              <h4 class="text-my-primary">ទំនាក់ទំនង</h4>
+              <h4 class="text-my-primary-mode">ទំនាក់ទំនង</h4>
             </div>
 
             <div class="contactus">
               <div class="mb-2">
-                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-secondary"></i>
-                  <span class="ms-2  text-my-secondary fs-5">Ant Trainning Center</span>
+                <a href="#"><i class="fa-solid fa-location-dot fs-4 text-my-primary-mode"></i>
+                  <span class="ms-2  text-my-primary-mode fs-5">Ant Trainning Center</span>
                 </a>
               </div>
               <div class="mb-2">
                 <a href="tel:+855 86359562">
-                  <i class="bi bi-telephone-fill fs-4 text-my-secondary"></i>
-                  <span class="ms-2 text-my-secondary fs-5">086 35 95 62</span>
+                  <i class="bi bi-telephone-fill fs-4 text-my-primary-mode"></i>
+                  <span class="ms-2 text-my-primary-mode fs-5">086 35 95 62</span>
                 </a>
               </div>
               <div class="mb-4">
                 <a href="mailto:csc.express@gmail.com">
-                  <i class="bi bi-envelope-fill fs-4 text-my-secondary"></i>
-                  <span class="ms-2 text-my-secondary fs-5">csc.express@gmail.com</span>
+                  <i class="bi bi-envelope-fill fs-4 text-my-primary-mode"></i>
+                  <span class="ms-2 text-my-primary-mode fs-5">csc.express@gmail.com</span>
                 </a>
               </div>
             </div>
@@ -1516,23 +1570,8 @@
 <script src="assets/js/headerfixed.js"></script>
 <script src="assets/js/backtotop.js"></script>
 <script src="assets/js/chatbot.js"></script>
+<script src="assets/js/formValidation.js"></script>
 <script src="assets/js/alertsuccessfullogin.js"></script>
-<!-- navbar-fixed -->
-<script>
-  // Ensure the script runs after the document is fully loaded
-  document.addEventListener('DOMContentLoaded', function () {
-    const navtop = document.querySelector('.navtop');
-    const navbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > navtop.offsetHeight) {
-        navbar.classList.add('scrolled-top');
-      } else {
-        navbar.classList.remove('scrolled-top');
-      }
-    });
-  });
-</script>
 <script>
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

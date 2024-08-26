@@ -975,7 +975,7 @@
                                     <!-- Change-Password-Section -->
                                     <div class="tab-pane fade" id="pills-passwd" role="tabpanel"
                                         aria-labelledby="pills-passwd-tab">
-                                        <h5 class="card-title">Change Password</h5>
+                                        <h5 class="card-title">ការផ្លាស់ប្តូរពាក្យសម្ងាត់</h5>
                                         <form class="row g-3 needs-validation" novalidate>
                                             <div class="col-md-12">
                                                 <label for="validationCustom08"
@@ -1014,7 +1014,7 @@
                                     <!-- Change Notification -->
                                     <div class="tab-pane fade" id="pills-graphicdesign" role="tabpanel"
                                         aria-labelledby="pills-graphicdesign-tab" tabindex="0">
-                                        <h5 class="card-title">Notifications</h5>
+                                        <h5 class="card-title">ការកំណត់នៃការជូនដំណឹង</h5>
                                         <!-- Content for 'ការជូនដំណឹង' tab -->
                                         <div class="container">
                                             <div class="row gy-2">
@@ -1096,90 +1096,177 @@
                                     <!-- Address -->
                                     <div class="tab-pane fade" id="pills-address" role="tabpanel"
                                         aria-labelledby="pills-graphicdesign-tab" tabindex="0">
-                                        <h5 class="card-title">Location</h5>
+                                        <h5 class="card-title">ជម្រើសនៃការទទួលអីវ៉ាន់</h5>
                                         <!-- Content for 'ការជូនដំណឹង' tab -->
-                                        <div class="container">
-                                            <form class="row g-3 needs-validation" novalidate>
-                                                <div class="col-md-6">
-                                                    <label for="province"
-                                                        class="form-label text-my-default fs-5">រាជធានី/ខេត្ត</label>
-                                                    <select id="province" class="form-select shadow-none"
-                                                        aria-label="Default select example">
-                                                        <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
-                                                        <option value="phnom-penh">ភ្នំពេញ</option>
-                                                        <option value="banteay-meanchey">បន្ទាយមានជ័យ</option>
-                                                        <option value="battambang">បាត់ដំបង</option>
-                                                        <option value="kampong-cham">កំពង់ចាម</option>
-                                                        <option value="kampong-chhnang">កំពង់ឆ្នាំង</option>
-                                                        <option value="kampong-speu">កំពង់ស្ពឺ</option>
-                                                        <option value="kampong-thom">កំពង់ធំ</option>
-                                                        <option value="kampot">កំពត</option>
-                                                        <option value="kandal">កណ្តាល</option>
-                                                        <option value="koh-kong">កោះកុង</option>
-                                                        <option value="kratie">ក្រចេះ</option>
-                                                        <option value="mondulkiri">មណ្ឌលគិរី</option>
-                                                        <option value="oddar-meanchey">ឧត្ដរមានជ័យ</option>
-                                                        <option value="pursat">ពោធិ៍សាត់</option>
-                                                        <option value="preah-vihear">ព្រះវិហារ</option>
-                                                        <option value="prey-veng">ព្រៃវែង</option>
-                                                        <option value="ratanakiri">រតនគិរី</option>
-                                                        <option value="siem-reap">សៀមរាប</option>
-                                                        <option value="preah-sihanouk">ព្រះសីហនុ</option>
-                                                        <option value="stung-treng">ស្ទឹងត្រែង</option>
-                                                        <option value="svay-rieng">ស្វាយរៀង</option>
-                                                        <option value="takeo">តាកែវ</option>
-                                                        <option value="tbong-khmum">ត្បូងឃ្មុំ</option>
-                                                        <option value="kep">កែប</option>
-                                                        <option value="pailin">ប៉ៃលិន</option>
-                                                    </select>
+                                        <ul class="nav nav-pills mb-3" id="pills-tab-notification" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-pickup-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-pickup" type="button"
+                                                    role="tab" aria-controls="pills-pickup"
+                                                    aria-selected="true">មកយកដោយផ្ទាល់</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-delivery-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-delivery" type="button" role="tab"
+                                                    aria-controls="pills-delivery"
+                                                    aria-selected="false">ដឹកអីវ៉ាន់ដល់ផ្ទះ</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent-notification">
+                                            <div class="tab-pane fade show active" id="pills-pickup" role="tabpanel"
+                                                aria-labelledby="pills-pickup-tab" tabindex="0">
+                                                <div class="container">
+                                                    <form class="row g-3 needs-validation" novalidate>
+                                                        <label for="province"
+                                                            class="form-label text-my-default fs-5">ជ្រើសរើសសាខា</label>
+                                                        <select id="province" class="form-select shadow-none"
+                                                            aria-label="Default select example">
+                                                            <option selected disabled>ជ្រើសរើសទីតាំងសម្រាប់មកយកអីវ៉ាន់
+                                                            </option>
+                                                            <option value="phnom-penh">ភ្នំពេញ</option>
+                                                            <option value="tk">ទួលគោក</option>
+                                                            <option value="tuoltp">ទួលទំពួង</option>
+                                                            <option value="sted">ស្ទឹងមានជ័យថ្មី</option>
+                                                            <option value="smn-12">សំណង់១២</option>
+                                                            <option value="7-makara">៧ មករា</option>
+                                                        </select>
+                                                        <h5>*បញ្ជាក់ចំពោះការយកអីវ៉ាន់ដោយផ្ទាល់ដល់ទីតាំង
+                                                            តម្រូវឱ្យលោកអ្នកធ្វើការបង់ប្រាក់ជាមុន។
+                                                            បើប្រើប្រាស់សេវាកម្មដឹកជញ្ជូនរបស់ក្រុមហ៊ុន
+                                                            លោកអ្នកអាចធ្វើការទូទាត់តាមអនឡាញ
+                                                            ឬចាំអីវ៉ាន់ទៅដល់ចាំទូទាត់ក៏បាន។ សូមអរគុណ!</h5>
+                                                        <div class="d-flex gap-4 justify-content-center my-4">
+                                                            <div class="img-qr">
+                                                                <img src="assets/images/qr.jpg" alt="qr-reils">
+                                                            </div>
+                                                            <div class="img-qr">
+                                                                <img src="assets/images/qr-dollar.jpg" alt="qr-reils">
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-grid justify-content-center gap-4">
+                                                            <input type="file" class="file-input" id="file-input"
+                                                                accept="image/*">
+                                                            <button type="button" class="btn btn-primary"
+                                                                onclick="document.getElementById('file-input').click();">
+                                                                បញ្ចូលរូបភាពការទូទាត់ទីនេះ
+                                                            </button>
+                                                        </div>
+                                                    </form>
                                                 </div>
+                                            </div>
 
-                                                <div class="col-md-6">
-                                                    <label for="district"
-                                                        class="form-label text-my-default fs-5">ក្រុង/ស្រុក/ខណ្ឌ</label>
-                                                    <select id="district" class="form-select shadow-none"
-                                                        aria-label="Default select example">
-                                                        <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
-                                                    </select>
-                                                </div>
+                                            <div class="tab-pane fade" id="pills-delivery" role="tabpanel"
+                                                aria-labelledby="pills-delivery-tab" tabindex="0">
+                                                <div class="container">
+                                                    <form class="row g-3 needs-validation" novalidate>
+                                                        <div class="col-md-6">
+                                                            <label for="validationServer01"
+                                                                class="form-label text-my-default fs-5">ឈ្មោះអ្នក
+                                                                ៖</label>
+                                                            <input type="text" class="form-control invalid shadow-none"
+                                                                id="validationServer01" required>
+                                                            <div class="invalid-feedback">
+                                                                សូមវាយបញ្ជូលឈ្មោះរបស់អ្នក
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="validationServer02"
+                                                                class="form-label text-my-default fs-5">លេខទូរស័ព្ទ​
+                                                                ៖</label>
+                                                            <input type="text" class="form-control invalid shadow-none"
+                                                                id="validationServer02" value="Otto" required>
+                                                            <div class="invalid-feedback">
+                                                                សូមវាយបញ្ជូលលេខទូរស័ព្ទរបស់អ្នក
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="province"
+                                                                class="form-label text-my-default fs-5">រាជធានី/ខេត្ត</label>
+                                                            <select id="province" class="form-select shadow-none"
+                                                                aria-label="Default select example">
+                                                                <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក
+                                                                </option>
+                                                                <option value="phnom-penh">ភ្នំពេញ</option>
+                                                                <option value="banteay-meanchey">បន្ទាយមានជ័យ</option>
+                                                                <option value="battambang">បាត់ដំបង</option>
+                                                                <option value="kampong-cham">កំពង់ចាម</option>
+                                                                <option value="kampong-chhnang">កំពង់ឆ្នាំង</option>
+                                                                <option value="kampong-speu">កំពង់ស្ពឺ</option>
+                                                                <option value="kampong-thom">កំពង់ធំ</option>
+                                                                <option value="kampot">កំពត</option>
+                                                                <option value="kandal">កណ្តាល</option>
+                                                                <option value="koh-kong">កោះកុង</option>
+                                                                <option value="kratie">ក្រចេះ</option>
+                                                                <option value="mondulkiri">មណ្ឌលគិរី</option>
+                                                                <option value="oddar-meanchey">ឧត្ដរមានជ័យ</option>
+                                                                <option value="pursat">ពោធិ៍សាត់</option>
+                                                                <option value="preah-vihear">ព្រះវិហារ</option>
+                                                                <option value="prey-veng">ព្រៃវែង</option>
+                                                                <option value="ratanakiri">រតនគិរី</option>
+                                                                <option value="siem-reap">សៀមរាប</option>
+                                                                <option value="preah-sihanouk">ព្រះសីហនុ</option>
+                                                                <option value="stung-treng">ស្ទឹងត្រែង</option>
+                                                                <option value="svay-rieng">ស្វាយរៀង</option>
+                                                                <option value="takeo">តាកែវ</option>
+                                                                <option value="tbong-khmum">ត្បូងឃ្មុំ</option>
+                                                                <option value="kep">កែប</option>
+                                                                <option value="pailin">ប៉ៃលិន</option>
+                                                            </select>
+                                                        </div>
 
-                                                <div class="col-md-6">
-                                                    <label for="district"
-                                                        class="form-label text-my-default fs-5">ឃុំ/សង្កាត់</label>
-                                                    <select id="commune" class="form-select shadow-none"
-                                                        aria-label="Default select example">
-                                                        <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
-                                                    </select>
+                                                        <div class="col-md-6">
+                                                            <label for="district"
+                                                                class="form-label text-my-default fs-5">ក្រុង/ស្រុក/ខណ្ឌ</label>
+                                                            <select id="district" class="form-select shadow-none"
+                                                                aria-label="Default select example">
+                                                                <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក
+                                                                </option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <label for="district"
+                                                                class="form-label text-my-default fs-5">ឃុំ/សង្កាត់</label>
+                                                            <select id="commune" class="form-select shadow-none"
+                                                                aria-label="Default select example">
+                                                                <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="district"
+                                                                class="form-label text-my-default fs-5">ភូមិ</label>
+                                                            <select id="village" class="form-select shadow-none"
+                                                                aria-label="Default select example">
+                                                                <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <label for="validationCustom09"
+                                                                class="form-label">ទីតាំង</label>
+                                                            <input type="text" class="form-control shadow-none"
+                                                                id="validationCustom09"
+                                                                value="ផ្ទះលេខ១២អា ផ្លូវ២៧១ សង្កាត់ចាក់អង្រែ ខណ្ឌមានជ័យ រាជធានីភ្នំពេញ"
+                                                                required>
+                                                            <div class="invalid-feedback">
+                                                                សូមបញ្ចូលទីលំនៅបច្ចុប្បន្នរបស់អ្នក
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button class="btn btn-my-primary"
+                                                                type="submit">រក្សាទុក</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label for="district"
-                                                        class="form-label text-my-default fs-5">ភូមិ</label>
-                                                    <select id="village" class="form-select shadow-none"
-                                                        aria-label="Default select example">
-                                                        <option selected disabled>ជ្រើសរើសទីតាំងរបស់អ្នក</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <label for="validationCustom09" class="form-label">ទីតាំង</label>
-                                                    <input type="text" class="form-control shadow-none"
-                                                        id="validationCustom09"
-                                                        value="ផ្ទះលេខ១២អា ផ្លូវ២៧១ សង្កាត់ចាក់អង្រែ ខណ្ឌមានជ័យ រាជធានីភ្នំពេញ"
-                                                        required>
-                                                    <div class="invalid-feedback">
-                                                        សូមបញ្ចូលទីលំនៅបច្ចុប្បន្នរបស់អ្នក
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <button class="btn btn-my-primary" type="submit">រក្សាទុក</button>
-                                                </div>
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <!-- Feedback-Section -->
                                     <div class="tab-pane fade" id="pills-marketing" role="tabpanel"
                                         aria-labelledby="pills-marketing-tab" tabindex="0">
-                                        <h5 class="card-title">Feedback</h5>
+                                        <h5 class="card-title">មតិយោបល់របស់អ្នក</h5>
                                         <form class="row g-3 needs-validation" novalidate>
                                             <div class="col-md-12">
                                                 <label for="validationCustomUsername1"

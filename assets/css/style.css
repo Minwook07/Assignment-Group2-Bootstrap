@@ -211,6 +211,10 @@ img {
   color: var(--my-color-primary-mode) !important;
 }
 
+a.text-my-primary-mode:hover{
+  color: #5cff26!important;
+}
+
 .text-my-dark-light:hover {
   color: #fff !important;
 }

@@ -7,11 +7,10 @@
   <title>CSC Express</title>
   <link rel="icon" href="assets/images/Logo-H.png">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/libs/icons-main/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
 </head>
 
 <body>
@@ -32,16 +31,17 @@
             </a>
           </div>
         </div>
-        <div class="d-none d-lg-flex ">
+        <div class="d-flex ms-auto">
           <div class="dropdown me-4">
-            <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+            <button
+              class="btn my-lan-color d-none d-xl-flex  btn-my-outline-secondary dropdown-toggle d-flex align-items-center"
               type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-globe2 fs-4 me-3 text-my-primary-mode"></i>
-              <span class="text-my-primary-mode">ភាសាខ្មែរ</span>
+              <i class="bi bi-globe2 fs-4 me-3"></i>
+              <span>ភាសាខ្មែរ</span>
             </button>
-            <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
-              <li><a class="dropdown-item text-my-primary-mode " href="#">English</a></li>
-              <li><a class="dropdown-item text-my-primary-mode" href="#">中國人</a></li>
+            <ul class="dropdown-menu bg-my-default" style="position: absolute; z-index: 9999;">
+              <li><a class="dropdown-item my-lan-color " href="#">English</a></li>
+              <li><a class="dropdown-item my-lan-color" href="#">中國人</a></li>
             </ul>
           </div>
           <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
@@ -131,20 +131,19 @@
                 <i class="fas fa-user-plus"></i> ចុះឈ្មោះ
               </button>
             </div>
-            <div class="d-flex d-lg-none">
+            <div class="d-flex d-xl-none">
               <div class="dropdown me-4">
-                <button class="btn btn-color  btn-my-outline-secondary  dropdown-toggle  d-flex align-items-center"
+                <button
+                  class="btn my-lan-color d-flex d-xl-none btn-my-outline-secondary dropdown-toggle d-flex align-items-center"
                   type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi bi-globe2 fs-4 me-3 text-my-primary"></i>
+                  <i class="bi bi-globe2 fs-4 me-3"></i>
                   <span>ភាសាខ្មែរ</span>
                 </button>
-                <ul class="dropdown-menu " style="position: absolute; z-index: 9999;">
-                  <li><a class="dropdown-item text-my-primary " href="#">English</a></li>
-                  <li><a class="dropdown-item text-my-primary" href="#">中國人</a></li>
+                <ul class="dropdown-menu bg-my-default" style="position: absolute; z-index: 9999;">
+                  <li><a class="dropdown-item my-lan-color " href="#">English</a></li>
+                  <li><a class="dropdown-item my-lan-color" href="#">中國人</a></li>
                 </ul>
               </div>
-              <button type="button" class="btn-mode border-0 bg-transparent" data-theme-toggle> <i
-                  class="bi bi-cloud-moon-fill fs-3 text-my-primary"></i></button>
             </div>
           </div>
         </div>
@@ -158,7 +157,7 @@
         <div class="modal-content">
           <div class="modal-header my-main-bg p-1">
             <a href="" class="logo-modal me-auto">
-              <img src="assets/images/my-logo-csc.png" class=" logo-modal p-0" alt="">
+              <img src="assets/images/my-logo-csc.png" class=" logo-modal p-0 ms-4" alt="">
             </a>
             <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
                 class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
@@ -241,6 +240,7 @@
         </div>
       </div>
     </div>
+
     <!-- otp Modal -->
     <div class="modal fade" id="otpcode" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="otppassword" aria-hidden="true">
@@ -270,13 +270,13 @@
       </div>
     </div>
 
-    <!-- sign in Modal -->
+    <!-- sign up Modal -->
     <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content my-main-bg">
           <div class="modal-header p-0">
             <a href="" class="logo-modal me-auto">
-              <img src="assets/images/my-logo-csc.png" class="logo-modal p-0" alt="">
+              <img src="assets/images/my-logo-csc.png" class="logo-modal p-0 ms-4" alt="">
             </a>
             <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close">
               <i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i>
@@ -351,7 +351,7 @@
       </div>
     </div>
   </header>
-  
+
   <main>
     <!-- BackToTop Button -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
@@ -528,21 +528,21 @@
                 </div>
                 <div class="col-6">
                   <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-user"></i></span>
+                    <span class="input-group-text" id="basic-addon13"><i class="fa-regular fa-user"></i></span>
                     <input type="text" class="form-control shadow-none outline" placeholder="នាមត្រកូល"
                       aria-label="នាមត្រកូល" aria-describedby="basic-addon1">
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope"></i></span>
+                    <span class="input-group-text" id="basic-addon14"><i class="fa-regular fa-envelope"></i></span>
                     <input type="text" class="form-control shadow-none" placeholder="អុីម៉េល​" aria-label="អុីម៉េល​"
                       aria-describedby="basic-addon1">
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
+                    <span class="input-group-text" id="basic-addon12"><i class="fa-solid fa-phone"></i></span>
                     <input type="text" class="form-control shadow-none" placeholder="លេខទូរស័ព្ទ"
                       aria-label="លេខទូរស័ព្ទ" aria-describedby="basic-addon1">
                   </div>
@@ -664,7 +664,7 @@
                 </a>
               </div>
             </div>
-            <div class="mb-2">
+            <div class="mb-2 d-flex g-3">
               <a href="www.facebook.com" target="_blank"><i
                   class="fa-brands fa-facebook-f bg-icon-media fs-4 btn btn-my-outline-primary me-2 text-color-icon"></i></a>
               <a href="#" target="_blank"><i

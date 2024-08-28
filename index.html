@@ -9,10 +9,9 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/libs/fontawesome-free-6.6.0-web/css/all.min.css">
-  <link rel="stylesheet" href="assets/libs/icons-main/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/libs/bootstrap-icon/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/libs/swiper.js/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -1619,8 +1618,12 @@
 <script src="assets/js/chatbot.js"></script>
 <script src="assets/js/formValidation.js"></script>
 <script src="assets/js/alertsuccessfullogin.js"></script>
+<script src="assets/libs/swiper.js/swiper-bundle.min.js"></script>
+<script src="assets/libs/aos-master/aos-master/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="assets/js/timercountdown.js"></script>
-
 <script>
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -1750,6 +1753,7 @@
     });
   });
 </script>
+
 <!-- script for toast -->
 <script>
   window.onload = function () {
@@ -1760,12 +1764,6 @@
     }
   }
 </script>
-<script src="assets/libs/aos-master/aos-master/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>

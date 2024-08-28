@@ -36,7 +36,6 @@ body {
   --my-card-default-blur-border: rgba(255, 255, 255, 0.25);
   --my-card-default-blur-backdrop: blur(2px);
   --hero-banner-bustransport-image: url('../images/bus-tran-hero.png');
-  --hero-banner-logistic-image: url('../images/map-logistic.jpg');
   --my-color-hover-default: #2a9a04;
 }
 
@@ -57,7 +56,6 @@ body {
   --my-card-default-blur-border: rgba(0, 0, 0, 0.35);
   --my-card-default-blur-backdrop: blur(2px);
   --hero-banner-bustransport-image: url('../images/bus-tran-hero-dark.png');
-  --hero-banner-logistic-image: url('../images/map-logistic1.png');
   --my-color-hover-default: #5cff26;
 }
 
@@ -2167,7 +2165,7 @@ input:focus {
 /* Page express_logistic*/
 /* SectionExpress Hero Banner */
 .hero-banner-express {
-  background-image: var(--hero-banner-logistic-image);
+  background-image: url(../images/map-logistic1.png);
   background-size: cover;
 }
 

@@ -161,8 +161,8 @@
             <a href="" class="logo-modal me-auto">
               <img src="assets/images/my-logo-csc.png" class=" logo-modal p-0 ms-4" alt="">
             </a>
-            <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
-                class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
+            <button type="button" class="btn-close bg-transparent border-0 me-2 shadow-none" data-bs-dismiss="modal"
+              aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
           </div>
           <div class="modal-body my-main-bg p-0 ">
             <div class="row justify-content-center p-0 rounded">
@@ -188,11 +188,15 @@
                       សូមបញ្ជូលលេខសម្ងាត់លោកអ្នក
                     </div>
                   </div>
-                  <div class=" form-check">
-                    <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
-                    <label class="form-check-label text-my-primary" for="exampleCheck1">ចងចាំខ្ញុំ</label>
+                  <div class="d-flex justify-content-between">
+                    <div class=" form-check">
+                      <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
+                      <label class="form-check-label text-my-primary" for="exampleCheck1">ចងចាំខ្ញុំ</label>
+                    </div>
+                    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
+                      class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
                   </div>
-                  <div class="d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
                     <button type="submit" class="btn outline-none fs-5 mb-3 btn-my-primary text-light">ចូលគណនី</button>
                   </div>
                   <div class="d-flex justify-content-center">
@@ -207,8 +211,6 @@
                     </a>
                   </div>
                 </form>
-                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#forgotpassword"
-                  class="text-decoration-none fs-6 color-text text-my-primary">ភ្លេចពាក្យសម្ងាត់?</a>
                 <p class="fs-6 text-center color-text mt-3 text-my-default">មិនទាន់មានគណនីមែនទេ?
                   <span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signin"
                       class=" color-text-primary text-my-primary">ចុះឈ្មោះឥឡូវនេះ</a></span>
@@ -224,20 +226,25 @@
     <div class="modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content my-main-bg">
-          <div class="modal-body">
-            <h4 class="mb-3 text-my-primary"> ស្នើរសុំផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
-            <p class="text-my-default">លោកអ្នកនឹងទទួលបានលេខកូដក្នុងរយៈ60វិនាទី</p>
+          <div class="modal-body p-4">
+
+            <div class="d-flex">
+              <h4 class="mb-3 text-my-primary me-auto"> ស្នើរសុំផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
+              <button type="button" class="btn-close bg-transparent border-0 me-2 shadow-none" data-bs-dismiss="modal"
+                aria-label="Close"><i class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
+            </div>
+            <p class="text-my-default fs-5">សូមបញ្ជូលលេខទូរស័ព្ទរបស់អ្នកដើម្បីផ្ទៀងផ្ទាត់</p>
             <div class="form-floating mb-3 needs-validation" novalidate>
-              <input type="email" class="form-control shadow-none" id="floatingEmail" placeholder="name@example.com">
-              <label for="floatingEmail">អ៊ីម៉េល​ ឬលេខទូរស័ព្ទ</label>
+              <input type="tel" class="form-control shadow-none" id="floatingNumber" placeholder="name@example.com">
+              <label for="floatingNumber">លេខទូរស័ព្ទ</label>
               <div class="invalid-feedback">
                 សូមបញ្ជូលអ៊ីម៉េល​ ឬលេខទូរស័ព្ទ
               </div>
             </div>
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
-              class="btn btn-my-primary text-light">បញ្ជូន</a>
+            <div class="d-flex justify-content-center">
+              <a type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
+                class="btn btn-my-primary text-light fs-5">បញ្ជូន</a>
+            </div>
           </div>
         </div>
       </div>
@@ -248,30 +255,70 @@
       aria-labelledby="otppassword" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content my-main-bg">
-          <div class="modal-header">
-            <a href="" class="logo-modal me-auto">
-              <img src="assets/images/my-logo-csc.png" class=" logo-modal p-0" alt="">
-            </a>
-            <button type="button" class="bg-transparent border-0 me-2" data-bs-dismiss="modal" aria-label="Close"><i
-                class="bi bi-x-lg text-my-primary fw-bold fs-4"></i></button>
-          </div>
-          <div class="modal-body">
-            <h4 class="text-my-primary mb-3">សូមលោកអ្នកបញ្ជូលេខកូដ4ខ្ទង់</h4>
-            <div class="d-flex justify-content-center mb-3">
-              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
-              <input type="text" class="opt-box me-4 text-my-primary fw-bold" maxlength="1">
+          <div class="modal-body p-5">
+            <div class="mb-3 d-flex justify-content-center align-items-center">
+              <a href="index.html" class="logo-modal text-center">
+                <img src="assets/images/my-logo-csc.png" class=" logo-modal p-0" alt="">
+              </a>
             </div>
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <a href="home.html" type="button" data-bs-toggle="modal" data-bs-target="#otpcode"
-              class="btn btn-my-primary text-light">បញ្ជូន</a>
+            <h4 class="text-my-primary mb-3 text-center">ផ្ទៀងផ្ទាត់លេខលេខទូរស័ព្ទរបស់អ្នក</h4>
+            <p class="text-my-defualt text-center fs-5">សូមបញ្ជូលលេខកូដដែលយើងបានផ្ញើទៅលេខទូរស័ព្ទរបស់អ្នក</p>
+            <div class="d-flex justify-content-center mb-4">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold rounded" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold rounded" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold rounded" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold rounded" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold rounded" maxlength="1">
+              <input type="text" class="opt-box me-4 text-my-primary fw-bold rounded" maxlength="1">
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+              <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#changePassword"
+                class="btn btn-my-primary text-light fs-5">ចុចផ្ទៀងផ្ទាត់</a>
+            </div>
+            <div class="text-my-primary text-center mb-3">
+              <span id="timer" class="fs-5">[01:00]</span>
+            </div>
+            <p class="text-my-default text-center mb-0">ប្រសិនលោកអ្នកមិនទទួលបានសារក្នុងរយៈពេលមួយនាទី,</p>
+            <p class="text-my-default text-center ">សូមចុចផ្ញើកូដម្តងទៀត <a href=""
+                class="text-my-primary fw-bold">ផ្ញើកូដម្តងទៀត</a></p>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- change password -->
+    <div class="modal fade " id="changePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-4 pt-5">
+            <div class="mb-3 d-flex justify-content-center align-items-center">
+              <a href="index.html" class="logo-modal text-center">
+                <img src="assets/images/my-logo-csc.png" class=" logo-modal p-0" alt="">
+              </a>
+            </div>
+            <div class="mb-3 needs-validation" novalidate>
+              <label for="floatingNewPassword" class="fw-bold text-my-primary mb-1 fs-5"> ពាក្យសម្ងាត់ថ្មី *</label>
+              <input type="tel" class="form-control shadow-none px-3 py-2" id="floatingNewPassword"
+                placeholder="ពាក្យសម្ងាត់ថ្មី*">
+              <div class="invalid-feedback">
+                សូមបញ្ជូលពាក្យសម្ងាត់ថ្មីរបស់អ្នក
+              </div>
+            </div>
+            <div class="mb-3 needs-validation" novalidate>
+              <label for="floatingCorrectPassword" class="fw-bold text-my-primary mb-1 fs-5"> ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់
+                *</label>
+              <input type="tel" class="form-control shadow-none px-3 py-2" id="floatingCorrectPassword"
+                placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់*">
+              <div class="invalid-feedback">
+                សូមបញ្ជូលពាក្យសម្ងាត់ថ្មីដើម្បីផ្ទៀងផ្ទាត់
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a href="home.html" class="btn btn-primary fs-5">បញ្ជូន</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- sign up Modal -->
     <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -1270,8 +1317,6 @@
                       <label for="exampleInputEmail1" class="form-label text-my-default">អ៊ីម៉ែល</label>
                       <input type="email" class="form-control shadow-none" id="exampleInputEmail1"
                         aria-describedby="emailHelp" placeholder="csc.express@gmail.com" required>
-                      <div id="emailHelp" class="form-text text-my-default">We'll never share your email with anyone
-                        else.</div>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label text-my-default">លេខទូរស័ព្ទ</label>
@@ -1348,18 +1393,24 @@
               <div class="card border-0" data-aos="fade-up">
                 <div class="image d-flex justify-content-center align-items-center">
                   <img class="rounded-top" src="assets/images/Chenny.jpg" alt="team">
-                  <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+                  <div
+                    class="social-hover social-hovers my-social-hover d-lg-block d-xl-flex gap-4 justify-content-center align-items-center position-absolute rounded-5">
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="https://www.facebook.com/chenny.clc?mibextid=LQQJ4d" class="mb-0"><i
+                          class="fa-brands fa-facebook-f bg-icon-media text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="#" class="mb-0"><i class="fa-brands fa-instagram text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="#" class="mb-0"><i class="fa-brands fa-linkedin-in text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
+                    <div class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center">
+                      <a href="https://t.me/chennyngoun" class="mb-0"><i
+                          class="fa-solid fa-paper-plane text-my-primary fs-5"></i></a>
                     </div>
                   </div>
                 </div>
@@ -1376,18 +1427,24 @@
               <div class="card border-0 " data-aos="fade-up">
                 <div class="image d-flex justify-content-center align-items-center">
                   <img class="rounded-top" src="assets/images/Chet.jpg" alt="team">
-                  <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+                  <div
+                    class="social-hover social-hovers my-social-hover d-lg-block d-xl-flex gap-4 justify-content-center align-items-center position-absolute rounded-5">
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="https://www.facebook.com/chet.chhunn?mibextid=LQQJ4d" class="mb-0"><i
+                          class="fa-brands fa-facebook-f bg-icon-media text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="#" class="mb-0"><i class="fa-brands fa-instagram text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon"></i></a>
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="#" class="mb-0"><i class="fa-brands fa-linkedin-in text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-solid fa-paper-plane text-color-icon"></i></a>
+                    <div class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center">
+                      <a href="https://t.me/lee_minwook" class="mb-0"><i
+                          class="fa-solid fa-paper-plane text-my-primary fs-5"></i></a>
                     </div>
                   </div>
                 </div>
@@ -1404,18 +1461,24 @@
               <div class="card border-0" data-aos="fade-up">
                 <div class="image d-flex justify-content-center align-items-center">
                   <img class="rounded-top" src="assets/images/nita.jpg" alt="team">
-                  <div class="social-hover d-flex gap-4 justify-content-center align-items-center">
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-facebook-f bg-icon-media text-color-icon"></i></a>
+                  <div
+                    class="social-hover social-hovers my-social-hover d-lg-block d-xl-flex gap-4 justify-content-center align-items-center position-absolute rounded-5">
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="https://www.facebook.com/profile.php?id=100009765192239&mibextid=LQQJ4d" class="mb-0"><i
+                          class="fa-brands fa-facebook-f bg-icon-media text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-twitter text-color-icon"></i></a>
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="#" class="mb-0"><i class="fa-brands fa-instagram text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-brands fa-linkedin-in text-color-icon "></i></a>
+                    <div
+                      class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                      <a href="#" class="mb-0"><i class="fa-brands fa-linkedin-in text-my-primary fs-5"></i></a>
                     </div>
-                    <div class="social-icon d-flex justify-content-center align-items-center">
-                      <a href="#"><i class="fa-solid fa-paper-plane  text-color-icon"></i></a>
+                    <div class="social-icon my-social-icon bg-white d-flex justify-content-center align-items-center">
+                      <a href="https://t.me/sonitasean" class="mb-0"><i
+                          class="fa-solid fa-paper-plane text-my-primary fs-5"></i></a>
                     </div>
                   </div>
                 </div>
@@ -1556,6 +1619,8 @@
 <script src="assets/js/chatbot.js"></script>
 <script src="assets/js/formValidation.js"></script>
 <script src="assets/js/alertsuccessfullogin.js"></script>
+<script src="assets/js/timercountdown.js"></script>
+
 <script>
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -1684,6 +1749,16 @@
       });
     });
   });
+</script>
+<!-- script for toast -->
+<script>
+  window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('showToast') === 'true') {
+      // Redirect to home.html with a query parameter to show the toast
+      window.location.href = 'home.html?showToast=true';
+    }
+  }
 </script>
 <script src="assets/libs/aos-master/aos-master/dist/aos.js"></script>
 <script>

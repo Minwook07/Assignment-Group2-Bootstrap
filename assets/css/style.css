@@ -37,6 +37,7 @@ body {
   --my-card-default-blur-backdrop: blur(2px);
   --hero-banner-bustransport-image: url('../images/bus-tran-hero.png');
   --hero-banner-logistic-image: url('../images/map-logistic.jpg');
+  --my-color-hover-default: #2a9a04;
 }
 
 [data-theme="dark"] {
@@ -57,6 +58,7 @@ body {
   --my-card-default-blur-backdrop: blur(2px);
   --hero-banner-bustransport-image: url('../images/bus-tran-hero-dark.png');
   --hero-banner-logistic-image: url('../images/map-logistic1.png');
+  --my-color-hover-default: #5cff26;
 }
 
 img {
@@ -215,7 +217,7 @@ img {
 }
 
 a.text-my-primary-mode:hover{
-  color: #5cff26!important;
+  color: var(--my-color-hover-default)!important;
 }
 
 .text-my-dark-light:hover {
@@ -351,11 +353,11 @@ textarea:focus {
   }
 
   .overlay-disabled {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 70px;
     background-color: transparent;
-    top: -50%;
-    left: -20%;
+    top: -10%;
+    left: -5%;
   }
 }
 
@@ -491,7 +493,7 @@ textarea:focus {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: var(--my-color-primary);
+  color: var(--my-color-hover-default)!important;
 }
 
 .navbar {

@@ -1748,6 +1748,22 @@
       </div>
     </div>
   </footer>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <div class="me-auto" style="width: 100px;">
+          <a href="home.html">
+            <img src="assets/images/my-logo-csc.png" alt="">
+        </div>
+          <small class="text-dark">1 នាទីមុន</small>
+          <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+       <p class="text-my-primary mb-0">ការចូលគណនីរបស់លោកអ្នកទទួលបានជោគជ័យ!</p>
+       <p class="text-my-primary">សូមរីករាយជាមួយការប្រើប្រាស់សេវាកម្មរបស់យើងខ្ញំុ!</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="assets/js/bootstrap.bundle.js"></script>
@@ -1761,6 +1777,18 @@
 <script>
   AOS.init();
 </script>
+
+<!-- script for toast -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toastElement = document.getElementById('liveToast');
+    if (toastElement) {
+      const toast = new bootstrap.Toast(toastElement);
+      toast.show();
+    }
+  });
+</script>
+
 <script>
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

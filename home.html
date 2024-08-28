@@ -86,7 +86,7 @@
                 </li>
                 <hr>
               </ul>
-   
+
               <div class="tab-content" id="pills-tabContent1">
                 <div class="tab-pane fade show active" id="pills-home1" role="tabpanel"
                   aria-labelledby="pills-home1-tab" tabindex="0">
@@ -262,7 +262,7 @@
                   </div>
                 </div>
               </div>
-              
+
             </ul>
           </li>
 
@@ -1040,7 +1040,7 @@
                   <div class="pb-4 text-my-default">
                     <span><i class="fa-solid fa-quote-left icons text-my-primary fs-3"></i>
                       ខ្ញុំមានការចាប់អារម្មណ៍យ៉ាងខ្លាំងជាមួយនឹងភាពរហ័សរហួនរបស់ CSC Express Delivery
-                        កញ្ចប់របស់ខ្ញុំបានមកដល់លឿនជាងការរំពឹងទុក។សូមអរគុណចំពោះសេវាកម្មដ៏ល្អនេះ!
+                      កញ្ចប់របស់ខ្ញុំបានមកដល់លឿនជាងការរំពឹងទុក។សូមអរគុណចំពោះសេវាកម្មដ៏ល្អនេះ!
                       <i class="fa-solid fa-quote-right text-my-primary fs-3 ms-2"></i>
                     </span>
                   </div>
@@ -1063,7 +1063,7 @@
                   <div class="pb-4 text-white">
                     <span><i class="fa-solid fa-quote-left icons text-white fs-3"></i>
                       ក្រុមដឹកជញ្ជូនបានចាត់ចែងកញ្ចប់របស់ខ្ញុំដោយយកចិត្តទុកដាក់បំផុត ហើយពួកគេបានមកដល់ក្នុងស្ថានភាពល្អ។
-                        ខ្ញុំសូមកោតសរសើរចំពោះការយកចិត្តទុកដាក់ចំពោះការវិចខ្ចប់!
+                      ខ្ញុំសូមកោតសរសើរចំពោះការយកចិត្តទុកដាក់ចំពោះការវិចខ្ចប់!
                       <i class="fa-solid fa-quote-right text-white fs-3 ms-2"></i>
                     </span>
                   </div>
@@ -1110,7 +1110,7 @@
                   <div class="pb-4 text-white">
                     <span><i class="fa-solid fa-quote-left icons text-white fs-3"></i>
                       ខ្ញុំចង់ឃើញជម្រើសនៃការដឹកជញ្ជូនដែលមានលក្ខណៈស្និទ្ធស្នាលនឹងបរិស្ថានបន្ថែមទៀត ដូចជារថយន្តអគ្គិសនី
-                        ឬការវេចខ្ចប់ដែលអាចកែច្នៃឡើងវិញបាន។ និរន្តរភាពគឺមានសារៈសំខាន់សម្រាប់ខ្ញុំ។
+                      ឬការវេចខ្ចប់ដែលអាចកែច្នៃឡើងវិញបាន។ និរន្តរភាពគឺមានសារៈសំខាន់សម្រាប់ខ្ញុំ។
                       <i class="fa-solid fa-quote-right text-white fs-3 ms-2"></i>
                     </span>
                   </div>
@@ -1749,6 +1749,22 @@
       </div>
     </div>
   </footer>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <div class="me-auto" style="width: 100px;">
+          <a href="home.html">
+            <img src="assets/images/my-logo-csc.png" alt="">
+        </div>
+          <small class="text-dark">1 នាទីមុន</small>
+          <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+       <p class="text-my-primary mb-0">ការចូលគណនីរបស់លោកអ្នកទទួលបានជោគជ័យ!</p>
+       <p class="text-my-primary">សូមរីករាយជាមួយការប្រើប្រាស់សេវាកម្មរបស់យើងខ្ញំុ!</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="assets/js/bootstrap.bundle.js"></script>
@@ -1756,6 +1772,16 @@
 <script src="assets/js/headerfixed.js"></script>
 <script src="assets/js/backtotop.js"></script>
 <script src="assets/js/chatbot.js"></script>
+<!-- script for toast -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toastElement = document.getElementById('liveToast');
+    if (toastElement) {
+      const toast = new bootstrap.Toast(toastElement);
+      toast.show();
+    }
+  });
+</script>
 <!-- navbar-fixed -->
 <script>
   // Ensure the script runs after the document is fully loaded

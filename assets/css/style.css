@@ -819,7 +819,10 @@ textarea:focus {
 }
 @media (max-width:566px) {
   .feedback-profile {
-    left: 150px;
+    left: 140px;
+  }
+  .email-text{
+    font-size: 17px!important;
   }
 }
 /* both service home */

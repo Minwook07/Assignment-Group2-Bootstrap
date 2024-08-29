@@ -878,6 +878,10 @@ textarea:focus {
   opacity: 1;
   cursor: pointer;
 }
+.logistic-img{
+  width: 100%!important;	
+  height: 100%!important;
+}
 /* faq */
 .accordion-header-primary .accordion-button:not(.collapsed){
   background-color: var(--my-color-primary);

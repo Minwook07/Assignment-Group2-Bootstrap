@@ -880,7 +880,7 @@ textarea:focus {
 }
 .logistic-img{
   width: 100%!important;	
-  height: 100%!important;
+  height: 450px!important;
 }
 /* faq */
 .accordion-header-primary .accordion-button:not(.collapsed){

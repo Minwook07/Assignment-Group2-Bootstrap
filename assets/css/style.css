@@ -2641,6 +2641,10 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+.remove-item:hover{
+  color: red;;
+}
+
 .nav-pills .nav-link-customize {
   width: 100px;
   height: 80px;
@@ -2649,6 +2653,10 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #ddd;
   border-radius: 10px;
   padding: 20px;
+}
+
+.nav-link-customize:hover{
+  background-color: var(--my-color-primary-mode)!important;
 }
 
 .nav-pills .nav-link-customize i {
